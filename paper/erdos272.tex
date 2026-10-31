@@ -1,0 +1,396 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools}
+\usepackage[margin=28mm]{geometry}
+\usepackage{microtype,booktabs,array}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\usepackage{xurl}
+\hypersetup{pdftitle={The exact maximum in Erdos problem 272 for sufficiently large ground sets},
+ pdfauthor={Li Xiang},pdfsubject={Computer-assisted partial solution of Erdos problem 272}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}\newtheorem{definition}[theorem]{Definition}
+\newcommand{\F}{\mathcal F}
+\newcommand{\G}{\mathcal G}
+\newcommand{\D}{\mathcal D}
+\newcommand{\A}{\mathcal A}
+\newcommand{\Hh}{\mathcal H}
+\newcommand{\repo}{\url{https://github.com/lixiang90/Erdos272}}
+\newcommand{\code}[1]{{\small\nolinkurl{#1}}}
+\setlength{\emergencystretch}{2em}
+\title{The exact maximum in Erd\H{o}s problem 272\protect\\for sufficiently large ground sets}
+\author{Li Xiang\thanks{Project and complete proof sources: \repo.}}
+\date{30 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Let $v(N)$ be the maximum cardinality of a family of distinct subsets of
+$\{1,\ldots,N\}$ whose intersections of distinct members are nonempty
+arithmetic progressions. We give a computer-assisted proof that
+\[
+ v(N)=\binom N2+1+\left\lfloor\frac{N-1}{4}\right\rfloor
+ \qquad(N\ge 2^{49}).
+\]
+The lower bound is Szab\'o's construction. For the upper bound we delete
+large nonprogressions, obtain a common point for the remaining
+nonprogressions, and force all members avoiding that point to be long
+intervals. Their common interval then pays for the deleted members.
+We give the explicit numerical estimates and the precise interfaces of
+the formally proved counting lemmas. The accompanying Lean development is
+part of the proof. More refined computations in that development establish
+the same formula for every $N\ge642498$; those refinements are not developed
+in this paper. The remaining finite range is not settled here.
+\end{abstract}
+
+\section{Statement and scope}
+Write $[N]=\{1,\ldots,N\}$. An arithmetic progression (AP) means a
+nonempty finite set $\{a,a+d,\ldots,a+kd\}$ with $d\ge1$ and $k\ge0$.
+Thus singletons and pairs are APs. A family $\F\subseteq2^{[N]}$ is
+\emph{legal} if $S\cap T$ is an AP whenever $S,T\in\F$ and $S\ne T$.
+The members themselves need not be APs. Set
+\[
+ B(N)=\binom N2+1+\left\lfloor\frac{N-1}{4}\right\rfloor,
+ \qquad v(N)=\max_{\F\text{ legal}}|\F|.
+\]
+The maximum exists because its domain is finite.
+
+\begin{theorem}\label{thm:main}
+For every integer $N\ge2^{49}$, $v(N)=B(N)$. For every $N\ge1$,
+there is a legal family of size $B(N)$.
+\end{theorem}
+
+This is a partial answer to Erd\H{o}s problem 272 and the corresponding
+Justin Sun Prize problem JSP-000233. Szab\'o established the leading term
+and the construction giving $B(N)$~\cite{Szabo}. Yang formulated the exact
+formula and proved the common-point bound using private pairs and a
+staircase inequality~\cite{Yang}. Our formal development also follows the
+non-common-point structural route of Kohlmeyer and Kruer~\cite{KK}.
+We do not claim priority for those constructions or methods. We prove
+existence of an optimal common-point family, not that every optimal family
+has a common point.
+
+The theorem is \emph{computer-assisted}: the finite-set counting lemmas
+specified below have complete proofs in the companion Lean source, which
+forms an electronic supplement to this paper. The paper supplies their
+mathematical interfaces and the full numerical and logical assembly.
+It does not replace those source proofs by an assertion that a numerical
+search succeeded. Section~\ref{sec:verification} gives direct paths and
+reproduction commands.
+
+\section{The matching construction}
+Let $c=\lceil N/2\rceil$ and $k=\lfloor(N-1)/4\rfloor$. Start with every
+subset of $[N]$ of size at most three containing $c$. For each $1\le d\le k$,
+remove the two triples
+\[
+ \{c-2d,c,c+d\},\qquad \{c-d,c,c+2d\},
+\]
+and add the five-term progression
+$P_d=\{c-2d,c-d,c,c+d,c+2d\}$ and its two four-term end deletions.
+
+\begin{proposition}[Szab\'o's construction]\label{prop:lower}
+For every integer $N\ge1$, the resulting family is legal and has cardinality $B(N)$.
+\end{proposition}
+\begin{proof}
+Since $2k\le\min(c-1,N-c)$, all its points lie in $[N]$.
+Every member contains $c$. Intersections involving a member of size at
+most two, or two distinct triples, therefore have size one or two.
+Two APs have an AP as their nonempty intersection: their common points
+form a residue class modulo the least common multiple of their steps,
+restricted to their common span.
+
+It remains to intersect a retained triple with an added AP. Only a
+three-point intersection needs checking. Such a triple lies in some
+$P_d$ and contains $c$. After translating and scaling, the six possible
+triples through zero in $\{-2,-1,0,1,2\}$ consist of four APs and the
+two deleted triples $\{-2,0,1\}$ and $\{-1,0,2\}$.
+Thus every required intersection is an AP.
+
+The ordered gaps $(2d,d)$ and $(d,2d)$ distinguish the deleted triples.
+The step and endpoints distinguish the added APs. Consequently exactly
+$2k$ triples are removed and $3k$ larger members are added, giving
+\[
+ N+\binom{N-1}{2}-2k+3k=\binom N2+1+k.
+\]
+This also covers $k=0$.
+\end{proof}
+
+\section{The structural counting certificates}\label{sec:structural}
+A member is \emph{crooked} if it is not an AP. For a legal family $\F$,
+define
+\[
+ \D(\F)=\{S\in\F:S\text{ is crooked and }28|S|>N\},
+ \qquad \G(\F)=\F\setminus\D(\F).
+\]
+Every AP member is retained. Write
+$H_N=\sum_{i=1}^N1/i$ and $J=\lfloor\log_2N\rfloor+1$.
+All intervals below are integer intervals, with both endpoints included.
+
+We use the following formally proved structural facts. Their hypotheses
+refer to the actual family and its subsets. In particular they do not
+assume an upper bound on an abstract collection of witnesses.
+
+\begin{lemma}[Preparation and endpoint deficit]\label{lem:prepare}
+Suppose $N\ge2^{49}$, $\F$ is legal, and $|\F|>B(N)$.
+Either leave $\F$ unchanged or reflect every member by $x\mapsto N+1-x$,
+obtaining a legal family $\Hh$ with $|\Hh|=|\F|$.
+There are integers $1\le c<L\le R\le N$ with the following properties.
+Put $\D=\D(\Hh)$, $\G=\G(\Hh)$, and
+$\A=\{S\in\G:c\notin S\}$.
+\begin{enumerate}
+\item Every crooked member of $\G$ contains $c$, and $\A\ne\varnothing$.
+\item Every $S\in\A$ has $\min S\le L$ and $\max S\ge R$.
+\item With $t=L+N-R$, there is a nonnegative witness count $E$ such that
+\begin{align}
+ |\D|&\le3137N,\qquad E\le6NH_N^3,\label{eq:deletion}\\
+ |\Hh|&\le\frac{N^2}{2}-\frac{t^2}{102}
+  +|\D|+E+40NH_N^2+6NH_N+24N+(L-c)+3.
+  \label{eq:deficit}
+\end{align}
+\end{enumerate}
+\end{lemma}
+
+Here and below the statements of the source lemmas are stronger than the
+specializations displayed. For Lemma~\ref{lem:prepare}, the exact source
+is \code{Counting/MiddleDeficit52.lean}, declaration
+\code{actual_original_prepared_endpoint102}; deletion and the exceptional
+count are supplied by \code{Core/DenseSharper41.lean} and
+\code{Arithmetic/DivisorMoment45.lean}.
+All source paths in the paper are relative to
+\code{formal/Erdos272/}.
+
+We describe the counting mechanism to clarify what is certified. A crooked
+set containing a root $c$ has a pair $\{x,y\}$ for which the smallest AP
+containing $c,x,y$ is not contained in the set. Such a pair cannot belong
+to another member through $c$, since their legal intersection would
+contain that AP. These private pairs, and the pairs covered by AP
+members, are counted in the same pair universe. Deleting large crooked
+members first bounds their cost by $(4\cdot28^2+1)N=3137N$.
+The remaining crooked members have a common point by the empty-kernel
+counting bound. If the retained family itself has a common point, the
+common-point bound and the omitter estimate already exclude a
+counterexample. Otherwise an avoiding AP supplies a one-sided
+orientation, and endpoint extrema supply $L,R$.
+
+The endpoint estimate counts primitive pairs in the middle region;
+coprimality, floor errors, and exceptional witnesses are retained in
+\eqref{eq:deficit}. The coefficient $1/102$ is deliberately conservative.
+These combinatorial arguments, including the common-point bound and its
+finite staircase certificate and unbounded tail, are proved in the import
+closure of the cited module. No kernel conjecture is assumed.
+
+\begin{lemma}[Excluding noninterval avoiders]\label{lem:noninterval}
+Let $\G$ be legal, let $c\in[N]$, and suppose every crooked member of
+$\G$ contains $c$. Suppose $c\le L\le N$, and each member avoiding $c$
+contains a point at most $L$. If an avoiding member is not an integer
+interval, then
+\begin{equation}\label{eq:noninterval}
+ |\G|\le\frac{3N^2}{8}+\frac53LN+2NH_N+20N+3+6NH_N^3.
+\end{equation}
+In particular, if $N\ge6$, $N<2^J$, $J\ge2$, $32L\le N$, and
+$16384J^3\le N$, then $|\G|\le11N^2/24$.
+\end{lemma}
+
+The exact finite-set counting proof is
+\code{Global/NonInterval53.lean}, declarations
+\code{actual_noninterval_family_count} and
+\code{actual_noninterval_family_gap}.
+An avoiding member is an AP. If it is not an interval, its step is at
+least two and its size is at most $N/2+1$. The unordered pairs meeting
+it number at most $3N^2/8+N$. Private witnesses for crooked members
+inject into these pairs, except for the separately bounded exceptional
+members. Counting the AP members with a low endpoint gives
+\eqref{eq:noninterval}. For the stated consequence, use $H_N\le J$
+and $J\ge2$. The last four terms in \eqref{eq:noninterval} are at most
+$31NJ^3\le31N^2/16384$. Hence
+\[
+ \frac38+\frac5{96}+\frac{31}{16384}<\frac{11}{24}.
+\]
+The elementary inequality $H_N\le J$ follows by partitioning $[N]$
+into the dyadic blocks $\{1\},[2,3],[4,7],\ldots$; each contributes
+at most one.
+
+\begin{lemma}[Interval count and restoration]\label{lem:restore}
+Let $N\ge29^3$ and $1\le c<L\le R\le N$, and put $t=L+N-R$.
+Let $\Hh$ be legal, $\D=\D(\Hh)$, and $\G=\G(\Hh)$.
+Suppose the members of $\G$ avoiding $c$ form a nonempty family of
+intervals $[a,b]$ satisfying $c<a\le L\le R\le b\le N$.
+If
+\begin{equation}\label{eq:payments}
+ 6tJ\le N,\qquad812t\le N,
+\end{equation}
+then
+\begin{equation}\label{eq:restore-counts}
+ |\G|\le\binom N2+1,
+ \qquad |\D|\le131(t-1)\le\left\lfloor\frac{N-1}{4}\right\rfloor.
+\end{equation}
+Consequently $|\Hh|\le B(N)$.
+\end{lemma}
+
+The first bound is
+\code{Retention/Terminal36.lean}, declaration
+\code{actual_native_interval_terminal}.
+The second is \code{Retention/JointFringe44.lean}, declaration
+\code{actual_dense_fringe_bound}, with parameters $r=28$, $p=29$.
+Their assembly is \code{Global/GlobalUpper53.lean}, declaration
+\code{actual_deleted_long_core_restore28}.
+
+Here is why the two counts fit together. An avoiding interval contains
+$[L,R]$, so this core lies in an actual AP member of the original family.
+Its exterior in $[N]$ has cardinality $t-1$. A deleted member has more
+than $N/28$ points. The inequality $28\cdot29t\le N$ forces a long
+trace in the core. Bounded-step trace anchors and points outside the core
+give the joint bound
+\[
+ \operatorname{JointCount}(29)(t-1)
+ =\left(29+\sum_{d=1}^{28}\left\lfloor\frac{29}{d}\right\rfloor\right)(t-1)
+ =131(t-1).
+\]
+The aligned and off-residue cases are both included in this count.
+For the final payment, $4\cdot131t=524t\le812t\le N$ implies
+$4\cdot131(t-1)\le N-1$. Since $\D$ and $\G$ partition the original
+family, their bounds add to exactly $B(N)$.
+
+\section{The explicit large-order argument}
+We now prove Theorem~\ref{thm:main} from the certified counting lemmas.
+Every numerical estimate in this section is elementary.
+
+\begin{lemma}[Uniform logarithmic payments]\label{lem:gates}
+If $N\ge2^{49}$ and $J=\lfloor\log_2N\rfloor+1$, then
+\begin{equation}\label{eq:gates}
+ J\ge50,\qquad470771616J^3\le N,\qquad25704J^5\le N.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Put $k=J-1\ge49$. At $k=49$, direct integer arithmetic gives
+\[
+ 470771616\cdot50^3=58846452000000<2^{49},\qquad
+ 25704\cdot50^5=8032500000000<2^{49}.
+\]
+For $k\ge49$, $(k+2)/(k+1)\le51/50$, and $(51/50)^5<2$.
+Thus both $(k+1)^3/2^k$ and $(k+1)^5/2^k$ decrease by induction.
+The desired bounds follow from $2^k\le N$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Proposition~\ref{prop:lower} proves the lower bound. Suppose for a
+contradiction that $N\ge2^{49}$ and $|\F|>B(N)$ for a legal family.
+Apply Lemma~\ref{lem:prepare} and use its notation. Since $H_N\le J$,
+$L-c\le N$, and $N\ge1$, \eqref{eq:deletion}--\eqref{eq:deficit}, together
+with $|\Hh|\ge\binom N2$, imply
+\begin{equation}\label{eq:t-square}
+ t^2\le102N(6J^3+40J^2+6J+3166)\le714NJ^3.
+\end{equation}
+For the last inequality, $J\ge50$ and the identity
+\[
+ J^3-40J^2-6J-3166
+ =(J-50)(J^2+10J+494)+21534\ge0
+\]
+suffice. The slack in $3166$ also covers the $N/2$ difference between
+$N^2/2$ and $\binom N2$, and the constant $3$ in \eqref{eq:deficit}.
+
+As $812^2\cdot714=470771616$ and $36\cdot714=25704$,
+Lemma~\ref{lem:gates} and \eqref{eq:t-square} give
+\[
+ (812t)^2\le N^2,\qquad(6tJ)^2\le N^2.
+\]
+All quantities are nonnegative, so $812t\le N$ and $6tJ\le N$.
+Also $L\le t$, whence $32L\le N$, and
+$16384J^3\le470771616J^3\le N$.
+
+If an avoiding member of $\G$ were not an interval,
+Lemma~\ref{lem:noninterval} would give $|\G|\le11N^2/24$.
+On the other hand, $|\Hh|>B(N)$ and $|\D|\le3137N$ imply
+\[
+ \frac{N^2}{2}\le |\G|+3138N.
+\]
+These inequalities would force $N\le24\cdot3138=75312$, contrary to
+$N\ge2^{49}$. Therefore every avoiding member is an integer interval
+$[a,b]$. The endpoint conditions in Lemma~\ref{lem:prepare} give
+$a\le L\le R\le b$. Since $c<L$ and $c\notin[a,b]$, necessarily
+$c<a$.
+
+All hypotheses of Lemma~\ref{lem:restore} now hold, for the same
+family, root, and endpoints. It follows that
+$|\F|=|\Hh|\le B(N)$, a contradiction.
+\end{proof}
+
+\section{Formal verification and the stronger range}\label{sec:verification}
+The repository is \repo. The public entry is
+\code{formal/PublicResults.lean}. It defines the ground set, AP predicate,
+legality, $B(N)$, the finite set of legal families, and its extremal value
+directly in that file using Lean and mathlib types. The proofs apply to
+these definitions by definitional equality with the internal finite-set
+model. In particular there is no additional common-point hypothesis in
+the public upper bound.
+
+\begin{corollary}[Refined formal result]\label{cor:refined}
+For every integer $N\ge642498$, $v(N)=B(N)$, and a legal family attaining
+this value exists.
+\end{corollary}
+
+This stronger result uses more refined arithmetic and finite certificates
+than the argument developed above. It is not proved in detail in this
+paper; readers can inspect and check the complete source through
+\code{PublicResults.exact_value} and \code{PublicResults.optimal_family}
+in namespace \code{JSP233}. The paper's own theorem has the separate
+entry \code{PublicResults.paper_exact_value}, which calls the
+$2^{49}$ argument directly. Thus the simpler theorem can be traced
+without relying on the refined threshold.
+
+The development is pinned to Lean 4.35.0 and mathlib's matching stable
+release. The lock file records the exact dependency revisions. From a
+checkout with the specified Lean toolchain, run
+\begin{verbatim}
+cd formal
+lake exe cache get
+lake build
+\end{verbatim}
+The public entry prints the theorem types and their axiom dependencies.
+The proofs use only \code{propext}, \code{Classical.choice}, and
+\code{Quot.sound}; finite certificates are checked by Lean's kernel.
+A full build can require substantial time and memory. With limited
+resources, compile the project modules sequentially in dependency order,
+reuse compiled dependencies, and choose process, thread, memory, and CPU
+limits suited to the available hardware.
+
+The directory groups separate foundational set geometry, private-pair
+counting, retention and restoration, arithmetic certificates, and global
+assembly. A proof covering the entire remaining finite range is still
+missing.
+
+\paragraph{Acknowledgements and collaboration.}
+The project builds on the work cited below and was developed with
+AI-assisted research, programming, and review. Formal checking and
+independent review serve different purposes: the former checks the
+proof terms, and the latter checks their interpretation as the stated
+mathematical problem. Contributions that close the remaining finite gap
+are welcome. Please credit the earlier results and all new contributions,
+and coordinate a joint application for the Justin Sun Prize.
+
+\begin{thebibliography}{9}
+\bibitem{Szabo}
+T.~Szab\'o, Intersection properties of subsets of integers,
+\emph{European Journal of Combinatorics} \textbf{20} (1999), 429--444.
+\url{https://page.mi.fu-berlin.de/szabo/PDF/aps.pdf}.
+
+\bibitem{Yang}
+Z.~Yang, Exact values and exact upper bounds for families of integers with
+arithmetic progression intersections (Erd\H{o}s Problem \#272),
+arXiv:2607.23004v1 (2026).
+\url{https://arxiv.org/abs/2607.23004v1}.
+
+\bibitem{KK}
+J.~Kohlmeyer and L.~Kruer, \emph{A linear error bound for Erd\H{o}s problem 272},
+manuscript and companion Lean development, fixed source commit
+\nolinkurl{a624e9de77e0bd8868e7103f8b379f9dbd86b607} in
+\href{https://github.com/JENW1N/complete-math-solutions/blob/a624e9de77e0bd8868e7103f8b379f9dbd86b607/proofs/Erdos272.lean}{JENW1N/complete-math-solutions (fixed Lean source)}.
+The source informed the structural route; the present theorems are checked
+in the accompanying finite-integer-set model.
+
+\bibitem{Prize}
+The Justin Sun Prize, Awards and problem list,
+\url{https://github.com/TheJustinSunPrize/awards}.
+\end{thebibliography}
+\end{document}

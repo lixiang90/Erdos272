@@ -1,0 +1,6 @@
+formal/.lake/
+paper/*
+!paper/erdos272.tex
+!paper/erdos272.pdf
+verification/
+__pycache__/

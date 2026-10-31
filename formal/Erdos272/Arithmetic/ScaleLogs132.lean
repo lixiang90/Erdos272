@@ -1,0 +1,15 @@
+import Erdos272.Arithmetic.ScaleLogs132_00
+import Erdos272.Arithmetic.ScaleLogs132_01
+import Erdos272.Arithmetic.ScaleLogs132_02
+import Erdos272.Arithmetic.ScaleLogs132_03
+import Erdos272.Arithmetic.ScaleLogs132_04
+import Erdos272.Arithmetic.ScaleLogs132_05
+import Erdos272.Arithmetic.ScaleLogs132_06
+import Erdos272.Arithmetic.ScaleLogs132_07
+import Erdos272.Arithmetic.ScaleLogs132_08
+import Erdos272.Arithmetic.ScaleLogs132_09
+import Erdos272.Arithmetic.ScaleLogs132_10
+import Erdos272.Arithmetic.ScaleLogs132_11
+import Erdos272.Arithmetic.ScaleLogs132_12
+import Erdos272.Arithmetic.ScaleLogs132_13
+import Erdos272.Arithmetic.ScaleLogs132_14
