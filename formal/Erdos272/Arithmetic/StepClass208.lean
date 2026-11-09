@@ -1,4 +1,8 @@
-import Erdos272.Resources.CoreFringe208
+module
+
+public import Erdos272.Resources.CoreFringe208
+
+@[expose] public section
 
 /-! Actual physical steps have the proper-divisor ratio used by the five
 arithmetic classes. The final class only excludes 2,3,5,7. -/

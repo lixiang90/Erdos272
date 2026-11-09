@@ -1,5 +1,10 @@
-import Erdos272.Counting.OffResidueDensity118
-import Mathlib.Data.Nat.ModEq
+module
+
+public import Erdos272.Counting.OffResidueDensity118
+public import Mathlib.Data.Nat.ModEq
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Complete off-residue classes with moduli at most twelve.  The ordinary
 classes use the finite dual.  The exceptional prime moduli force every

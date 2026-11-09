@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.ComputedSigma209
-import Erdos272.Arithmetic.FactorFullData209
+module
+
+public import Erdos272.Arithmetic.ComputedSigma209
+public import Erdos272.Arithmetic.FactorFullData209
+
+@[expose] public section
 namespace JSP233.SigmaBaseData209
 set_option maxHeartbeats 0
 set_option maxRecDepth 1000000

@@ -1,4 +1,9 @@
-import Erdos272.Resources.StarWindow212
+module
+
+public import Erdos272.Resources.StarWindow212
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 namespace JSP233.StarWindow213
 open StarCompletion APGeometry DenseDeletion40
 open StarWindow212 StarResources30 CrossLine30 JointResources31 LowSteps32 HarmonicAbel29

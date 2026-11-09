@@ -1,6 +1,12 @@
-import Erdos272.Arithmetic.VolumeStep125
-import Mathlib.Analysis.Convex.Function
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+module
+
+public import Erdos272.Arithmetic.VolumeStep125
+public import Mathlib.Analysis.Convex.Function
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 namespace JSP233.Trapezoid130
 open Set MeasureTheory intervalIntegral

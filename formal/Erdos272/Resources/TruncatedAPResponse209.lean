@@ -1,5 +1,10 @@
-import Erdos272.Resources.APJoint208
-import Erdos272.Resources.UniformCapacity208
+module
+
+public import Erdos272.Resources.APJoint208
+public import Erdos272.Resources.UniformCapacity208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! A stronger response on the smaller, explicitly checked source interval.
 All AP/triple counting below uses the same original family and actual AP. -/

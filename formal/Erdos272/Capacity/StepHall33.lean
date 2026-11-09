@@ -1,6 +1,10 @@
-import Erdos272.Geometry.CrossLine30
-import Erdos272.Resources.StarBoundConcrete30
-import Mathlib.Combinatorics.Hall.Finite
+module
+
+public import Erdos272.Geometry.CrossLine30
+public import Erdos272.Resources.StarBoundConcrete30
+public import Mathlib.Combinatorics.Hall.Finite
+
+@[expose] public section
 
 /-! Genuine Hall matchings from the all-subfamily AP defect theorem.
 Resources remain actual internal primitive bad pairs, with one optional dummy. -/

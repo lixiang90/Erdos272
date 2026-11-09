@@ -1,6 +1,12 @@
-import Erdos272.Counting.APCount41
-import Erdos272.Counting.EndpointExterior55
-import Erdos272.Counting.APProfile208
+module
+
+public import Erdos272.Counting.APCount41
+public import Erdos272.Counting.EndpointExterior55
+public import Erdos272.Counting.APProfile208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual APs of at least two points leave their common-root singleton
 available in the endpoint rectangle. This removes the constant term for

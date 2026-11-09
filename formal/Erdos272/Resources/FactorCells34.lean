@@ -1,5 +1,9 @@
-import Erdos272.Resources.DivisorCells34
-import Mathlib.Data.Nat.Factorization.Divisors
+module
+
+public import Erdos272.Resources.DivisorCells34
+public import Mathlib.Data.Nat.Factorization.Divisors
+
+@[expose] public section
 
 /-! Actual gcd-cell Euler weights and faithful reverse factor coordinates. -/
 namespace JSP233.FactorCells34

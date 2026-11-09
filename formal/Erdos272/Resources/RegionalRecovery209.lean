@@ -1,7 +1,12 @@
-import Erdos272.Resources.RegionalBootstrap209
-import Erdos272.Resources.FiniteRecovery209
-import Erdos272.Resources.OriginalTerminal208
-import Erdos272.Global.NonInterval53
+module
+
+public import Erdos272.Resources.RegionalBootstrap209
+public import Erdos272.Resources.FiniteRecovery209
+public import Erdos272.Resources.OriginalTerminal208
+public import Erdos272.Global.NonInterval53
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.RegionalRecovery209
 open StarCompletion APGeometry DenseDeletion40 LongTerminal35 NonIntervalAP47

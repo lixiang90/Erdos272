@@ -1,5 +1,9 @@
-import Erdos272.Resources.IntegerUniformProfiles209
-import Erdos272.Arithmetic.HarmonicLog55
+module
+
+public import Erdos272.Resources.IntegerUniformProfiles209
+public import Erdos272.Arithmetic.HarmonicLog55
+
+@[expose] public section
 
 namespace JSP233.IntegerLightLog209
 open IntegerUniformProfiles209 IntegerUniformRows209 IntegerHighPrices209

@@ -1,5 +1,9 @@
-import Erdos272.Resources.RawEndpoint116
-import Erdos272.Arithmetic.HarmonicCorrect118
+module
+
+public import Erdos272.Resources.RawEndpoint116
+public import Erdos272.Arithmetic.HarmonicCorrect118
+
+@[expose] public section
 
 /-! The independent actual bootstrap retains its original 68-class fringe
 and width32 preparation. The finite corrected harmonic sequence sharpens

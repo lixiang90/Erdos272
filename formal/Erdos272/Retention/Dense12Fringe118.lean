@@ -1,6 +1,12 @@
-import Erdos272.Retention.Relative12Fringe118
-import Erdos272.Retention.DenseAligned117
-import Erdos272.Counting.PeriodOff117
+module
+
+public import Erdos272.Retention.Relative12Fringe118
+public import Erdos272.Retention.DenseAligned117
+public import Erdos272.Counting.PeriodOff117
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! A second actual trace grid. The same dense11 sources remain on Ground N.
 The twelve-denominator ceil grid needs28 aligned classes after the true

@@ -1,4 +1,8 @@
-import Erdos272.Core.NearAP36
+module
+
+public import Erdos272.Core.NearAP36
+
+@[expose] public section
 
 /-! Actual maximal-core geometry for the Far slot argument.
 

@@ -1,6 +1,11 @@
-import Erdos272.Core.NearAP36
-import Erdos272.Resources.TraceWitnessCodes36
-import Erdos272.Counting.BandAggregation34
+module
+
+public import Erdos272.Core.NearAP36
+public import Erdos272.Resources.TraceWitnessCodes36
+public import Erdos272.Counting.BandAggregation34
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual transversal anchor selection, private structural-pair accounting,
 and near/far band aggregation.  The remaining single-member witness/core

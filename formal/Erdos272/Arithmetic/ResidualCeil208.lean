@@ -1,4 +1,11 @@
-import Erdos272.Resources.NearResidual208
+module
+
+public import Erdos272.Resources.NearResidual208
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.ResidualCeil208
 open ResidualAggregate208 ResidualTwoCensus208 ResidualCensus208 StepCensus208 ResidualSpan208

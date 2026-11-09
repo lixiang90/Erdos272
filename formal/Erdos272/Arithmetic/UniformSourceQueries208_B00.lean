@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.UniformQuery208
+module
+
+public import Erdos272.Arithmetic.UniformQuery208
+
+@[expose] public section
 
 namespace JSP233.UniformSourceQueries208_B00
 open UniformQuery208

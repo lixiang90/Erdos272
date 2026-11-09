@@ -1,5 +1,9 @@
-import Erdos272.Resources.SevenFamily208
-import Erdos272.Resources.UniformActualWindow209
+module
+
+public import Erdos272.Resources.SevenFamily208
+public import Erdos272.Resources.UniformActualWindow209
+
+@[expose] public section
 
 namespace JSP233.DeficiencyCuts208
 open StarCompletion APGeometry SourceBridge208 SourceCertified208 SourcePrefixSpecs208

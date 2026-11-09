@@ -1,5 +1,9 @@
-import Erdos272.Resources.ActualRecoveryChain214
-import Erdos272.Resources.OriginalTerminal213
+module
+
+public import Erdos272.Resources.ActualRecoveryChain214
+public import Erdos272.Resources.OriginalTerminal213
+
+@[expose] public section
 namespace JSP233.OriginalTerminal214
 open StarCompletion APGeometry DenseDeletion40
 open RecoveryResource213 ActualRecoveryChain214

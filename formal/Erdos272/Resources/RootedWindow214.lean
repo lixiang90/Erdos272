@@ -1,5 +1,9 @@
-import Erdos272.Resources.RetainedIntervals214
-import Erdos272.Resources.InitialPreparation213
+module
+
+public import Erdos272.Resources.RetainedIntervals214
+public import Erdos272.Resources.InitialPreparation213
+
+@[expose] public section
 namespace JSP233.RootedWindow214
 open StarCompletion APGeometry DenseDeletion40
 set_option autoImplicit false

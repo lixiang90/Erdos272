@@ -1,5 +1,10 @@
-import Erdos272.Resources.NeighborSupply208
-import Mathlib.Data.Finset.Sort
+module
+
+public import Erdos272.Resources.NeighborSupply208
+public import Mathlib.Data.Finset.Sort
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! All three rank classes inject into the same actual physical slot set. -/
 namespace JSP233.RankSlots208

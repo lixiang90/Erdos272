@@ -1,4 +1,12 @@
-import Erdos272.Arithmetic.Trapezoid130
+module
+
+public import Erdos272.Arithmetic.Trapezoid130
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.Order.Floor.Semifield
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 namespace JSP233.FloorTrapezoid130
 open Trapezoid130 SimplexMoment57
 open Set MeasureTheory intervalIntegral

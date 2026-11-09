@@ -1,11 +1,15 @@
-import Erdos272.Foundation.StarCompletion
-import Erdos272.Foundation.StaircaseCertificate
-import Mathlib.Data.Finset.Powerset
-import Mathlib.Data.Finset.Lattice.Fold
-import Mathlib.Data.Int.Interval
-import Mathlib.Data.Int.GCD
-import Mathlib.Order.Interval.Finset.Nat
-import Mathlib.Algebra.BigOperators.Ring.Finset
+module
+
+public import Erdos272.Foundation.StarCompletion
+public import Erdos272.Foundation.StaircaseCertificate
+public import Mathlib.Data.Finset.Powerset
+public import Mathlib.Data.Finset.Lattice.Fold
+public import Mathlib.Data.Int.Interval
+public import Mathlib.Data.Int.GCD
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-!
 Unbounded geometric downclosure for actual unit-step intervals through zero.

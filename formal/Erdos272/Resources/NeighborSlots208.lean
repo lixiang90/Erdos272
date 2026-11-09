@@ -1,6 +1,12 @@
-import Erdos272.Resources.IntrinsicTriples208
-import Erdos272.Arithmetic.TriangularWeights208
-import Erdos272.Foundation.JSP233
+module
+
+public import Erdos272.Resources.IntrinsicTriples208
+public import Erdos272.Arithmetic.TriangularWeights208
+public import Erdos272.Foundation.JSP233
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The actual weighted physical slot pool is shared by all rank distances.
 No per-source supply estimate is assumed in this global capacity theorem. -/

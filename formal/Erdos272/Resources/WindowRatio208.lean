@@ -1,5 +1,10 @@
-import Erdos272.Resources.CleanupNet208
-import Erdos272.Resources.CleanupWindowBounds208
+module
+
+public import Erdos272.Resources.CleanupNet208
+public import Erdos272.Resources.CleanupWindowBounds208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.WindowRatio208
 open StarCompletion ClippedWindows208 CleanupNet208

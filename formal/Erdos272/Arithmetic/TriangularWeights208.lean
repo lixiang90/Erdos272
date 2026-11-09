@@ -1,4 +1,11 @@
-import Mathlib.Tactic
+module
+
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! A finite bound for triangular weights, proved by a square telescope. -/
 namespace JSP233.TriangularWeights208

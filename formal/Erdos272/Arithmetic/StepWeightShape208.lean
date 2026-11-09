@@ -1,4 +1,9 @@
-import Erdos272.Arithmetic.UniformSourceCore208
+module
+
+public import Erdos272.Arithmetic.UniformSourceCore208
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 
 /-! Global monotonicity of the exact floor-step weight, including every
 breakpoint, follows by induction over the actual step index. -/

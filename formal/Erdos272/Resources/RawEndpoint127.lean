@@ -1,5 +1,9 @@
-import Erdos272.Resources.RawEndpoint121
-import Erdos272.Arithmetic.WitnessSingle127
+module
+
+public import Erdos272.Resources.RawEndpoint121
+public import Erdos272.Arithmetic.WitnessSingle127
+
+@[expose] public section
 
 /-! The full actual single-prefix complete2+3 tangent saving is paid at the physical root exception.
 The merged physical prefix and its single absolute tangent fee remain in the same original

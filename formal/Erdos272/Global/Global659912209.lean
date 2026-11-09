@@ -1,5 +1,9 @@
-import Erdos272.Global.LowUnitClosed209
-import Erdos272.Global.Global62p443451m140
+module
+
+public import Erdos272.Global.LowUnitClosed209
+public import Erdos272.Global.Global62p443451m140
+
+@[expose] public section
 
 namespace JSP233.Global659912209
 open StarCompletion

@@ -1,5 +1,9 @@
-import Erdos272.Foundation.TwoTraceGlobal
-import Erdos272.Foundation.PrimeKernel
+module
+
+public import Erdos272.Foundation.TwoTraceGlobal
+public import Erdos272.Foundation.PrimeKernel
+
+@[expose] public section
 
 /-! Real step-three common kernels: no near-full-hull or omitter-count
 threshold is needed. Coarse members have points private in the entire

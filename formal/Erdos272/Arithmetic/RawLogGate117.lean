@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.RawLogGate116
-import Erdos272.Arithmetic.RawLogGate112
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+module
+
+public import Erdos272.Arithmetic.RawLogGate116
+public import Erdos272.Arithmetic.RawLogGate112
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+
+@[expose] public section
 
 /-! The191m all-N arithmetic gate uses the old unconditional32-width
 preparation and the same bootstrap polynomial with final restoration ratio40.

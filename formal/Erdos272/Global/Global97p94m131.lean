@@ -1,13 +1,17 @@
-import Erdos272.Resources.PairRecovery131
-import Erdos272.Arithmetic.WindowFirst131
-import Erdos272.Arithmetic.WindowGateA131
-import Erdos272.Arithmetic.WindowGateB131
-import Erdos272.Arithmetic.WindowGateC131
-import Erdos272.Arithmetic.WindowGateD131
-import Erdos272.Arithmetic.WindowGateE131
-import Erdos272.Arithmetic.WindowGateF131
-import Erdos272.Arithmetic.WindowGateG131
-import Erdos272.Arithmetic.WindowGateH131
+module
+
+public import Erdos272.Resources.PairRecovery131
+public import Erdos272.Arithmetic.WindowFirst131
+public import Erdos272.Arithmetic.WindowGateA131
+public import Erdos272.Arithmetic.WindowGateB131
+public import Erdos272.Arithmetic.WindowGateC131
+public import Erdos272.Arithmetic.WindowGateD131
+public import Erdos272.Arithmetic.WindowGateE131
+public import Erdos272.Arithmetic.WindowGateF131
+public import Erdos272.Arithmetic.WindowGateG131
+public import Erdos272.Arithmetic.WindowGateH131
+
+@[expose] public section
 /-! Complete39-window original-family assembly; the frozen130 theorem pays
 all N>=107277000. These development sources do not alter the public entry. -/
 namespace JSP233.Global97p94m131

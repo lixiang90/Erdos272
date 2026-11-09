@@ -1,5 +1,9 @@
-import Erdos272.Resources.JointResources31
-import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+module
+
+public import Erdos272.Resources.JointResources31
+public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+
+@[expose] public section
 
 /-! Actual one-private-pair root accounting, retaining a quantitative loss on
 one actual AP step class. The final payment accepts that geometric surplus

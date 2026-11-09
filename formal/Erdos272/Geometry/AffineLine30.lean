@@ -1,9 +1,13 @@
-import Erdos272.Staircase.StaircaseComplete29
-import Erdos272.Foundation.APGeometry
-import Mathlib.Data.Int.GCD
-import Mathlib.Data.Finset.Max
-import Mathlib.Tactic.Ring
-import Mathlib.Tactic.Linarith
+module
+
+public import Erdos272.Staircase.StaircaseComplete29
+public import Erdos272.Foundation.APGeometry
+public import Mathlib.Data.Int.GCD
+public import Mathlib.Data.Finset.Max
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.Linarith
+
+@[expose] public section
 
 namespace JSP233.AffineLine30
 open StarCompletion StaircaseGeometry APGeometry

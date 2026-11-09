@@ -1,4 +1,8 @@
-import Erdos272.Counting.TerminalDeficit51
+module
+
+public import Erdos272.Counting.TerminalDeficit51
+
+@[expose] public section
 
 /-! The complete actual rooted AP matching chain under uniform totient7.
 The physical condition is 28*(L+N-R)≤N, with N<2^50. -/

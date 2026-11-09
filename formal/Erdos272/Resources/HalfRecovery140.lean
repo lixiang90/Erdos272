@@ -1,9 +1,13 @@
-import Erdos272.Resources.LocalReduction140
-import Erdos272.Resources.HalfRecovery133
-import Erdos272.Arithmetic.HalfWindowCertificate140
-import Erdos272.Resources.HalfBootstrap139
-import Erdos272.Global.NonInterval24_139
-import Erdos272.Resources.RestoreDense140
+module
+
+public import Erdos272.Resources.LocalReduction140
+public import Erdos272.Resources.HalfRecovery133
+public import Erdos272.Arithmetic.HalfWindowCertificate140
+public import Erdos272.Resources.HalfBootstrap139
+public import Erdos272.Global.NonInterval24_139
+public import Erdos272.Resources.RestoreDense140
+
+@[expose] public section
 namespace JSP233.HalfRecovery140
 open StarCompletion APGeometry CoprimeDensity52 MiddleJoint51 MiddleDeficit52
 open PreparedClasses50 APPrepare49 PreparedWitness48 MiddleCoordinates51

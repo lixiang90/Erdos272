@@ -1,9 +1,13 @@
-import Mathlib.Algebra.Order.Field.Power
-import Mathlib.Data.Real.Basic
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Ring
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Convert
+module
+
+public import Mathlib.Algebra.Order.Field.Power
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Convert
+
+@[expose] public section
 
 /-! Preserve the endpoint square in the raw retained resource expression.
 These are scalar/weighted algebraic identities. They do not assume or prove

@@ -1,4 +1,9 @@
-import Mathlib.Tactic
+module
+
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+
+@[expose] public section
 
 /-! Exact finite Abel comparison with an affine prefix majorant. -/
 namespace JSP233.PrefixAbel208

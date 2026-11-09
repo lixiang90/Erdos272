@@ -1,9 +1,13 @@
-import Erdos272.Foundation.PrimePowerCapacity
-import Mathlib.Data.Pi.Interval
-import Mathlib.Data.Finset.Prod
-import Mathlib.Order.Interval.Finset.Nat
-import Mathlib.Order.Preorder.Finite
-import Mathlib.Tactic.FinCases
+module
+
+public import Erdos272.Foundation.PrimePowerCapacity
+public import Mathlib.Data.Pi.Interval
+public import Mathlib.Data.Finset.Prod
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Order.Preorder.Finite
+public import Mathlib.Tactic.FinCases
+
+@[expose] public section
 
 /-! Unbounded actual divisor traces and the pivot-coordinate charging core.
 This module does not assume an anchor-capacity inequality. -/

@@ -1,5 +1,9 @@
-import Erdos272.Global.APPrepare49
-import Erdos272.Counting.CornerJoint49
+module
+
+public import Erdos272.Global.APPrepare49
+public import Erdos272.Counting.CornerJoint49
+
+@[expose] public section
 namespace JSP233.RightJoint50
 open StarCompletion APGeometry PrivatePairExistence LongTerminal35 WitnessInterval43
 open scoped Classical BigOperators

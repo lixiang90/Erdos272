@@ -1,4 +1,8 @@
-import Erdos272.Resources.UniformActualGlobal209
+module
+
+public import Erdos272.Resources.UniformActualGlobal209
+
+@[expose] public section
 
 namespace JSP233.IntegerUniformSource209
 open StarCompletion APGeometry SourceBridge208 UniformSourceCore208 UniformAbel208

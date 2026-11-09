@@ -1,5 +1,11 @@
-import Erdos272.Arithmetic.LogAnchor127
-import Erdos272.Arithmetic.ExclusionTangent126
+module
+
+public import Erdos272.Arithmetic.LogAnchor127
+public import Erdos272.Arithmetic.ExclusionTangent126
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 namespace JSP233.SingleTangent127
 open ExclusionTangent126 VolumeLower125 DivisorMoment122 SimplexMoment57
 open scoped Classical BigOperators

@@ -1,4 +1,8 @@
-import Erdos272.Resources.LocalMobius120
+module
+
+public import Erdos272.Resources.LocalMobius120
+
+@[expose] public section
 namespace JSP233.LocalMobius121
 /-! Half of the actual area pays the local reciprocal cutoff loss.
 The finite cubic comparison retains the same physical density rho_N. -/

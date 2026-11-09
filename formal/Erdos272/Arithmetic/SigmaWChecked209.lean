@@ -1,17 +1,21 @@
-import Erdos272.Arithmetic.SigmaWBase209
-import Erdos272.Arithmetic.SigmaWBlock209_000
-import Erdos272.Arithmetic.SigmaWBlock209_001
-import Erdos272.Arithmetic.SigmaWBlock209_002
-import Erdos272.Arithmetic.SigmaWBlock209_003
-import Erdos272.Arithmetic.SigmaWBlock209_004
-import Erdos272.Arithmetic.SigmaWBlock209_005
-import Erdos272.Arithmetic.SigmaWBlock209_006
-import Erdos272.Arithmetic.SigmaWBlock209_007
-import Erdos272.Arithmetic.SigmaWBlock209_008
-import Erdos272.Arithmetic.SigmaWBlock209_009
-import Erdos272.Arithmetic.SigmaWBlock209_010
-import Erdos272.Arithmetic.SigmaWBlock209_011
-import Erdos272.Arithmetic.SigmaWBlock209_012
+module
+
+public import Erdos272.Arithmetic.SigmaWBase209
+public import Erdos272.Arithmetic.SigmaWBlock209_000
+public import Erdos272.Arithmetic.SigmaWBlock209_001
+public import Erdos272.Arithmetic.SigmaWBlock209_002
+public import Erdos272.Arithmetic.SigmaWBlock209_003
+public import Erdos272.Arithmetic.SigmaWBlock209_004
+public import Erdos272.Arithmetic.SigmaWBlock209_005
+public import Erdos272.Arithmetic.SigmaWBlock209_006
+public import Erdos272.Arithmetic.SigmaWBlock209_007
+public import Erdos272.Arithmetic.SigmaWBlock209_008
+public import Erdos272.Arithmetic.SigmaWBlock209_009
+public import Erdos272.Arithmetic.SigmaWBlock209_010
+public import Erdos272.Arithmetic.SigmaWBlock209_011
+public import Erdos272.Arithmetic.SigmaWBlock209_012
+
+@[expose] public section
 namespace JSP233.SigmaWChecked209
 set_option maxHeartbeats 0
 theorem state_32768 :

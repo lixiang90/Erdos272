@@ -1,6 +1,12 @@
-import Erdos272.Traces.HalfBad133
-import Erdos272.Arithmetic.PrefixSuper127
-import Mathlib.Data.Nat.Choose.Cast
+module
+
+public import Erdos272.Traces.HalfBad133
+public import Erdos272.Arithmetic.PrefixSuper127
+public import Mathlib.Data.Nat.Choose.Cast
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.HalfPrefix133
 open StarCompletion RestrictedWitness44 HalfBad133 TwoSidedMoment62

@@ -1,5 +1,11 @@
-import Erdos272.Resources.UniformScale208
-import Mathlib.Data.Rat.Floor
+module
+
+public import Erdos272.Resources.UniformScale208
+public import Mathlib.Data.Rat.Floor
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 
 /-! Executable rational formulas cast exactly to the continuous source. -/
 namespace JSP233.UniformRat208

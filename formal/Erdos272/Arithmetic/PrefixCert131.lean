@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.PrefixState131
-import Erdos272.Arithmetic.LogIncrement131
+module
+
+public import Erdos272.Arithmetic.PrefixState131
+public import Erdos272.Arithmetic.LogIncrement131
+
+@[expose] public section
 namespace JSP233.PrefixCert131
 open PrefixState131 EndpointEval131 LogIncrement131
 set_option maxHeartbeats 0

@@ -1,7 +1,15 @@
-import Erdos272.Arithmetic.StepWeightShape208
-import Erdos272.Arithmetic.PrefixAbel208
-import Erdos272.Resources.SourceBridge208
-import Mathlib.Algebra.Order.Floor.Semifield
+module
+
+public import Erdos272.Arithmetic.StepWeightShape208
+public import Erdos272.Arithmetic.PrefixAbel208
+public import Erdos272.Resources.SourceBridge208
+public import Mathlib.Algebra.Order.Floor.Semifield
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 
 /-! The finite totient frontier controls all actual AP-cover triples by Abel. -/
 namespace JSP233.UniformAbel208

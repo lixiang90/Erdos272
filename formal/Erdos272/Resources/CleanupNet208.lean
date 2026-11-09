@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.WindowCounts208
+module
+
+public import Erdos272.Arithmetic.WindowCounts208
+
+@[expose] public section
 
 namespace JSP233.CleanupNet208
 open scoped BigOperators

@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.RecoveryCaps213
+module
+
+public import Erdos272.Arithmetic.RecoveryCaps213
+
+@[expose] public section
 namespace JSP233.RecoveryScalar213
 open Recovery208 RecoveryCaps213 AlignedPlans212 RecoveryOmitters212
 noncomputable section

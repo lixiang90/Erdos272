@@ -1,9 +1,13 @@
-import Erdos272.Resources.InitialPreparation208
-import Erdos272.Resources.SourceFees208
-import Erdos272.Resources.UniformFees208
-import Erdos272.Resources.APJoint208
-import Erdos272.Global.RootPaid208
-import Erdos272.Global.SparseSmall39
+module
+
+public import Erdos272.Resources.InitialPreparation208
+public import Erdos272.Resources.SourceFees208
+public import Erdos272.Resources.UniformFees208
+public import Erdos272.Resources.APJoint208
+public import Erdos272.Global.RootPaid208
+public import Erdos272.Global.SparseSmall39
+
+@[expose] public section
 
 namespace JSP233.SevenFamily208
 open StarCompletion APGeometry DenseDeletion40 Density41 SparseSmall39

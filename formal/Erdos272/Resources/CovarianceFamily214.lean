@@ -1,5 +1,11 @@
-import Erdos272.Resources.CovarianceWindow213
-import Erdos272.Resources.LocalResourceRecovery208
+module
+
+public import Erdos272.Resources.CovarianceWindow213
+public import Erdos272.Resources.LocalResourceRecovery208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 namespace JSP233.CovarianceFamily214
 open StarCompletion APGeometry HarmonicAbel29 APPrepare49 PreparedClasses50
 open PreparedWitness48 RestrictedWitness44 MiddleCoordinates51 LongTerminal35 DenseDeletion40

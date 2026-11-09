@@ -1,4 +1,8 @@
-import Erdos272.Certificates.SourcePrefixBlocks208
+module
+
+public import Erdos272.Certificates.SourcePrefixBlocks208
+
+@[expose] public section
 
 /-! Use the proved linear row checker when the physical size exceeds twice
 the target-list length. The certificate statements retain the original checker. -/

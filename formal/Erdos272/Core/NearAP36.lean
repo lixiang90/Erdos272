@@ -1,5 +1,9 @@
-import Erdos272.Core.CoreAP34
-import Mathlib.Data.Finset.Sigma
+module
+
+public import Erdos272.Core.CoreAP34
+public import Mathlib.Data.Finset.Sigma
+
+@[expose] public section
 
 /-! Actual maximal AP cores, long overlaps, and private remainders.
 The original family's AP intersections are used, rather than an abstract

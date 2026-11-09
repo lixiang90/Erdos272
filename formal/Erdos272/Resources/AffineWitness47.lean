@@ -1,6 +1,10 @@
-import Erdos272.Geometry.AffineTrace46
-import Mathlib.Data.List.Nodup
-import Mathlib.Data.List.Chain
+module
+
+public import Erdos272.Geometry.AffineTrace46
+public import Mathlib.Data.List.Nodup
+public import Mathlib.Data.List.Chain
+
+@[expose] public section
 
 /-! Sparse, ordinary-kernel witness certificates for every prefix of a block.
 Only listed coprime points are checked; no claim about unlisted points is needed. -/

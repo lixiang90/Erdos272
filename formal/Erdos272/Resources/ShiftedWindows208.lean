@@ -1,5 +1,9 @@
-import Erdos272.Resources.HeavyWindows208
-import Erdos272.Counting.PotentialPhases208
+module
+
+public import Erdos272.Resources.HeavyWindows208
+public import Erdos272.Counting.PotentialPhases208
+
+@[expose] public section
 
 namespace JSP233.ShiftedWindows208
 open StarCompletion APGeometry NearAP36 PotentialPhases208 ShiftedBlocks208

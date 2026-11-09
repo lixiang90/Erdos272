@@ -1,5 +1,10 @@
-import Erdos272.Resources.TruncatedAPResponse209
-import Erdos272.Global.LowHighRoot209
+module
+
+public import Erdos272.Resources.TruncatedAPResponse209
+public import Erdos272.Global.LowHighRoot209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.TruncatedGlobal209
 open StarCompletion APGeometry DenseDeletion40 Density41 SparseSmall39

@@ -1,4 +1,10 @@
-import Erdos272.Arithmetic.FullPrefix209_021
+module
+
+public import Erdos272.Arithmetic.FullPrefix209_021
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Basic.Real.Basic
+
+@[expose] public section
 namespace JSP233.TotientWindow209
 set_option maxHeartbeats 0
 set_option maxRecDepth 1000000

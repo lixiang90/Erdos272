@@ -1,5 +1,9 @@
-import Erdos272.Resources.CoreFringe208
-import Erdos272.Core.NearAP36
+module
+
+public import Erdos272.Resources.CoreFringe208
+public import Erdos272.Core.NearAP36
+
+@[expose] public section
 
 /-! The enlarged integer block is applicable to actual same-code cores.
 There is no supplied remainder-disjointness or block cardinality budget. -/

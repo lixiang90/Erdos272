@@ -1,4 +1,8 @@
-import Erdos272.Resources.RawEndpoint130
+module
+
+public import Erdos272.Resources.RawEndpoint130
+
+@[expose] public section
 
 /-! Round129: full retained-family coarse budget from the direct fifteen-term moment. -/
 namespace JSP233.CoarseEndpoint130

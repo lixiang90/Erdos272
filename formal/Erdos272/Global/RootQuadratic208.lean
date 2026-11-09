@@ -1,4 +1,9 @@
-import Erdos272.Global.SparseSmall39
+module
+
+public import Erdos272.Global.SparseSmall39
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 /-! The quadratic degree estimate keeps the size of the same actual omitter.
 The older root branch discarded its quadratic saving before choosing a scale.

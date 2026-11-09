@@ -1,4 +1,9 @@
-import Erdos272.Resources.RawEndpoint116
+module
+
+public import Erdos272.Resources.RawEndpoint116
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 namespace JSP233.BootstrapFringe139
 open StarCompletion APGeometry DenseDeletion40 LongTerminal35 JointFringe44
 open scoped Classical BigOperators

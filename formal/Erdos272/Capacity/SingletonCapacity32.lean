@@ -1,4 +1,8 @@
-import Erdos272.Core.UnitPrivate32
+module
+
+public import Erdos272.Core.UnitPrivate32
+
+@[expose] public section
 
 /-! Actual singleton private pools have only three signed affine shapes.
 Their finite physical keys are one nonroot ground point and one of three tags. -/

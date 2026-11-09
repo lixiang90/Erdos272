@@ -1,4 +1,9 @@
-import Erdos272.Core.CoreSeven52
+module
+
+public import Erdos272.Core.CoreSeven52
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! Full physical uniform-seven exterior witnesses and terminal restoration. -/
 namespace JSP233.TerminalSeven52

@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.CompleteSeven129
+module
+
+public import Erdos272.Arithmetic.CompleteSeven129
+
+@[expose] public section
 namespace JSP233.Bonferroni132
 open scoped Classical
 noncomputable section

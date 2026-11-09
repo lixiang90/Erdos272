@@ -1,10 +1,15 @@
-import Erdos272.Retention.DenseFringe117
-import Erdos272.Retention.CrossBad117
-import Erdos272.Counting.RectSlack117
-import Erdos272.Resources.ProfileArms117
-import Erdos272.Core.Terminal29Native117
-import Erdos272.Retention.Restore11Ratio112
-import Erdos272.Retention.Relative13Min116
+module
+
+public import Erdos272.Retention.DenseFringe117
+public import Erdos272.Retention.CrossBad117
+public import Erdos272.Counting.RectSlack117
+public import Erdos272.Resources.ProfileArms117
+public import Erdos272.Core.Terminal29Native117
+public import Erdos272.Retention.Restore11Ratio112
+public import Erdos272.Retention.Relative13Min116
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual original-family restoration using the complete normalized
 quadratic profile. The true minimum omitted member is retained through four

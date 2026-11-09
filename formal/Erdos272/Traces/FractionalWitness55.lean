@@ -1,6 +1,14 @@
-import Erdos272.Certificates.FiniteSixteen54
-import Erdos272.Core.NearHelly54
-import Erdos272.Arithmetic.PrimorialRatio39
+module
+
+public import Erdos272.Certificates.FiniteSixteen54
+public import Erdos272.Core.NearHelly54
+public import Erdos272.Arithmetic.PrimorialRatio39
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Data.Nat.Choose.Cast
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Tactic.NormNum.Prime
+
+@[expose] public section
 
 namespace JSP233.FractionalWitness55
 open StarCompletion APGeometry LongTerminal35 PrimePrefix35 PrimorialPrefix46

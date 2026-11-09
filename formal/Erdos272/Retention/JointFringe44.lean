@@ -1,5 +1,9 @@
-import Erdos272.Traces.FlexibleTrace44
-import Erdos272.Counting.OffResidue44
+module
+
+public import Erdos272.Traces.FlexibleTrace44
+public import Erdos272.Counting.OffResidue44
+
+@[expose] public section
 
 /-! Actual off-residue packing and aligned private-point code compression,
 assembled into the original-family long-interval restoration theorem. -/

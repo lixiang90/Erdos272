@@ -1,4 +1,9 @@
-import Erdos272.Counting.WitnessInterval43
+module
+
+public import Erdos272.Counting.WitnessInterval43
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 /-! Exact counting of the actual unordered meeting/outside pair pool. -/
 namespace JSP233.MeetingPool46

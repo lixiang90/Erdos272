@@ -1,4 +1,8 @@
-import Erdos272.Resources.FarFinal112
+module
+
+public import Erdos272.Resources.FarFinal112
+
+@[expose] public section
 
 /-! Stronger complete actual Far payment.
 

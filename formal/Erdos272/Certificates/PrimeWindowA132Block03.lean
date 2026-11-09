@@ -1,5 +1,10 @@
-import Erdos272.Certificates.CoefficientSum132
-import Erdos272.Arithmetic.ScaleLogs132
+module
+
+public import Erdos272.Certificates.CoefficientSum132
+public import Erdos272.Arithmetic.ScaleLogs132
+public import Mathlib.Tactic.NormNum.Prime
+
+@[expose] public section
 namespace JSP233.PrimeWindowA132.Blocks
 open PrefixState131 PrefixTable131 PrefixTable132 ScaleLogs132 PairWindow131 ScaleWindow132 SimplexMoment57 PrefixLog131
 open scoped Classical BigOperators

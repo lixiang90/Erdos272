@@ -1,4 +1,8 @@
-import Erdos272.Foundation.StaircaseCertificate
+module
+
+public import Erdos272.Foundation.StaircaseCertificate
+
+@[expose] public section
 
 /-! Verified prefix-count reflection for the finite staircase certificate.
 Only ordinary finite comparisons will certify candidate lookup functions. -/

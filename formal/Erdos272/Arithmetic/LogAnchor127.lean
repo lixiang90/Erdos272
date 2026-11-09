@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.DivisorMoment122
+module
+
+public import Erdos272.Arithmetic.DivisorMoment122
+
+@[expose] public section
 
 /-! Tight finite logarithmic windows and the exact fixed-anchor certificates.
 The near10 library bounds already have ordinary finite Taylor proofs.

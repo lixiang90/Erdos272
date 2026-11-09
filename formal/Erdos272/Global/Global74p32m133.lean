@@ -1,5 +1,9 @@
-import Erdos272.Global.Global97p365m132
-import Erdos272.Arithmetic.HalfInterval133
+module
+
+public import Erdos272.Global.Global97p365m132
+public import Erdos272.Arithmetic.HalfInterval133
+
+@[expose] public section
 
 namespace JSP233.Global74p32m133
 open StarCompletion

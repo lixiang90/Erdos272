@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.DivisorMoment122
-import Erdos272.Arithmetic.TwoSidedMoment62
+module
+
+public import Erdos272.Arithmetic.DivisorMoment122
+public import Erdos272.Arithmetic.TwoSidedMoment62
+
+@[expose] public section
 
 /-! Full physical left/right distance prefixes with the corrected divisor
 second moment. Zero-length sides are included; the actual ground-set root

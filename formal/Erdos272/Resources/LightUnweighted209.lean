@@ -1,4 +1,10 @@
-import Erdos272.Resources.ActualLightAnalytic209
+module
+
+public import Erdos272.Resources.ActualLightAnalytic209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.LightUnweighted209
 open LightAnalytic209 LightOwnerPrice209 ActualLightAnalytic209 PrefixAbel208

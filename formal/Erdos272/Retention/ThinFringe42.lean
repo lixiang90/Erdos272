@@ -1,5 +1,9 @@
-import Erdos272.Retention.ThinFringe38
-import Erdos272.Global.DenseDeletion40
+module
+
+public import Erdos272.Retention.ThinFringe38
+public import Erdos272.Global.DenseDeletion40
+
+@[expose] public section
 
 /-! A rank-parameterized actual dense crooked fringe: positive grid anchors
 use only r+1 positions under the stronger physical thinness r*(r+1)*t<=N, with exact finite AnchorCount r. -/

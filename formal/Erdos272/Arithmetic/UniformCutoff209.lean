@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.UniformPotential208
+module
+
+public import Erdos272.Arithmetic.UniformPotential208
+
+@[expose] public section
 
 namespace JSP233.UniformCutoff209
 open UniformQuery208 UniformDecision208 UniformRat208 UniformEnvelope208 UniformScale208

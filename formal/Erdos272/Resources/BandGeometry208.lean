@@ -1,5 +1,9 @@
-import Erdos272.Counting.ActualNearBlock208
-import Erdos272.Resources.RightWindows208
+module
+
+public import Erdos272.Counting.ActualNearBlock208
+public import Erdos272.Resources.RightWindows208
+
+@[expose] public section
 
 namespace JSP233.BandGeometry208
 open StarCompletion APGeometry NearAP36 SourceBridge208 CoreCoordinates208

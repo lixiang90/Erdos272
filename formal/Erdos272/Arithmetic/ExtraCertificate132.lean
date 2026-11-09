@@ -1,4 +1,10 @@
-import Erdos272.Arithmetic.PoolExtension132
+module
+
+public import Erdos272.Arithmetic.PoolExtension132
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 namespace JSP233.ExtraCertificate132
 open PoolExtension132 SimplexMoment57
 open scoped BigOperators

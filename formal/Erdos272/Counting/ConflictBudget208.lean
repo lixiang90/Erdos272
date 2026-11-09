@@ -1,4 +1,9 @@
-import Mathlib.Tactic
+module
+
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+
+@[expose] public section
 
 /-! Delete the smaller endpoint of a conflicting pair. Ordered pairs are
 counted twice, so the exact charge is one half of their symmetric cost. -/

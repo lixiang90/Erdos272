@@ -1,11 +1,15 @@
-import Erdos272.Arithmetic.MobiusUniform
-import Erdos272.Foundation.StaircaseCertificate
-import Mathlib.Data.Nat.Totient
-import Mathlib.Data.Nat.Factorization.Basic
-import Mathlib.Data.Nat.Cast.Order.Field
-import Mathlib.Algebra.BigOperators.Intervals
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Ring
+module
+
+public import Erdos272.Arithmetic.MobiusUniform
+public import Erdos272.Foundation.StaircaseCertificate
+public import Mathlib.Data.Nat.Totient
+public import Mathlib.Data.Nat.Factorization.Basic
+public import Mathlib.Data.Nat.Cast.Order.Field
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 namespace JSP233.TotientFloor29
 open scoped BigOperators

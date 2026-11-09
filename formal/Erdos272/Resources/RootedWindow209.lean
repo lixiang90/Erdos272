@@ -1,5 +1,9 @@
-import Erdos272.Resources.ActualRecoveryWindow209
-import Erdos272.Resources.InitialPreparation208
+module
+
+public import Erdos272.Resources.ActualRecoveryWindow209
+public import Erdos272.Resources.InitialPreparation208
+
+@[expose] public section
 
 namespace JSP233.RootedWindow209
 open StarCompletion APGeometry DenseDeletion40

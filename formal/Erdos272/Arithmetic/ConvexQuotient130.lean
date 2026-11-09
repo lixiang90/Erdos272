@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.Trapezoid130
-import Mathlib.Analysis.Convex.Deriv
+module
+
+public import Erdos272.Arithmetic.Trapezoid130
+public import Mathlib.Analysis.Convex.Deriv
+
+@[expose] public section
 namespace JSP233.ConvexQuotient130
 open Set MeasureTheory intervalIntegral
 open scoped Classical BigOperators

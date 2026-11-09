@@ -1,7 +1,12 @@
-import Erdos272.Counting.EndpointDensity54
-import Erdos272.Counting.EndpointExterior55
-import Erdos272.Arithmetic.DivisorMoment45
-import Mathlib.NumberTheory.Harmonic.EulerMascheroni
+module
+
+public import Erdos272.Counting.EndpointDensity54
+public import Erdos272.Counting.EndpointExterior55
+public import Erdos272.Arithmetic.DivisorMoment45
+public import Mathlib.NumberTheory.Harmonic.EulerMascheroni
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 /-! Actual harmonic sums and explicit real logarithm windows.  The actual
 exception is bounded using the native harmonic moment theorem; the sharper

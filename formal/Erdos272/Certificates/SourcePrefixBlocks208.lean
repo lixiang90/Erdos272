@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.BatchSourceLinear208
-import Mathlib.Data.Fintype.Basic
-import Mathlib.Tactic.FinCases
+module
+
+public import Erdos272.Arithmetic.BatchSourceLinear208
+public import Mathlib.Data.Fintype.Basic
+public import Mathlib.Tactic.FinCases
+
+@[expose] public section
 
 /-! Assemble bounded row batches for the original physical-size checker. -/
 namespace JSP233.BatchSource208

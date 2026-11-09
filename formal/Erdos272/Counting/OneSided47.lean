@@ -1,7 +1,11 @@
-import Erdos272.Counting.ResidueRoot47
-import Erdos272.Global.CrossStartup47
-import Erdos272.Core.LinearOmitters43
-import Erdos272.Counting.OutsideEnvelope43
+module
+
+public import Erdos272.Counting.ResidueRoot47
+public import Erdos272.Global.CrossStartup47
+public import Erdos272.Core.LinearOmitters43
+public import Erdos272.Counting.OutsideEnvelope43
+
+@[expose] public section
 
 /-! Actual all-cross-root exclusion and original-family one-sided reduction. -/
 namespace JSP233.OneSided47

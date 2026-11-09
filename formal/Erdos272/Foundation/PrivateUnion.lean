@@ -1,4 +1,8 @@
-import Lean
+module
+
+public import Lean
+
+@[expose] public section
 
 /-!
 Actual arithmetic-progression union and private-point mechanisms, round 21.

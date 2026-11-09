@@ -1,4 +1,8 @@
-import Erdos272.Global.RootBranch112
+module
+
+public import Erdos272.Global.RootBranch112
+
+@[expose] public section
 
 /-! A small empty kernel pays the whole actual family, including all Large.
 The chosen minimum member is an actual member of the original family.

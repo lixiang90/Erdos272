@@ -1,5 +1,9 @@
-import Erdos272.Resources.CoreFringe208
-import Erdos272.Core.NearAP36
+module
+
+public import Erdos272.Resources.CoreFringe208
+public import Erdos272.Core.NearAP36
+
+@[expose] public section
 
 /-! The exact light price uses phases one through d. Subtract one only
 in the code, while retaining all original members and ground points. -/

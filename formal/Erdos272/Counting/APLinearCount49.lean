@@ -1,4 +1,9 @@
-import Erdos272.Counting.APCount41
+module
+
+public import Erdos272.Counting.APCount41
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual short-AP and prescribed-endpoint counts, with no capacity input. -/
 namespace JSP233.APLinearCount49

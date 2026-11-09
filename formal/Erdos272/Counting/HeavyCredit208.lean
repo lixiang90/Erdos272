@@ -1,4 +1,8 @@
-import Erdos272.Resources.CoreCleanup208
+module
+
+public import Erdos272.Resources.CoreCleanup208
+
+@[expose] public section
 
 namespace JSP233.HeavyCredit208
 open scoped Classical BigOperators

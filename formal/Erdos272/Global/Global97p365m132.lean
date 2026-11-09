@@ -1,9 +1,13 @@
-import Erdos272.Global.Global97p94m131
-import Erdos272.Arithmetic.PrimeWindowA132
-import Erdos272.Arithmetic.PrimeWindowB132
-import Erdos272.Arithmetic.PrimeWindowC132
-import Erdos272.Arithmetic.PrimeWindowD132
-import Erdos272.Arithmetic.PrimeWindowE132
+module
+
+public import Erdos272.Global.Global97p94m131
+public import Erdos272.Arithmetic.PrimeWindowA132
+public import Erdos272.Arithmetic.PrimeWindowB132
+public import Erdos272.Arithmetic.PrimeWindowC132
+public import Erdos272.Arithmetic.PrimeWindowD132
+public import Erdos272.Arithmetic.PrimeWindowE132
+
+@[expose] public section
 
 namespace JSP233.Global97p365m132
 open StarCompletion PairRecovery131

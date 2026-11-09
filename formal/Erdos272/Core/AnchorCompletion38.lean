@@ -1,5 +1,9 @@
-import Erdos272.Geometry.AnchorGeometry38
-import Erdos272.Core.MiddleWindow32
+module
+
+public import Erdos272.Geometry.AnchorGeometry38
+public import Erdos272.Core.MiddleWindow32
+
+@[expose] public section
 
 /-! Actual two-point capacity and original-[N] conclusions after discharging
 the common-point theorem.  No auxiliary trace or StarBound premise is exposed. -/

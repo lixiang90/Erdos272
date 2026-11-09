@@ -1,8 +1,13 @@
-import Erdos272.Foundation.APGeometry
-import Erdos272.Foundation.JSP233
-import Mathlib.Data.Finset.Powerset
-import Mathlib.Tactic.FinCases
-import Erdos272.Construction.ConstructionGeometry45
+module
+
+public import Erdos272.Foundation.APGeometry
+public import Erdos272.Foundation.JSP233
+public import Mathlib.Data.Finset.Powerset
+public import Mathlib.Tactic.FinCases
+public import Erdos272.Construction.ConstructionGeometry45
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Szabo's actual all-N lower construction.  The finite family is explicit;
 no supplied validity, injectivity, or cardinality premises are used. -/

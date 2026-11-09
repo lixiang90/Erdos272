@@ -1,6 +1,10 @@
-import Erdos272.Foundation.Staircase249Data
-import Mathlib.Tactic.FinCases
-import Mathlib.Data.Fintype.Basic
+module
+
+public import Erdos272.Foundation.Staircase249Data
+public import Mathlib.Tactic.FinCases
+public import Mathlib.Data.Fintype.Basic
+
+@[expose] public section
 
 namespace JSP233.Staircase249Data
 set_option maxRecDepth 1000000

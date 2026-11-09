@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.PrefixState131
-import Erdos272.Arithmetic.EndpointLog131
+module
+
+public import Erdos272.Arithmetic.PrefixState131
+public import Erdos272.Arithmetic.EndpointLog131
+
+@[expose] public section
 namespace JSP233.PrefixLog131
 open PrefixState131
 noncomputable section

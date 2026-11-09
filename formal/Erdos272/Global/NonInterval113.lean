@@ -1,4 +1,8 @@
-import Erdos272.Global.NonInterval53
+module
+
+public import Erdos272.Global.NonInterval53
+
+@[expose] public section
 
 /-! The actual noninterval gap needs only 1024 J^3, preserving the complete
 count, actual root, actual omitter and the full witness exception. -/

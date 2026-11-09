@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.RecoveryLocalization212
-import Erdos272.Resources.RecoveryOmitters212
+module
+
+public import Erdos272.Arithmetic.RecoveryLocalization212
+public import Erdos272.Resources.RecoveryOmitters212
+
+@[expose] public section
 namespace JSP233.RecoveryScalar212
 open Recovery208 RecoveryGates208 RecoveryPrefix208 RecoveryLocalization212
 open AlignedPlans212 RecoveryOmitters212

@@ -1,5 +1,12 @@
-import Erdos272.Arithmetic.CompleteSeven129
-import Erdos272.Arithmetic.DirectMoment128
+module
+
+public import Erdos272.Arithmetic.CompleteSeven129
+public import Erdos272.Arithmetic.DirectMoment128
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 namespace JSP233.DirectMoment129
 open SimplexMoment57 DivisorMoment122 VolumeLower125 HarmonicAbel29
 open TwoSidedMoment62 StarCompletion RestrictedWitness44

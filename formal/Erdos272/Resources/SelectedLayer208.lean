@@ -1,4 +1,8 @@
-import Erdos272.Resources.LayerPayment208
+module
+
+public import Erdos272.Resources.LayerPayment208
+
+@[expose] public section
 namespace JSP233.SelectedLayer208
 open scoped BigOperators
 set_option maxHeartbeats 0

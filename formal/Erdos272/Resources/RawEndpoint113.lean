@@ -1,4 +1,9 @@
-import Erdos272.Resources.RawEndpoint112
+module
+
+public import Erdos272.Resources.RawEndpoint112
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 /-! Preserve the actual harmonic bound and the quarter in B(N). A preliminary
 42w payment pays L-c and the constant error before the final width estimate.

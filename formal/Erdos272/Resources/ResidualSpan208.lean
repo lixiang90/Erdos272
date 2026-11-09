@@ -1,5 +1,10 @@
-import Erdos272.Resources.CoreFringe208
-import Erdos272.Resources.CommonCapacity208
+module
+
+public import Erdos272.Resources.CoreFringe208
+public import Erdos272.Resources.CommonCapacity208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.ResidualSpan208
 open StarCompletion APGeometry APCount41 NearAP36 FarSlot112

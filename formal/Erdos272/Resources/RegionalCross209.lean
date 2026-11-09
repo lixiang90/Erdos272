@@ -1,5 +1,9 @@
-import Erdos272.Resources.RegionalBootstrap209
-import Erdos272.Counting.OneSided47
+module
+
+public import Erdos272.Resources.RegionalBootstrap209
+public import Erdos272.Counting.OneSided47
+
+@[expose] public section
 
 namespace JSP233.RegionalCross209
 open StarCompletion APGeometry OneSided47 Straddling47 NonIntervalAP47 HarmonicAbel29

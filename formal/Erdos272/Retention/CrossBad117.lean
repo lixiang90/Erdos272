@@ -1,4 +1,9 @@
-import Erdos272.Retention.CrossBad116
+module
+
+public import Erdos272.Retention.CrossBad116
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual short-trace rectangles with the weaker dense117 missing-point
 ratio.  Sources remain legal on Ground N; the core interval is only a trace

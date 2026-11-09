@@ -1,8 +1,12 @@
-import Erdos272.Foundation.StarCompletion
-import Mathlib.Data.Finset.Max
-import Mathlib.Data.Int.GCD
-import Mathlib.Data.Finset.Powerset
-import Mathlib.Algebra.Ring.Divisibility.Basic
+module
+
+public import Erdos272.Foundation.StarCompletion
+public import Mathlib.Data.Finset.Max
+public import Mathlib.Data.Int.GCD
+public import Mathlib.Data.Finset.Powerset
+public import Mathlib.Algebra.Ring.Divisibility.Basic
+
+@[expose] public section
 
 /-!
 Intrinsic private-pair existence for actual finite integer sets.  In contrast

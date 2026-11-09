@@ -1,4 +1,8 @@
-import Erdos272.Geometry.FamilyReflect43
+module
+
+public import Erdos272.Geometry.FamilyReflect43
+
+@[expose] public section
 
 /-! Extremal physical endpoints chosen from actual avoiding members. -/
 namespace JSP233.OutsideEnvelope43

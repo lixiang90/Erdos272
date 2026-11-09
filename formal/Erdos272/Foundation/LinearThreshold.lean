@@ -1,7 +1,11 @@
-import Erdos272.Foundation.APGeometry
-import Erdos272.Foundation.TwoTrace
-import Erdos272.Foundation.PrimeKernel
-import Erdos272.Foundation.SmallGround
+module
+
+public import Erdos272.Foundation.APGeometry
+public import Erdos272.Foundation.TwoTrace
+public import Erdos272.Foundation.PrimeKernel
+public import Erdos272.Foundation.SmallGround
+
+@[expose] public section
 
 /-! The complete geometric/counting part of the round-20 all-N linear
 omitter theorem. The final original-family bound has precisely the named

@@ -1,6 +1,10 @@
-import Erdos272.Foundation.TwoTraceGlobal
-import Erdos272.Foundation.PrimeKernel
-import Mathlib.Data.Nat.Prime.Defs
+module
+
+public import Erdos272.Foundation.TwoTraceGlobal
+public import Erdos272.Foundation.PrimeKernel
+public import Mathlib.Data.Nat.Prime.Defs
+
+@[expose] public section
 
 /-! Uniform prime-step capacity. The actual AP geometry forces the pair
 steps; the only selection lemmas reused are the finite private-point and

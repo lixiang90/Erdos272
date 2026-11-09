@@ -1,7 +1,11 @@
-import Erdos272.Resources.StarBoundConcrete30
-import Erdos272.Foundation.APGeometry
-import Mathlib.Data.Finset.Max
-import Mathlib.Data.Int.Interval
+module
+
+public import Erdos272.Resources.StarBoundConcrete30
+public import Erdos272.Foundation.APGeometry
+public import Mathlib.Data.Finset.Max
+public import Mathlib.Data.Int.Interval
+
+@[expose] public section
 
 /-! A genuine one-third complement for actual legal AP-intersection families.
 The Helly argument fixes an anchor member before applying interval geometry. -/

@@ -1,6 +1,10 @@
-import Erdos272.Resources.ActualUnitFees208
-import Erdos272.Arithmetic.UnitFeeArithmetic208
-import Erdos272.Global.HybridGlobal208
+module
+
+public import Erdos272.Resources.ActualUnitFees208
+public import Erdos272.Arithmetic.UnitFeeArithmetic208
+public import Erdos272.Global.HybridGlobal208
+
+@[expose] public section
 
 namespace JSP233.ActualUnitNearWindow208
 open StarCompletion APGeometry Density41

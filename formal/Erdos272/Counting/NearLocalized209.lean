@@ -1,5 +1,10 @@
-import Erdos272.Counting.NearWholeSlim209
-import Erdos272.Resources.FarFinal112
+module
+
+public import Erdos272.Counting.NearWholeSlim209
+public import Erdos272.Resources.FarFinal112
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.NearLocalized209
 open StarCompletion APGeometry NearAP36 NearWholeSlim209 HarmonicAbel29 BandAggregation34

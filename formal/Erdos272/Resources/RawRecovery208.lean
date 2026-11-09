@@ -1,8 +1,12 @@
-import Erdos272.Resources.RawEndpoint115
-import Erdos272.Resources.ActualExterior208
-import Erdos272.Resources.Recovery208
-import Erdos272.Resources.DenseDeletion208
-import Erdos272.Resources.ActualPreparation208
+module
+
+public import Erdos272.Resources.RawEndpoint115
+public import Erdos272.Resources.ActualExterior208
+public import Erdos272.Resources.Recovery208
+public import Erdos272.Resources.DenseDeletion208
+public import Erdos272.Resources.ActualPreparation208
+
+@[expose] public section
 
 /-! The actual readded family is retained in this bridge.  Its omitted
 avoider count is paid exactly once, with no independent family chosen. -/

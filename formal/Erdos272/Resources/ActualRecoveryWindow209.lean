@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.TotientWindow209
-import Erdos272.Arithmetic.TotientInputBridge209
-import Erdos272.Resources.OriginalTerminal208
+module
+
+public import Erdos272.Arithmetic.TotientWindow209
+public import Erdos272.Arithmetic.TotientInputBridge209
+public import Erdos272.Resources.OriginalTerminal208
+
+@[expose] public section
 
 namespace JSP233.ActualRecoveryWindow209
 open StarCompletion APGeometry ActualRecoveryChain208 DenseDeletion40

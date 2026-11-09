@@ -1,6 +1,10 @@
-import Erdos272.Resources.UniformFiniteCut209
-import Erdos272.Arithmetic.UniformCutoff209
-import Erdos272.Arithmetic.TotientExtended209
+module
+
+public import Erdos272.Resources.UniformFiniteCut209
+public import Erdos272.Arithmetic.UniformCutoff209
+public import Erdos272.Arithmetic.TotientExtended209
+
+@[expose] public section
 
 namespace JSP233.UniformActualGlobal209
 open StarCompletion APGeometry SourceBridge208 UniformSourceCore208 UniformAbel208

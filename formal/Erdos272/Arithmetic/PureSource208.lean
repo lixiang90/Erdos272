@@ -1,7 +1,11 @@
-import Mathlib.Data.Nat.Totient
-import Mathlib.Data.Finset.Lattice.Fold
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
-import Mathlib.Tactic
+module
+
+public import Mathlib.Data.Nat.Totient
+public import Mathlib.Data.Finset.Lattice.Fold
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! # Exact finite physical source tables
 

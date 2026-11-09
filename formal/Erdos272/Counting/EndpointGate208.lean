@@ -1,4 +1,9 @@
-import Erdos272.Counting.EndpointAP208
+module
+
+public import Erdos272.Counting.EndpointAP208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.EndpointGate208
 open StarCompletion HarmonicAbel29 EndpointAP208

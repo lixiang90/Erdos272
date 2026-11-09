@@ -1,6 +1,14 @@
-import Erdos272.Resources.ResourceSymmetry56
-import Erdos272.Arithmetic.TwoSidedMoment62
-import Mathlib.Tactic
+module
+
+public import Erdos272.Resources.ResourceSymmetry56
+public import Erdos272.Arithmetic.TwoSidedMoment62
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual coprime rows.  The divisor 1 has exactly zero floor error. -/
 namespace JSP233.TotientRows208

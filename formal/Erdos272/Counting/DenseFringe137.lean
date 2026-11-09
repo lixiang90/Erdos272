@@ -1,5 +1,10 @@
-import Erdos272.Arithmetic.AlignedLinear137
-import Erdos272.Counting.ActualOffBlock119
+module
+
+public import Erdos272.Arithmetic.AlignedLinear137
+public import Erdos272.Counting.ActualOffBlock119
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual dense long traces.  The original full sources keep their dense
 rank and crookedness while the p13 private-key and periodic-hole counts are

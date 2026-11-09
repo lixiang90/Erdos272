@@ -1,5 +1,11 @@
-import Erdos272.Resources.ActualBandEval208
-import Erdos272.Resources.CleanupRowBounds208
+module
+
+public import Erdos272.Resources.ActualBandEval208
+public import Erdos272.Resources.CleanupRowBounds208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.ActualCleanupEval208
 open StarCompletion APGeometry NearAP36

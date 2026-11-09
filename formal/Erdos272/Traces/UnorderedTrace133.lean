@@ -1,5 +1,10 @@
-import Erdos272.Traces.RestrictedWitness44
-import Mathlib.Data.Finset.Powerset
+module
+
+public import Erdos272.Traces.RestrictedWitness44
+public import Mathlib.Data.Finset.Powerset
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.UnorderedTrace133
 open StarCompletion APGeometry RestrictedWitness44

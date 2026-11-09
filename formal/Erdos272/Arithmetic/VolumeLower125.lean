@@ -1,6 +1,11 @@
-import Erdos272.Arithmetic.SimplexMoment57
-import Mathlib.Algebra.Order.Floor.Semifield
-import Mathlib.Analysis.Calculus.Deriv.MeanValue
+module
+
+public import Erdos272.Arithmetic.SimplexMoment57
+public import Mathlib.Algebra.Order.Floor.Semifield
+public import Mathlib.Analysis.Calculus.Deriv.MeanValue
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.VolumeLower125
 open SimplexMoment57 HarmonicAbel29

@@ -1,4 +1,10 @@
-import Erdos272.Arithmetic.LogKernel122
+module
+
+public import Erdos272.Arithmetic.LogKernel122
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The actual divisor recursion with corrected first and second logarithmic
 kernels. Every physical floor quotient, including1, is retained. The actual

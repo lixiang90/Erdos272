@@ -1,5 +1,10 @@
-import Erdos272.Resources.ResidualPool208
-import Mathlib.Algebra.BigOperators.Intervals
+module
+
+public import Erdos272.Resources.ResidualPool208
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.ResidualWeights208
 open scoped Classical BigOperators

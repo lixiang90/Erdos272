@@ -1,4 +1,9 @@
-import Erdos272.Retention.Ceil12Grid118
+module
+
+public import Erdos272.Retention.Ceil12Grid118
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The ceil grid is built on the actual interval I, but the original sources
 remain Legal on Ground N. Off traces are packed in I; full sources are not

@@ -1,4 +1,8 @@
-import Erdos272.Certificates.EndpointFinite208.Block028
+module
+
+public import Erdos272.Certificates.EndpointFinite208.Block028
+
+@[expose] public section
 
 namespace JSP233.EndpointFinite208
 open StarCompletion APPrepare49 HarmonicAbel29 EndpointAP208 EndpointGate208

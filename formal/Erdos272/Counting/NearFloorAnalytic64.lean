@@ -1,5 +1,11 @@
-import Erdos272.Core.NearFloor63
-import Erdos272.Counting.EndpointDensity54
+module
+
+public import Erdos272.Core.NearFloor63
+public import Erdos272.Counting.EndpointDensity54
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.NearFloorAnalytic64
 open NearFloor63 HarmonicAbel29 CoprimeDensity52 StarCompletion APGeometry NearAP36

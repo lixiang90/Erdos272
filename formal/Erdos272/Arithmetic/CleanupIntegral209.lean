@@ -1,7 +1,14 @@
-import Erdos272.Arithmetic.HarmonicLog55
-import Mathlib.Analysis.SumIntegralComparisons
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
-import Mathlib.Tactic
+module
+
+public import Erdos272.Arithmetic.HarmonicLog55
+public import Mathlib.Analysis.SumIntegralComparisons
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.CleanupIntegral209
 open MeasureTheory Set intervalIntegral

@@ -1,6 +1,11 @@
-import Erdos272.Arithmetic.FastLookupBridge209
-import Erdos272.Arithmetic.FastComputed209
-import Erdos272.Arithmetic.FastDecode208
+module
+
+public import Erdos272.Arithmetic.FastLookupBridge209
+public import Erdos272.Arithmetic.FastComputed209
+public import Erdos272.Arithmetic.FastDecode208
+public import Mathlib.Tactic.NormNum.Prime
+
+@[expose] public section
 namespace JSP233.FactorSoundBridge209
 open FactorFullData209
 set_option maxHeartbeats 0

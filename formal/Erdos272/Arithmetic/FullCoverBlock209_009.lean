@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.FastLookupBridge209
+module
+
+public import Erdos272.Arithmetic.FastLookupBridge209
+
+@[expose] public section
 namespace JSP233.FullCoverBlock209_009
 open FastFullLookup209
 set_option maxHeartbeats 0

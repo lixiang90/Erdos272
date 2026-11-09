@@ -1,6 +1,10 @@
-import Erdos272.Resources.RootedWindow209
-import Erdos272.Resources.RegionalRecoveryActual209
-import Erdos272.Resources.GlobalRecoveryActual209
+module
+
+public import Erdos272.Resources.RootedWindow209
+public import Erdos272.Resources.RegionalRecoveryActual209
+public import Erdos272.Resources.GlobalRecoveryActual209
+
+@[expose] public section
 
 namespace JSP233.RootedFinite209
 open StarCompletion APGeometry DenseDeletion40

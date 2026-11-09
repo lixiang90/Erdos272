@@ -1,5 +1,9 @@
-import Erdos272.Resources.ActualRecoveryChain208
-import Erdos272.Arithmetic.PrefixTable132
+module
+
+public import Erdos272.Resources.ActualRecoveryChain208
+public import Erdos272.Arithmetic.PrefixTable132
+
+@[expose] public section
 namespace JSP233.RecoveryLocalization212
 open HarmonicAbel29 RecoveryPrefix208 PrefixState131 PrefixCert131 PrefixTable131
 open scoped Classical BigOperators

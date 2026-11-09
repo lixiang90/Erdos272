@@ -1,5 +1,11 @@
-import Erdos272.Resources.IntrinsicTriples208
-import Erdos272.Arithmetic.APCoupling208
+module
+
+public import Erdos272.Resources.IntrinsicTriples208
+public import Erdos272.Arithmetic.APCoupling208
+public import Mathlib.Data.Nat.Choose.Cast
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! The reserved triples of one actual AP member and the actual intrinsic
 triple supply are connected to the universal common-response inequality. -/

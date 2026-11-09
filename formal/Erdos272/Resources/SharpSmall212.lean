@@ -1,5 +1,10 @@
-import Erdos272.Counting.CrossBand57
-import Erdos272.Core.SmallKernel112
+module
+
+public import Erdos272.Counting.CrossBand57
+public import Erdos272.Core.SmallKernel112
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Two opposite first-hit covers pay the whole family, including Large. -/
 namespace JSP233.SharpSmall212

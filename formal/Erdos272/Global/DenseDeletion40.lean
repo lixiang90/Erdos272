@@ -1,6 +1,11 @@
-import Erdos272.Core.AnchorCompletion38
-import Mathlib.Combinatorics.Enumerative.DoubleCounting
-import Mathlib.Tactic
+module
+
+public import Erdos272.Core.AnchorCompletion38
+public import Mathlib.Combinatorics.Enumerative.DoubleCounting
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+
+@[expose] public section
 
 /-! Actual short consecutive pairs and native deletion of dense crooked members. -/
 namespace JSP233.DenseDeletion40

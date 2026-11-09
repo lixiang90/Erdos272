@@ -1,4 +1,8 @@
-import Erdos272.Global.ActualUnitNearWindow208
+module
+
+public import Erdos272.Global.ActualUnitNearWindow208
+
+@[expose] public section
 
 namespace JSP233.UnitTruncatedFamily209
 open StarCompletion APGeometry Density41

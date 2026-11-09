@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.RecoveryLocalization212
-import Erdos272.Resources.AlignedPlans212
-import Erdos272.Resources.RecoveryOmitters212
+module
+
+public import Erdos272.Arithmetic.RecoveryLocalization212
+public import Erdos272.Resources.AlignedPlans212
+public import Erdos272.Resources.RecoveryOmitters212
+
+@[expose] public section
 namespace JSP233.RecoveryCaps213
 open HarmonicAbel29 PrefixState131 PrefixCert131 PrefixTable131 AlignedPlans212
 open RecoveryOmitters212 (PreparationP)

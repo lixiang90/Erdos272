@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.PrimePrefix35
-import Erdos272.Traces.TraceAntichain35
+module
+
+public import Erdos272.Arithmetic.PrimePrefix35
+public import Erdos272.Traces.TraceAntichain35
+
+@[expose] public section
 
 /-! Actual AP-prefix unions and minimal-trace arithmetic, with the prime
 parameter tied to the actual prefix length. Dyadic growth is explicit. -/

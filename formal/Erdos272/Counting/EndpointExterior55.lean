@@ -1,4 +1,9 @@
-import Erdos272.Counting.EndpointDensity54
+module
+
+public import Erdos272.Counting.EndpointDensity54
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual EX129/200 endpoint rectangles and the complete same-family raw67
 resource chain. No exterior-family capacity or middle resource row is supplied. -/

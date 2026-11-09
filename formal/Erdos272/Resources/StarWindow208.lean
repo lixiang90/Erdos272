@@ -1,8 +1,15 @@
-import Erdos272.Resources.DenseDeletion208
-import Erdos272.Capacity.LowSteps32
-import Erdos272.Core.OneThird32
-import Erdos272.Capacity.SingletonCapacity32
-import Erdos272.Arithmetic.HarmonicSharp39
+module
+
+public import Erdos272.Resources.DenseDeletion208
+public import Erdos272.Capacity.LowSteps32
+public import Erdos272.Core.OneThird32
+public import Erdos272.Capacity.SingletonCapacity32
+public import Erdos272.Arithmetic.HarmonicSharp39
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Data.Nat.Choose.Cast
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Retained-star recovery on the entire new finite formalization window.
 

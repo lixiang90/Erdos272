@@ -1,7 +1,12 @@
-import Erdos272.Retention.RestoreDense118
-import Erdos272.Retention.DenseFringe120
-import Erdos272.Retention.CrossBad120
-import Erdos272.Resources.ProfileArms120
+module
+
+public import Erdos272.Retention.RestoreDense118
+public import Erdos272.Retention.DenseFringe120
+public import Erdos272.Retention.CrossBad120
+public import Erdos272.Resources.ProfileArms120
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Restore the same original family at width900/23. Every density leaf
 uses the complete actual Bad/Good partition; the true smallest omitted

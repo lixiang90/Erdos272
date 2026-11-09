@@ -1,6 +1,10 @@
-import Erdos272.Resources.NoHighAPBound208
-import Erdos272.Arithmetic.TerminalLattice208
-import Erdos272.Arithmetic.TerminalGcd208
+module
+
+public import Erdos272.Resources.NoHighAPBound208
+public import Erdos272.Arithmetic.TerminalLattice208
+public import Erdos272.Arithmetic.TerminalGcd208
+
+@[expose] public section
 
 /-! The actual NoHigh loss is local in the cutoff, with the original ground
 and the original legal family retained throughout the proof. -/

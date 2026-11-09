@@ -1,4 +1,8 @@
-import Erdos272.Resources.PreparedWitness48
+module
+
+public import Erdos272.Resources.PreparedWitness48
+
+@[expose] public section
 namespace JSP233.CornerJoint49
 open StarCompletion PrivatePairExistence LongTerminal35 WitnessInterval43
 open scoped Classical

@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.UnitRecipeStatic208
+module
+
+public import Erdos272.Arithmetic.UnitRecipeStatic208
+
+@[expose] public section
 namespace JSP233.UnitRecipeFacts208
 open UnitRecipeStatic208 CleanupRecipes208
 set_option maxHeartbeats 600000

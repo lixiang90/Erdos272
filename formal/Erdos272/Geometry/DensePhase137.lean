@@ -1,4 +1,8 @@
-import Erdos272.Retention.DenseAligned117
+module
+
+public import Erdos272.Retention.DenseAligned117
+
+@[expose] public section
 namespace JSP233.DensePhase137
 open StarCompletion APGeometry Relative13Fringe116
 open scoped Classical BigOperators

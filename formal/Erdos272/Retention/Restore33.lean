@@ -1,5 +1,9 @@
-import Erdos272.Retention.ThinFringe33
-import Erdos272.Retention.KKRetention32
+module
+
+public import Erdos272.Retention.ThinFringe33
+public import Erdos272.Retention.KKRetention32
+
+@[expose] public section
 
 /-! Actual thin-fringe deletion and recovery. The retained-family exact
 bound remains an explicit premise; no global reduction is asserted. -/

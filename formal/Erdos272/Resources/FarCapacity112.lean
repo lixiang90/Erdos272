@@ -1,5 +1,10 @@
-import Erdos272.Core.FarSlot112
-import Mathlib.Combinatorics.Enumerative.DoubleCounting
+module
+
+public import Erdos272.Core.FarSlot112
+public import Mathlib.Combinatorics.Enumerative.DoubleCounting
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Double counting actual maximal-core/physical-shell slots.
 

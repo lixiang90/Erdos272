@@ -1,5 +1,9 @@
-import Erdos272.Resources.ActualUnitLayer208
-import Erdos272.Arithmetic.UnitRows208
+module
+
+public import Erdos272.Resources.ActualUnitLayer208
+public import Erdos272.Arithmetic.UnitRows208
+
+@[expose] public section
 
 namespace JSP233.ActualUnitFees208
 open StarCompletion APGeometry NearAP36 SourceCertified208

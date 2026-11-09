@@ -1,5 +1,9 @@
-import Erdos272.Resources.IntegerUniformSource209
-import Erdos272.Arithmetic.UniformQuery208
+module
+
+public import Erdos272.Resources.IntegerUniformSource209
+public import Erdos272.Arithmetic.UniformQuery208
+
+@[expose] public section
 
 namespace JSP233.IntegerUniformQueries209
 open StarCompletion APGeometry SourceBridge208 UniformScale208 UniformEnvelope208 UniformQuery208

@@ -1,4 +1,10 @@
-import Erdos272.Resources.FarJoint112
+module
+
+public import Erdos272.Resources.FarJoint112
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Group.Action.Defs
+
+@[expose] public section
 
 namespace JSP233.WeightedJoint136
 open StarCompletion APGeometry NearAP36 FarSlot112 FarCapacity112 FarJoint112 LongTerminal35

@@ -1,4 +1,11 @@
-import Erdos272.Resources.CleanupChecked208
+module
+
+public import Erdos272.Resources.CleanupChecked208
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.CleanupRowBounds208
 open CleanupEval208

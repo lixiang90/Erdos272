@@ -1,4 +1,8 @@
-import Erdos272.Core.LongCore34
+module
+
+public import Erdos272.Core.LongCore34
+
+@[expose] public section
 
 /-! Cross-step matching of all actual large rooted AP windows outside the
 reserved exterior corner. The retained-family final count is not asserted. -/

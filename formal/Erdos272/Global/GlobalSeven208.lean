@@ -1,5 +1,11 @@
-import Erdos272.Resources.SevenFamily208
-import Erdos272.Resources.RootedWindow209
+module
+
+public import Erdos272.Resources.SevenFamily208
+public import Erdos272.Resources.RootedWindow209
+public import Mathlib.Data.Nat.Choose.Cast
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.GlobalSeven208
 open StarCompletion APGeometry DenseDeletion40 Density41 SparseSmall39

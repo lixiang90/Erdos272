@@ -1,6 +1,10 @@
-import Erdos272.Staircase.StaircaseTailBridge29
-import Erdos272.Foundation.Staircase249
-import Erdos272.Foundation.StaircaseThin
+module
+
+public import Erdos272.Staircase.StaircaseTailBridge29
+public import Erdos272.Foundation.Staircase249
+public import Erdos272.Foundation.StaircaseThin
+
+@[expose] public section
 
 /-! Unbounded actual unit-step line bound. The finite square, the two thin
 edges, and the actual arithmetic/Abel analytic tail cover all extents. -/

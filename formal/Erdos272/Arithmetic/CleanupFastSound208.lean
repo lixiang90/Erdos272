@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.CleanupFast208
-import Erdos272.Arithmetic.CleanupMachineSound208
-import Erdos272.Arithmetic.WindowExtinction208
+module
+
+public import Erdos272.Arithmetic.CleanupFast208
+public import Erdos272.Arithmetic.CleanupMachineSound208
+public import Erdos272.Arithmetic.WindowExtinction208
+
+@[expose] public section
 
 namespace JSP233.CleanupFastSound208
 set_option maxHeartbeats 0

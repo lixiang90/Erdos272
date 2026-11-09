@@ -1,4 +1,8 @@
-import Erdos272.Retention.LongTerminal35
+module
+
+public import Erdos272.Retention.LongTerminal35
+
+@[expose] public section
 
 /-! Actual intrinsic witnesses and interval endpoints share one finite pool.
 All resources below belong to the same legal family. -/

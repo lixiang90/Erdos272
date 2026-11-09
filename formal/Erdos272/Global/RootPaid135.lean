@@ -1,5 +1,9 @@
-import Erdos272.Global.RootBranch112
-import Erdos272.Counting.NearFar135
+module
+
+public import Erdos272.Global.RootBranch112
+public import Erdos272.Counting.NearFar135
+
+@[expose] public section
 namespace JSP233.RootPaid135
 open StarCompletion NearAP36 NearWhole112 NearFar135 RootBranch112 RootEnvelope112
 open scoped Classical BigOperators

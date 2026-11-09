@@ -1,5 +1,10 @@
-import Erdos272.Resources.RecoveryOmitters212
-import Erdos272.Resources.AlignedPlans213
+module
+
+public import Erdos272.Resources.RecoveryOmitters212
+public import Erdos272.Resources.AlignedPlans213
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.RecoveryOmitters213
 open StarCompletion APGeometry DenseDeletion40
 open OffResidue44 AlignedPlans212 ActualGrid212 ThinFringe33

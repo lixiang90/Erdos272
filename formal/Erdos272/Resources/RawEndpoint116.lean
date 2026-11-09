@@ -1,4 +1,9 @@
-import Erdos272.Resources.RawEndpoint115
+module
+
+public import Erdos272.Resources.RawEndpoint115
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! A non-circular bootstrap after actual unit interval preparation.
 At width32 the original p17 fringe counts all actual deleted avoiders.  Its

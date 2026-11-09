@@ -1,5 +1,9 @@
-import Erdos272.Resources.RecoveryResource213
-import Erdos272.Arithmetic.RecoveryScalar213
+module
+
+public import Erdos272.Resources.RecoveryResource213
+public import Erdos272.Arithmetic.RecoveryScalar213
+
+@[expose] public section
 namespace JSP233.ActualRecoveryChain213
 open StarCompletion APGeometry DenseDeletion40 LocalResourceRecovery208 Recovery208
 open RecoveryCaps213 RecoveryResource213 RecoveryScalar213 AlignedPlans212

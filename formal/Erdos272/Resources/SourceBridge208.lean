@@ -1,5 +1,9 @@
-import Erdos272.Counting.TripleCodes208
-import Erdos272.Arithmetic.TotientConvolution208
+module
+
+public import Erdos272.Counting.TripleCodes208
+public import Erdos272.Arithmetic.TotientConvolution208
+
+@[expose] public section
 
 /-! # Exact unit source bounds for actual families
 

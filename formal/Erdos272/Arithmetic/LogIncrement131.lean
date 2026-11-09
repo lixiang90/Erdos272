@@ -1,5 +1,9 @@
-import Mathlib.Analysis.Complex.ExponentialBounds
-import Mathlib.Data.Nat.Factorial.Basic
+module
+
+public import Mathlib.Analysis.Complex.ExponentialBounds
+public import Mathlib.Data.Nat.Factorial.Basic
+
+@[expose] public section
 namespace JSP233.LogIncrement131
 open scoped BigOperators
 set_option maxHeartbeats 0

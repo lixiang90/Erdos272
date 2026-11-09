@@ -1,6 +1,11 @@
-import Erdos272.Arithmetic.MixedFloor29
-import Erdos272.Core.LongCore34
-import Mathlib.Data.Nat.Squarefree
+module
+
+public import Erdos272.Arithmetic.MixedFloor29
+public import Erdos272.Core.LongCore34
+public import Mathlib.Data.Nat.Squarefree
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual finite coprime supply with squarefree support, including intervals.
 The error counts nonzero Mobius coefficients, not all divisors. -/

@@ -1,5 +1,12 @@
-import Erdos272.Arithmetic.LightAnalytic209
-import Erdos272.Arithmetic.LightOwners209
+module
+
+public import Erdos272.Arithmetic.LightAnalytic209
+public import Erdos272.Arithmetic.LightOwners209
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.LightOwnerPrice209
 open LightAnalytic209 LightOwners209

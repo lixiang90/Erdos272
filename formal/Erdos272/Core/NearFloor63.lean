@@ -1,5 +1,11 @@
-import Erdos272.Core.NearHelly54
-import Mathlib.Algebra.BigOperators.Intervals
+module
+
+public import Erdos272.Core.NearHelly54
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual near-core start slack and exact finite floor budgets.
 The refined code pool is derived from the actual core's A*K-th member.

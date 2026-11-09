@@ -1,5 +1,10 @@
-import Erdos272.Resources.ActualRecoveryChain208
-import Erdos272.Arithmetic.RecoveryScalar212
+module
+
+public import Erdos272.Resources.ActualRecoveryChain208
+public import Erdos272.Arithmetic.RecoveryScalar212
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.ActualRecoveryChain212
 open StarCompletion APGeometry HarmonicAbel29 APPrepare49 PreparedClasses50
 open PreparedWitness48 RestrictedWitness44 MiddleCoordinates51 LongTerminal35 DenseDeletion40

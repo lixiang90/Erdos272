@@ -1,4 +1,9 @@
-import Mathlib.Tactic
+module
+
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+
+@[expose] public section
 namespace JSP233.ConvexPrice134
 noncomputable section
 set_option maxHeartbeats 0

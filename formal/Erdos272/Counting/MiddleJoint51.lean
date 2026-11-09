@@ -1,4 +1,8 @@
-import Erdos272.Geometry.MiddleCoordinates51
+module
+
+public import Erdos272.Geometry.MiddleCoordinates51
+
+@[expose] public section
 namespace JSP233.MiddleJoint51
 open StarCompletion APGeometry LongTerminal35 WitnessInterval43 MiddleCoordinates51
 open APCount41 APPrepare49 PreparedWitness48 PreparedClasses50 DenseDeletion40 FamilyReflect43 RestrictedWitness44

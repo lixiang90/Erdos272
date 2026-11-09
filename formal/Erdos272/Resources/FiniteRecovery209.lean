@@ -1,6 +1,12 @@
-import Erdos272.Resources.UniversalRecovery209
-import Erdos272.Resources.FiniteResource209
-import Erdos272.Arithmetic.FrontierDensity208
+module
+
+public import Erdos272.Resources.UniversalRecovery209
+public import Erdos272.Resources.FiniteResource209
+public import Erdos272.Arithmetic.FrontierDensity208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Local middle resources replace the old global harmonic-squared error
 for the same actual readded family. Totient estimates remain explicit inputs. -/

@@ -1,5 +1,9 @@
-import Erdos272.Foundation.StaircaseGeometry
-import Erdos272.Foundation.PrivatePairExistence
+module
+
+public import Erdos272.Foundation.StaircaseGeometry
+public import Erdos272.Foundation.PrivatePairExistence
+
+@[expose] public section
 
 /-! Actual primitive bad-pair supply, classified by the signs of its endpoints.
 No finite range bound or supply-count oracle is assumed. -/

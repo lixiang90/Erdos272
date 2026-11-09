@@ -1,4 +1,9 @@
-import Erdos272.Counting.GlobalSparse42
+module
+
+public import Erdos272.Counting.GlobalSparse42
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 /-! Linear omitter payment from actual root resources, including exact
 restoration of the entire retained-star branch of the original family. -/

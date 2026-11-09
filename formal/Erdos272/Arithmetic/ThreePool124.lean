@@ -1,4 +1,10 @@
-import Erdos272.Arithmetic.ParityPool123
+module
+
+public import Erdos272.Arithmetic.ParityPool123
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! A finite div3 cube of actual quadruples. Its two middle coordinates are
 three times a pair not both even, so the image is disjoint from both the

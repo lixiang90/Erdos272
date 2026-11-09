@@ -1,4 +1,9 @@
-import Erdos272.Resources.CrossBandCleanup208
+module
+
+public import Erdos272.Resources.CrossBandCleanup208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.CrossBandMenu208
 open StarCompletion CrossBandCredit208 CrossBandCredit208.System CrossBandCleanup208

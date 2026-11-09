@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.HarmonicSharp39
-import Erdos272.Foundation.JSP233
-import Mathlib.Tactic
+module
+
+public import Erdos272.Arithmetic.HarmonicSharp39
+public import Erdos272.Foundation.JSP233
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! Native counting of actual intersecting arithmetic progressions. -/
 namespace JSP233.APCount41

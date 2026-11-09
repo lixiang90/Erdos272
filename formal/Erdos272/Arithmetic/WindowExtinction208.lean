@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.WindowSums208
-import Erdos272.Arithmetic.CombinedCounts208
-import Erdos272.Arithmetic.LightPrice208
+module
+
+public import Erdos272.Arithmetic.WindowSums208
+public import Erdos272.Arithmetic.CombinedCounts208
+public import Erdos272.Arithmetic.LightPrice208
+
+@[expose] public section
 
 namespace JSP233.WindowExtinction208
 open LightClosed208 WindowCounts208 WindowSums208 CombinedCounts208

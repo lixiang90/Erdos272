@@ -1,5 +1,9 @@
-import Erdos272.Resources.NativeRestore213
-import Erdos272.Resources.ActualRecoveryChain213
+module
+
+public import Erdos272.Resources.NativeRestore213
+public import Erdos272.Resources.ActualRecoveryChain213
+
+@[expose] public section
 
 namespace JSP233.OriginalTerminal213
 open StarCompletion APGeometry DenseDeletion40 TerminalDeficit51 NativeRestore213

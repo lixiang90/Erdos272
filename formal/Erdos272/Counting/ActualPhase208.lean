@@ -1,7 +1,11 @@
-import Erdos272.Counting.PhaseCodes208
-import Erdos272.Geometry.PhaseOverlap208
-import Erdos272.Counting.SpanBudget208
-import Erdos272.Geometry.BlockAP119
+module
+
+public import Erdos272.Counting.PhaseCodes208
+public import Erdos272.Geometry.PhaseOverlap208
+public import Erdos272.Counting.SpanBudget208
+public import Erdos272.Geometry.BlockAP119
+
+@[expose] public section
 
 /-! The complete 10/11 span bound for the same actual AP traces.
 Repeated phase labels remain indexed by their original members. -/

@@ -1,4 +1,9 @@
-import Erdos272.Global.SparseSmall39
+module
+
+public import Erdos272.Global.SparseSmall39
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! A singleton intersection needs cross pairs, not all pairs of the union. -/
 namespace JSP233.SparseCross41

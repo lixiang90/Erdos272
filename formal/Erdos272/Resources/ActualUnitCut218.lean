@@ -1,5 +1,10 @@
-import Erdos272.Resources.ActualUnitSystem208
-import Erdos272.Resources.LightCap216
+module
+
+public import Erdos272.Resources.ActualUnitSystem208
+public import Erdos272.Resources.LightCap216
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.ActualUnitCut218
 open StarCompletion APGeometry NearAP36 SourceBridge208 SourcePrefixSpecs208 SourceCertified208
 open CrossBandCredit208 CrossBandCredit208.System CrossBandCleanup208 SevenFamily208

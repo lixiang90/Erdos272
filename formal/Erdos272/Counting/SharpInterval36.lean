@@ -1,4 +1,9 @@
-import Erdos272.Traces.SquarefreeSupply35
+module
+
+public import Erdos272.Traces.SquarefreeSupply35
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! A single finite interval sieve: floor errors are subtracted before
 taking absolute values, so the error is 2^omega, with no factor two. -/

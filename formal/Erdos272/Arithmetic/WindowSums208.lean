@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.WindowCounts208
+module
+
+public import Erdos272.Arithmetic.WindowCounts208
+
+@[expose] public section
 
 namespace JSP233.WindowSums208
 open LightClosed208 WindowCounts208

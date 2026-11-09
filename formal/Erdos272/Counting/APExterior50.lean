@@ -1,4 +1,9 @@
-import Erdos272.Counting.APLinearCount49
+module
+
+public import Erdos272.Counting.APLinearCount49
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual exterior AP endpoint rectangles, summed over all nonunit steps. -/
 namespace JSP233.APExterior50

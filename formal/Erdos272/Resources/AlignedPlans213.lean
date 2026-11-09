@@ -1,4 +1,9 @@
-import Erdos272.Resources.AlignedPlans212
+module
+
+public import Erdos272.Resources.AlignedPlans212
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.AlignedPlans213
 open StarCompletion APGeometry Aligned208 AlignedPlans212
 open scoped Classical BigOperators

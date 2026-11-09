@@ -1,5 +1,10 @@
-import Erdos272.Foundation.StarCompletion
-import Mathlib.Data.Int.Interval
+module
+
+public import Erdos272.Foundation.StarCompletion
+public import Mathlib.Data.Int.Interval
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Native finite-set geometry of the published centered lower construction.
 No abstract three-term predicate or supplied AP classification is used. -/

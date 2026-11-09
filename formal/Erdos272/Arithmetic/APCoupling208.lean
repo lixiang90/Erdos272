@@ -1,4 +1,9 @@
-import Mathlib.Tactic
+module
+
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+
+@[expose] public section
 
 /-! The exact common response of the longest actual AP and the one residual
 triple pool used in round207.  This file proves the universal real inequality;

@@ -1,5 +1,10 @@
-import Erdos272.Global.PaddedCommon212
-import Erdos272.Resources.SharpSmall212
+module
+
+public import Erdos272.Global.PaddedCommon212
+public import Erdos272.Resources.SharpSmall212
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual common-root classification with minimum size240.  The two added
 size layers are NOT assumed proved: their actual near-fee and scalar price

@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.SourceLookupFast208
+module
+
+public import Erdos272.Arithmetic.SourceLookupFast208
+
+@[expose] public section
 
 /-! Composite-marker coverage avoids a separate long trial division for each
 large prime.  Coverage is checked on multiples of a proved prime cover.

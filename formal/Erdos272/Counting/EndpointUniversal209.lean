@@ -1,4 +1,8 @@
-import Erdos272.Counting.EndpointAP208
+module
+
+public import Erdos272.Counting.EndpointAP208
+
+@[expose] public section
 
 namespace JSP233.EndpointUniversal209
 open StarCompletion APPrepare49 HarmonicAbel29 EndpointAP208 SimplexMoment57

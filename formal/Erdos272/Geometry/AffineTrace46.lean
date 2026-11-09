@@ -1,6 +1,12 @@
-import Erdos272.Arithmetic.PrimorialPrefix46
-import Erdos272.Retention.LongSharp42
-import Mathlib.Data.Finset.Lattice.Fold
+module
+
+public import Erdos272.Arithmetic.PrimorialPrefix46
+public import Erdos272.Retention.LongSharp42
+public import Mathlib.Data.Finset.Lattice.Fold
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The finite primorial error is a constructed number, not a supplied actual
 row bound. All actual minimal traces, exterior points and witness codes below

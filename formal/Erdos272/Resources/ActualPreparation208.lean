@@ -1,5 +1,9 @@
-import Erdos272.Global.APPrepare49
-import Erdos272.Counting.ShortAP208
+module
+
+public import Erdos272.Global.APPrepare49
+public import Erdos272.Counting.ShortAP208
+
+@[expose] public section
 
 /-! Preserve the actual preparation filters, including the no-high-witness
 family, while replacing the short-progression count by its sharp linear

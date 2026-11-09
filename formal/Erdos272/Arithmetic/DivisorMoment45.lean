@@ -1,5 +1,10 @@
-import Erdos272.Traces.RestrictedWitness44
-import Erdos272.Arithmetic.HarmonicSharp39
+module
+
+public import Erdos272.Traces.RestrictedWitness44
+public import Erdos272.Arithmetic.HarmonicSharp39
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual restricted witness exceptions paid by the divisor second moment.
 The gcd-factor encoding is the finite argument at fixed KK source 4152--4331;

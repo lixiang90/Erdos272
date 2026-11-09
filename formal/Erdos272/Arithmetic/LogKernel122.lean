@@ -1,5 +1,12 @@
-import Erdos272.Arithmetic.HarmonicDiv121
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+module
+
+public import Erdos272.Arithmetic.HarmonicDiv121
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! Uniform first and second logarithmic kernels. Every small quotient is
 covered by finite ordinary-Lean Taylor bounds, with no numerical oracle. -/

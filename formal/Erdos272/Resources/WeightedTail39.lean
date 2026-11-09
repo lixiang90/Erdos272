@@ -1,4 +1,9 @@
-import Erdos272.Resources.WeightedFar38
+module
+
+public import Erdos272.Resources.WeightedFar38
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Finite ordinary-kernel payment for the exact linear dyadic tail.
 The terminal budget is uniform in the number of actual size bands. -/

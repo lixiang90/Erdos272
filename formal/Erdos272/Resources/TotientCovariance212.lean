@@ -1,6 +1,14 @@
-import Erdos272.Resources.TotientRows208
-import Mathlib.NumberTheory.Divisors
-import Mathlib.Tactic
+module
+
+public import Erdos272.Resources.TotientRows208
+public import Mathlib.NumberTheory.Divisors
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.TotientCovariance212
 open scoped Classical BigOperators

@@ -1,6 +1,11 @@
-import Erdos272.Global.IntegerWindowEndpoints209
-import Erdos272.Resources.IntegerShared209
-import Erdos272.Resources.RootedFinite209
+module
+
+public import Erdos272.Global.IntegerWindowEndpoints209
+public import Erdos272.Resources.IntegerShared209
+public import Erdos272.Resources.RootedFinite209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.IntegerGlobalCases209
 open StarCompletion APGeometry NearAP36 DenseDeletion40 Density41 SparseSmall39 PrivateFinset

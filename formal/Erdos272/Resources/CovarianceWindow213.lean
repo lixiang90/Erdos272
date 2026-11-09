@@ -1,5 +1,10 @@
-import Erdos272.Resources.CovarianceResource213
-import Erdos272.Arithmetic.TotientWindow209
+module
+
+public import Erdos272.Resources.CovarianceResource213
+public import Erdos272.Arithmetic.TotientWindow209
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual finite-frontier instantiation: no numerical-bound or covariance
 moment assumption remains in the two resource APIs below. -/

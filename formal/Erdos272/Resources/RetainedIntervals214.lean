@@ -1,5 +1,9 @@
-import Erdos272.Resources.OriginalTerminal214
-import Erdos272.Resources.RetainedIntervals213
+module
+
+public import Erdos272.Resources.OriginalTerminal214
+public import Erdos272.Resources.RetainedIntervals213
+
+@[expose] public section
 namespace JSP233.RetainedIntervals214
 open StarCompletion APGeometry DenseDeletion40 LongTerminal35
 open RecoveryResource213 ActualRecoveryChain214

@@ -1,5 +1,10 @@
-import Mathlib.Tactic
-import Mathlib.Data.Nat.Sqrt
+module
+
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Data.Nat.Sqrt
+
+@[expose] public section
 
 /-! Uniform square-root parameters for the complete Near/Far/root costs.
 

@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.SourceLookupFast208
-import Erdos272.Arithmetic.SourceTargetOrder208
+module
+
+public import Erdos272.Arithmetic.SourceLookupFast208
+public import Erdos272.Arithmetic.SourceTargetOrder208
+
+@[expose] public section
 
 /-! Shared, already certified data for the disjoint finite-prefix chunks. -/
 namespace JSP233.SourcePrefixSpecs208

@@ -1,16 +1,20 @@
-import Erdos272.Foundation.DyadicFinset
-import Erdos272.Foundation.LinearThreshold
-import Erdos272.Foundation.PrivatePairExistence
-import Erdos272.Foundation.StaircaseCertificate
-import Erdos272.Foundation.StaircaseGeometry
-import Erdos272.Foundation.StaircaseSupply
-import Erdos272.Foundation.Staircase249
-import Erdos272.Foundation.StaircaseTail
-import Erdos272.Foundation.StaircaseThin
-import Erdos272.Foundation.ThreeQuarter
-import Erdos272.Foundation.TwoTraceStrict
-import Erdos272.Foundation.PrimeCapacity
-import Erdos272.Foundation.FiveSixths
+module
+
+public import Erdos272.Foundation.DyadicFinset
+public import Erdos272.Foundation.LinearThreshold
+public import Erdos272.Foundation.PrivatePairExistence
+public import Erdos272.Foundation.StaircaseCertificate
+public import Erdos272.Foundation.StaircaseGeometry
+public import Erdos272.Foundation.StaircaseSupply
+public import Erdos272.Foundation.Staircase249
+public import Erdos272.Foundation.StaircaseTail
+public import Erdos272.Foundation.StaircaseThin
+public import Erdos272.Foundation.ThreeQuarter
+public import Erdos272.Foundation.TwoTraceStrict
+public import Erdos272.Foundation.PrimeCapacity
+public import Erdos272.Foundation.FiveSixths
+
+@[expose] public section
 
 /-!
 Concrete [N] interfaces. The all-N linear omitter theorem now has its

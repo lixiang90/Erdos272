@@ -1,18 +1,22 @@
-import Erdos272.Arithmetic.LightValues209_000
-import Erdos272.Arithmetic.LightValues209_001
-import Erdos272.Arithmetic.LightValues209_002
-import Erdos272.Arithmetic.LightValues209_003
-import Erdos272.Arithmetic.LightValues209_004
-import Erdos272.Arithmetic.LightValues209_005
-import Erdos272.Arithmetic.LightValues209_006
-import Erdos272.Arithmetic.LightValues209_007
-import Erdos272.Arithmetic.LightValues209_008
-import Erdos272.Arithmetic.LightValues209_009
-import Erdos272.Arithmetic.LightValues209_010
-import Erdos272.Arithmetic.LightValues209_011
-import Erdos272.Arithmetic.LightValues209_012
-import Erdos272.Arithmetic.LightValues209_013
-import Erdos272.Arithmetic.LightValues209_014
+module
+
+public import Erdos272.Arithmetic.LightValues209_000
+public import Erdos272.Arithmetic.LightValues209_001
+public import Erdos272.Arithmetic.LightValues209_002
+public import Erdos272.Arithmetic.LightValues209_003
+public import Erdos272.Arithmetic.LightValues209_004
+public import Erdos272.Arithmetic.LightValues209_005
+public import Erdos272.Arithmetic.LightValues209_006
+public import Erdos272.Arithmetic.LightValues209_007
+public import Erdos272.Arithmetic.LightValues209_008
+public import Erdos272.Arithmetic.LightValues209_009
+public import Erdos272.Arithmetic.LightValues209_010
+public import Erdos272.Arithmetic.LightValues209_011
+public import Erdos272.Arithmetic.LightValues209_012
+public import Erdos272.Arithmetic.LightValues209_013
+public import Erdos272.Arithmetic.LightValues209_014
+
+@[expose] public section
 namespace JSP233.LightValues209
 open LightAnalytic209 ResidualCeil208
 noncomputable section

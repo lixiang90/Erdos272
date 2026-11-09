@@ -1,4 +1,9 @@
-import Mathlib.Tactic
+module
+
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+
+@[expose] public section
 
 /-! A continuous endpoint certificate for all prices used in round207,
 including the quadratic saving in the actual root degree.  The proof is

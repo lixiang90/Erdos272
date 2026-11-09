@@ -1,7 +1,12 @@
-import Erdos272.Resources.GlobalBootstrap209
-import Erdos272.Resources.FiniteRecovery209
-import Erdos272.Resources.OriginalTerminal208
-import Erdos272.Global.NonInterval53
+module
+
+public import Erdos272.Resources.GlobalBootstrap209
+public import Erdos272.Resources.FiniteRecovery209
+public import Erdos272.Resources.OriginalTerminal208
+public import Erdos272.Global.NonInterval53
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The same physical endpoints and the same original family pass through
 one actual restoration, uniformly between two million and the global window. -/

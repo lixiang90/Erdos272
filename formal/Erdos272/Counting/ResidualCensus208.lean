@@ -1,5 +1,12 @@
-import Erdos272.Arithmetic.StepCensus208
-import Erdos272.Resources.ResidualSpan208
+module
+
+public import Erdos272.Arithmetic.StepCensus208
+public import Erdos272.Resources.ResidualSpan208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.Order.Floor.Semifield
+
+@[expose] public section
 
 namespace JSP233.ResidualCensus208
 open StepClass208 StepCensus208 ResidualSpan208

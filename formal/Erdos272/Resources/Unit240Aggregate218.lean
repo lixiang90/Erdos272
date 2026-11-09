@@ -1,5 +1,9 @@
-import Erdos272.Resources.Unit240Family218
-import Erdos272.Arithmetic.Unit240RowsChecked218
+module
+
+public import Erdos272.Resources.Unit240Family218
+public import Erdos272.Arithmetic.Unit240RowsChecked218
+
+@[expose] public section
 
 namespace JSP233.Unit240Aggregate218
 open StarCompletion APGeometry

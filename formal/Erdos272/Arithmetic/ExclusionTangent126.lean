@@ -1,7 +1,14 @@
-import Erdos272.Arithmetic.CompletePool126
-import Erdos272.Arithmetic.VolumeTangent125
-import Erdos272.Arithmetic.DivisorMoment122
-import Erdos272.Arithmetic.LogThree126
+module
+
+public import Erdos272.Arithmetic.CompletePool126
+public import Erdos272.Arithmetic.VolumeTangent125
+public import Erdos272.Arithmetic.DivisorMoment122
+public import Erdos272.Arithmetic.LogThree126
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 
 namespace JSP233.ExclusionTangent126
 open SimplexMoment57 DivisorMoment45 DivisorMoment122 VolumeLower125 VolumeTangent125

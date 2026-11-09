@@ -1,4 +1,8 @@
-import Erdos272.Counting.OneSided47
+module
+
+public import Erdos272.Counting.OneSided47
+
+@[expose] public section
 
 /-! Actual preferred witnesses and cropped traces after the actual one-sided envelope. -/
 namespace JSP233.PreparedWitness48

@@ -1,6 +1,11 @@
-import Erdos272.Resources.NativeRestore212
-import Erdos272.Arithmetic.NativeGates213
-import Erdos272.Resources.FewOffRest213
+module
+
+public import Erdos272.Resources.NativeRestore212
+public import Erdos272.Arithmetic.NativeGates213
+public import Erdos272.Resources.FewOffRest213
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.NativeRestore213
 open StarCompletion APGeometry DenseDeletion40
 open LongTerminal35 RestoreTerminal35 TerminalDeficit51 KKRetention32

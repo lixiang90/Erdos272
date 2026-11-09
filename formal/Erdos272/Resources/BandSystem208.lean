@@ -1,4 +1,8 @@
-import Erdos272.Resources.HeavyMenu208
+module
+
+public import Erdos272.Resources.HeavyMenu208
+
+@[expose] public section
 
 namespace JSP233.BandSystem208
 open StarCompletion APGeometry NearAP36 SourceBridge208 ShiftedBlocks208 ClippedWindows208

@@ -1,6 +1,10 @@
-import Erdos272.Resources.FrontierSum208
-import Erdos272.Arithmetic.FrontierDensity208
-import Erdos272.Arithmetic.HarmonicLog55
+module
+
+public import Erdos272.Resources.FrontierSum208
+public import Erdos272.Arithmetic.FrontierDensity208
+public import Erdos272.Arithmetic.HarmonicLog55
+
+@[expose] public section
 
 /-! Scalar closure for the weaker covariance route using only D(c)>=0.
 No family cardinality or geometry oracle is assumed.  Finite row and

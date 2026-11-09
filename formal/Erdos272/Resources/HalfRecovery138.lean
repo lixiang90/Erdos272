@@ -1,7 +1,11 @@
-import Erdos272.Resources.LocalReduction138
-import Erdos272.Resources.HalfRecovery133
-import Erdos272.Arithmetic.HalfWindowCertificate137
-import Erdos272.Resources.RestoreDense137
+module
+
+public import Erdos272.Resources.LocalReduction138
+public import Erdos272.Resources.HalfRecovery133
+public import Erdos272.Arithmetic.HalfWindowCertificate137
+public import Erdos272.Resources.RestoreDense137
+
+@[expose] public section
 namespace JSP233.HalfRecovery138
 open StarCompletion APGeometry CoprimeDensity52 MiddleJoint51 MiddleDeficit52
 open PreparedClasses50 APPrepare49 PreparedWitness48 MiddleCoordinates51

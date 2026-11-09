@@ -1,5 +1,11 @@
-import Erdos272.Arithmetic.HalfPrefix133
-import Erdos272.Arithmetic.WindowProfile131
+module
+
+public import Erdos272.Arithmetic.HalfPrefix133
+public import Erdos272.Arithmetic.WindowProfile131
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.HalfWindow133
 open StarCompletion RestrictedWitness44 DivisorMoment45 HarmonicAbel29

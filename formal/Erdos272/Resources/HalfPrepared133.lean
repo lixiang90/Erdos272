@@ -1,5 +1,9 @@
-import Erdos272.Traces.HalfBad133
-import Erdos272.Global.APPrepare49
+module
+
+public import Erdos272.Traces.HalfBad133
+public import Erdos272.Global.APPrepare49
+
+@[expose] public section
 
 namespace JSP233.HalfPrepared133
 open StarCompletion RestrictedWitness44 HalfBad133

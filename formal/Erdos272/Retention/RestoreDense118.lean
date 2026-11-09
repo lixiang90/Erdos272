@@ -1,7 +1,12 @@
-import Erdos272.Retention.RestoreDense117
-import Erdos272.Retention.Dense12Fringe118
-import Erdos272.Retention.CrossBad12_118
-import Erdos272.Resources.ProfileArms118
+module
+
+public import Erdos272.Retention.RestoreDense117
+public import Erdos272.Retention.Dense12Fringe118
+public import Erdos272.Retention.CrossBad12_118
+public import Erdos272.Resources.ProfileArms118
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Restore the same original family with a genuine second trace grid.
 The true shortest omitted member selects all three exhaustive size leaves.

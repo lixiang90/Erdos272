@@ -1,6 +1,11 @@
-import Erdos272.Global.DenseDeletion40
-import Erdos272.Counting.TerminalDeficit51
-import Mathlib.Data.Finset.Prod
+module
+
+public import Erdos272.Global.DenseDeletion40
+public import Erdos272.Counting.TerminalDeficit51
+public import Mathlib.Data.Finset.Prod
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 /-! All ordered pairs of each actual dense crooked member are counted.
 The capacity at each ground pair is inherited from the two-point AP anchor

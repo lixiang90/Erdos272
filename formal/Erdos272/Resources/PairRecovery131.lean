@@ -1,5 +1,10 @@
-import Erdos272.Global.Global107p277m130
-import Erdos272.Arithmetic.HarmonicCorrect118
+module
+
+public import Erdos272.Global.Global107p277m130
+public import Erdos272.Arithmetic.HarmonicCorrect118
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 namespace JSP233.PairRecovery131
 open StarCompletion APGeometry CoprimeDensity52 MiddleJoint51 MiddleDeficit52

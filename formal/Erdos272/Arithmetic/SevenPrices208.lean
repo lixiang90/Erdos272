@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.ReciprocalPrice208
-import Erdos272.Arithmetic.APCoupling208
+module
+
+public import Erdos272.Arithmetic.ReciprocalPrice208
+public import Erdos272.Arithmetic.APCoupling208
+
+@[expose] public section
 
 /-! Exact continuous seven-price arithmetic for the last mathematical window.
 These constants are kernel checked as rational numbers. The actual source and

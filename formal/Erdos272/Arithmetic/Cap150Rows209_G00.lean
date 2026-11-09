@@ -1,14 +1,18 @@
-import Erdos272.Arithmetic.Cap150Costs209_G023
-import Erdos272.Arithmetic.Cap150Costs209_G024
-import Erdos272.Arithmetic.Cap150Costs209_G025
-import Erdos272.Arithmetic.Cap150Costs209_G026
-import Erdos272.Arithmetic.Cap150Costs209_G027
-import Erdos272.Arithmetic.Cap150Costs209_G028
-import Erdos272.Arithmetic.Cap150Costs209_G029
-import Erdos272.Arithmetic.CleanupFastSound208
-import Erdos272.Arithmetic.CleanupMachineSound208
-import Erdos272.Arithmetic.CleanupRecipes208
-import Erdos272.Arithmetic.CleanupSegments208
+module
+
+public import Erdos272.Arithmetic.Cap150Costs209_G023
+public import Erdos272.Arithmetic.Cap150Costs209_G024
+public import Erdos272.Arithmetic.Cap150Costs209_G025
+public import Erdos272.Arithmetic.Cap150Costs209_G026
+public import Erdos272.Arithmetic.Cap150Costs209_G027
+public import Erdos272.Arithmetic.Cap150Costs209_G028
+public import Erdos272.Arithmetic.Cap150Costs209_G029
+public import Erdos272.Arithmetic.CleanupFastSound208
+public import Erdos272.Arithmetic.CleanupMachineSound208
+public import Erdos272.Arithmetic.CleanupRecipes208
+public import Erdos272.Arithmetic.CleanupSegments208
+
+@[expose] public section
 namespace JSP233.Cap150Rows209_G00
 open CleanupEval208 CleanupMachineSound208 CleanupRecipes208
 set_option maxHeartbeats 0

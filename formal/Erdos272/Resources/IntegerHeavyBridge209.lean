@@ -1,5 +1,10 @@
-import Erdos272.Arithmetic.IntegerUniformHeavyData209
-import Erdos272.Resources.FullBandLinear209
+module
+
+public import Erdos272.Arithmetic.IntegerUniformHeavyData209
+public import Erdos272.Resources.FullBandLinear209
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.IntegerHeavyBridge209
 open StarCompletion APGeometry SevenFamily208

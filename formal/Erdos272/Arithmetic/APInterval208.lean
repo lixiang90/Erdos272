@@ -1,7 +1,11 @@
-import Erdos272.Counting.ActualAPCount208
-import Erdos272.Arithmetic.PureSource208
-import Mathlib.Algebra.BigOperators.Intervals
-import Mathlib.Tactic
+module
+
+public import Erdos272.Counting.ActualAPCount208
+public import Erdos272.Arithmetic.PureSource208
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! # Arithmetic conversion of the actual AP bound
 

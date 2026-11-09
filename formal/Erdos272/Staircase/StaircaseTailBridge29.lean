@@ -1,7 +1,11 @@
-import Erdos272.Foundation.StaircaseTail
-import Erdos272.Arithmetic.HarmonicAbel
-import Erdos272.Arithmetic.MixedFloor29
-import Mathlib.Algebra.BigOperators.Intervals
+module
+
+public import Erdos272.Foundation.StaircaseTail
+public import Erdos272.Arithmetic.HarmonicAbel
+public import Erdos272.Arithmetic.MixedFloor29
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! Actual staircase geometry for the arithmetic-to-analytic tail bridge.
 The arithmetic estimates are supplied by the separately checked floor and

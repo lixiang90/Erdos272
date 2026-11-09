@@ -1,4 +1,9 @@
-import Erdos272.Arithmetic.VolumeStep125
+module
+
+public import Erdos272.Arithmetic.VolumeStep125
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 
 /-! An actual all-quotient tangent lower bound for the divisor third moment.
 The full real-floor volume lower bound is proved by actual recursion in

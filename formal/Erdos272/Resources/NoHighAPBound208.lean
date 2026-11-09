@@ -1,5 +1,9 @@
-import Erdos272.Resources.NoHigh208
-import Erdos272.Arithmetic.TwoSidedMoment62
+module
+
+public import Erdos272.Resources.NoHigh208
+public import Erdos272.Arithmetic.TwoSidedMoment62
+
+@[expose] public section
 
 /-! # The one-sided local AP-trace loss
 

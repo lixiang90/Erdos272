@@ -1,4 +1,10 @@
-import Erdos272.Arithmetic.UniformLow208
+module
+
+public import Erdos272.Arithmetic.UniformLow208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! Closed step polynomials and their exact cubic differences. -/
 namespace JSP233.UniformPolynomial208

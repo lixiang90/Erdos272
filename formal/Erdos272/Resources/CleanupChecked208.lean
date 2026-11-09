@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.CleanupEval208
-import Mathlib.Algebra.BigOperators.Fin
+module
+
+public import Erdos272.Arithmetic.CleanupEval208
+public import Mathlib.Algebra.BigOperators.Fin
+
+@[expose] public section
 
 namespace JSP233.CleanupChecked208
 open CleanupEval208 CleanupNet208

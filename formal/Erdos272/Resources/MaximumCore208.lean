@@ -1,5 +1,9 @@
-import Erdos272.Resources.SourceBridge208
-import Erdos272.Resources.CoreBlock208
+module
+
+public import Erdos272.Resources.SourceBridge208
+public import Erdos272.Resources.CoreBlock208
+
+@[expose] public section
 
 namespace JSP233.MaximumCore208
 open StarCompletion APGeometry SourceBridge208 NearAP36 CoreBlock208

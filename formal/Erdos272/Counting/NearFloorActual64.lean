@@ -1,5 +1,9 @@
-import Erdos272.Counting.NearFloorDyadic64
-import Erdos272.Counting.CrossBand57
+module
+
+public import Erdos272.Counting.NearFloorDyadic64
+public import Erdos272.Counting.CrossBand57
+
+@[expose] public section
 
 namespace JSP233.NearFloorActual64
 open NearFloorAnalytic64 NearFloorDyadic64 HarmonicAbel29

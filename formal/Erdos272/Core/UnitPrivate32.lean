@@ -1,5 +1,9 @@
-import Erdos272.Core.SinglePrivate32
-import Mathlib.Data.Int.Interval
+module
+
+public import Erdos272.Core.SinglePrivate32
+public import Mathlib.Data.Int.Interval
+
+@[expose] public section
 
 /-! The complete unit-normalized singleton intrinsic-pair classification. -/
 namespace JSP233.UnitPrivate32

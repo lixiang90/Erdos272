@@ -1,6 +1,10 @@
-import Erdos272.Resources.RawEndpoint113
-import Erdos272.Retention.CeilFringe113
-import Erdos272.Counting.TerminalDeficit51
+module
+
+public import Erdos272.Resources.RawEndpoint113
+public import Erdos272.Retention.CeilFringe113
+public import Erdos272.Counting.TerminalDeficit51
+
+@[expose] public section
 
 /-! Readd the root-bearing deleted members before estimating the width.
 

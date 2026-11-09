@@ -1,4 +1,8 @@
-import Erdos272.Resources.ClippedWindows208
+module
+
+public import Erdos272.Resources.ClippedWindows208
+
+@[expose] public section
 
 namespace JSP233.OrdinaryUnion208
 open StarCompletion APGeometry NearAP36 ClippedWindows208

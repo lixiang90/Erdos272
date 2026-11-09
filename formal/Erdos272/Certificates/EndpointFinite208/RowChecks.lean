@@ -1,4 +1,8 @@
-import Erdos272.Counting.EndpointGate208
+module
+
+public import Erdos272.Counting.EndpointGate208
+
+@[expose] public section
 
 /-! Assemble row certificates without reducing an entire block at once. -/
 namespace JSP233.EndpointFinite208

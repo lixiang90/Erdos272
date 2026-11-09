@@ -1,6 +1,10 @@
-import Erdos272.Global.InitialPreparation218
-import Erdos272.Resources.RecoveryBounds218
-import Erdos272.Resources.OriginalTerminal218
+module
+
+public import Erdos272.Global.InitialPreparation218
+public import Erdos272.Resources.RecoveryBounds218
+public import Erdos272.Resources.OriginalTerminal218
+
+@[expose] public section
 
 /-! Complete rooted recovery on the original family.  All geometry, omitted
 families, density upgrades and terminal plans are constructed internally. -/

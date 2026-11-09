@@ -1,4 +1,11 @@
-import Erdos272.Counting.AlignedResidue137
+module
+
+public import Erdos272.Counting.AlignedResidue137
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 namespace JSP233.AlignedLinear137
 open StarCompletion APGeometry Relative13Fringe116 AlignedResidue137 ResidueInterval137
 open scoped Classical BigOperators

@@ -1,4 +1,8 @@
-import Erdos272.Certificates.LightCeilFast209
+module
+
+public import Erdos272.Certificates.LightCeilFast209
+
+@[expose] public section
 namespace JSP233.LightValues209_012
 open LightAnalytic209 ResidualCeil208
 set_option maxHeartbeats 0

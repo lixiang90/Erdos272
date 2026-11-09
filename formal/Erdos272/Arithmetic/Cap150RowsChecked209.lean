@@ -1,13 +1,17 @@
-import Erdos272.Arithmetic.Cap150Rows209_G00
-import Erdos272.Arithmetic.Cap150Rows209_G01
-import Erdos272.Arithmetic.Cap150Rows209_G02
-import Erdos272.Arithmetic.Cap150Rows209_G03
-import Erdos272.Arithmetic.Cap150Rows209_G04
-import Erdos272.Arithmetic.Cap150Rows209_G05
-import Erdos272.Arithmetic.Cap150Rows209_G06
-import Erdos272.Arithmetic.Cap150Rows209_G07
-import Erdos272.Arithmetic.Cap150Rows209_G08
-import Erdos272.Arithmetic.Cap150Rows209_G09
+module
+
+public import Erdos272.Arithmetic.Cap150Rows209_G00
+public import Erdos272.Arithmetic.Cap150Rows209_G01
+public import Erdos272.Arithmetic.Cap150Rows209_G02
+public import Erdos272.Arithmetic.Cap150Rows209_G03
+public import Erdos272.Arithmetic.Cap150Rows209_G04
+public import Erdos272.Arithmetic.Cap150Rows209_G05
+public import Erdos272.Arithmetic.Cap150Rows209_G06
+public import Erdos272.Arithmetic.Cap150Rows209_G07
+public import Erdos272.Arithmetic.Cap150Rows209_G08
+public import Erdos272.Arithmetic.Cap150Rows209_G09
+
+@[expose] public section
 namespace JSP233.Cap150RowsChecked209
 open CleanupEval208 CleanupMachineSound208 CleanupRecipes208
 theorem row242_001_facts : ChunkFacts (toRow CleanupRecipes208.row242_001) 1 row242_001_end (toTotals row242_001_expected) := Cap150Rows209_G00.row242_001_facts

@@ -1,6 +1,12 @@
-import Erdos272.Resources.BandCredit208
-import Erdos272.Resources.NearResidual208
-import Erdos272.Resources.BandSystem208
+module
+
+public import Erdos272.Resources.BandCredit208
+public import Erdos272.Resources.NearResidual208
+public import Erdos272.Resources.BandSystem208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.CrossBandCredit208
 open StarCompletion APGeometry NearAP36 SourceBridge208 ShiftedBlocks208

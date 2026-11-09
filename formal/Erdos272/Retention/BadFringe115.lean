@@ -1,4 +1,8 @@
-import Erdos272.Retention.RelativeFringe114
+module
+
+public import Erdos272.Retention.RelativeFringe114
+
+@[expose] public section
 
 /-! Short interval traces must use almost all exterior points.  If both real
 exterior arms are sufficiently populated, two such actual sources would have

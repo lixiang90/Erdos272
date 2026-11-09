@@ -1,4 +1,8 @@
-import Erdos272.Capacity.AnchorCapacity33
+module
+
+public import Erdos272.Capacity.AnchorCapacity33
+
+@[expose] public section
 
 /-! Actual pure-trace tail choices and same-side collision-class exclusion.
 No collision tree or numerical capacity is assumed. -/

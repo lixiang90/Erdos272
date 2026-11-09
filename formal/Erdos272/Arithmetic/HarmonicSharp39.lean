@@ -1,4 +1,8 @@
-import Erdos272.Resources.ShortPayment37
+module
+
+public import Erdos272.Resources.ShortPayment37
+
+@[expose] public section
 
 /-! A fully finite harmonic estimate.  Each dyadic interval beyond 64 is
 partitioned into 64 equal integer blocks and bounded by the genuine rational

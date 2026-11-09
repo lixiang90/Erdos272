@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.CleanupMachine208
-import Erdos272.Resources.CleanupChecked208
+module
+
+public import Erdos272.Arithmetic.CleanupMachine208
+public import Erdos272.Resources.CleanupChecked208
+
+@[expose] public section
 
 namespace JSP233.CleanupMachineSound208
 set_option maxHeartbeats 0

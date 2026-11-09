@@ -1,5 +1,10 @@
-import Erdos272.Global.HybridGlobal208
-import Erdos272.Global.IntegerGlobalCases209
+module
+
+public import Erdos272.Global.HybridGlobal208
+public import Erdos272.Global.IntegerGlobalCases209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.LowHighRoot209
 open StarCompletion APGeometry DenseDeletion40 Density41 SparseSmall39

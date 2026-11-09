@@ -1,7 +1,13 @@
-import Erdos272.Arithmetic.PairHyperbolaExact131
-import Erdos272.Arithmetic.D1Analytic131
-import Erdos272.Arithmetic.D1Sharper131
-import Erdos272.Arithmetic.PrefixSuper127
+module
+
+public import Erdos272.Arithmetic.PairHyperbolaExact131
+public import Erdos272.Arithmetic.D1Analytic131
+public import Erdos272.Arithmetic.D1Sharper131
+public import Erdos272.Arithmetic.PrefixSuper127
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.PairWeighted131
 open SimplexMoment57 PairHyperbola131 PairHyperbolaExact131

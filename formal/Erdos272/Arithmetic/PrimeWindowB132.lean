@@ -1,19 +1,25 @@
-import Erdos272.Certificates.PrimeWindowB132Block00
-import Erdos272.Certificates.PrimeWindowB132Block01
-import Erdos272.Certificates.PrimeWindowB132Block02
-import Erdos272.Certificates.PrimeWindowB132Block03
-import Erdos272.Certificates.PrimeWindowB132Block04
-import Erdos272.Certificates.PrimeWindowB132Block05
-import Erdos272.Certificates.PrimeWindowB132Block06
-import Erdos272.Certificates.PrimeWindowB132Block07
-import Erdos272.Certificates.PrimeWindowB132Block08
-import Erdos272.Certificates.PrimeWindowB132Block09
-import Erdos272.Certificates.PrimeWindowB132Block10
-import Erdos272.Certificates.PrimeWindowB132Block11
-import Erdos272.Certificates.CoefficientSum132
-import Erdos272.Arithmetic.ScaleWindow132
-import Erdos272.Arithmetic.ScaleLogs132
-import Erdos272.Arithmetic.WindowProfile131
+module
+
+public import Erdos272.Certificates.PrimeWindowB132Block00
+public import Erdos272.Certificates.PrimeWindowB132Block01
+public import Erdos272.Certificates.PrimeWindowB132Block02
+public import Erdos272.Certificates.PrimeWindowB132Block03
+public import Erdos272.Certificates.PrimeWindowB132Block04
+public import Erdos272.Certificates.PrimeWindowB132Block05
+public import Erdos272.Certificates.PrimeWindowB132Block06
+public import Erdos272.Certificates.PrimeWindowB132Block07
+public import Erdos272.Certificates.PrimeWindowB132Block08
+public import Erdos272.Certificates.PrimeWindowB132Block09
+public import Erdos272.Certificates.PrimeWindowB132Block10
+public import Erdos272.Certificates.PrimeWindowB132Block11
+public import Erdos272.Certificates.CoefficientSum132
+public import Erdos272.Arithmetic.ScaleWindow132
+public import Erdos272.Arithmetic.ScaleLogs132
+public import Erdos272.Arithmetic.WindowProfile131
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Tactic.NormNum.Prime
+
+@[expose] public section
 namespace JSP233.PrimeWindowB132
 open Blocks
 open PrefixState131 PrefixTable131 PrefixTable132 ScaleLogs132 PairWindow131 ScaleWindow132 WindowProfile131 PairRecovery131 SimplexMoment57 PrefixLog131

@@ -1,4 +1,9 @@
-import Erdos272.Resources.IntegerUniformSystem209
+module
+
+public import Erdos272.Resources.IntegerUniformSystem209
+public import Mathlib.Data.List.GetD
+
+@[expose] public section
 
 namespace JSP233.IntegerUniformRows209
 open StarCompletion APGeometry SourceBridge208 SevenFamily208 CrossBandCredit208

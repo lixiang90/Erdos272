@@ -1,4 +1,13 @@
-import Mathlib.Tactic
+module
+
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! Finite reciprocal-square and triangular sums for the terminal gcd bound.
 All quantities are finite; no numerical or asymptotic oracle is assumed. -/

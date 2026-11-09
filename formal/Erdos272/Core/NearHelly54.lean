@@ -1,5 +1,11 @@
-import Erdos272.Core.NearAP36
-import Erdos272.Counting.BandAggregation34
+module
+
+public import Erdos272.Core.NearAP36
+public import Erdos272.Counting.BandAggregation34
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual near-AP cores of arbitrary member width, with a one-dimensional
 Helly bound for the genuine heavy start-code windows. -/

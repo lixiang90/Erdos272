@@ -1,7 +1,12 @@
-import Erdos272.Arithmetic.HalfPrefixTable138
-import Erdos272.Arithmetic.PrefixLog131
-import Erdos272.Arithmetic.PairWindow131
-import Erdos272.Arithmetic.HalfWindowCertificate137
+module
+
+public import Erdos272.Arithmetic.HalfPrefixTable138
+public import Erdos272.Arithmetic.PrefixLog131
+public import Erdos272.Arithmetic.PairWindow131
+public import Erdos272.Arithmetic.HalfWindowCertificate137
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.HalfIntervalC138
 open PrefixState131 PrefixTable131 HalfPrefixTable133 HalfPrefixTable134 HalfPrefixTable135 HalfPrefixTable136 HalfPrefixTable137 HalfPrefixTable138 PrefixLog131 PairWindow131 WindowProfile131 HalfWindow133 HalfWindowCertificate137 HalfRecovery133 PairRecovery131 SimplexMoment57
 open scoped Classical BigOperators

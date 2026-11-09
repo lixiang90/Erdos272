@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.LightPhaseAnalytic209
+module
+
+public import Erdos272.Arithmetic.LightPhaseAnalytic209
+
+@[expose] public section
 
 namespace JSP233.LightCoefficient209
 open LightPhaseAnalytic209

@@ -1,5 +1,10 @@
-import Erdos272.Resources.ResidualStratum208
-import Erdos272.Resources.ResidualWeights208
+module
+
+public import Erdos272.Resources.ResidualStratum208
+public import Erdos272.Resources.ResidualWeights208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.ResidualPrice208
 open StarCompletion APGeometry NearAP36 ResidualSpan208 ResidualStratum208

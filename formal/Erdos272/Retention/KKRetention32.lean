@@ -1,4 +1,8 @@
-import Erdos272.Resources.JointResources31
+module
+
+public import Erdos272.Resources.JointResources31
+
+@[expose] public section
 
 /-! Actual AP-retaining deletion bookkeeping. This module does not assert an
 external KK reduction or an omitter counting bound. -/

@@ -1,4 +1,9 @@
-import Erdos272.Geometry.ResidueInterval137
+module
+
+public import Erdos272.Geometry.ResidueInterval137
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.AlignedResidue137
 open StarCompletion APGeometry ThinFringe33 KKRetention32 Restore33
 open Relative13Fringe116 DenseAligned117 DensePhase137 ResidueInterval137

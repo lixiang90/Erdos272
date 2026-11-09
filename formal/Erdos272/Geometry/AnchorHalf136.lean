@@ -1,5 +1,9 @@
-import Erdos272.Geometry.AnchorPrimitive136
-import Erdos272.Geometry.AnchorPacking136
+module
+
+public import Erdos272.Geometry.AnchorPrimitive136
+public import Erdos272.Geometry.AnchorPacking136
+
+@[expose] public section
 namespace JSP233.AnchorHalf136
 open StarCompletion APGeometry FarSlot112 FarCapacity112 LongTerminal35
 open AnchorPrimitive136 AnchorPacking136

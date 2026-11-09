@@ -1,8 +1,13 @@
-import Erdos272.Resources.FewOff212
-import Erdos272.Resources.FewOffGeometry213
-import Erdos272.Arithmetic.FewOffGates213
-import Erdos272.Resources.AlignedPlans213
-import Erdos272.Resources.ActualGrid213
+module
+
+public import Erdos272.Resources.FewOff212
+public import Erdos272.Resources.FewOffGeometry213
+public import Erdos272.Arithmetic.FewOffGates213
+public import Erdos272.Resources.AlignedPlans213
+public import Erdos272.Resources.ActualGrid213
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.FewOff213
 open StarCompletion APGeometry DenseDeletion40
 open ActualGrid212 FewOffGeometry212 FewOffGates212 OffResidue44 AlignedPlans212

@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.CappedCeil209
+module
+
+public import Erdos272.Arithmetic.CappedCeil209
+
+@[expose] public section
 namespace JSP233.CappedValues209
 set_option maxHeartbeats 0
 set_option maxRecDepth 10000

@@ -1,5 +1,9 @@
-import Erdos272.Foundation.EightAPStencil
-import Erdos272.Foundation.PrivateUnion
+module
+
+public import Erdos272.Foundation.EightAPStencil
+public import Erdos272.Foundation.PrivateUnion
+
+@[expose] public section
 
 /-!
 The dyadic eight-member stencil payment theorem.

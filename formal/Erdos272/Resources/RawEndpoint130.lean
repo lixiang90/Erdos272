@@ -1,5 +1,9 @@
-import Erdos272.Resources.RawEndpoint121
-import Erdos272.Arithmetic.ProfilePayment130
+module
+
+public import Erdos272.Resources.RawEndpoint121
+public import Erdos272.Arithmetic.ProfilePayment130
+
+@[expose] public section
 
 /-! Round129: direct whole-prefix fifteen-term moment profile. -/
 namespace JSP233.RawEndpoint130

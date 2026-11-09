@@ -1,5 +1,9 @@
-import Erdos272.Resources.FewOffGeometry212
-import Erdos272.Resources.ActualGrid213
+module
+
+public import Erdos272.Resources.FewOffGeometry212
+public import Erdos272.Resources.ActualGrid213
+
+@[expose] public section
 namespace JSP233.FewOffGeometry213
 open StarCompletion APGeometry ActualGrid212 FewOffGeometry212
 open scoped Classical BigOperators

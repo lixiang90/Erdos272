@@ -1,5 +1,12 @@
-import Erdos272.Arithmetic.Hyperbola131
-import Erdos272.Arithmetic.HarmonicWindow131
+module
+
+public import Erdos272.Arithmetic.Hyperbola131
+public import Erdos272.Arithmetic.HarmonicWindow131
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.Order.Floor.Semifield
+
+@[expose] public section
 namespace JSP233.D1Analytic131
 open Hyperbola131 HarmonicWindow131 SimplexMoment57 HarmonicAbel29
 open Set MeasureTheory intervalIntegral

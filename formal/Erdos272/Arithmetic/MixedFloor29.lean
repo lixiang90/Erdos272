@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.TotientFloor
-import Mathlib.Algebra.BigOperators.Ring.Finset
+module
+
+public import Erdos272.Arithmetic.TotientFloor
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! The actual mixed primitive supply, from a finite Moebius sieve.
 The endpoint a=r is excluded by the original geometric definition and costs

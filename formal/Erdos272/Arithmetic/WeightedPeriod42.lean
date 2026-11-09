@@ -1,4 +1,9 @@
-import Erdos272.Arithmetic.PrimePeriod41
+module
+
+public import Erdos272.Arithmetic.PrimePeriod41
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Unbounded short-band schedules and weighted sums from actual finite seeds. -/
 namespace JSP233.WeightedPeriod42

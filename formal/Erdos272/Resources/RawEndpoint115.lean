@@ -1,4 +1,9 @@
-import Erdos272.Resources.RawEndpoint114
+module
+
+public import Erdos272.Resources.RawEndpoint114
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Keep the actual left/right quadratic profile before taking its worst ray.
 The only extra readded-family loss is the actual deleted-avoider fringe.

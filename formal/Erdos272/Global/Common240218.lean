@@ -1,4 +1,9 @@
-import Erdos272.Global.Common240216
+module
+
+public import Erdos272.Global.Common240216
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! The minimum240 classification is valid down to its actual small-kernel
 cutoff.  Genuine source fees and the price are still explicit in this module.

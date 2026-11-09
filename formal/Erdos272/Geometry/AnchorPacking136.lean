@@ -1,4 +1,8 @@
-import Erdos272.Resources.FarCapacity112
+module
+
+public import Erdos272.Resources.FarCapacity112
+
+@[expose] public section
 namespace JSP233.AnchorPacking136
 open scoped Classical
 noncomputable section

@@ -1,4 +1,10 @@
-import Erdos272.Counting.ResidualTwoCensus208
+module
+
+public import Erdos272.Counting.ResidualTwoCensus208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.CoarseCensus209
 open ResidualSpan208 ResidualCensus208 ResidualPrice208 ResidualTwoCensus208 StepClass208

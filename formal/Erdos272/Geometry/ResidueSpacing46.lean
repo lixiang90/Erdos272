@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.DivisorMoment45
-import Mathlib.Data.Int.Interval
+module
+
+public import Erdos272.Arithmetic.DivisorMoment45
+public import Mathlib.Data.Int.Interval
+
+@[expose] public section
 
 /-! Actual cardinality payment for residue classes with step at least three. -/
 namespace JSP233.ResidueSpacing46

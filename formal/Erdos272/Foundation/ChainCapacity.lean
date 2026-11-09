@@ -1,6 +1,10 @@
-import Erdos272.Foundation.ChainGeometry
-import Erdos272.Foundation.PeelingCapacity
-import Erdos272.Foundation.APGeometry
+module
+
+public import Erdos272.Foundation.ChainGeometry
+public import Erdos272.Foundation.PeelingCapacity
+public import Erdos272.Foundation.APGeometry
+
+@[expose] public section
 
 namespace JSP233.ChainCapacity
 

@@ -1,4 +1,8 @@
-import Erdos272.Core.CoreSeven52
+module
+
+public import Erdos272.Core.CoreSeven52
+
+@[expose] public section
 
 /-! The same physical uniform-seven exterior witnesses with an explicit29-width gate.
 The actual AP core needs28; the coprime prefix contradiction needs only29, not42.

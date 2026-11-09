@@ -1,5 +1,11 @@
-import Erdos272.Arithmetic.StepWeightMoment208
-import Erdos272.Arithmetic.SigmaConvolution208
+module
+
+public import Erdos272.Arithmetic.StepWeightMoment208
+public import Erdos272.Arithmetic.SigmaConvolution208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 
 /-! The finite W bound and the exact short tail control every physical prefix. -/
 namespace JSP233.UniformMoment208

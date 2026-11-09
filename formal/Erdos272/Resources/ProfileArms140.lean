@@ -1,4 +1,9 @@
-import Erdos272.Resources.ProfileArms118
+module
+
+public import Erdos272.Resources.ProfileArms118
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The same complete actual endpoint profile pays both physical arm gates
 for width369/10 with6000-scaled physical arm slack. The actual dense11 minimum and a real short source justify every subtraction. -/

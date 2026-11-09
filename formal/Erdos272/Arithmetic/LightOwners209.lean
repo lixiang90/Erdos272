@@ -1,5 +1,10 @@
-import Erdos272.Arithmetic.StepCensus208
-import Erdos272.Arithmetic.PrefixAbel208
+module
+
+public import Erdos272.Arithmetic.StepCensus208
+public import Erdos272.Arithmetic.PrefixAbel208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Periodic owner masks and exact integer prefix-discrepancy certificates. -/
 namespace JSP233.LightOwners209

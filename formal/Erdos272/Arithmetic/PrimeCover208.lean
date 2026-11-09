@@ -1,4 +1,9 @@
-import Erdos272.Arithmetic.TotientSieveFast208
+module
+
+public import Erdos272.Arithmetic.TotientSieveFast208
+public import Mathlib.Tactic.NormNum.Prime
+
+@[expose] public section
 
 /-! A bounded prime oracle for the 32753-entry SPF lookup.  The 42 small
 primes and their coverage are proved by ordinary kernel-checked arithmetic.

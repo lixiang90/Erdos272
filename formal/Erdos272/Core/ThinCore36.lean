@@ -1,7 +1,11 @@
-import Erdos272.Capacity.StepHall33
-import Mathlib.Data.Nat.Log
-import Mathlib.Data.Nat.Totient
-import Mathlib.Data.Finset.Max
+module
+
+public import Erdos272.Capacity.StepHall33
+public import Mathlib.Data.Nat.Log
+public import Mathlib.Data.Nat.Totient
+public import Mathlib.Data.Finset.Max
+
+@[expose] public section
 
 /-! Arithmetic and actual long-row matching from the physical long-core
 condition. No totient supply or Hall premise is assumed in the final bridge. -/

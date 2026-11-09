@@ -1,8 +1,12 @@
-import Erdos272.Foundation.StarCompletion
-import Erdos272.Foundation.PrivateUnion
-import Mathlib.Data.Int.GCD
-import Mathlib.Data.Int.Interval
-import Mathlib.Data.Finset.Max
+module
+
+public import Erdos272.Foundation.StarCompletion
+public import Erdos272.Foundation.PrivateUnion
+public import Mathlib.Data.Int.GCD
+public import Mathlib.Data.Int.Interval
+public import Mathlib.Data.Finset.Max
+
+@[expose] public section
 
 /-! Arithmetic geometry of actual finite integer arithmetic progressions. -/
 

@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.BatchSourceBlocks208
+module
+
+public import Erdos272.Arithmetic.BatchSourceBlocks208
+
+@[expose] public section
 
 /-! For physical sizes beyond twice the defect range, every nonzero
 multiplicity is simply the defect. The checker below is proved equal to the

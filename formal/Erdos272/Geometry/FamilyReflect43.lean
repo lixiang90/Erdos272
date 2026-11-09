@@ -1,5 +1,9 @@
-import Erdos272.Geometry.Reflect37
-import Erdos272.Global.DenseDeletion40
+module
+
+public import Erdos272.Geometry.Reflect37
+public import Erdos272.Global.DenseDeletion40
+
+@[expose] public section
 
 /-! Reflection of the complete physical family, including native deletion. -/
 namespace JSP233.FamilyReflect43

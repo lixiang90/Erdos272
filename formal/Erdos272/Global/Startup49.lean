@@ -1,8 +1,12 @@
-import Erdos272.Resources.WeightedTail39
-import Erdos272.Retention.ThinFringe38
-import Erdos272.Arithmetic.PrimorialRatio39
-import Erdos272.Global.SparseRoot49
-import Mathlib.Data.Nat.Sqrt
+module
+
+public import Erdos272.Resources.WeightedTail39
+public import Erdos272.Retention.ThinFringe38
+public import Erdos272.Arithmetic.PrimorialRatio39
+public import Erdos272.Global.SparseRoot49
+public import Mathlib.Data.Nat.Sqrt
+
+@[expose] public section
 
 /-! Actual q49 cutoff and r28 recovery arithmetic. -/
 namespace JSP233.Startup49

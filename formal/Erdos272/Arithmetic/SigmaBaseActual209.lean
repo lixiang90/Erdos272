@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.LowFactorSound209
-import Erdos272.Arithmetic.SigmaBaseCorrect209
+module
+
+public import Erdos272.Arithmetic.LowFactorSound209
+public import Erdos272.Arithmetic.SigmaBaseCorrect209
+
+@[expose] public section
 namespace JSP233.SigmaBaseActual209
 set_option maxHeartbeats 0
 

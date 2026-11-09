@@ -1,4 +1,12 @@
-import Erdos272.Arithmetic.SourceLookupFast208
+module
+
+public import Erdos272.Arithmetic.SourceLookupFast208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Mathlib.Basic.Real.Basic
+
+@[expose] public section
 
 /-! Integer directed-rounding certificate for every finite totient prefix.
 Block endpoints are part of the kernel check, so concatenating certificates

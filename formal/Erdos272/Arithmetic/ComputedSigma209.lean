@@ -1,5 +1,10 @@
-import Erdos272.Arithmetic.SigmaSieve209
-import Erdos272.Arithmetic.ForcedCheck209
+module
+
+public import Erdos272.Arithmetic.SigmaSieve209
+public import Erdos272.Arithmetic.ForcedCheck209
+public import Mathlib.Tactic.NormNum.Prime
+
+@[expose] public section
 namespace JSP233.ComputedSigma209
 set_option maxHeartbeats 0
 

@@ -1,6 +1,12 @@
-import Erdos272.Arithmetic.LightAnalytic209
-import Erdos272.Arithmetic.LightCoefficient209
-import Erdos272.Arithmetic.ResidualCeil208
+module
+
+public import Erdos272.Arithmetic.LightAnalytic209
+public import Erdos272.Arithmetic.LightCoefficient209
+public import Erdos272.Arithmetic.ResidualCeil208
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.LightCeil209
 open LightPhaseAnalytic209 LightAnalytic209 ResidualCeil208

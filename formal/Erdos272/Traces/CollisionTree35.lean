@@ -1,6 +1,10 @@
-import Erdos272.Capacity.AnchorCapacity33
-import Mathlib.Order.Partition.Finpartition
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
+module
+
+public import Erdos272.Capacity.AnchorCapacity33
+public import Mathlib.Order.Partition.Finpartition
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+
+@[expose] public section
 
 /-! Finite global-component collision decomposition.
 The construction starts from any actual finpartition, selects a maximal-rank

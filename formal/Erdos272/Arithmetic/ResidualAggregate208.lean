@@ -1,4 +1,9 @@
-import Erdos272.Resources.ResidualWeights208
+module
+
+public import Erdos272.Resources.ResidualWeights208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.ResidualAggregate208
 open ResidualWeights208

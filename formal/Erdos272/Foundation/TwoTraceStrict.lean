@@ -1,4 +1,8 @@
-import Erdos272.Foundation.TwoTrace
+module
+
+public import Erdos272.Foundation.TwoTrace
+
+@[expose] public section
 
 /-!
 Simultaneous saturation of the two genuine exterior-point groups is

@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.DualFrontier209
-import Erdos272.Arithmetic.FactorFullCertificate209
-import Erdos272.Arithmetic.SplitChecks209
+module
+
+public import Erdos272.Arithmetic.DualFrontier209
+public import Erdos272.Arithmetic.FactorFullCertificate209
+public import Erdos272.Arithmetic.SplitChecks209
+
+@[expose] public section
 namespace JSP233.FullPrefix209_000
 set_option maxHeartbeats 0
 set_option maxRecDepth 1000000

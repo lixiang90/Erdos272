@@ -1,5 +1,9 @@
-import Erdos272.Global.LowUnitTruncated209
-import Erdos272.Arithmetic.Cap150UnitRowsChecked209
+module
+
+public import Erdos272.Global.LowUnitTruncated209
+public import Erdos272.Arithmetic.Cap150UnitRowsChecked209
+
+@[expose] public section
 
 namespace JSP233.LowUnitClosed209
 open StarCompletion APGeometry

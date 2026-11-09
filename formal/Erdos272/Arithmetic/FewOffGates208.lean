@@ -1,5 +1,10 @@
-import Erdos272.Resources.AlignedPlans208
-import Mathlib.Tactic
+module
+
+public import Erdos272.Resources.AlignedPlans208
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+
+@[expose] public section
 
 namespace JSP233.FewOffGates208
 open AlignedPlans208

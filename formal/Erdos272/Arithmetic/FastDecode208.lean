@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.SourceLookupFast208
+module
+
+public import Erdos272.Arithmetic.SourceLookupFast208
+
+@[expose] public section
 
 /-! The 64 fixed decoding divisors are verified against the original powers.
 This changes evaluation cost only; the authoritative lookup is unchanged. -/

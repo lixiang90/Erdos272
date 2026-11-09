@@ -1,6 +1,10 @@
-import Erdos272.Global.Global71p425022m136
-import Erdos272.Arithmetic.HalfInterval137
-import Erdos272.Resources.HalfRecovery137
+module
+
+public import Erdos272.Global.Global71p425022m136
+public import Erdos272.Arithmetic.HalfInterval137
+public import Erdos272.Resources.HalfRecovery137
+
+@[expose] public section
 
 namespace JSP233.Global64p660617m137
 open StarCompletion

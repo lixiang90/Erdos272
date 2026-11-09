@@ -1,4 +1,10 @@
-import Erdos272.Resources.RankWeights208
+module
+
+public import Erdos272.Resources.RankWeights208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Three genuine rank supplies pay one actual weighted physical slot pool. -/
 namespace JSP233.NeighborMass208

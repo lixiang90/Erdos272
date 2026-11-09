@@ -1,7 +1,11 @@
-import Erdos272.Global.TruncatedGlobal209
-import Erdos272.Resources.UnitTruncatedFamily209
-import Erdos272.Arithmetic.TruncatedUnitPrices209
-import Erdos272.Global.RobustGlobalWindow209
+module
+
+public import Erdos272.Global.TruncatedGlobal209
+public import Erdos272.Resources.UnitTruncatedFamily209
+public import Erdos272.Arithmetic.TruncatedUnitPrices209
+public import Erdos272.Global.RobustGlobalWindow209
+
+@[expose] public section
 
 namespace JSP233.LowUnitTruncated209
 open StarCompletion APGeometry DenseDeletion40 Density41

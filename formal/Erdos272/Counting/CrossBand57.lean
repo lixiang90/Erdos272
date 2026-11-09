@@ -1,6 +1,10 @@
-import Erdos272.Resources.WeightedFar38
-import Erdos272.Counting.SmallSpan48
-import Erdos272.Traces.FractionalWitness55
+module
+
+public import Erdos272.Resources.WeightedFar38
+public import Erdos272.Counting.SmallSpan48
+public import Erdos272.Traces.FractionalWitness55
+
+@[expose] public section
 
 namespace JSP233.CrossBand57
 open StarCompletion APGeometry TraceWitnessCodes36 FarWitness36 NearAP36

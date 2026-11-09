@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.CleanupSegments208
-import Erdos272.Arithmetic.Unit240LightChecks218_G0
-import Erdos272.Arithmetic.Unit240LightChecks218_G1
+module
+
+public import Erdos272.Arithmetic.CleanupSegments208
+public import Erdos272.Arithmetic.Unit240LightChecks218_G0
+public import Erdos272.Arithmetic.Unit240LightChecks218_G1
+
+@[expose] public section
 namespace JSP233.Unit240Light218
 open Unit240Geometry218 Unit240Rows218
 open scoped BigOperators

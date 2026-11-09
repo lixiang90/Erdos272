@@ -1,4 +1,8 @@
-import Erdos272.Resources.PairEnvelope208
+module
+
+public import Erdos272.Resources.PairEnvelope208
+
+@[expose] public section
 
 /-! Exact cardinal saving from the coarse residue subsequence of a finer AP. -/
 namespace JSP233.PairSlice208

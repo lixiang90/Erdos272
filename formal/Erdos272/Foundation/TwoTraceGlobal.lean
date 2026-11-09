@@ -1,4 +1,8 @@
-import Erdos272.Foundation.TwoTrace
+module
+
+public import Erdos272.Foundation.TwoTrace
+
+@[expose] public section
 
 /-!
 The coarse group has points private in the whole family. Combining those

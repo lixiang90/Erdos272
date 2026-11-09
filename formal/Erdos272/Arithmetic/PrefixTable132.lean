@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.PrefixTableD131
-import Erdos272.Arithmetic.PrefixLog131
+module
+
+public import Erdos272.Arithmetic.PrefixTableD131
+public import Erdos272.Arithmetic.PrefixLog131
+
+@[expose] public section
 namespace JSP233.PrefixTable132
 open PrefixState131 PrefixCert131 PrefixTable131
 set_option maxHeartbeats 0

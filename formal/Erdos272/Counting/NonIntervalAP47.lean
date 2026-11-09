@@ -1,5 +1,10 @@
-import Erdos272.Counting.APCount41
-import Erdos272.Resources.ResiduePool46
+module
+
+public import Erdos272.Counting.APCount41
+public import Erdos272.Resources.ResiduePool46
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual noninterval progressions and the full large-step straddling family. -/
 namespace JSP233.NonIntervalAP47

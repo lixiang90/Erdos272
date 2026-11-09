@@ -1,6 +1,11 @@
-import Erdos272.Global.GlobalSeven208
-import Erdos272.Arithmetic.HybridPrices209
-import Erdos272.Counting.NearLocalized209
+module
+
+public import Erdos272.Global.GlobalSeven208
+public import Erdos272.Arithmetic.HybridPrices209
+public import Erdos272.Counting.NearLocalized209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.HybridGlobal208
 open StarCompletion APGeometry DenseDeletion40 Density41 SparseSmall39

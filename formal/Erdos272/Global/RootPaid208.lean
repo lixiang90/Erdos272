@@ -1,5 +1,9 @@
-import Erdos272.Global.RootQuadratic208
-import Erdos272.Arithmetic.DyadicPrice208
+module
+
+public import Erdos272.Global.RootQuadratic208
+public import Erdos272.Arithmetic.DyadicPrice208
+
+@[expose] public section
 
 /-! Actual-root assembly for the final mathematical window.  The only unpaid
 input is the explicit bound on the actual avoider subfamily, to be supplied

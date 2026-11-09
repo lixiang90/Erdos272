@@ -1,5 +1,12 @@
-import Erdos272.Resources.CrossBandMenu208
-import Erdos272.Resources.CleanupNet208
+module
+
+public import Erdos272.Resources.CrossBandMenu208
+public import Erdos272.Resources.CleanupNet208
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.CrossBandNormalize208
 open CrossBandCredit208 CrossBandCredit208.System CrossBandCleanup208 CrossBandMenu208

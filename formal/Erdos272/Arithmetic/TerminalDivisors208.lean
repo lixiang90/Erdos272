@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.TerminalCounting208
-import Mathlib.Tactic
+module
+
+public import Erdos272.Arithmetic.TerminalCounting208
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! Elementary uniform bounds for the small-step part of terminal codes. -/
 namespace JSP233.TerminalDivisors208

@@ -1,4 +1,8 @@
-import Erdos272.Global.IntegerHighRoot209
+module
+
+public import Erdos272.Global.IntegerHighRoot209
+
+@[expose] public section
 
 namespace JSP233.IntegerWindowEndpoints209
 open StarCompletion APGeometry Density41 SparseSmall39 SevenFamily208 PrivateFinset

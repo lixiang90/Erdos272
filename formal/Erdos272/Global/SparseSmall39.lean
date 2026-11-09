@@ -1,7 +1,11 @@
-import Erdos272.Core.AnchorCompletion38
-import Mathlib.Data.Finset.Sort
-import Mathlib.Algebra.BigOperators.Intervals
-import Mathlib.Data.Nat.Choose.Cast
+module
+
+public import Erdos272.Core.AnchorCompletion38
+public import Mathlib.Data.Finset.Sort
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 /-! Actual first-hit partitions and sparse small-member counting.
 All class capacities are supplied by the proved two-point theorem. -/

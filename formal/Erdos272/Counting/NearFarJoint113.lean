@@ -1,5 +1,9 @@
-import Erdos272.Resources.FarJoint113
-import Erdos272.Counting.NearWhole112
+module
+
+public import Erdos272.Resources.FarJoint113
+public import Erdos272.Counting.NearWhole112
+
+@[expose] public section
 
 /-! Fully paid actual Near/Far whole-family and rebased tail estimates.
 The same complete source family is partitioned anew at each scale.  Linear

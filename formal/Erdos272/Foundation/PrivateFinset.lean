@@ -1,6 +1,10 @@
-import Erdos272.Foundation.StarCompletion
-import Erdos272.Foundation.PrivateUnion
-import Mathlib.Data.Fintype.EquivFin
+module
+
+public import Erdos272.Foundation.StarCompletion
+public import Erdos272.Foundation.PrivateUnion
+public import Mathlib.Data.Fintype.EquivFin
+
+@[expose] public section
 
 /-!
 Finite-set bridge for the actual same-step private-point theorem.

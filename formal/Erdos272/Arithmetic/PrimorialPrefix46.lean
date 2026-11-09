@@ -1,8 +1,12 @@
-import Erdos272.Arithmetic.PrimePrefix35
-import Mathlib.Data.Finset.Card
-import Mathlib.Data.Nat.Prime.Nth
-import Mathlib.Data.Nat.PrimeFin
-import Mathlib.Data.Nat.GCD.BigOperators
+module
+
+public import Erdos272.Arithmetic.PrimePrefix35
+public import Mathlib.Data.Finset.Card
+public import Mathlib.Data.Nat.Prime.Nth
+public import Mathlib.Data.Nat.PrimeFin
+public import Mathlib.Data.Nat.GCD.BigOperators
+
+@[expose] public section
 namespace JSP233.PrimorialPrefix46
 open PrimePrefix35
 open scoped Classical

@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.UniformDecision208
+module
+
+public import Erdos272.Arithmetic.UniformDecision208
+
+@[expose] public section
 
 namespace JSP233.UniformQuery208
 open UniformDecision208 UniformEnvelope208

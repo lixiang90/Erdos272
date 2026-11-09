@@ -1,4 +1,8 @@
-import Erdos272.Counting.WitnessInterval43
+module
+
+public import Erdos272.Counting.WitnessInterval43
+
+@[expose] public section
 
 /-! Actual rooted interval members outside the strict straddled class consume
 only the two physical endpoint images of Ground N. -/

@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.DirectMoment130
-import Erdos272.Arithmetic.DirectGate130
-import Erdos272.Arithmetic.HarmonicCorrect118
+module
+
+public import Erdos272.Arithmetic.DirectMoment130
+public import Erdos272.Arithmetic.DirectGate130
+public import Erdos272.Arithmetic.HarmonicCorrect118
+
+@[expose] public section
 namespace JSP233.ProfilePayment130
 open StarCompletion RestrictedWitness44 DivisorMoment45
 open DivisorMoment122 DirectMoment130 HarmonicAbel29

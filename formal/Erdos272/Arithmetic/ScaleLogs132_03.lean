@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.PrefixTable132
+module
+
+public import Erdos272.Arithmetic.PrefixTable132
+
+@[expose] public section
 namespace JSP233.ScaleLogs132
 open PrefixState131 PrefixTable131 PrefixTable132 PrefixLog131
 noncomputable section

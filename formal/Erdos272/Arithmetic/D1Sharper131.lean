@@ -1,4 +1,9 @@
-import Erdos272.Arithmetic.D1Analytic131
+module
+
+public import Erdos272.Arithmetic.D1Analytic131
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.D1Sharper131
 open D1Analytic131 Hyperbola131 HarmonicWindow131 SimplexMoment57 HarmonicAbel29
 open Set MeasureTheory intervalIntegral

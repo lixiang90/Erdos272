@@ -1,7 +1,13 @@
-import Erdos272.Counting.MiddleDeficit52
-import Erdos272.Arithmetic.DivisorMoment45
-import Erdos272.Core.DenseSharper41
-import Mathlib.Data.Nat.Log
+module
+
+public import Erdos272.Counting.MiddleDeficit52
+public import Erdos272.Arithmetic.DivisorMoment45
+public import Erdos272.Core.DenseSharper41
+public import Mathlib.Data.Nat.Log
+public import Mathlib.Data.Nat.Choose.Cast
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual original-family endpoint stability and explicit unbounded physical
 payments.  No eventual statement or supplied retained capacity is used. -/

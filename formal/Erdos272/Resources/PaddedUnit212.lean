@@ -1,6 +1,10 @@
-import Erdos272.Resources.UnitTruncatedFamily209
-import Erdos272.Arithmetic.TruncatedUnitPrices209
-import Erdos272.Arithmetic.Cap150UnitRowsChecked209
+module
+
+public import Erdos272.Resources.UnitTruncatedFamily209
+public import Erdos272.Arithmetic.TruncatedUnitPrices209
+public import Erdos272.Arithmetic.Cap150UnitRowsChecked209
+
+@[expose] public section
 
 namespace JSP233.PaddedUnit212
 open StarCompletion APGeometry Density41

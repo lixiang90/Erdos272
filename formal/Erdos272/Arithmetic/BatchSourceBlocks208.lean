@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.BatchSource208
+module
+
+public import Erdos272.Arithmetic.BatchSource208
+
+@[expose] public section
 
 /-! Small independently checked source blocks can be joined by proof rather
 than by reducing the full rectangle again.  Stronger target rows may be

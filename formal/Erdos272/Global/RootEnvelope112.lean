@@ -1,5 +1,10 @@
-import Erdos272.Foundation.StarCompletion
-import Mathlib.Tactic
+module
+
+public import Erdos272.Foundation.StarCompletion
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+
+@[expose] public section
 
 /-! Algebraic coupling for the whole-family root branch of the 400m proof.
 The estimates on the actual root part and all avoiders remain explicit inputs.

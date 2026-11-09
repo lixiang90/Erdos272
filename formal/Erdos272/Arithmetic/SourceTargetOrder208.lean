@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.BatchSourceBlocks208
-import Erdos272.Arithmetic.SourceTargets208
+module
+
+public import Erdos272.Arithmetic.BatchSourceBlocks208
+public import Erdos272.Arithmetic.SourceTargets208
+
+@[expose] public section
 
 /-! Only the 2405 adjacent scalar target comparisons are evaluated here.
 No totient lookup or physical-source rectangle is computed. -/

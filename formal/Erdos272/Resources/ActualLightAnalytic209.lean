@@ -1,5 +1,11 @@
-import Erdos272.Arithmetic.LightOwnerPrice209
-import Erdos272.Resources.ActualBandEval208
+module
+
+public import Erdos272.Arithmetic.LightOwnerPrice209
+public import Erdos272.Resources.ActualBandEval208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.ActualLightAnalytic209
 open CrossBandCredit208 CrossBandCredit208.System CrossBandCleanup208

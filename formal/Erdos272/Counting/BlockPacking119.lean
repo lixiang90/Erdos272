@@ -1,4 +1,9 @@
-import Erdos272.Geometry.BlockAP119
+module
+
+public import Erdos272.Geometry.BlockAP119
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Every actual finite trace loses at most720 points near its own extrema.
 Its remaining actual points sit in blocks wholly inside its own span. The

@@ -1,4 +1,8 @@
-import Erdos272.Global.StartupSeeds40
+module
+
+public import Erdos272.Global.StartupSeeds40
+
+@[expose] public section
 
 /-! Unbounded actual prime-factor and totient supplies from the thirty native seeds.
 The period is thirty binary exponents. No prime-count or ordering premise is exported. -/

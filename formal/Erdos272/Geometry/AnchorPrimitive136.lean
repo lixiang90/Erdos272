@@ -1,5 +1,9 @@
-import Erdos272.Resources.FarCapacity112
-import Erdos272.Resources.FarJoint112
+module
+
+public import Erdos272.Resources.FarCapacity112
+public import Erdos272.Resources.FarJoint112
+
+@[expose] public section
 namespace JSP233.AnchorPrimitive136
 open StarCompletion APGeometry FarSlot112 FarCapacity112 LongTerminal35
 open scoped Classical BigOperators

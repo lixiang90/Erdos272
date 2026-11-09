@@ -1,5 +1,10 @@
-import Erdos272.Arithmetic.StepWeightShape208
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+module
+
+public import Erdos272.Arithmetic.StepWeightShape208
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 
 /-! Pointwise semiconvex control of the actual floor-step weight. -/
 namespace JSP233.StepWeightTail208

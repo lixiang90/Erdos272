@@ -1,5 +1,9 @@
-import Erdos272.Foundation.ChainCapacity
-import Mathlib.Data.Nat.Prime.Basic
+module
+
+public import Erdos272.Foundation.ChainCapacity
+public import Mathlib.Data.Nat.Prime.Basic
+
+@[expose] public section
 
 namespace JSP233.PrimePowerCapacity
 

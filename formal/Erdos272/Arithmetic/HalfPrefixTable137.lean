@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.HalfPrefixTable136
+module
+
+public import Erdos272.Arithmetic.HalfPrefixTable136
+
+@[expose] public section
 namespace JSP233.HalfPrefixTable137
 open PrefixState131 PrefixCert131 PrefixTable131 HalfPrefixTable133 HalfPrefixTable134 HalfPrefixTable135 HalfPrefixTable136
 set_option maxHeartbeats 0

@@ -1,5 +1,10 @@
-import Erdos272.Resources.SevenFamily208
-import Erdos272.Resources.CrossBandMenu208
+module
+
+public import Erdos272.Resources.SevenFamily208
+public import Erdos272.Resources.CrossBandMenu208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.UnitNearAggregate208
 open SevenFamily208 SevenPrices208 SourceCertified208

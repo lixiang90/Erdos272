@@ -1,7 +1,11 @@
-import Erdos272.Geometry.AffineMiddleWitness31
-import Erdos272.Resources.JointResources31
-import Mathlib.Algebra.BigOperators.Intervals
-import Mathlib.Data.Nat.Choose.Cast
+module
+
+public import Erdos272.Geometry.AffineMiddleWitness31
+public import Erdos272.Resources.JointResources31
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 /-! Finite, actual-coordinate counting behind low-step concentration.
 No classification or complement existence assertion is assumed proved here. -/

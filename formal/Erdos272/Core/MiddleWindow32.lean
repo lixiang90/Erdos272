@@ -1,6 +1,10 @@
-import Erdos272.Capacity.LowSteps32
-import Erdos272.Core.OneThird32
-import Erdos272.Capacity.SingletonCapacity32
+module
+
+public import Erdos272.Capacity.LowSteps32
+public import Erdos272.Core.OneThird32
+public import Erdos272.Capacity.SingletonCapacity32
+
+@[expose] public section
 
 /-! Actual complement, singleton classification and low-step concentration
 assembled into the unconditional small-kernel middle-window bound. -/

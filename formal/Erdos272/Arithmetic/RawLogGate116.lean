@@ -1,6 +1,10 @@
-import Erdos272.Resources.RawEndpoint116
-import Erdos272.Arithmetic.RawLogGate112
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+module
+
+public import Erdos272.Resources.RawEndpoint116
+public import Erdos272.Arithmetic.RawLogGate112
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+
+@[expose] public section
 
 /-! All-N logarithmic gates for the bootstrap actual r11 width polynomial.
 The old polynomial pays only32w<=N; the bootstrap polynomial pays the new

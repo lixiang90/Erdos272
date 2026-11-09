@@ -1,5 +1,9 @@
-import Erdos272.Resources.FarJoint112
-import Erdos272.Core.FarShort112
+module
+
+public import Erdos272.Resources.FarJoint112
+public import Erdos272.Core.FarShort112
+
+@[expose] public section
 
 /-! Complete actual Far bound, including Short maximum cores and all shell
 directions.  Long and Short use one physical pool; the Short intrinsic exclusion

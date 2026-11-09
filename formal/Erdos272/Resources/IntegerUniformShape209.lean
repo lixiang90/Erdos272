@@ -1,4 +1,8 @@
-import Erdos272.Resources.IntegerUniformProfiles209
+module
+
+public import Erdos272.Resources.IntegerUniformProfiles209
+
+@[expose] public section
 
 namespace JSP233.IntegerUniformShape209
 open IntegerUniformProfiles209 IntegerUniformRows209

@@ -1,15 +1,19 @@
-import Erdos272.Foundation.StaircaseSupply
-import Erdos272.Foundation.Staircase249Block000
-import Erdos272.Foundation.Staircase249Block025
-import Erdos272.Foundation.Staircase249Block050
-import Erdos272.Foundation.Staircase249Block075
-import Erdos272.Foundation.Staircase249Block100
-import Erdos272.Foundation.Staircase249Block125
-import Erdos272.Foundation.Staircase249Block150
-import Erdos272.Foundation.Staircase249Block175
-import Erdos272.Foundation.Staircase249Block200
-import Erdos272.Foundation.Staircase249Block225
-import Erdos272.Foundation.Staircase249Edge
+module
+
+public import Erdos272.Foundation.StaircaseSupply
+public import Erdos272.Foundation.Staircase249Block000
+public import Erdos272.Foundation.Staircase249Block025
+public import Erdos272.Foundation.Staircase249Block050
+public import Erdos272.Foundation.Staircase249Block075
+public import Erdos272.Foundation.Staircase249Block100
+public import Erdos272.Foundation.Staircase249Block125
+public import Erdos272.Foundation.Staircase249Block150
+public import Erdos272.Foundation.Staircase249Block175
+public import Erdos272.Foundation.Staircase249Block200
+public import Erdos272.Foundation.Staircase249Block225
+public import Erdos272.Foundation.Staircase249Edge
+
+@[expose] public section
 
 /-! Ordinary-kernel finite certificate and its actual unit-interval-family
 consequence. The tables are candidates; all arithmetic and gcd recurrence

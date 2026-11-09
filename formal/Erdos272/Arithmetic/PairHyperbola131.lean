@@ -1,5 +1,10 @@
-import Erdos272.Arithmetic.Hyperbola131
-import Erdos272.Arithmetic.ParityPool123
+module
+
+public import Erdos272.Arithmetic.Hyperbola131
+public import Erdos272.Arithmetic.ParityPool123
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.PairHyperbola131
 open SimplexMoment57 DivisorMoment45 ParityPool123 Hyperbola131

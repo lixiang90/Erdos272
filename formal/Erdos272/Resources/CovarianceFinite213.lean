@@ -1,5 +1,12 @@
-import Erdos272.Arithmetic.CovarianceScalar213
-import Erdos272.Resources.TotientCovariance212
+module
+
+public import Erdos272.Arithmetic.CovarianceScalar213
+public import Erdos272.Resources.TotientCovariance212
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Finite covariance moments.  F bounds are genuine bounds on TotientMass,
 and the only reciprocal-square estimate used is the finite 1,670,000 bound. -/

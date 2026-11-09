@@ -1,5 +1,11 @@
-import Erdos272.Arithmetic.StepClass208
-import Mathlib.Algebra.BigOperators.Intervals
+module
+
+public import Erdos272.Arithmetic.StepClass208
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.StepCensus208
 open StepClass208

@@ -1,4 +1,9 @@
-import Erdos272.Foundation.StarCompletion
+module
+
+public import Erdos272.Foundation.StarCompletion
+public import Mathlib.Data.Finset.Basic
+
+@[expose] public section
 
 /-! Finite counting from hereditary private points. The geometric existence
 of those points is proved separately in `ChainGeometry`, not assumed by the

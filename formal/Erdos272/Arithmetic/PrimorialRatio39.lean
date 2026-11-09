@@ -1,7 +1,13 @@
-import Mathlib.NumberTheory.PrimeCounting
-import Mathlib.Data.Nat.Totient
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
-import Mathlib.Tactic
+module
+
+public import Mathlib.NumberTheory.PrimeCounting
+public import Mathlib.Data.Nat.Totient
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Data.Fin.VecNotation
+
+@[expose] public section
 
 /-! Actual prime-factor cardinalities and real totient ratios from primorial exclusion.
 Maximum-prime induction supplies the comparison; no ordering premise is exported. -/

@@ -1,5 +1,10 @@
-import Erdos272.Global.DenseDeletion40
-import Mathlib.Tactic
+module
+
+public import Erdos272.Global.DenseDeletion40
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+
+@[expose] public section
 
 /-! Keep the actual floor in the dense-pair count before paying its remainder. -/
 namespace JSP233.DenseSharper41

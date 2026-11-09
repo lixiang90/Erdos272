@@ -1,4 +1,8 @@
-import Erdos272.Retention.Terminal36
+module
+
+public import Erdos272.Retention.Terminal36
+
+@[expose] public section
 
 /-! A rank-parameterized actual dense crooked fringe: positive grid anchors
 use only r+2 positions, with exact finite AnchorCount r. -/

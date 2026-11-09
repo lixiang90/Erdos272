@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.LightPrice208
+module
+
+public import Erdos272.Arithmetic.LightPrice208
+
+@[expose] public section
 
 namespace JSP233.LightActualPrice208
 open StarCompletion APGeometry NearAP36 LightPhases208

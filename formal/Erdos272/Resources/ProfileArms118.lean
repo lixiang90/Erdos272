@@ -1,4 +1,9 @@
-import Erdos272.Resources.ProfileArms117
+module
+
+public import Erdos272.Resources.ProfileArms117
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The same complete actual endpoint profile pays both physical arm gates
 for the rational width 399/10. The p12 branch retains its stronger actual

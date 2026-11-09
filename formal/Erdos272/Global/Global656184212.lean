@@ -1,6 +1,10 @@
-import Erdos272.Global.Global659912209
-import Erdos272.Global.PaddedCommon212
-import Erdos272.Resources.RootedWindow212
+module
+
+public import Erdos272.Global.Global659912209
+public import Erdos272.Global.PaddedCommon212
+public import Erdos272.Resources.RootedWindow212
+
+@[expose] public section
 
 namespace JSP233.Global656184212
 open StarCompletion

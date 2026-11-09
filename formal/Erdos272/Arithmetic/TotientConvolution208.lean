@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.APInterval208
-import Mathlib.Tactic
+module
+
+public import Erdos272.Arithmetic.APInterval208
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! # The exact totient convolution underlying the unit source
 

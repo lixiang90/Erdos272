@@ -1,5 +1,9 @@
-import Mathlib.Data.Nat.Log
-import Mathlib.Tactic
+module
+
+public import Mathlib.Data.Nat.Log
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! Exact scale gates used by the actual r11 preparation.  Dyadic lower
 bounds pay the cube at each real logarithmic index.  There is no unused

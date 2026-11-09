@@ -1,5 +1,11 @@
-import Erdos272.Retention.CeilFringe113
-import Erdos272.Retention.Restore11Ratio112
+module
+
+public import Erdos272.Retention.CeilFringe113
+public import Erdos272.Retention.Restore11Ratio112
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! Same-original-family r11 restoration at ratio 1120/23. Only the actual
 minimum-rank-eleven branch needs the changed ceil/private physical labels. -/

@@ -1,4 +1,8 @@
-import Erdos272.Resources.UniformActualWindow209
+module
+
+public import Erdos272.Resources.UniformActualWindow209
+
+@[expose] public section
 
 namespace JSP233.UniformFiniteCut209
 open StarCompletion APGeometry SourceBridge208 UniformSourceCore208 UniformAbel208

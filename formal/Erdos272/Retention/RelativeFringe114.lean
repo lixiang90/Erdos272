@@ -1,4 +1,8 @@
-import Erdos272.Retention.CeilFringe114
+module
+
+public import Erdos272.Retention.CeilFringe114
+
+@[expose] public section
 
 /-! The ceil grid is built on the actual interval I, but the original sources
 remain Legal on Ground N. Off traces are packed in I; full sources are not

@@ -14,35 +14,48 @@ The problem is [Erdős #272](https://www.erdosproblems.com/272), also listed as 
 
 ## Results in this repository
 
-**Theorem.** Let $N\ge642498$ be an integer. Among all families $\mathcal F$ of distinct subsets of $[N]=\{1,\ldots,N\}$ such that $A\cap B$ is a nonempty arithmetic progression for every pair of distinct members $A,B\in\mathcal F$, the maximum possible cardinality is
+**Theorem.** Let $N\ge200000$ be an integer. Among all families $\mathcal F$ of distinct subsets of $[N]=\{1,\ldots,N\}$ such that $A\cap B$ is a nonempty arithmetic progression for every pair of distinct members $A,B\in\mathcal F$, the maximum possible cardinality is
 
 $$
 \max |\mathcal F|=\binom{N}{2}+1+\left\lfloor\frac{N-1}{4}\right\rfloor.
 $$
 
-Singletons and two-element sets count as arithmetic progressions. Every such family satisfies this upper bound, and for every $N\ge642498$ a family attaining equality exists.
+Singletons and two-element sets count as arithmetic progressions. Every such family satisfies this upper bound, and for every $N\ge200000$ a family attaining equality exists.
 
 The following table gives the individual results, their ranges, and the corresponding Lean declarations.
 
 | Result | Scope | Entry |
 |---|---|---|
 | Szabó's matching construction | Every `N ≥ 1` | `lower_bound` |
-| Simpler large-order proof presented in the paper | Every `N ≥ 2^49` | `paper_exact_value` |
-| Refined formal upper bound and exact value | Every `N ≥ 642498` | `upper_bound`, `exact_value` |
-| Existence of an attaining optimal family | Every `N ≥ 642498` | `optimal_family` |
+| The paper's theorem | Every `N ≥ 200000` | `paper_exact_value` |
+| Formal upper bound and exact value | Every `N ≥ 200000` | `upper_bound`, `exact_value` |
+| Existence of an attaining optimal family | Every `N ≥ 200000` | `optimal_family` |
 
 All five public theorems are in [formal/PublicResults.lean](formal/PublicResults.lean), in namespace `JSP233.PublicResults`. The six problem definitions are written directly in that file. Their correspondence with the internal model is checked by Lean through definitional equality.
 
-The [English paper (PDF)](paper/erdos272.pdf) and its [LaTeX source](paper/erdos272.tex) explain a computer-assisted proof for `N ≥ 2^49`. The complete Lean proofs of its structural counting lemmas are part of the electronic supplement. The paper explicitly directs readers to the code for the stronger `642498` threshold, whose arithmetic refinements are not fully developed in the text.
+The [English paper (PDF)](paper/erdos272.pdf) and its [LaTeX source](paper/erdos272.tex) present the computer-assisted result for `N ≥ 200000`. They develop the explicit large-order argument and describe the mixed-source finite-window certificates and symbolic recovery. The complete structural proofs and finite certificates form the Lean electronic supplement.
 
-**A proof covering the entire remaining finite range, `1 ≤ N < 642498`, is still missing.**
+The remaining finite range is `1 ≤ N < 200000`.
+
+## Dated formalization milestones
+
+The dates below use UTC+8 and record completed formal checks of the original problem. The numerical threshold is the start of the proved infinite range.
+
+| Date | Proved range | Toolchain and milestone |
+|---|---|---|
+| 2026-10-31 | `N ≥ 642498` | Initial public release, Lean and mathlib 4.35.0 |
+| 2026-11-08 | `N ≥ 291012` | Research development, Lean 4.32.2 |
+| 2026-11-08 | `N ≥ 250262` | Research development, Lean 4.32.2 |
+| 2026-11-08 | `N ≥ 243614` | Research development, Lean 4.32.2 |
+| 2026-11-08 | `N ≥ 233811` | Research development, Lean 4.32.2 |
+| 2026-11-09 | `N ≥ 200000` | Mixed-source proof and public migration to Lean and mathlib 4.35.0 |
 
 ## Check the proofs
 
-Install [elan](https://github.com/leanprover/elan), then run:
+Install [elan](https://github.com/leanprover/elan) and run the following commands.
 
 ```sh
-git clone https://github.com/lixiang90/Erdos272.git
+git clone --branch dev https://github.com/lixiang90/Erdos272.git
 cd Erdos272/formal
 lake exe cache get
 lake build
@@ -52,7 +65,7 @@ The project uses **Lean 4.35.0** and **mathlib v4.35.0**. Exact dependency commi
 
 The public entry prints the theorem types and their axiom dependencies. The proofs use only the standard axioms `propext`, `Classical.choice`, and `Quot.sound`. Finite arithmetic certificates are checked by Lean's kernel.
 
-A full build can take substantial time and memory. On machines with limited resources, reuse mathlib's cache and compile the project modules one at a time in dependency order. Limit concurrent Lean processes and choose thread counts, memory limits, and CPU limits appropriate to your machine.
+The public import closure was checked sequentially with one Lean thread and a 6 GiB aggregate committed-memory cap, reusing the pinned mathlib cache. A full build can take substantial time. On machines with limited resources, compile project modules one at a time in dependency order and limit concurrent Lean processes.
 
 ## Layout
 
@@ -70,13 +83,16 @@ formal/
     Resources/, Arithmetic/   Joint counts and exact arithmetic certificates
     Certificates/             Finite proof data
     Global/                   Assembly of the universal upper bounds
+    */N200000/                Mixed-source certificates and final assembly
+    */N233811/, */N243614/     Intermediate source and recovery windows
+    */N250262/, */N291012/     Supporting finite-window certificates
 ```
 
 See [formal/README.md](formal/README.md) for a reading route through the proof.
 
 ## Build the paper
 
-With a standard TeX distribution:
+Use the following commands with a standard TeX distribution.
 
 ```sh
 cd paper

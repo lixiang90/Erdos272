@@ -1,4 +1,8 @@
-import Erdos272.Certificates.TotientLookup208
+module
+
+public import Erdos272.Certificates.TotientLookup208
+
+@[expose] public section
 
 /-! Complete kernel certificate for the proposed totient lookup, using a
 proved bounded prime test. The data generator is outside the trust base.

@@ -1,6 +1,10 @@
-import Erdos272.Counting.APCount41
-import Erdos272.Resources.MeetingPool46
-import Erdos272.Geometry.FamilyReflect43
+module
+
+public import Erdos272.Counting.APCount41
+public import Erdos272.Resources.MeetingPool46
+public import Erdos272.Geometry.FamilyReflect43
+
+@[expose] public section
 
 /-! Actual cross-root AP classification, opposite parity and finite budgets. -/
 namespace JSP233.Straddling47

@@ -1,7 +1,12 @@
-import Erdos272.Arithmetic.IntegerHighPrices209
-import Erdos272.Counting.NearLocalized209
-import Erdos272.Resources.GlobalBootstrap209
-import Erdos272.Global.GlobalSeven208
+module
+
+public import Erdos272.Arithmetic.IntegerHighPrices209
+public import Erdos272.Counting.NearLocalized209
+public import Erdos272.Resources.GlobalBootstrap209
+public import Erdos272.Global.GlobalSeven208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.IntegerHighRoot209
 open StarCompletion APGeometry NearAP36 DenseDeletion40 Density41 SparseSmall39

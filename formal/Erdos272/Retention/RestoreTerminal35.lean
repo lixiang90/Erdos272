@@ -1,5 +1,9 @@
-import Erdos272.Retention.Restore33
-import Erdos272.Retention.LongTerminal35
+module
+
+public import Erdos272.Retention.Restore33
+public import Erdos272.Retention.LongTerminal35
+
+@[expose] public section
 
 /-! Actual thin-fringe recovery with a proved retained-family terminal.
 No retained-family cardinality premise is supplied.  The remaining local

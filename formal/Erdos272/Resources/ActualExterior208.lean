@@ -1,4 +1,9 @@
-import Erdos272.Counting.EndpointExterior55
+module
+
+public import Erdos272.Counting.EndpointExterior55
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual exterior progressions retain their two physical fringe lengths.
 The linear error is paid by their sum w instead of being replaced by 2N. -/

@@ -17,12 +17,12 @@
 \newcommand{\D}{\mathcal D}
 \newcommand{\A}{\mathcal A}
 \newcommand{\Hh}{\mathcal H}
-\newcommand{\repo}{\url{https://github.com/lixiang90/Erdos272}}
+\newcommand{\repo}{\url{https://github.com/lixiang90/Erdos272/tree/dev}}
 \newcommand{\code}[1]{{\small\nolinkurl{#1}}}
 \setlength{\emergencystretch}{2em}
 \title{The exact maximum in Erd\H{o}s problem 272\protect\\for sufficiently large ground sets}
 \author{Li Xiang\thanks{Project and complete proof sources: \repo.}}
-\date{30 October 2026}
+\date{9 November 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -31,17 +31,19 @@ $\{1,\ldots,N\}$ whose intersections of distinct members are nonempty
 arithmetic progressions. We give a computer-assisted proof that
 \[
  v(N)=\binom N2+1+\left\lfloor\frac{N-1}{4}\right\rfloor
- \qquad(N\ge 2^{49}).
+ \qquad(N\ge 200000).
 \]
 The lower bound is Szab\'o's construction. For the upper bound we delete
 large nonprogressions, obtain a common point for the remaining
 nonprogressions, and force all members avoiding that point to be long
 intervals. Their common interval then pays for the deleted members.
 We give the explicit numerical estimates and the precise interfaces of
-the formally proved counting lemmas. The accompanying Lean development is
-part of the proof. More refined computations in that development establish
-the same formula for every $N\ge642498$; those refinements are not developed
-in this paper. The remaining finite range is not settled here.
+the formally proved counting lemmas. For the finite-window argument we
+combine a source from a longest AP with a totient source, use a zero-cost
+initial potential layer, and perform two symbolic recovery preparations.
+The accompanying Lean 4.35.0 development supplies the complete structural
+proofs and finite certificates and forms part of the proof. The remaining
+finite range below 200000 is open in this development.
 \end{abstract}
 
 \section{Statement and scope}
@@ -57,7 +59,7 @@ The members themselves need not be APs. Set
 The maximum exists because its domain is finite.
 
 \begin{theorem}\label{thm:main}
-For every integer $N\ge2^{49}$, $v(N)=B(N)$. For every $N\ge1$,
+For every integer $N\ge200000$, $v(N)=B(N)$. For every $N\ge1$,
 there is a legal family of size $B(N)$.
 \end{theorem}
 
@@ -253,7 +255,10 @@ $4\cdot131(t-1)\le N-1$. Since $\D$ and $\G$ partition the original
 family, their bounds add to exactly $B(N)$.
 
 \section{The explicit large-order argument}
-We now prove Theorem~\ref{thm:main} from the certified counting lemmas.
+\begin{proposition}[Large-order tail]\label{prop:tail}
+For every integer $N\ge2^{49}$, $v(N)=B(N)$.
+\end{proposition}
+We prove Proposition~\ref{prop:tail} from the certified counting lemmas.
 Every numerical estimate in this section is elementary.
 
 \begin{lemma}[Uniform logarithmic payments]\label{lem:gates}
@@ -273,7 +278,7 @@ Thus both $(k+1)^3/2^k$ and $(k+1)^5/2^k$ decrease by induction.
 The desired bounds follow from $2^k\le N$.
 \end{proof}
 
-\begin{proof}[Proof of Theorem~\ref{thm:main}]
+\begin{proof}[Proof of Proposition~\ref{prop:tail}]
 Proposition~\ref{prop:lower} proves the lower bound. Suppose for a
 contradiction that $N\ge2^{49}$ and $|\F|>B(N)$ for a legal family.
 Apply Lemma~\ref{lem:prepare} and use its notation. Since $H_N\le J$,
@@ -316,7 +321,123 @@ family, root, and endpoints. It follows that
 $|\F|=|\Hh|\le B(N)$, a contradiction.
 \end{proof}
 
-\section{Formal verification and the stronger range}\label{sec:verification}
+\section{The finite-window certificates}\label{sec:finite}
+The finite part of the argument uses deletion parameter 12. Its source
+and recovery lemmas apply to the same actual legal family throughout.
+We give the certificate interfaces and the choices at the lower end of
+the range. All their finite proof data are included in the source.
+
+For a member $S$, let $s=|S|$, let $a$ be the largest cardinality of an AP
+contained in $S$, and put $e=s-a$. Let $\operatorname{Pool}(S)$ be the
+three-element subsets of $S$ whose AP hull is not contained in $S$.
+The longest-AP source gives
+\[
+ |\operatorname{Pool}(S)|\ge eU(a),\qquad
+ U(a)=\binom a2-
+ \sum_{\substack{p<a\\p\text{ prime}}}\binom{\lceil a/p\rceil}{2}.
+\]
+It counts pairs in the AP and one point outside it. The sieve removes
+pairs whose hull can remain in $S$. An unused prime class pays for an
+exceptional maximal run, so the estimate is uniform in the actual step
+denominator. The exact source is
+\code{Core/N200000/CoreUnionSource200000.lean}.
+
+For $a\le2^k$, prime reciprocal bounds imply
+\[
+ U(a)\ge \frac{a^2}{4}-\frac{k+1}{2}a.
+\]
+The certificate uses $k=8$ up to 256 and $k=18$ above 256, with a
+uniform tail price 14070 from 257. The monotonicity used here is that of
+the displayed quadratic on the relevant domain.
+
+The totient source supplies a second lower bound, denoted
+$\operatorname{Floor}(T,D,H)$, asserting that every relevant member with
+$s\ge T$ and $e\ge D$ has at least $H$ pool triples. To pay a target $H$
+when only $e\ge E$ is known, the mixed certificate checks
+\[
+ \operatorname{Floor}(T,D,H),\qquad H\le Eu,\qquad
+ u\le U(a)\quad(T-D+1\le a\le2^{18}).
+\]
+If $e\ge D$ the first bound applies. If $e<D$, then $a\ge T-D+1$
+and the longest-AP source gives $eU(a)\ge Eu\ge H$. This implication is
+\code{Core/N200000/MixedCore200000.lean}, declaration
+\code{actual_mixed_source}. There are 150 source plans in the three
+windows below.
+
+\begin{center}
+\begin{tabular}{rrrrr}
+\toprule
+$N$ range & Member floor & Free height & Final height & Paid layers\\
+\midrule
+$[200000,210000]$ & 134 & 3402 & 175390 & 7\\
+$[210001,220000]$ & 137 & 3520 & 184410 & 7\\
+$[220001,233810]$ & 140 & 3700 & 193464 & 7\\
+\bottomrule
+\end{tabular}
+\end{center}
+A crooked member has $e\ge1$, so the mixed source already pays the
+free height. The family with pool strictly below that height is empty.
+Its initial potential-layer cardinality cost is therefore zero. The
+remaining layers pay the full residual, cleanup, and light terms.
+There are 64531 cleanup steps and 4606 additional totient-source
+basepoints in these finite certificates.
+
+For each window, put $g=1/(6H)$ with $H$ its final height. The AP count
+and the same actual pool satisfy the joint response
+\[
+ |\{S\in\F:S\text{ is an AP}\}|+
+ 6g\sum_{S\in\F}|\operatorname{Pool}(S)|
+ \le \frac{129}{800}N^2+g(N-1)^3+\frac1{432g^2}+NH_N.
+\]
+The source bill is bounded using the window's upper endpoint, while
+this response retains the actual $N$. A cubic chord identity reduces
+the resulting margin to two endpoint checks. The exact rational
+endpoint margins are positive. The common-root proof also pays the
+empty-small-kernel branch and the three high-root branches, with cutoff
+594 and respective parameters $(K,J)=(198,6),(260,5),(2083,2)$.
+The assembly is \code{Global/N200000/CommonRoot200000.lean}.
+
+For recovery, let $c,L,R$ be the root and endpoints of the same oriented
+family, let $\mathcal E$ be its retained omitter family, and put
+$w=L+N-R$. Density and the all-pair budget first give
+$L<N/16$ and $w<51N/500$. Two preparations then give successively
+\[
+ |\mathcal E|\le\frac{1337}{60}w-\frac{297}{20},
+ \qquad L<N/27,\quad w<N/15,
+\]
+and
+\[
+ |\mathcal E|\le\frac{947}{60}w-\frac{187}{20},
+ \qquad L<N/27,\quad w<N/16.
+\]
+These bounds pay the native recovery gate since
+$2811/27+1193/16<192$. All six minimum-omitter size branches include
+their full fringe cost. The tightest leading coefficient has positive
+slack $1/240$. The exact original-family restoration is
+\code{Retention/N200000/Restore200000.lean}.
+
+\begin{lemma}[Finite-window certificate]\label{lem:finite}
+If $200000\le N<2^{49}$ and $\F$ is legal, then $|\F|\le B(N)$.
+\end{lemma}
+\begin{proof}[Computer-assisted proof]
+The lower-end windows just described are assembled with the remaining
+source, common-root, and recovery windows in
+\code{Global/N200000/Global200000.lean}, declaration
+\code{actual_original_upper_bound}. Its only hypotheses are
+$200000\le N$ and legality of the original family. The arithmetic data
+and every required structural lemma are in its direct import closure.
+The files use the physical directory paths and are checked with the
+pinned Lean and mathlib versions as specified below.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+For $N\ge2^{49}$ apply Proposition~\ref{prop:tail}. For
+$200000\le N<2^{49}$, Lemma~\ref{lem:finite} gives the upper bound,
+and Proposition~\ref{prop:lower} gives an attaining family. The same
+construction proves the assertion for every positive $N$.
+\end{proof}
+
+\section{Formal verification}\label{sec:verification}
 The repository is \repo. The public entry is
 \code{formal/PublicResults.lean}. It defines the ground set, AP predicate,
 legality, $B(N)$, the finite set of legal families, and its extremal value
@@ -325,19 +446,14 @@ these definitions by definitional equality with the internal finite-set
 model. In particular there is no additional common-point hypothesis in
 the public upper bound.
 
-\begin{corollary}[Refined formal result]\label{cor:refined}
-For every integer $N\ge642498$, $v(N)=B(N)$, and a legal family attaining
-this value exists.
-\end{corollary}
-
-This stronger result uses more refined arithmetic and finite certificates
-than the argument developed above. It is not proved in detail in this
-paper; readers can inspect and check the complete source through
-\code{PublicResults.exact_value} and \code{PublicResults.optimal_family}
-in namespace \code{JSP233}. The paper's own theorem has the separate
-entry \code{PublicResults.paper_exact_value}, which calls the
-$2^{49}$ argument directly. Thus the simpler theorem can be traced
-without relying on the refined threshold.
+Theorem~\ref{thm:main} is checked by
+\code{PublicResults.exact_value} and
+\code{PublicResults.paper_exact_value};
+\code{PublicResults.upper_bound} gives the universal original-family
+upper bound and \code{PublicResults.optimal_family} supplies an attaining
+family, all in namespace \code{JSP233}. Their numerical hypothesis is
+$200000\le N$. The construction entry
+\code{PublicResults.lower_bound} assumes only $1\le N$.
 
 The development is pinned to Lean 4.35.0 and mathlib's matching stable
 release. The lock file records the exact dependency revisions. From a

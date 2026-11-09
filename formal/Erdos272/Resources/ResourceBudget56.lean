@@ -1,5 +1,11 @@
-import Erdos272.Resources.ResourceSymmetry56
-import Erdos272.Arithmetic.HarmonicLog55
+module
+
+public import Erdos272.Resources.ResourceSymmetry56
+public import Erdos272.Arithmetic.HarmonicLog55
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 /-! Recombine the actual finite coprime pools before converting their common
 Moebius density to the same finite rho_N. This lowers the real error coefficient

@@ -1,4 +1,8 @@
-import Erdos272.Resources.FrontierGrid208
+module
+
+public import Erdos272.Resources.FrontierGrid208
+
+@[expose] public section
 
 namespace JSP233.FiniteFrontier209
 open CoprimeDensity52 HarmonicAbel29 ResourceSymmetry56 LocalizedMiddle208 FrontierGrid208

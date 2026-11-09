@@ -1,5 +1,9 @@
-import Erdos272.Retention.LongTerminal35
-import Erdos272.Traces.CoprimeMiddle36
+module
+
+public import Erdos272.Retention.LongTerminal35
+public import Erdos272.Traces.CoprimeMiddle36
+
+@[expose] public section
 
 /-! Direct completion geometry for every exterior-corner crooked member.
 The first-positive-neighbor gcd determines the actual AP prefix. Interior

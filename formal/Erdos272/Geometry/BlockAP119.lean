@@ -1,6 +1,10 @@
-import Erdos272.Counting.PeriodOff117
-import Erdos272.Retention.BadFringe115
-import Mathlib.Data.Int.ModEq
+module
+
+public import Erdos272.Counting.PeriodOff117
+public import Erdos272.Retention.BadFringe115
+public import Mathlib.Data.Int.ModEq
+
+@[expose] public section
 
 /-! Actual360-point blocks of truncated arithmetic progressions. Complete
 classes are derived from actual AP endpoints. A repeated compatible class

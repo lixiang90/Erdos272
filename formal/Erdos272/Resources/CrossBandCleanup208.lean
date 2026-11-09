@@ -1,4 +1,10 @@
-import Erdos272.Resources.CrossBandCredit208
+module
+
+public import Erdos272.Resources.CrossBandCredit208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.CrossBandCleanup208
 open StarCompletion APGeometry NearAP36 SourceBridge208 ShiftedBlocks208

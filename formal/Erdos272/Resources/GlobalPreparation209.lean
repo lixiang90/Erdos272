@@ -1,6 +1,10 @@
-import Erdos272.Resources.GlobalRecovery209
-import Erdos272.Resources.StarWindow208
-import Erdos272.Counting.OneSided47
+module
+
+public import Erdos272.Resources.GlobalRecovery209
+public import Erdos272.Resources.StarWindow208
+public import Erdos272.Counting.OneSided47
+
+@[expose] public section
 
 /-! Actual startup from a common retained crooked root.  The all-cross case
 is excluded with the finite harmonic cap before choosing physical endpoints.

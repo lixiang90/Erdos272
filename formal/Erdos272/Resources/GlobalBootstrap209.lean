@@ -1,5 +1,9 @@
-import Erdos272.Resources.UniversalRecovery209
-import Erdos272.Arithmetic.HarmonicLog55
+module
+
+public import Erdos272.Resources.UniversalRecovery209
+public import Erdos272.Arithmetic.HarmonicLog55
+
+@[expose] public section
 
 /-! An actual, all-N legacy middle bootstrap.  Only the temporary left
 endpoint is bounded here; no finite totient estimate is used. -/

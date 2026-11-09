@@ -1,5 +1,10 @@
-import Erdos272.Resources.InitialProfile218
-import Erdos272.Counting.UnitCount218
+module
+
+public import Erdos272.Resources.InitialProfile218
+public import Erdos272.Counting.UnitCount218
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The actual unit omitters already have their endpoint envelope before
 any assertion that all retained omitters are intervals. -/

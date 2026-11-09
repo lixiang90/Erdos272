@@ -1,5 +1,9 @@
-import Mathlib.NumberTheory.ArithmeticFunction.Misc
-import Mathlib.Tactic
+module
+
+public import Mathlib.NumberTheory.ArithmeticFunction.Misc
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 namespace JSP233.SigmaSieve209
 set_option maxHeartbeats 0

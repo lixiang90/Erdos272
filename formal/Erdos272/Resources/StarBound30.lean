@@ -1,5 +1,9 @@
-import Erdos272.Geometry.CrossLine30
-import Erdos272.Resources.StarBudget30
+module
+
+public import Erdos272.Geometry.CrossLine30
+public import Erdos272.Resources.StarBudget30
+
+@[expose] public section
 
 /-! The complete common-point upper bound for actual finite integer sets.
 No StarBound, line estimate, affine normalization or supply inequality is

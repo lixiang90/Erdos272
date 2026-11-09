@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.UnitRows208
-import Erdos272.Arithmetic.Cap150RowsChecked209
-import Erdos272.Resources.CleanupRowBounds208
+module
+
+public import Erdos272.Arithmetic.UnitRows208
+public import Erdos272.Arithmetic.Cap150RowsChecked209
+public import Erdos272.Resources.CleanupRowBounds208
+
+@[expose] public section
 namespace JSP233.Cap150UnitRowsChecked209
 open CleanupEval208 CleanupMachineSound208
 set_option maxHeartbeats 0

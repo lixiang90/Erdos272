@@ -1,5 +1,9 @@
-import Erdos272.Foundation.PrivateFinset
-import Mathlib.Data.Finset.Powerset
+module
+
+public import Erdos272.Foundation.PrivateFinset
+public import Mathlib.Data.Finset.Powerset
+
+@[expose] public section
 
 namespace JSP233.SmallGround
 

@@ -1,5 +1,9 @@
-import Erdos272.Resources.HalfPrepared133
-import Erdos272.Resources.PairRecovery131
+module
+
+public import Erdos272.Resources.HalfPrepared133
+public import Erdos272.Resources.PairRecovery131
+
+@[expose] public section
 
 namespace JSP233.HalfRecovery133
 open StarCompletion APGeometry CoprimeDensity52 MiddleJoint51 MiddleDeficit52

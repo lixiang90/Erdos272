@@ -1,7 +1,13 @@
-import Erdos272.Arithmetic.HarmonicLog55
-import Erdos272.Resources.ResourceBudget56
-import Mathlib.Analysis.SumIntegralComparisons
-import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+module
+
+public import Erdos272.Arithmetic.HarmonicLog55
+public import Erdos272.Resources.ResourceBudget56
+public import Mathlib.Analysis.SumIntegralComparisons
+public import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 namespace JSP233.SimplexMoment57
 open scoped Classical BigOperators

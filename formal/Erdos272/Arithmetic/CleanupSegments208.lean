@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.CleanupEval208
+module
+
+public import Erdos272.Arithmetic.CleanupEval208
+
+@[expose] public section
 
 namespace JSP233.CleanupSegments208
 open CleanupEval208

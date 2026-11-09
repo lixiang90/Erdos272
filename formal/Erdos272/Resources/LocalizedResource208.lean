@@ -1,7 +1,13 @@
-import Erdos272.Resources.GcdResource208
-import Erdos272.Resources.FrontierGrid208
-import Erdos272.Resources.FrontierSum208
-import Erdos272.Resources.RawEndpoint115
+module
+
+public import Erdos272.Resources.GcdResource208
+public import Erdos272.Resources.FrontierGrid208
+public import Erdos272.Resources.FrontierSum208
+public import Erdos272.Resources.RawEndpoint115
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The actual middle resource is summed before the local error is estimated.
 The totient and finite reciprocal-square estimates are explicit hypotheses here. -/

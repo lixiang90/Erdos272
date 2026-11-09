@@ -1,4 +1,8 @@
-import Erdos272.Resources.SourceCertified208
+module
+
+public import Erdos272.Resources.SourceCertified208
+
+@[expose] public section
 
 /-! The selected unit-source layers pay the original family's actual pool.
 This interface deliberately retains that sum so APJoint208 can reserve AP

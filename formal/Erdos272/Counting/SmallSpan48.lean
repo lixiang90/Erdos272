@@ -1,4 +1,8 @@
-import Erdos272.Core.SmallJoint46
+module
+
+public import Erdos272.Core.SmallJoint46
+
+@[expose] public section
 namespace JSP233.SmallSpan48
 open StarCompletion SparseSmall39 SmallJoint46
 open scoped Classical BigOperators

@@ -1,4 +1,10 @@
-import Erdos272.Traces.AffinePayment47
+module
+
+public import Erdos272.Traces.AffinePayment47
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Tactic.NormNum.Prime
+
+@[expose] public section
 
 /-! Seventeen-prime affine8/error52 rows from the frozen nineteen-prime
 ordinary-kernel certificate. Only the two actual extra coprimes61 and67

@@ -1,7 +1,12 @@
-import Erdos272.Resources.FarCapacity112
-import Erdos272.Retention.LongTerminal35
-import Mathlib.Data.Finset.Sort
-import Mathlib.Tactic
+module
+
+public import Erdos272.Resources.FarCapacity112
+public import Erdos272.Retention.LongTerminal35
+public import Mathlib.Data.Finset.Sort
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual Short-source geometry and its complete ordered gap supply.
 

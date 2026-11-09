@@ -1,4 +1,8 @@
-import Erdos272.Resources.Unit240Geometry218
+module
+
+public import Erdos272.Resources.Unit240Geometry218
+
+@[expose] public section
 namespace JSP233.Unit240LightChecks218_G0
 open Unit240Geometry218
 set_option maxHeartbeats 0

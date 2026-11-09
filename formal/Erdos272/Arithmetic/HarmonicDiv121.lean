@@ -1,5 +1,12 @@
-import Erdos272.Resources.LocalMobius119
-import Erdos272.Arithmetic.HarmonicCorrect118
+module
+
+public import Erdos272.Resources.LocalMobius119
+public import Erdos272.Arithmetic.HarmonicCorrect118
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! Finite-prefix logarithmic summation and a uniform corrected harmonic
 bound. All quotient lengths, including1, remain in the physical sum. -/

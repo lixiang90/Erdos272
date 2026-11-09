@@ -1,5 +1,10 @@
-import Erdos272.Resources.ActualGrid212
-import Erdos272.Resources.Aligned208
+module
+
+public import Erdos272.Resources.ActualGrid212
+public import Erdos272.Resources.Aligned208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The same actual whole residue class is used for both external capacity
 and off-point counting. No aligned-only trace bound is used for off sources. -/

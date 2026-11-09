@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.FewOffGates212
-import Erdos272.Resources.AlignedPlans213
+module
+
+public import Erdos272.Arithmetic.FewOffGates212
+public import Erdos272.Resources.AlignedPlans213
+
+@[expose] public section
 namespace JSP233.FewOffGates213
 open AlignedPlans212 FewOffGates212
 open scoped Classical BigOperators

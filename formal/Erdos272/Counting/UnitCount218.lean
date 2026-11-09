@@ -1,6 +1,11 @@
-import Erdos272.Counting.PairShadowBudget218
-import Erdos272.Counting.APTail208
-import Erdos272.Resources.DenseDeletion208
+module
+
+public import Erdos272.Counting.PairShadowBudget218
+public import Erdos272.Counting.APTail208
+public import Erdos272.Resources.DenseDeletion208
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 namespace JSP233.UnitCount218
 open StarCompletion APGeometry APCount41 APTail208 HarmonicAbel29

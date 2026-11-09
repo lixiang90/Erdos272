@@ -1,6 +1,10 @@
-import Erdos272.Certificates.SigmaPrefixBlocks209
-import Erdos272.Arithmetic.SigmaValue209
-import Erdos272.Arithmetic.SigmaPrefix209
+module
+
+public import Erdos272.Certificates.SigmaPrefixBlocks209
+public import Erdos272.Arithmetic.SigmaValue209
+public import Erdos272.Arithmetic.SigmaPrefix209
+
+@[expose] public section
 namespace JSP233.SigmaWBlock209_011
 set_option maxHeartbeats 0
 set_option Elab.async false

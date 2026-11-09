@@ -1,7 +1,11 @@
-import Erdos272.Arithmetic.HarmonicCorrect118
-import Erdos272.Arithmetic.LogThree126
-import Erdos272.Arithmetic.Trapezoid130
-import Erdos272.Arithmetic.ConvexQuotient130
+module
+
+public import Erdos272.Arithmetic.HarmonicCorrect118
+public import Erdos272.Arithmetic.LogThree126
+public import Erdos272.Arithmetic.Trapezoid130
+public import Erdos272.Arithmetic.ConvexQuotient130
+
+@[expose] public section
 namespace JSP233.HarmonicWindow131
 open HarmonicAbel29 HarmonicLog55 HarmonicCorrect118
 open Set MeasureTheory intervalIntegral

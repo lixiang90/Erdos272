@@ -1,8 +1,12 @@
-import Erdos272.Certificates.SourcePrefixLinear208
-import Erdos272.Certificates.SourcePrefixBlocks208
-import Erdos272.Arithmetic.SourcePrefixSpecs208
-import Erdos272.Arithmetic.FastDecode208
-import Erdos272.Arithmetic.BatchSourceLinear208
+module
+
+public import Erdos272.Certificates.SourcePrefixLinear208
+public import Erdos272.Certificates.SourcePrefixBlocks208
+public import Erdos272.Arithmetic.SourcePrefixSpecs208
+public import Erdos272.Arithmetic.FastDecode208
+public import Erdos272.Arithmetic.BatchSourceLinear208
+
+@[expose] public section
 
 /-! Exactly the actual physical sizes 24928..25183, target row 13.
 The complete lookup has a separate kernel certificate. -/

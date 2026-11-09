@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.UniformMoment208
-import Erdos272.Resources.APResidual208
-import Erdos272.Resources.NeighborJoint208
+module
+
+public import Erdos272.Arithmetic.UniformMoment208
+public import Erdos272.Resources.APResidual208
+public import Erdos272.Resources.NeighborJoint208
+
+@[expose] public section
 
 /-! The analytic uniform source is supplied by the same actual intrinsic pool. -/
 namespace JSP233.UniformActual208

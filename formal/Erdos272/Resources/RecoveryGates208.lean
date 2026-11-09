@@ -1,4 +1,8 @@
-import Erdos272.Resources.Recovery208
+module
+
+public import Erdos272.Resources.Recovery208
+
+@[expose] public section
 
 /-! Rational gates for the four round207 affine resources. These are
 conditional algebraic implications; the actual family resources must still

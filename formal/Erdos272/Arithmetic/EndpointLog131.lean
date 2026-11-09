@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.LogIncrement131
+module
+
+public import Erdos272.Arithmetic.LogIncrement131
+
+@[expose] public section
 namespace JSP233.EndpointLog131
 set_option maxHeartbeats 0
 noncomputable section

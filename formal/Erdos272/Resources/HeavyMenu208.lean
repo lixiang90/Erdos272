@@ -1,4 +1,8 @@
-import Erdos272.Resources.BandGeometry208
+module
+
+public import Erdos272.Resources.BandGeometry208
+
+@[expose] public section
 
 namespace JSP233.HeavyMenu208
 open StarCompletion APGeometry NearAP36 ClippedWindows208 OrdinaryTruncate208 RightWindows208

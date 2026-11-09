@@ -1,7 +1,12 @@
-import Erdos272.Resources.TraceWitnessCodes36
-import Erdos272.Traces.DyadicTraceSupply36
-import Erdos272.Core.NearAP36
-import Erdos272.Counting.SharpInterval36
+module
+
+public import Erdos272.Resources.TraceWitnessCodes36
+public import Erdos272.Traces.DyadicTraceSupply36
+public import Erdos272.Core.NearAP36
+public import Erdos272.Counting.SharpInterval36
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual fixed-step maximal cores of finite integer sets, divisor-minimal
 traces, and their structural witness geometry.  No witness count or witness

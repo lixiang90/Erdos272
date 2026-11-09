@@ -1,5 +1,10 @@
-import Erdos272.Global.PaddedCommon212
-import Erdos272.Resources.SharpSmall212
+module
+
+public import Erdos272.Global.PaddedCommon212
+public import Erdos272.Resources.SharpSmall212
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.SharpCommon213
 open StarCompletion APGeometry DenseDeletion40 Density41 SparseSmall39

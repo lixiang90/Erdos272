@@ -1,5 +1,10 @@
-import Erdos272.Resources.RawEndpoint116
-import Erdos272.Retention.CrossBad116
+module
+
+public import Erdos272.Resources.RawEndpoint116
+public import Erdos272.Retention.CrossBad116
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The full endpoint profile forces quantitative room on both actual arms.
 The normalized profile hypothesis is paid from the independent bootstrap

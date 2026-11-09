@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.LightClosed208
-import Erdos272.Resources.RightWindows208
+module
+
+public import Erdos272.Arithmetic.LightClosed208
+public import Erdos272.Resources.RightWindows208
+
+@[expose] public section
 
 namespace JSP233.WindowCounts208
 open LightClosed208

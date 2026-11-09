@@ -1,7 +1,12 @@
-import Erdos272.Resources.UnitNearAggregate208
-import Erdos272.Resources.DeficiencyCuts208
-import Erdos272.Arithmetic.CleanupEval208
-import Erdos272.Resources.CoreCoordinates208
+module
+
+public import Erdos272.Resources.UnitNearAggregate208
+public import Erdos272.Resources.DeficiencyCuts208
+public import Erdos272.Arithmetic.CleanupEval208
+public import Erdos272.Resources.CoreCoordinates208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.ActualUnitSystem208
 open StarCompletion APGeometry NearAP36 SourceBridge208 SourcePrefixSpecs208 SourceCertified208

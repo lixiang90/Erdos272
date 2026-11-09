@@ -1,7 +1,11 @@
-import Erdos272.Resources.NativeRestore218
-import Erdos272.Counting.DensePair218
-import Erdos272.Counting.UnitAvoider218
-import Erdos272.Geometry.RetainedIntervals218
+module
+
+public import Erdos272.Resources.NativeRestore218
+public import Erdos272.Counting.DensePair218
+public import Erdos272.Counting.UnitAvoider218
+public import Erdos272.Geometry.RetainedIntervals218
+
+@[expose] public section
 
 /-! The terminal consumes the same original Start, its actual omitted
 avoiders, their proved density-six property, and native width 29. -/

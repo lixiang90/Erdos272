@@ -1,4 +1,11 @@
-import Erdos272.Traces.TraceDefect54
+module
+
+public import Erdos272.Traces.TraceDefect54
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Tactic.NormNum.Prime
+
+@[expose] public section
 
 namespace JSP233.FiniteSixteen54
 open PrimePrefix35 PrimorialPrefix46 PrimorialValue47 FiniteSeventeen52 TraceDefect54

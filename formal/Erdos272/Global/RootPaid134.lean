@@ -1,5 +1,9 @@
-import Erdos272.Global.RootBranch112
-import Erdos272.Counting.NearFar134
+module
+
+public import Erdos272.Global.RootBranch112
+public import Erdos272.Counting.NearFar134
+
+@[expose] public section
 
 /-! Fully paid actual common-Small root branch.
 

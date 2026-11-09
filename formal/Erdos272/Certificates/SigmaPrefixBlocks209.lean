@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.SigmaPrefix209
+module
+
+public import Erdos272.Arithmetic.SigmaPrefix209
+
+@[expose] public section
 
 namespace JSP233.SigmaPrefixBlocks209
 set_option maxHeartbeats 0

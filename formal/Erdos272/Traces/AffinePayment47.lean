@@ -1,4 +1,9 @@
-import Erdos272.Certificates.FiniteAffine47
+module
+
+public import Erdos272.Certificates.FiniteAffine47
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.AffinePayment47
 open AffineWitness47 PrimorialValue47 PrimorialPrefix46 AffineTrace46 FiniteAffine47
 open TraceWitnessCodes36 DyadicTraceSupply36 NearAP36 FarCore37

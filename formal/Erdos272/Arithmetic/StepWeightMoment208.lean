@@ -1,4 +1,12 @@
-import Erdos272.Arithmetic.StepWeightIntegral208
+module
+
+public import Erdos272.Arithmetic.StepWeightIntegral208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 
 /-! Exact finite step sums on the short tail; no zeta approximation enters. -/
 namespace JSP233.StepWeightMoment208

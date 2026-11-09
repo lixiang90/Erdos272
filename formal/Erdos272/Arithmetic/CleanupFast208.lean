@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.CleanupMachine208
+module
+
+public import Erdos272.Arithmetic.CleanupMachine208
+
+@[expose] public section
 namespace JSP233.CleanupFast208
 open CleanupMachine208
 set_option maxHeartbeats 0

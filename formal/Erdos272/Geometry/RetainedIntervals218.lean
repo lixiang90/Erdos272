@@ -1,6 +1,11 @@
-import Erdos272.Resources.InitialProfile218
-import Erdos272.Global.NonInterval53
-import Erdos272.Resources.DenseDeletion208
+module
+
+public import Erdos272.Resources.InitialProfile218
+public import Erdos272.Global.NonInterval53
+public import Erdos272.Resources.DenseDeletion208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.RetainedIntervals218
 open StarCompletion APGeometry DenseDeletion40 LongTerminal35 NonIntervalAP47
 open HarmonicAbel29 LocalResourceRecovery208 Recovery208

@@ -1,5 +1,9 @@
-import Erdos272.Construction.Construction45
-import Mathlib.Data.Finset.Lattice.Fold
+module
+
+public import Erdos272.Construction.Construction45
+public import Mathlib.Data.Finset.Lattice.Fold
+
+@[expose] public section
 
 /-! The actual extremal value of all legal finite families on Ground N.
 The exact equality is reduced to the remaining universal upper bound, with

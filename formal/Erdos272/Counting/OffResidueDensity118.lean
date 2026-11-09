@@ -1,6 +1,11 @@
-import Mathlib.Data.Finset.Card
-import Mathlib.Algebra.BigOperators.Group.Finset.Basic
-import Mathlib.Tactic
+module
+
+public import Mathlib.Data.Finset.Card
+public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! An exact finite dual certificate for disjoint off-residue classes.
 This local lemma concerns complete residue classes, not truncated AP traces.

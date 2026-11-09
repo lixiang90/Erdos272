@@ -1,5 +1,10 @@
-import Erdos272.Arithmetic.LightPhaseAnalytic209
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+module
+
+public import Erdos272.Arithmetic.LightPhaseAnalytic209
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.LightSeries209
 open LightPhaseAnalytic209

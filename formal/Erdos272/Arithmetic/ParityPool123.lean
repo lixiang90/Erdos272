@@ -1,4 +1,9 @@
-import Erdos272.Arithmetic.SimplexMoment57
+module
+
+public import Erdos272.Arithmetic.SimplexMoment57
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The actual gcd-factor encoder retains the coprimality of its two middle
 coordinates. The complete both-even subpool is removed by an actual scaling

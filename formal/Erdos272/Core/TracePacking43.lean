@@ -1,4 +1,8 @@
-import Erdos272.Retention.ThinFringe42
+module
+
+public import Erdos272.Retention.ThinFringe42
+
+@[expose] public section
 
 /-! Actual indexed traces with pairwise intersection at most one cannot all
 be long. No injectivity of the trace map or abstract pool capacity is assumed. -/

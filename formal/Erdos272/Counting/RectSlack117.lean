@@ -1,5 +1,11 @@
-import Mathlib.Data.Finset.Prod
-import Mathlib.Tactic
+module
+
+public import Mathlib.Data.Finset.Prod
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Group.Action.Defs
+
+@[expose] public section
 
 /-! Pure finite rectangular packing with an explicit missing-point slack.  The actual AP intersection argument
 that makes the rectangles disjoint is a separate geometric obligation. -/

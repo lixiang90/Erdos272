@@ -1,7 +1,11 @@
-import Erdos272.Counting.ActualPhase208
-import Erdos272.Resources.FewOffGeometry208
-import Erdos272.Arithmetic.FewOffGates208
-import Erdos272.Resources.AlignedPlans208
+module
+
+public import Erdos272.Counting.ActualPhase208
+public import Erdos272.Resources.FewOffGeometry208
+public import Erdos272.Arithmetic.FewOffGates208
+public import Erdos272.Resources.AlignedPlans208
+
+@[expose] public section
 
 /-! Actual few-off buckets, followed by the disjoint heavy/few split.
 The phase d,a is fixed before either count is performed. -/

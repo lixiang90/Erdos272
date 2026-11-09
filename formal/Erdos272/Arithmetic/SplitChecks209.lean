@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.DualFrontier209
-import Erdos272.Arithmetic.MarkerSieve209
+module
+
+public import Erdos272.Arithmetic.DualFrontier209
+public import Erdos272.Arithmetic.MarkerSieve209
+
+@[expose] public section
 namespace JSP233.SplitChecks209
 set_option maxHeartbeats 0
 

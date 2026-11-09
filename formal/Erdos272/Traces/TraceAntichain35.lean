@@ -1,8 +1,12 @@
-import Mathlib.Data.Nat.Factorization.Basic
-import Mathlib.Data.Finset.Max
-import Mathlib.Algebra.Ring.Parity
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
-import Mathlib.Tactic.Linarith
+module
+
+public import Mathlib.Data.Nat.Factorization.Basic
+public import Mathlib.Data.Finset.Max
+public import Mathlib.Algebra.Ring.Parity
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Mathlib.Tactic.Linarith
+
+@[expose] public section
 
 /-! Actual divisor-minimal traces have a square lower bound on their index sum.
 This module proves the finite arithmetic independently of the external KK file. -/

@@ -1,5 +1,9 @@
-import Erdos272.Resources.ActualJoint136
-import Erdos272.Resources.FarCut134
+module
+
+public import Erdos272.Resources.ActualJoint136
+public import Erdos272.Resources.FarCut134
+
+@[expose] public section
 namespace JSP233.FarWeighted136
 open StarCompletion APGeometry NearAP36 FarSlot112 FarCapacity112 FarJoint112
   FarShort112 FarFinal112 FarCut134

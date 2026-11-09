@@ -1,6 +1,13 @@
-import Erdos272.Certificates.FiniteSeventeen52
-import Erdos272.Counting.GraphDegree51
-import Mathlib.Data.Finset.Card
+module
+
+public import Erdos272.Certificates.FiniteSeventeen52
+public import Erdos272.Counting.GraphDegree51
+public import Mathlib.Data.Finset.Card
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Data.Nat.Choose.Cast
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual finite seventeen-prime tail layers, common-root prefix union,
 quotient-antichain odd slots and joint minimal-trace resource payments. -/

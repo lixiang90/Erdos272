@@ -1,4 +1,8 @@
-import Erdos272.Foundation.StaircaseSupply
+module
+
+public import Erdos272.Foundation.StaircaseSupply
+
+@[expose] public section
 
 /-! Actual thin-side unit-interval families inject into their primitive bad-pair pool.
 No profile cap, analytic estimate, or StarBound hypothesis is used. -/

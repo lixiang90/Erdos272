@@ -1,7 +1,13 @@
-import Erdos272.Resources.FarCore37
-import Erdos272.Resources.ShortPayment37
-import Erdos272.Core.FarAssembly37
-import Erdos272.Arithmetic.TotientRatio38
+module
+
+public import Erdos272.Resources.FarCore37
+public import Erdos272.Resources.ShortPayment37
+public import Erdos272.Core.FarAssembly37
+public import Erdos272.Arithmetic.TotientRatio38
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 /-! Actual short-prefix geometry with free-B payment. The original member
 constructs all traces, cores and witness codes internally. -/

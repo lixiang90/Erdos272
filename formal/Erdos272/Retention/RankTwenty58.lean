@@ -1,4 +1,9 @@
-import Erdos272.Retention.QuarterRestore54
+module
+
+public import Erdos272.Retention.QuarterRestore54
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Uniform physical payment for the actual minimum dense rank, followed by
 the complete r20/T98 table from the written cross-band startup argument.

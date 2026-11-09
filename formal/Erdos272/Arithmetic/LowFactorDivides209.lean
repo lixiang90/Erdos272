@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.FastFullLookup209
-import Erdos272.Arithmetic.ForcedDivides209
+module
+
+public import Erdos272.Arithmetic.FastFullLookup209
+public import Erdos272.Arithmetic.ForcedDivides209
+
+@[expose] public section
 namespace JSP233.LowFactorDivides209
 set_option maxHeartbeats 0
 set_option maxRecDepth 1000000

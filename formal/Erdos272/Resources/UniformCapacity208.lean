@@ -1,5 +1,10 @@
-import Erdos272.Resources.NeighborSlots208
-import Erdos272.Resources.APResidual208
+module
+
+public import Erdos272.Resources.NeighborSlots208
+public import Erdos272.Resources.APResidual208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! One weighted slot pool and one triple pool give the uniform capacity.
 The three rank distances are not charged as independent physical pools. -/

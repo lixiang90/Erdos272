@@ -1,7 +1,12 @@
-import Erdos272.Arithmetic.UnitFeeArithmetic208
-import Erdos272.Resources.UnitNearAggregate208
-import Erdos272.Resources.TruncatedAPResponse209
-import Erdos272.Arithmetic.ReciprocalPrice208
+module
+
+public import Erdos272.Arithmetic.UnitFeeArithmetic208
+public import Erdos272.Resources.UnitNearAggregate208
+public import Erdos272.Resources.TruncatedAPResponse209
+public import Erdos272.Arithmetic.ReciprocalPrice208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.TruncatedUnitPrices209
 open SourceCertified208 UnitRecipeStatic208 UnitRows208 ResidualTable208

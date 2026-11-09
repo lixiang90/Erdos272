@@ -1,7 +1,12 @@
-import Erdos272.Counting.WitnessInterval43
-import Erdos272.Resources.ExteriorWitness36
-import Erdos272.Geometry.Reflect37
-import Mathlib.NumberTheory.Divisors
+module
+
+public import Erdos272.Counting.WitnessInterval43
+public import Erdos272.Resources.ExteriorWitness36
+public import Erdos272.Geometry.Reflect37
+public import Mathlib.NumberTheory.Divisors
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual restricted bad witnesses: no witness at the selected anchor gives
 AP covers, and crooked traces give private two-divisor codes. -/

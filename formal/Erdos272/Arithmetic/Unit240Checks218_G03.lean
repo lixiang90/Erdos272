@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.CleanupFast208
-import Erdos272.Arithmetic.Unit240Rows218
+module
+
+public import Erdos272.Arithmetic.CleanupFast208
+public import Erdos272.Arithmetic.Unit240Rows218
+
+@[expose] public section
 namespace JSP233.Unit240Checks218_G03
 open CleanupMachine208 Unit240Rows218
 set_option maxHeartbeats 0

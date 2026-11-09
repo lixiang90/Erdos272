@@ -1,6 +1,12 @@
-import Erdos272.Counting.MiddleJoint51
-import Erdos272.Arithmetic.MixedFloor29
-import Mathlib.Analysis.PSeries
+module
+
+public import Erdos272.Counting.MiddleJoint51
+public import Erdos272.Arithmetic.MixedFloor29
+public import Mathlib.Analysis.PSeries
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.BigOperators.Field
+
+@[expose] public section
 
 /-! Finite coprime densities for the actual MiddleJoint51 resource pools.
 The finite convolution/sieve proof follows the fixed Erdos272 source at

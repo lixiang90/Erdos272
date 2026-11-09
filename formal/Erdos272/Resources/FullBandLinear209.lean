@@ -1,5 +1,11 @@
-import Erdos272.Resources.FullBandCleanup209
-import Erdos272.Arithmetic.HeavyFiniteSums209
+module
+
+public import Erdos272.Resources.FullBandCleanup209
+public import Erdos272.Arithmetic.HeavyFiniteSums209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.FullBandLinear209
 open StarCompletion APGeometry NearAP36 SourceBridge208

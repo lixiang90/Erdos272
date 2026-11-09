@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.FastLookupBridge209
-import Erdos272.Arithmetic.SplitChecks209
+module
+
+public import Erdos272.Arithmetic.FastLookupBridge209
+public import Erdos272.Arithmetic.SplitChecks209
+
+@[expose] public section
 namespace JSP233.FullCoverBlock209_002
 open FastFullLookup209
 set_option maxHeartbeats 0

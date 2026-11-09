@@ -1,5 +1,9 @@
-import Erdos272.Resources.StarBoundConcrete30
-import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+module
+
+public import Erdos272.Resources.StarBoundConcrete30
+public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+
+@[expose] public section
 
 /-! Actual original-family joint resources. All root triples are counted once.
 The remaining defect is the number of crooked large members whose actual

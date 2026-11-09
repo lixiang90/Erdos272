@@ -1,7 +1,11 @@
-import Erdos272.Foundation.StarCompletion
-import Mathlib.Data.Finset.Powerset
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
-import Mathlib.Tactic
+module
+
+public import Erdos272.Foundation.StarCompletion
+public import Mathlib.Data.Finset.Powerset
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! # The actual intrinsic triple resource
 

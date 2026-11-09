@@ -1,5 +1,10 @@
-import Erdos272.Counting.APTail208
-import Erdos272.Resources.APResidual208
+module
+
+public import Erdos272.Counting.APTail208
+public import Erdos272.Resources.APResidual208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! The AP and triple terms are paid for the same original family and the
 same longest actual AP member. Only the near/source fee remains an input. -/

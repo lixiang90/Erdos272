@@ -1,5 +1,9 @@
-import Erdos272.Resources.CoreDensity208
-import Mathlib.Data.Finset.Prod
+module
+
+public import Erdos272.Resources.CoreDensity208
+public import Mathlib.Data.Finset.Prod
+
+@[expose] public section
 
 /-! A proper refinement of an AP fills p-1 genuinely new points in every
 coarse gap. Both alternatives of the frozen unit block gate are proved from

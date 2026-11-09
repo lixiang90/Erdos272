@@ -1,5 +1,11 @@
-import Erdos272.Arithmetic.HalfWindow133
-import Erdos272.Resources.HalfRecovery133
+module
+
+public import Erdos272.Arithmetic.HalfWindow133
+public import Erdos272.Resources.HalfRecovery133
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.HalfWindowCertificate133
 open StarCompletion RestrictedWitness44 DivisorMoment45 HarmonicAbel29

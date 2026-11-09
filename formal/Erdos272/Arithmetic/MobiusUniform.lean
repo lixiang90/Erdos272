@@ -1,7 +1,11 @@
-import Erdos272.Arithmetic.Mobius1536
-import Mathlib.Algebra.BigOperators.Intervals
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Ring
+module
+
+public import Erdos272.Arithmetic.Mobius1536
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 /-! Uniform finite Moebius lower bound, using the actual 1536-term certificate.
 No infinite series or zeta identity is used. Floor and Abel estimates remain

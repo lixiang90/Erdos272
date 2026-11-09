@@ -1,11 +1,16 @@
-import Erdos272.Arithmetic.RawLogGate130
-import Erdos272.Resources.CoarseEndpoint130
-import Erdos272.Arithmetic.PreparationScales119
-import Erdos272.Retention.RestoreDense120
-import Erdos272.Retention.Restore11Ratio113
-import Erdos272.Global.NonInterval113
-import Erdos272.Counting.OneSided47
-import Erdos272.Global.NonInterval53
+module
+
+public import Erdos272.Arithmetic.RawLogGate130
+public import Erdos272.Resources.CoarseEndpoint130
+public import Erdos272.Arithmetic.PreparationScales119
+public import Erdos272.Retention.RestoreDense120
+public import Erdos272.Retention.Restore11Ratio113
+public import Erdos272.Global.NonInterval113
+public import Erdos272.Counting.OneSided47
+public import Erdos272.Global.NonInterval53
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 /-! Round129: same-family recovery from the direct fifteen-term moment. -/
 namespace JSP233.OriginalPrepare130

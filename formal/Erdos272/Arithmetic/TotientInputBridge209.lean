@@ -1,4 +1,9 @@
-import Erdos272.Resources.LocalResourceRecovery208
+module
+
+public import Erdos272.Resources.LocalResourceRecovery208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.TotientInputBridge209
 set_option maxHeartbeats 0
 

@@ -1,5 +1,9 @@
-import Erdos272.Resources.RecoveryResource213
-import Erdos272.Resources.CovarianceFamily214
+module
+
+public import Erdos272.Resources.RecoveryResource213
+public import Erdos272.Resources.CovarianceFamily214
+
+@[expose] public section
 namespace JSP233.RecoveryResource214
 open StarCompletion APGeometry HarmonicAbel29 DenseDeletion40
 open LocalRecovery208 Recovery208 RecoveryCaps213 AlignedPlans212

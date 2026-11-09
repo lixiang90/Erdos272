@@ -1,6 +1,10 @@
-import Erdos272.Resources.SourceCertified208
-import Erdos272.Resources.UnitNearAggregate208
-import Erdos272.Arithmetic.SourceLookupFast208
+module
+
+public import Erdos272.Resources.SourceCertified208
+public import Erdos272.Resources.UnitNearAggregate208
+public import Erdos272.Arithmetic.SourceLookupFast208
+
+@[expose] public section
 
 namespace JSP233.Source240216
 open SourceCertified208 UnitNearAggregate208 FastSource208 PureSource208

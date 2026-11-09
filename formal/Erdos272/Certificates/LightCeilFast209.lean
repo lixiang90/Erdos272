@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.LightCeil209
+module
+
+public import Erdos272.Arithmetic.LightCeil209
+
+@[expose] public section
 
 namespace JSP233.LightCeilFast209
 open ResidualCeil208

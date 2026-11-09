@@ -1,6 +1,13 @@
-import Erdos272.Arithmetic.CompleteFive128
-import Erdos272.Arithmetic.ExclusionTangent126
-import Erdos272.Arithmetic.PrefixSuper127
+module
+
+public import Erdos272.Arithmetic.CompleteFive128
+public import Erdos272.Arithmetic.ExclusionTangent126
+public import Erdos272.Arithmetic.PrefixSuper127
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 
 namespace JSP233.DirectMoment128
 open SimplexMoment57 DivisorMoment122 VolumeLower125 HarmonicAbel29

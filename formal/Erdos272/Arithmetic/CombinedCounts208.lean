@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.WindowCounts208
-import Erdos272.Resources.HeavyMenu208
+module
+
+public import Erdos272.Arithmetic.WindowCounts208
+public import Erdos272.Resources.HeavyMenu208
+
+@[expose] public section
 
 namespace JSP233.CombinedCounts208
 open LightClosed208 WindowCounts208

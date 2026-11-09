@@ -1,4 +1,8 @@
-import Erdos272.Counting.LightPhases208
+module
+
+public import Erdos272.Counting.LightPhases208
+
+@[expose] public section
 
 namespace JSP233.LightClosed208
 open LightPhases208

@@ -1,5 +1,9 @@
-import Erdos272.Resources.NeighborMass208
-import Erdos272.Resources.UniformCapacity208
+module
+
+public import Erdos272.Resources.NeighborMass208
+public import Erdos272.Resources.UniformCapacity208
+
+@[expose] public section
 
 /-! The exact mixed uniform source pays the actual joint slot/triple mass. -/
 namespace JSP233.NeighborJoint208

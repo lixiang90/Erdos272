@@ -1,4 +1,9 @@
-import Erdos272.Global.Startup49
+module
+
+public import Erdos272.Global.Startup49
+public import Mathlib.Data.Fin.VecNotation
+
+@[expose] public section
 
 /-! All thirty finite startup blocks. Data supplies only numerals; every arithmetic
 and finite prime-count assertion below is checked by the ordinary Lean kernel. -/

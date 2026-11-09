@@ -1,8 +1,15 @@
-import Erdos272.Arithmetic.LightValues209
-import Erdos272.Resources.LightUnweighted209
-import Erdos272.Arithmetic.CappedValues209
-import Erdos272.Resources.IntegerUniformShape209
-import Erdos272.Arithmetic.IntegerLightLog209
+module
+
+public import Erdos272.Arithmetic.LightValues209
+public import Erdos272.Resources.LightUnweighted209
+public import Erdos272.Arithmetic.CappedValues209
+public import Erdos272.Resources.IntegerUniformShape209
+public import Erdos272.Arithmetic.IntegerLightLog209
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.IntegerUniformLight209
 open StarCompletion APGeometry SevenFamily208

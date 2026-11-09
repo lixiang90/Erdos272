@@ -1,5 +1,10 @@
-import Erdos272.Counting.NearWhole112
-import Erdos272.Arithmetic.HarmonicLog55
+module
+
+public import Erdos272.Counting.NearWhole112
+public import Erdos272.Arithmetic.HarmonicLog55
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 namespace JSP233.FiniteNear136
 open StarCompletion APGeometry NearAP36 NearWhole112 HarmonicAbel29
 open scoped Classical BigOperators

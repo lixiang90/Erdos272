@@ -1,6 +1,12 @@
-import Erdos272.Resources.ResourceSymmetry56
-import Erdos272.Resources.TotientRows208
-import Mathlib.Tactic
+module
+
+public import Erdos272.Resources.ResourceSymmetry56
+public import Erdos272.Resources.TotientRows208
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Exact finite identities for the localized middle resource.
 The frontier height remains the actual height selected by MiddleJoint51.

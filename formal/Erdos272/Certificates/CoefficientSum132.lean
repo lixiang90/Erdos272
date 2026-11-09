@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.ScaleWindow132
+module
+
+public import Erdos272.Arithmetic.ScaleWindow132
+
+@[expose] public section
 
 namespace JSP233.CoefficientSum132
 open PairWindow131 ScaleWindow132

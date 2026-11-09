@@ -1,4 +1,10 @@
-import Erdos272.Retention.DenseAligned117
+module
+
+public import Erdos272.Retention.DenseAligned117
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! A separate dense10 specialization, preserving the frozen first dense117
 module.  This is used only after the actual minimum source exceeds N/10. -/

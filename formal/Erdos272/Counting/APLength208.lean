@@ -1,4 +1,9 @@
-import Erdos272.Counting.APCount41
+module
+
+public import Erdos272.Counting.APCount41
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual unit-step APs with a common root, separated by their actual lengths. -/
 namespace JSP233.APLength208

@@ -1,5 +1,9 @@
-import Erdos272.Geometry.AnchorHalf136
-import Mathlib.Combinatorics.Enumerative.DoubleCounting
+module
+
+public import Erdos272.Geometry.AnchorHalf136
+public import Mathlib.Combinatorics.Enumerative.DoubleCounting
+
+@[expose] public section
 namespace JSP233.CoreShellHalf136
 open StarCompletion APGeometry FarSlot112 FarCapacity112 FarJoint112 LongTerminal35
 open AnchorHalf136

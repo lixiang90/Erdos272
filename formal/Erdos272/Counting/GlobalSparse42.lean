@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.WeightedPeriod42
-import Erdos272.Counting.Density41
+module
+
+public import Erdos272.Arithmetic.WeightedPeriod42
+public import Erdos272.Counting.Density41
+
+@[expose] public section
 
 /-! All-N actual large-family budgets and original-family sparse crooked roots.
 All arithmetic, band, weighted and density inputs are discharged internally. -/

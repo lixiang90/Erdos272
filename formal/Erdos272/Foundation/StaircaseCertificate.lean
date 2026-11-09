@@ -1,8 +1,12 @@
-import Mathlib.Data.Finset.Card
-import Mathlib.Algebra.BigOperators.Group.Finset.Basic
-import Mathlib.Data.Nat.GCD.Basic
-import Mathlib.Tactic.Linarith
-import Lean.Elab.Tactic.Omega
+module
+
+public import Mathlib.Data.Finset.Card
+public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+public import Mathlib.Data.Nat.GCD.Basic
+public import Mathlib.Tactic.Linarith
+public import Lean.Elab.Tactic.Omega
+
+@[expose] public section
 
 /-!
 Kernel-checked local potential certificates for finite decreasing staircase

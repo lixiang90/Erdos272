@@ -1,5 +1,11 @@
-import Erdos272.Counting.NearFloorDyadic64
-import Mathlib.Data.Nat.Log
+module
+
+public import Erdos272.Counting.NearFloorDyadic64
+public import Mathlib.Data.Nat.Log
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-!
 Actual core-first Near bounds and the half-open size decomposition used in

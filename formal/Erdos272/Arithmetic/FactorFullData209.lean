@@ -1,4 +1,9 @@
-import Erdos272.Arithmetic.MarkerSieve209
+module
+
+public import Erdos272.Arithmetic.MarkerSieve209
+public import Mathlib.Tactic.NormNum.Prime
+
+@[expose] public section
 namespace JSP233.FactorFullData209
 set_option maxHeartbeats 0
 set_option maxRecDepth 1000000

@@ -1,4 +1,10 @@
-import Erdos272.Retention.Relative13Fringe116
+module
+
+public import Erdos272.Retention.Relative13Fringe116
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Relative off-point capacity retains the actual minimum full-source size.
 No source is reinterpreted as a legal family on the trace interval. -/

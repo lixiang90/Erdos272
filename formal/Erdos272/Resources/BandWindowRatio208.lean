@@ -1,4 +1,9 @@
-import Erdos272.Resources.WindowRatio208
+module
+
+public import Erdos272.Resources.WindowRatio208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.BandWindowRatio208
 open StarCompletion ClippedWindows208 HeavyMenu208 WindowRatio208 CleanupNet208

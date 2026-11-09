@@ -1,8 +1,12 @@
-import Erdos272.Certificates.ForcedDual209
-import Erdos272.Arithmetic.DualFrontier209
-import Erdos272.Arithmetic.FactorFullCertificate209
-import Erdos272.Arithmetic.SplitChecks209
-import Erdos272.Arithmetic.FullPrefix209_012
+module
+
+public import Erdos272.Certificates.ForcedDual209
+public import Erdos272.Arithmetic.DualFrontier209
+public import Erdos272.Arithmetic.FactorFullCertificate209
+public import Erdos272.Arithmetic.SplitChecks209
+public import Erdos272.Arithmetic.FullPrefix209_012
+
+@[expose] public section
 namespace JSP233.FullPrefix209_013
 set_option maxHeartbeats 0
 set_option Elab.async false

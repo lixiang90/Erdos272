@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.StepWeightTail208
+module
+
+public import Erdos272.Arithmetic.StepWeightTail208
+
+@[expose] public section
 
 /-! The actual semiconvex short tail has a 5/2 error per unit interval. -/
 namespace JSP233.StepWeightIntegral208

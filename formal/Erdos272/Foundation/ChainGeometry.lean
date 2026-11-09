@@ -1,6 +1,10 @@
-import Erdos272.Foundation.TwoTraceGlobal
-import Erdos272.Foundation.PrimeKernel
-import Mathlib.Data.Finset.Max
+module
+
+public import Erdos272.Foundation.TwoTraceGlobal
+public import Erdos272.Foundation.PrimeKernel
+public import Mathlib.Data.Finset.Max
+
+@[expose] public section
 
 /-! A genuine private point from divisibility-comparable actual AP steps.
 No trace classification, private-point oracle, or capacity is assumed. -/

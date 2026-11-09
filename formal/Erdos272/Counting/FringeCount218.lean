@@ -1,6 +1,12 @@
-import Erdos272.Resources.AlignedPlans212
-import Erdos272.Resources.ActualGrid212
-import Erdos272.Counting.TerminalDeficit51
+module
+
+public import Erdos272.Resources.AlignedPlans212
+public import Erdos272.Resources.ActualGrid212
+public import Erdos272.Counting.TerminalDeficit51
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 namespace JSP233.FringeCount218
 open StarCompletion APGeometry DenseDeletion40 OffResidue44

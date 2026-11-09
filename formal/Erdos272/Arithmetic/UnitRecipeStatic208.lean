@@ -1,7 +1,11 @@
-import Erdos272.Arithmetic.CleanupRecipes208
-import Erdos272.Arithmetic.CleanupMachineSound208
-import Erdos272.Resources.SourceCertified208
-import Mathlib.Data.List.GetD
+module
+
+public import Erdos272.Arithmetic.CleanupRecipes208
+public import Erdos272.Arithmetic.CleanupMachineSound208
+public import Erdos272.Resources.SourceCertified208
+public import Mathlib.Data.List.GetD
+
+@[expose] public section
 
 namespace JSP233.UnitRecipeStatic208
 open SourcePrefixSpecs208 SourceCertified208

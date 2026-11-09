@@ -1,5 +1,11 @@
-import Erdos272.Resources.FullBandCredit209
-import Erdos272.Resources.NearCapped209
+module
+
+public import Erdos272.Resources.FullBandCredit209
+public import Erdos272.Resources.NearCapped209
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.FullBandCleanup209
 open StarCompletion APGeometry NearAP36 SourceBridge208 ShiftedBlocks208

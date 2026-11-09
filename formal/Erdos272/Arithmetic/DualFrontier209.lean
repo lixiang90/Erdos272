@@ -1,4 +1,11 @@
-import Erdos272.Arithmetic.FrontierCheck209
+module
+
+public import Erdos272.Arithmetic.FrontierCheck209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Basic.Real.Basic
+
+@[expose] public section
 namespace JSP233.DualFrontier209
 open scoped BigOperators
 set_option maxHeartbeats 0

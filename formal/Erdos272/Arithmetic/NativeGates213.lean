@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.NativeGates212
+module
+
+public import Erdos272.Arithmetic.NativeGates212
+
+@[expose] public section
 namespace JSP233.NativeGates213
 open AlignedPlans212 FewOffGates212
 open scoped Classical BigOperators

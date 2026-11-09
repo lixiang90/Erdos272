@@ -1,4 +1,10 @@
-import Erdos272.Arithmetic.CompletePool126
+module
+
+public import Erdos272.Arithmetic.CompletePool126
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.CompleteFive128
 open ParityPool123 DivisorMoment45 SimplexMoment57

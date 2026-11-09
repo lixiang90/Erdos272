@@ -1,4 +1,8 @@
-import Erdos272.Resources.OrdinaryTruncate208
+module
+
+public import Erdos272.Resources.OrdinaryTruncate208
+
+@[expose] public section
 
 namespace JSP233.RightWindows208
 open StarCompletion APGeometry NearAP36 ClippedWindows208

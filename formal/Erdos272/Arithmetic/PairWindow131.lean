@@ -1,5 +1,13 @@
-import Erdos272.Arithmetic.PrefixState131
-import Erdos272.Arithmetic.CompleteSeven129
+module
+
+public import Erdos272.Arithmetic.PrefixState131
+public import Erdos272.Arithmetic.CompleteSeven129
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.Order.Floor.Semifield
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 
 namespace JSP233.PairWindow131
 open PairWeighted131 PrefixState131 SimplexMoment57

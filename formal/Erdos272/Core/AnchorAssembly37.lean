@@ -1,8 +1,12 @@
-import Erdos272.Capacity.AnchorCapacity33
-import Erdos272.Capacity.AnchorEuler33
-import Erdos272.Resources.FactorCells34
-import Erdos272.Traces.PureTailCollision35
-import Mathlib.Data.Finset.Sort
+module
+
+public import Erdos272.Capacity.AnchorCapacity33
+public import Erdos272.Capacity.AnchorEuler33
+public import Erdos272.Resources.FactorCells34
+public import Erdos272.Traces.PureTailCollision35
+public import Mathlib.Data.Finset.Sort
+
+@[expose] public section
 
 /-! Native nonprincipal-prefix charging and its actual gcd-cell resource payment.
 The prefix and key choices below are constructed from the finite traces. -/

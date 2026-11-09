@@ -1,6 +1,11 @@
-import Erdos272.Geometry.ResidueSpacing46
-import Erdos272.Resources.MeetingPool46
-import Erdos272.Geometry.RootedIntervals46
+module
+
+public import Erdos272.Geometry.ResidueSpacing46
+public import Erdos272.Resources.MeetingPool46
+public import Erdos272.Geometry.RootedIntervals46
+public import Mathlib.Data.Int.Interval
+
+@[expose] public section
 
 /-! The actual interval/witness pool for an actual step-at-least-three avoider. -/
 namespace JSP233.ResiduePool46

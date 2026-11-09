@@ -1,5 +1,12 @@
-import Erdos272.Resources.NearCapped209
-import Erdos272.Arithmetic.ResidualCeil208
+module
+
+public import Erdos272.Resources.NearCapped209
+public import Erdos272.Arithmetic.ResidualCeil208
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.CappedCeil209
 open scoped BigOperators

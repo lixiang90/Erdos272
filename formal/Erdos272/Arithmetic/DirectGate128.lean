@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.RawLogGate127
+module
+
+public import Erdos272.Arithmetic.RawLogGate127
+
+@[expose] public section
 namespace JSP233.DirectGate128
 open scoped Classical BigOperators
 noncomputable section

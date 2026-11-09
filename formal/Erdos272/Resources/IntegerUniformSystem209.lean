@@ -1,5 +1,11 @@
-import Erdos272.Arithmetic.IntegerUniformQueries209
-import Erdos272.Resources.ActualUnitSystem208
+module
+
+public import Erdos272.Arithmetic.IntegerUniformQueries209
+public import Erdos272.Resources.ActualUnitSystem208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Tactic.NormNum.Prime
+
+@[expose] public section
 
 namespace JSP233.IntegerUniformSystem209
 open StarCompletion APGeometry NearAP36 SourceBridge208 SourcePrefixSpecs208

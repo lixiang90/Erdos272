@@ -1,4 +1,10 @@
-import Erdos272.Arithmetic.CleanupIntegral209
+module
+
+public import Erdos272.Arithmetic.CleanupIntegral209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.HeavyFiniteSums209
 open CleanupIntegral209

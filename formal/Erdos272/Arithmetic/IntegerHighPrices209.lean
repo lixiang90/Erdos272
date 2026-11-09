@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.SevenPrices208
+module
+
+public import Erdos272.Arithmetic.SevenPrices208
+
+@[expose] public section
 namespace JSP233.IntegerHighPrices209
 open ReciprocalPrice208 SevenPrices208
 noncomputable section

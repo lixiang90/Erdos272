@@ -1,7 +1,12 @@
-import Erdos272.Arithmetic.FactorFullCertificate209
-import Erdos272.Arithmetic.SigmaBaseActual209
-import Erdos272.Arithmetic.SigmaValue209
-import Erdos272.Arithmetic.SigmaWChecked209
+module
+
+public import Erdos272.Arithmetic.FactorFullCertificate209
+public import Erdos272.Arithmetic.SigmaBaseActual209
+public import Erdos272.Arithmetic.SigmaValue209
+public import Erdos272.Arithmetic.SigmaWChecked209
+public import Mathlib.Basic.Real.Basic
+
+@[expose] public section
 namespace JSP233.SigmaCertificate209
 set_option maxHeartbeats 0
 open FactorFullData209

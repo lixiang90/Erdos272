@@ -1,5 +1,10 @@
-import Erdos272.Resources.ActualUnitCut218
-import Erdos272.Arithmetic.Unit240Light218
+module
+
+public import Erdos272.Resources.ActualUnitCut218
+public import Erdos272.Arithmetic.Unit240Light218
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.Unit240Family218
 open StarCompletion APGeometry NearAP36 SourceCertified208

@@ -1,18 +1,22 @@
-import Erdos272.Arithmetic.FullCoverage209
-import Erdos272.Arithmetic.FullDivBlock209_000
-import Erdos272.Arithmetic.FullDivBlock209_001
-import Erdos272.Arithmetic.FullDivBlock209_002
-import Erdos272.Arithmetic.FullDivBlock209_003
-import Erdos272.Arithmetic.FullDivBlock209_004
-import Erdos272.Arithmetic.FullDivBlock209_005
-import Erdos272.Arithmetic.FullDivBlock209_006
-import Erdos272.Arithmetic.FullDivBlock209_007
-import Erdos272.Arithmetic.FullDivBlock209_008
-import Erdos272.Arithmetic.FullDivBlock209_009
-import Erdos272.Arithmetic.FullDivBlock209_010
-import Erdos272.Arithmetic.FullDivBlock209_011
-import Erdos272.Arithmetic.FullDivBlock209_012
-import Erdos272.Arithmetic.FactorSoundBridge209
+module
+
+public import Erdos272.Arithmetic.FullCoverage209
+public import Erdos272.Arithmetic.FullDivBlock209_000
+public import Erdos272.Arithmetic.FullDivBlock209_001
+public import Erdos272.Arithmetic.FullDivBlock209_002
+public import Erdos272.Arithmetic.FullDivBlock209_003
+public import Erdos272.Arithmetic.FullDivBlock209_004
+public import Erdos272.Arithmetic.FullDivBlock209_005
+public import Erdos272.Arithmetic.FullDivBlock209_006
+public import Erdos272.Arithmetic.FullDivBlock209_007
+public import Erdos272.Arithmetic.FullDivBlock209_008
+public import Erdos272.Arithmetic.FullDivBlock209_009
+public import Erdos272.Arithmetic.FullDivBlock209_010
+public import Erdos272.Arithmetic.FullDivBlock209_011
+public import Erdos272.Arithmetic.FullDivBlock209_012
+public import Erdos272.Arithmetic.FactorSoundBridge209
+
+@[expose] public section
 namespace JSP233.FactorFullCertificate209
 open FactorFullData209
 set_option maxHeartbeats 0

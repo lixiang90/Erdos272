@@ -1,5 +1,9 @@
-import Erdos272.Counting.PotentialPhases208
-import Erdos272.Counting.HeavyCredit208
+module
+
+public import Erdos272.Counting.PotentialPhases208
+public import Erdos272.Counting.HeavyCredit208
+
+@[expose] public section
 
 namespace JSP233.LightPhases208
 open StarCompletion APGeometry NearAP36 ShiftedBlocks208 PotentialPhases208

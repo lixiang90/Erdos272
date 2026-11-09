@@ -1,4 +1,8 @@
-import Erdos272.Resources.TraceWitnessCodes36
+module
+
+public import Erdos272.Resources.TraceWitnessCodes36
+
+@[expose] public section
 
 /-! Integer reflection preserves actual AP cores and intrinsic witness pairs. -/
 namespace JSP233.Reflect37

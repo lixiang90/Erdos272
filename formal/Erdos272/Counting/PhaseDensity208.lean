@@ -1,4 +1,10 @@
-import Erdos272.Counting.FullResidueBudget119
+module
+
+public import Erdos272.Counting.FullResidueBudget119
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Data.Nat.Cast.Field
+
+@[expose] public section
 
 /-! A finite dual for the ordinary moduli at most eleven. The exceptional
 prime moduli seven and eleven force all disjoint classes to share that modulus. -/

@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.TotientSieve208
+module
+
+public import Erdos272.Arithmetic.TotientSieve208
+
+@[expose] public section
 
 /-! A kernel-computable prime test for the totient recurrence checker.
 The ordinary `Decidable Nat.Prime` instance checks all smaller candidates.

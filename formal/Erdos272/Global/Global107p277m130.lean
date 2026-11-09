@@ -1,6 +1,10 @@
-import Erdos272.Global.CroftKernel113
-import Erdos272.Global.OriginalPrepare130
-import Erdos272.Global.GlobalUpper53
+module
+
+public import Erdos272.Global.CroftKernel113
+public import Erdos272.Global.OriginalPrepare130
+public import Erdos272.Global.GlobalUpper53
+
+@[expose] public section
 
 /-! The original-family bound for N >= 107277000. The root and recovery
 lemmas cover the whole interval below 2^49; the simpler theorem supplies the tail. -/

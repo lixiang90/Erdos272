@@ -1,6 +1,12 @@
-import Erdos272.Resources.BandWindowRatio208
-import Erdos272.Resources.CrossBandNormalize208
-import Erdos272.Resources.CleanupChecked208
+module
+
+public import Erdos272.Resources.BandWindowRatio208
+public import Erdos272.Resources.CrossBandNormalize208
+public import Erdos272.Resources.CleanupChecked208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.ActualBandEval208
 open StarCompletion APGeometry NearAP36 SourceBridge208

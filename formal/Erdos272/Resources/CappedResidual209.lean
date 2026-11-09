@@ -1,6 +1,12 @@
-import Erdos272.Arithmetic.CappedWeights209
-import Erdos272.Counting.CoarseCensus209
-import Erdos272.Resources.ResidualGlobal208
+module
+
+public import Erdos272.Arithmetic.CappedWeights209
+public import Erdos272.Counting.CoarseCensus209
+public import Erdos272.Resources.ResidualGlobal208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.CappedResidual209
 open StarCompletion APGeometry NearAP36 ResidualStratum208 ResidualGlobal208 ResidualPrice208

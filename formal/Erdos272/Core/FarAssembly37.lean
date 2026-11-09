@@ -1,6 +1,10 @@
-import Erdos272.Resources.FarCore37
-import Erdos272.Geometry.Reflect37
-import Erdos272.Resources.FarWitness36
+module
+
+public import Erdos272.Resources.FarCore37
+public import Erdos272.Geometry.Reflect37
+public import Erdos272.Resources.FarWitness36
+
+@[expose] public section
 
 /-! Complete actual far witness geometry at an arbitrary anchor and its
 integration into the true near/far band and dyadic large-family budgets.

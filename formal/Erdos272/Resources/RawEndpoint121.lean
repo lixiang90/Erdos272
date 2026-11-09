@@ -1,6 +1,12 @@
-import Erdos272.Resources.LocalMobius121
-import Erdos272.Arithmetic.HarmonicDiv121
-import Erdos272.Resources.RawEndpoint118
+module
+
+public import Erdos272.Resources.LocalMobius121
+public import Erdos272.Arithmetic.HarmonicDiv121
+public import Erdos272.Resources.RawEndpoint118
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Sum actual local-cutoff middle rows at their common physical density.
 The reciprocal cutoff loss is paid by half of its true local area. A finite cubic cutoff leaves only an absolute square-sum loss. The full

@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.UniformHigh208
-import Erdos272.Arithmetic.UniformConcave208
-import Erdos272.Resources.UniformScale208
+module
+
+public import Erdos272.Arithmetic.UniformHigh208
+public import Erdos272.Arithmetic.UniformConcave208
+public import Erdos272.Resources.UniformScale208
+
+@[expose] public section
 
 /-! A finite rational height test controls the entire continuous source domain. -/
 namespace JSP233.UniformEnvelope208

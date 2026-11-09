@@ -1,5 +1,11 @@
-import Erdos272.Resources.IntegerUniformRows209
-import Erdos272.Arithmetic.IntegerLowPrices209
+module
+
+public import Erdos272.Resources.IntegerUniformRows209
+public import Erdos272.Arithmetic.IntegerLowPrices209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Data.List.GetD
+
+@[expose] public section
 
 namespace JSP233.IntegerUniformProfiles209
 open StarCompletion APGeometry SourceBridge208 SevenFamily208 CrossBandCredit208 CrossBandCleanup208

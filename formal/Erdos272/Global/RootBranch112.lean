@@ -1,6 +1,11 @@
-import Erdos272.Global.RootEnvelope112
-import Erdos272.Counting.NearWhole112
-import Erdos272.Global.SparseSmall39
+module
+
+public import Erdos272.Global.RootEnvelope112
+public import Erdos272.Counting.NearWhole112
+public import Erdos272.Global.SparseSmall39
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual first-omitter preparation for the whole root branch.
 All root-bearing members and all actual avoiders are retained. The final

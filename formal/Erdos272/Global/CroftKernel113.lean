@@ -1,7 +1,11 @@
-import Erdos272.Core.SmallKernel112
-import Erdos272.Global.RootPaid113
-import Erdos272.Arithmetic.UniformScale113
-import Erdos272.Counting.APDensity112
+module
+
+public import Erdos272.Core.SmallKernel112
+public import Erdos272.Global.RootPaid113
+public import Erdos272.Arithmetic.UniformScale113
+public import Erdos272.Counting.APDensity112
+
+@[expose] public section
 
 /-!
 The complete sparse-croft empty-kernel alternative, followed by the actual

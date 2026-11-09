@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.CleanupMachine208
-import Erdos272.Resources.UnitNearAggregate208
-import Erdos272.Resources.SourceCut216
+module
+
+public import Erdos272.Arithmetic.CleanupMachine208
+public import Erdos272.Resources.UnitNearAggregate208
+public import Erdos272.Resources.SourceCut216
+
+@[expose] public section
 namespace JSP233.Unit240Rows218
 open CleanupMachine208 UnitNearAggregate208
 noncomputable section

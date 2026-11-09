@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.FactorFullData209
+module
+
+public import Erdos272.Arithmetic.FactorFullData209
+
+@[expose] public section
 namespace JSP233.SmallCover209
 set_option maxHeartbeats 0
 def Small : List Nat := [2,3,5,7,11,13]

@@ -1,4 +1,8 @@
-import Erdos272.Foundation.PrimePowerCapacity
+module
+
+public import Erdos272.Foundation.PrimePowerCapacity
+
+@[expose] public section
 
 namespace JSP233.FiveSixths
 

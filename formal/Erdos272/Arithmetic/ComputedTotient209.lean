@@ -1,4 +1,9 @@
-import Erdos272.Arithmetic.MarkerSieve209
+module
+
+public import Erdos272.Arithmetic.MarkerSieve209
+public import Mathlib.Tactic.NormNum.Prime
+
+@[expose] public section
 
 /-! A totient evaluator from a proposed small-factor table. The table contains
 no totient values above the existing certified base. A zero factor is accepted

@@ -1,6 +1,10 @@
-import Erdos272.Foundation.PrivatePairExistence
-import Mathlib.Data.Finset.Powerset
-import Mathlib.Data.Finset.SDiff
+module
+
+public import Erdos272.Foundation.PrivatePairExistence
+public import Mathlib.Data.Finset.Powerset
+public import Mathlib.Data.Finset.SDiff
+
+@[expose] public section
 
 /-! Actual common-root resource accounting. The AP-line estimate is a
 separate geometric input here; none of the resource inequalities below

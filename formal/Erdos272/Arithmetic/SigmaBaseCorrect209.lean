@@ -1,11 +1,15 @@
-import Erdos272.Arithmetic.SigmaBaseBlock209_00002
-import Erdos272.Arithmetic.SigmaBaseBlock209_04098
-import Erdos272.Arithmetic.SigmaBaseBlock209_08194
-import Erdos272.Arithmetic.SigmaBaseBlock209_12290
-import Erdos272.Arithmetic.SigmaBaseBlock209_16386
-import Erdos272.Arithmetic.SigmaBaseBlock209_20482
-import Erdos272.Arithmetic.SigmaBaseBlock209_24578
-import Erdos272.Arithmetic.SigmaBaseBlock209_28674
+module
+
+public import Erdos272.Arithmetic.SigmaBaseBlock209_00002
+public import Erdos272.Arithmetic.SigmaBaseBlock209_04098
+public import Erdos272.Arithmetic.SigmaBaseBlock209_08194
+public import Erdos272.Arithmetic.SigmaBaseBlock209_12290
+public import Erdos272.Arithmetic.SigmaBaseBlock209_16386
+public import Erdos272.Arithmetic.SigmaBaseBlock209_20482
+public import Erdos272.Arithmetic.SigmaBaseBlock209_24578
+public import Erdos272.Arithmetic.SigmaBaseBlock209_28674
+
+@[expose] public section
 namespace JSP233.SigmaBaseCorrect209
 set_option maxHeartbeats 0
 theorem step (n : Nat) (hn : 2≤n) (hnH : n≤32753) :

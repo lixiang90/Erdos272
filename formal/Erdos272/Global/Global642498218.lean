@@ -1,7 +1,11 @@
-import Erdos272.Global.Global653292214
-import Erdos272.Global.Common240218
-import Erdos272.Resources.PaddedUnit240218
-import Erdos272.Global.Rooted642498218
+module
+
+public import Erdos272.Global.Global653292214
+public import Erdos272.Global.Common240218
+public import Erdos272.Resources.PaddedUnit240218
+public import Erdos272.Global.Rooted642498218
+
+@[expose] public section
 
 /-! Same-family pair-shadow recovery joins the closed minimum240 common-root
 entry.  All actual source, density, geometry and terminal facts are internal. -/

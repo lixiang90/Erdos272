@@ -1,6 +1,10 @@
-import Erdos272.Resources.StarBoundConcrete30
-import Mathlib.Data.Finset.Sigma
-import Mathlib.Algebra.BigOperators.Intervals
+module
+
+public import Erdos272.Resources.StarBoundConcrete30
+public import Mathlib.Data.Finset.Sigma
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! Actual adjacent trace classes and exterior private points. -/
 namespace JSP233.ThinFringe33

@@ -1,7 +1,12 @@
-import Erdos272.Arithmetic.UnitRows208
-import Erdos272.Resources.SourceCertified208
-import Erdos272.Arithmetic.ResidualTable208
-import Erdos272.Arithmetic.SevenPrices208
+module
+
+public import Erdos272.Arithmetic.UnitRows208
+public import Erdos272.Resources.SourceCertified208
+public import Erdos272.Arithmetic.ResidualTable208
+public import Erdos272.Arithmetic.SevenPrices208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.UnitFeeArithmetic208
 open SourceCertified208 UnitRecipeStatic208 UnitRows208 ResidualTable208 SevenPrices208

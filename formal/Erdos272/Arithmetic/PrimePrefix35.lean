@@ -1,7 +1,11 @@
-import Mathlib.NumberTheory.Chebyshev
-import Mathlib.Data.Nat.Log
-import Mathlib.Data.Nat.Factorization.Basic
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
+module
+
+public import Mathlib.NumberTheory.Chebyshev
+public import Mathlib.Data.Nat.Log
+public import Mathlib.Data.Nat.Factorization.Basic
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+
+@[expose] public section
 
 /-! Finite prime-index supplies for the actual variable-anchor coprime rows.
 The product may be as large as N²; no bound on its divisor count is assumed. -/

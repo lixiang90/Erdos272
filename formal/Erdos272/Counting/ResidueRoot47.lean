@@ -1,6 +1,10 @@
-import Erdos272.Counting.NonIntervalAP47
-import Erdos272.Counting.Straddling47
-import Erdos272.Geometry.CrossLine30
+module
+
+public import Erdos272.Counting.NonIntervalAP47
+public import Erdos272.Counting.Straddling47
+public import Erdos272.Geometry.CrossLine30
+
+@[expose] public section
 
 /-! Actual primitive AP resources leave every residue class that their member leaves. -/
 namespace JSP233.ResidueRoot47

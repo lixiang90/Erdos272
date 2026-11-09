@@ -1,5 +1,10 @@
-import Erdos272.Resources.UniformFees208
-import Erdos272.Global.GlobalSeven208
+module
+
+public import Erdos272.Resources.UniformFees208
+public import Erdos272.Global.GlobalSeven208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Keep the actual triple pool until the same original family's longest AP
 has been selected.  Slot capacity is paid once; no triple cube is substituted

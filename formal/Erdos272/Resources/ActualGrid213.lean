@@ -1,4 +1,9 @@
-import Erdos272.Resources.ActualGrid212
+module
+
+public import Erdos272.Resources.ActualGrid212
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.ActualGrid213
 open StarCompletion APGeometry ActualGrid212 OffResidue44 ThinFringe33
 open scoped Classical BigOperators

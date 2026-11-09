@@ -1,6 +1,10 @@
-import Erdos272.Counting.WitnessInterval43
-import Erdos272.Counting.APCount41
-import Mathlib.Data.Finset.Powerset
+module
+
+public import Erdos272.Counting.WitnessInterval43
+public import Erdos272.Counting.APCount41
+public import Mathlib.Data.Finset.Powerset
+
+@[expose] public section
 
 /-! The private pairs of all actual root-crooked members and the entire
 pair shadow of any actual root-AP subfamily use one physical pair pool. -/

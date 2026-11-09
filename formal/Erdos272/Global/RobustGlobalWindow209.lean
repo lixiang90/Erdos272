@@ -1,6 +1,10 @@
-import Erdos272.Resources.IntegerUniformFees209
-import Erdos272.Global.IntegerGlobalCases209
-import Erdos272.Global.ActualUnitNearWindow208
+module
+
+public import Erdos272.Resources.IntegerUniformFees209
+public import Erdos272.Global.IntegerGlobalCases209
+public import Erdos272.Global.ActualUnitNearWindow208
+
+@[expose] public section
 
 namespace JSP233.RobustGlobalWindow209
 open StarCompletion APGeometry Density41

@@ -1,5 +1,9 @@
-import Erdos272.Certificates.EndpointFinite208.Block068
-import Erdos272.Certificates.EndpointFinite208.RowChecks
+module
+
+public import Erdos272.Certificates.EndpointFinite208.Block068
+public import Erdos272.Certificates.EndpointFinite208.RowChecks
+
+@[expose] public section
 
 namespace JSP233.EndpointFinite208
 open StarCompletion APPrepare49 HarmonicAbel29 EndpointAP208 EndpointGate208

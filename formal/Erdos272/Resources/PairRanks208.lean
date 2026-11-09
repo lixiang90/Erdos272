@@ -1,4 +1,8 @@
-import Erdos272.Resources.PairSlice208
+module
+
+public import Erdos272.Resources.PairSlice208
+
+@[expose] public section
 
 /-! Actual rank-one, rank-two and rank-three pair covers. -/
 namespace JSP233.PairRanks208

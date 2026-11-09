@@ -1,6 +1,10 @@
-import Erdos272.Resources.RawEndpoint112
-import Erdos272.Retention.Restore11Ratio112
-import Mathlib.Analysis.Complex.ExponentialBounds
+module
+
+public import Erdos272.Resources.RawEndpoint112
+public import Erdos272.Retention.Restore11Ratio112
+public import Mathlib.Analysis.Complex.ExponentialBounds
+
+@[expose] public section
 
 /-!
 All-N logarithmic payment for the existing actual r11 ratio restore theorem.

@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.LightClosed208
+module
+
+public import Erdos272.Arithmetic.LightClosed208
+
+@[expose] public section
 
 namespace JSP233.LightPrice208
 open LightPhases208 LightClosed208

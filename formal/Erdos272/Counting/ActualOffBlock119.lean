@@ -1,5 +1,10 @@
-import Erdos272.Counting.BlockPacking119
-import Erdos272.Counting.FullResidueBudget119
+module
+
+public import Erdos272.Counting.BlockPacking119
+public import Erdos272.Counting.FullResidueBudget119
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Complete classes are now obtained from actual truncated off-source AP
 traces. The physical720-endpoint loss and the final ceil block are paid

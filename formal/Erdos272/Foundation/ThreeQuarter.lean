@@ -1,7 +1,11 @@
-import Erdos272.Foundation.APGeometry
-import Erdos272.Foundation.PrimeKernel
-import Erdos272.Foundation.TwoTraceGlobal
-import Erdos272.Foundation.ThreeTrace
+module
+
+public import Erdos272.Foundation.APGeometry
+public import Erdos272.Foundation.PrimeKernel
+public import Erdos272.Foundation.TwoTraceGlobal
+public import Erdos272.Foundation.ThreeTrace
+
+@[expose] public section
 
 namespace JSP233.ThreeQuarter
 

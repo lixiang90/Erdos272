@@ -1,6 +1,11 @@
-import Erdos272.Resources.RawRecovery208
-import Erdos272.Counting.EndpointFinite208
-import Erdos272.Resources.NoHighTerminalResource208
+module
+
+public import Erdos272.Resources.RawRecovery208
+public import Erdos272.Counting.EndpointFinite208
+public import Erdos272.Resources.NoHighTerminalResource208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The actual preparation filters are paid by the local NoHigh theorem
 and the kernel-checked endpoint library.  The same family, root and physical

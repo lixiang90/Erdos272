@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.Source240216
-import Erdos272.Resources.DeficiencyCuts208
+module
+
+public import Erdos272.Arithmetic.Source240216
+public import Erdos272.Resources.DeficiencyCuts208
+
+@[expose] public section
 
 namespace JSP233.SourceCut216
 open StarCompletion APGeometry IntrinsicTriples208 SourceBridge208

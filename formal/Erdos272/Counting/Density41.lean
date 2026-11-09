@@ -1,7 +1,11 @@
-import Erdos272.Counting.APCount41
-import Erdos272.Core.DenseSharper41
-import Erdos272.Global.StartupSeeds40
-import Mathlib.Data.Nat.Choose.Cast
+module
+
+public import Erdos272.Counting.APCount41
+public import Erdos272.Core.DenseSharper41
+public import Erdos272.Global.StartupSeeds40
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 /-! The actual original family supplies its sparse crooked density internally. -/
 namespace JSP233.Density41

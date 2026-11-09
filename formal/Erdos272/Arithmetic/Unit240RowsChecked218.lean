@@ -1,11 +1,15 @@
-import Erdos272.Arithmetic.CleanupFastSound208
-import Erdos272.Arithmetic.CleanupSegments208
-import Erdos272.Arithmetic.Unit240Rows218
-import Erdos272.Arithmetic.Unit240Checks218_G00
-import Erdos272.Arithmetic.Unit240Checks218_G01
-import Erdos272.Arithmetic.Unit240Checks218_G02
-import Erdos272.Arithmetic.Unit240Checks218_G03
-import Erdos272.Arithmetic.Unit240Checks218_G04
+module
+
+public import Erdos272.Arithmetic.CleanupFastSound208
+public import Erdos272.Arithmetic.CleanupSegments208
+public import Erdos272.Arithmetic.Unit240Rows218
+public import Erdos272.Arithmetic.Unit240Checks218_G00
+public import Erdos272.Arithmetic.Unit240Checks218_G01
+public import Erdos272.Arithmetic.Unit240Checks218_G02
+public import Erdos272.Arithmetic.Unit240Checks218_G03
+public import Erdos272.Arithmetic.Unit240Checks218_G04
+
+@[expose] public section
 namespace JSP233.Unit240RowsChecked218
 open CleanupEval208 CleanupMachineSound208 Unit240Rows218
 set_option maxHeartbeats 0

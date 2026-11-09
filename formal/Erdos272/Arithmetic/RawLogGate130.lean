@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.DirectGate130
-import Erdos272.Resources.CoarseEndpoint130
+module
+
+public import Erdos272.Arithmetic.DirectGate130
+public import Erdos272.Resources.CoarseEndpoint130
+
+@[expose] public section
 namespace JSP233.RawLogGate130
 open StarCompletion RawEndpoint112
 noncomputable section

@@ -1,5 +1,10 @@
-import Erdos272.Resources.LocalizedMiddle208
-import Mathlib.Tactic
+module
+
+public import Erdos272.Resources.LocalizedMiddle208
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+
+@[expose] public section
 
 /-! The floor error of the actual localized frontier is paid at L/d. -/
 namespace JSP233.FrontierGrid208

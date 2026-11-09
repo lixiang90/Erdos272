@@ -1,27 +1,31 @@
-import Erdos272.Arithmetic.UniformPotential242_B00
-import Erdos272.Arithmetic.UniformPotential242_B01
-import Erdos272.Arithmetic.UniformPotential242_B02
-import Erdos272.Arithmetic.UniformPotential242_B03
-import Erdos272.Arithmetic.UniformPotential242_B04
-import Erdos272.Arithmetic.UniformPotential242_B05
-import Erdos272.Arithmetic.UniformPotential242_B06
-import Erdos272.Arithmetic.UniformPotential242_B07
-import Erdos272.Arithmetic.UniformPotential242_B08
-import Erdos272.Arithmetic.UniformPotential242_B09
-import Erdos272.Arithmetic.UniformPotential242_B10
-import Erdos272.Arithmetic.UniformPotential242_B11
-import Erdos272.Arithmetic.UniformPotential243_B00
-import Erdos272.Arithmetic.UniformPotential243_B01
-import Erdos272.Arithmetic.UniformPotential243_B02
-import Erdos272.Arithmetic.UniformPotential243_B03
-import Erdos272.Arithmetic.UniformPotential243_B04
-import Erdos272.Arithmetic.UniformPotential243_B05
-import Erdos272.Arithmetic.UniformPotential243_B06
-import Erdos272.Arithmetic.UniformPotential243_B07
-import Erdos272.Arithmetic.UniformPotential243_B08
-import Erdos272.Arithmetic.UniformPotential243_B09
-import Erdos272.Arithmetic.UniformPotential243_B10
-import Erdos272.Arithmetic.UniformPotential243_B11
+module
+
+public import Erdos272.Arithmetic.UniformPotential242_B00
+public import Erdos272.Arithmetic.UniformPotential242_B01
+public import Erdos272.Arithmetic.UniformPotential242_B02
+public import Erdos272.Arithmetic.UniformPotential242_B03
+public import Erdos272.Arithmetic.UniformPotential242_B04
+public import Erdos272.Arithmetic.UniformPotential242_B05
+public import Erdos272.Arithmetic.UniformPotential242_B06
+public import Erdos272.Arithmetic.UniformPotential242_B07
+public import Erdos272.Arithmetic.UniformPotential242_B08
+public import Erdos272.Arithmetic.UniformPotential242_B09
+public import Erdos272.Arithmetic.UniformPotential242_B10
+public import Erdos272.Arithmetic.UniformPotential242_B11
+public import Erdos272.Arithmetic.UniformPotential243_B00
+public import Erdos272.Arithmetic.UniformPotential243_B01
+public import Erdos272.Arithmetic.UniformPotential243_B02
+public import Erdos272.Arithmetic.UniformPotential243_B03
+public import Erdos272.Arithmetic.UniformPotential243_B04
+public import Erdos272.Arithmetic.UniformPotential243_B05
+public import Erdos272.Arithmetic.UniformPotential243_B06
+public import Erdos272.Arithmetic.UniformPotential243_B07
+public import Erdos272.Arithmetic.UniformPotential243_B08
+public import Erdos272.Arithmetic.UniformPotential243_B09
+public import Erdos272.Arithmetic.UniformPotential243_B10
+public import Erdos272.Arithmetic.UniformPotential243_B11
+
+@[expose] public section
 namespace JSP233.UniformPotential208
 open UniformQuery208 UniformEnvelope208 UniformSourceQueries208
 set_option maxHeartbeats 0

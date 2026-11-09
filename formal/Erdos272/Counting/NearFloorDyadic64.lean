@@ -1,4 +1,9 @@
-import Erdos272.Counting.NearFloorAnalytic64
+module
+
+public import Erdos272.Counting.NearFloorAnalytic64
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.NearFloorDyadic64
 open NearFloorAnalytic64 NearFloor63 HarmonicAbel29 BandAggregation34

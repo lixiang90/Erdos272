@@ -1,4 +1,10 @@
-import Erdos272.Retention.JointFringe44
+module
+
+public import Erdos272.Retention.JointFringe44
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! Actual ceil-grid preceding anchors, with the real interval as the off pool. -/
 namespace JSP233.Ceil12Grid118

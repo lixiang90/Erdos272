@@ -1,4 +1,10 @@
-import Erdos272.Resources.ActualCleanupEval208
+module
+
+public import Erdos272.Resources.ActualCleanupEval208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! The light cap is an actual ground upper bound, independent of the
 low/high window used by the coupled cleanup count and normalization. -/

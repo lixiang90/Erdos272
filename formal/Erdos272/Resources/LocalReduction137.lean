@@ -1,5 +1,10 @@
-import Erdos272.Resources.PairRecovery131
-import Erdos272.Global.CroftKernel137
+module
+
+public import Erdos272.Resources.PairRecovery131
+public import Erdos272.Global.CroftKernel137
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 namespace JSP233.LocalReduction137
 open StarCompletion APGeometry CoprimeDensity52 MiddleJoint51 MiddleDeficit52
 open PreparedClasses50 APPrepare49 PreparedWitness48 MiddleCoordinates51

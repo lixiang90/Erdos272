@@ -1,4 +1,10 @@
-import Erdos272.Arithmetic.Bonferroni132
+module
+
+public import Erdos272.Arithmetic.Bonferroni132
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 namespace JSP233.PoolExtension132
 open CompleteSeven129 CompleteFive128 ParityPool123 SimplexMoment57 DivisorMoment45
 open Bonferroni132

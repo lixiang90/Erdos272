@@ -1,4 +1,10 @@
-import Erdos272.Arithmetic.PairHyperbola131
+module
+
+public import Erdos272.Arithmetic.PairHyperbola131
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.Order.Floor.Semifield
+
+@[expose] public section
 
 namespace JSP233.PairHyperbolaExact131
 open SimplexMoment57 DivisorMoment45 ParityPool123 PairHyperbola131

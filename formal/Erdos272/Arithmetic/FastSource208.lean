@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.APInterval208
-import Erdos272.Arithmetic.TotientTable208
-import Mathlib.Tactic
+module
+
+public import Erdos272.Arithmetic.APInterval208
+public import Erdos272.Arithmetic.TotientTable208
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! # Efficient kernel evaluation of the exact physical source
 

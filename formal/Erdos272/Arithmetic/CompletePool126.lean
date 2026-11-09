@@ -1,4 +1,10 @@
-import Erdos272.Arithmetic.ThreePool124
+module
+
+public import Erdos272.Arithmetic.ThreePool124
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 namespace JSP233.CompletePool126
 open ThreePool124 ParityPool123 DivisorMoment45 SimplexMoment57
 open scoped Classical BigOperators

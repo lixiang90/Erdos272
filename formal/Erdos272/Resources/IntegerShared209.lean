@@ -1,4 +1,9 @@
-import Erdos272.Resources.SharedUniformStrong209
+module
+
+public import Erdos272.Resources.SharedUniformStrong209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.IntegerShared209
 open StarCompletion APGeometry DenseDeletion40 Density41 IntrinsicTriples208 HarmonicAbel29

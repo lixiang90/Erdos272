@@ -1,5 +1,11 @@
-import Erdos272.Counting.PairShadowBudget218
-import Erdos272.Counting.NonIntervalAP47
+module
+
+public import Erdos272.Counting.PairShadowBudget218
+public import Erdos272.Counting.NonIntervalAP47
+public import Mathlib.Data.Nat.Choose.Cast
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual endpoint pairs and the two actual side shadows give a linear
 bound for every common-root interval family. -/

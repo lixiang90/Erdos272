@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.TotientTail208
+module
+
+public import Erdos272.Arithmetic.TotientTail208
+
+@[expose] public section
 
 /-! Proposed query floors from the frozen round207 witness. Only the analytic
 large-size tails are certified here. Every finite prefix still requires its

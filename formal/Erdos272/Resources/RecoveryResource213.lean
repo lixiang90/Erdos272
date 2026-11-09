@@ -1,5 +1,10 @@
-import Erdos272.Arithmetic.RecoveryCaps213
-import Erdos272.Resources.RecoveryOmitters213
+module
+
+public import Erdos272.Arithmetic.RecoveryCaps213
+public import Erdos272.Resources.RecoveryOmitters213
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.RecoveryResource213
 open StarCompletion APGeometry HarmonicAbel29 DenseDeletion40
 open LocalRecovery208 LocalResourceRecovery208 Recovery208 RecoveryCaps213 AlignedPlans212

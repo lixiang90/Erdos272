@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.UniformRat208
-import Erdos272.Resources.UniformEnvelope208
+module
+
+public import Erdos272.Arithmetic.UniformRat208
+public import Erdos272.Resources.UniformEnvelope208
+
+@[expose] public section
 
 /-! The frozen finite height test is executable over rationals and kernel-sound. -/
 namespace JSP233.UniformDecision208

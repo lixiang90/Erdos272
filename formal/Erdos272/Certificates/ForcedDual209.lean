@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.DualFrontier209
-import Erdos272.Arithmetic.ForcedCheck209
+module
+
+public import Erdos272.Arithmetic.DualFrontier209
+public import Erdos272.Arithmetic.ForcedCheck209
+
+@[expose] public section
 
 /-! Force numeric accumulators before the next step of the dual frontier
 check. Both the lower and upper inequalities remain in the specification. -/

@@ -1,5 +1,9 @@
-import Erdos272.Resources.FarCapacity112
-import Erdos272.Retention.LongTerminal35
+module
+
+public import Erdos272.Resources.FarCapacity112
+public import Erdos272.Retention.LongTerminal35
+
+@[expose] public section
 
 /-! One actual physical slot pool for Long core-shell codes and Short intrinsic
 codes.  The latter exclude every other actual source, including AP members.

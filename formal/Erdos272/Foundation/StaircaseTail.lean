@@ -1,12 +1,16 @@
-import Erdos272.Foundation.StaircaseSupply
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
-import Mathlib.Analysis.Calculus.Deriv.MeanValue
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Data.Nat.Totient
-import Mathlib.NumberTheory.ArithmeticFunction.Moebius
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Positivity
-import Mathlib.Tactic.GCongr
+module
+
+public import Erdos272.Foundation.StaircaseSupply
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+public import Mathlib.Analysis.Calculus.Deriv.MeanValue
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import Mathlib.Data.Nat.Totient
+public import Mathlib.NumberTheory.ArithmeticFunction.Moebius
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Tactic.GCongr
+
+@[expose] public section
 
 /-! Kernel-checked real analytic tail package for the staircase audit.
 The arithmetic Mobius/totient estimates are a separate interface. -/

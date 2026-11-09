@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.PrimorialValue47
+module
+
+public import Erdos272.Arithmetic.PrimorialValue47
+
+@[expose] public section
 /-! Deterministic sparse witness data. Each listed point, and every block
 prefix payment, is checked by the ordinary Lean kernel using decide. -/
 namespace JSP233.FiniteAffine47

@@ -1,6 +1,11 @@
-import Erdos272.Resources.StarBoundConcrete30
-import Mathlib.Data.Nat.Log
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
+module
+
+public import Erdos272.Resources.StarBoundConcrete30
+public import Mathlib.Data.Nat.Log
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual rank-band aggregation and the two-scale trace arithmetic.
 The KK band estimate remains an explicit input, not an axiom. -/

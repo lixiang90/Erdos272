@@ -1,5 +1,9 @@
-import Erdos272.Resources.CommonCapacity208
-import Erdos272.Resources.HeavyWindows208
+module
+
+public import Erdos272.Resources.CommonCapacity208
+public import Erdos272.Resources.HeavyWindows208
+
+@[expose] public section
 
 namespace JSP233.CoreCleanup208
 open StarCompletion APGeometry NearAP36 FarSlot112 CommonCapacity208 APCount41

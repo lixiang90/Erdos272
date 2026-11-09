@@ -1,5 +1,10 @@
-import Erdos272.Resources.PaddedUnit212
-import Erdos272.Global.TruncatedGlobal209
+module
+
+public import Erdos272.Resources.PaddedUnit212
+public import Erdos272.Global.TruncatedGlobal209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 namespace JSP233.PaddedCommon212
 open StarCompletion APGeometry DenseDeletion40 Density41 SparseSmall39
 open PrivateFinset IntrinsicTriples208 SevenFamily208 SevenPrices208 GlobalSeven208

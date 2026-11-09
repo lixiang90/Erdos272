@@ -1,4 +1,8 @@
-import Erdos272.Core.CoreAP34
+module
+
+public import Erdos272.Core.CoreAP34
+
+@[expose] public section
 
 /-! Actual interval reservations and joint root resources.  The geometric
 crooked witness premise, when present, is explicit; no cardinality bound

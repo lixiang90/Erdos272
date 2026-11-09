@@ -1,4 +1,9 @@
-import Erdos272.Traces.UnorderedTrace133
+module
+
+public import Erdos272.Traces.UnorderedTrace133
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.HalfBad133
 open StarCompletion APGeometry RestrictedWitness44 UnorderedTrace133

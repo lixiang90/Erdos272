@@ -1,5 +1,10 @@
-import Erdos272.Resources.UniformCapacity208
-import Erdos272.Resources.LayerPayment208
+module
+
+public import Erdos272.Resources.UniformCapacity208
+public import Erdos272.Resources.LayerPayment208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Every complete uniform layer pays the same actual mixed resource once. -/
 namespace JSP233.UniformFees208

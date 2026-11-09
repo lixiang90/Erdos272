@@ -1,4 +1,10 @@
-import Erdos272.Resources.IntegerHeavyBridge209
+module
+
+public import Erdos272.Resources.IntegerHeavyBridge209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.IntegerUniformFees209
 open StarCompletion APGeometry SevenFamily208

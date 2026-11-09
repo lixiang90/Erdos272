@@ -1,31 +1,35 @@
-import Erdos272.Arithmetic.CleanupCosts208_G008
-import Erdos272.Arithmetic.CleanupCosts208_G010
-import Erdos272.Arithmetic.CleanupCosts208_G011
-import Erdos272.Arithmetic.CleanupCosts208_G013
-import Erdos272.Arithmetic.CleanupCosts208_G015
-import Erdos272.Arithmetic.CleanupCosts208_G016
-import Erdos272.Arithmetic.CleanupCosts208_G018
-import Erdos272.Arithmetic.CleanupCosts208_G020
-import Erdos272.Arithmetic.CleanupCosts208_G021
-import Erdos272.Arithmetic.CleanupCosts208_G023
-import Erdos272.Arithmetic.CleanupCosts208_G025
-import Erdos272.Arithmetic.CleanupCosts208_G026
-import Erdos272.Arithmetic.CleanupCosts208_G027
-import Erdos272.Arithmetic.CleanupCosts208_G028
-import Erdos272.Arithmetic.CleanupCosts208_G030
-import Erdos272.Arithmetic.CleanupCosts208_G032
-import Erdos272.Arithmetic.CleanupCosts208_G033
-import Erdos272.Arithmetic.CleanupCosts208_G035
-import Erdos272.Arithmetic.CleanupCosts208_G037
-import Erdos272.Arithmetic.CleanupCosts208_G038
-import Erdos272.Arithmetic.CleanupCosts208_G040
-import Erdos272.Arithmetic.CleanupCosts208_G042
-import Erdos272.Arithmetic.CleanupCosts208_G043
-import Erdos272.Arithmetic.CleanupCosts208_G045
-import Erdos272.Arithmetic.CleanupFastSound208
-import Erdos272.Arithmetic.CleanupMachineSound208
-import Erdos272.Arithmetic.CleanupRecipes208
-import Erdos272.Arithmetic.CleanupSegments208
+module
+
+public import Erdos272.Arithmetic.CleanupCosts208_G008
+public import Erdos272.Arithmetic.CleanupCosts208_G010
+public import Erdos272.Arithmetic.CleanupCosts208_G011
+public import Erdos272.Arithmetic.CleanupCosts208_G013
+public import Erdos272.Arithmetic.CleanupCosts208_G015
+public import Erdos272.Arithmetic.CleanupCosts208_G016
+public import Erdos272.Arithmetic.CleanupCosts208_G018
+public import Erdos272.Arithmetic.CleanupCosts208_G020
+public import Erdos272.Arithmetic.CleanupCosts208_G021
+public import Erdos272.Arithmetic.CleanupCosts208_G023
+public import Erdos272.Arithmetic.CleanupCosts208_G025
+public import Erdos272.Arithmetic.CleanupCosts208_G026
+public import Erdos272.Arithmetic.CleanupCosts208_G027
+public import Erdos272.Arithmetic.CleanupCosts208_G028
+public import Erdos272.Arithmetic.CleanupCosts208_G030
+public import Erdos272.Arithmetic.CleanupCosts208_G032
+public import Erdos272.Arithmetic.CleanupCosts208_G033
+public import Erdos272.Arithmetic.CleanupCosts208_G035
+public import Erdos272.Arithmetic.CleanupCosts208_G037
+public import Erdos272.Arithmetic.CleanupCosts208_G038
+public import Erdos272.Arithmetic.CleanupCosts208_G040
+public import Erdos272.Arithmetic.CleanupCosts208_G042
+public import Erdos272.Arithmetic.CleanupCosts208_G043
+public import Erdos272.Arithmetic.CleanupCosts208_G045
+public import Erdos272.Arithmetic.CleanupFastSound208
+public import Erdos272.Arithmetic.CleanupMachineSound208
+public import Erdos272.Arithmetic.CleanupRecipes208
+public import Erdos272.Arithmetic.CleanupSegments208
+
+@[expose] public section
 namespace JSP233.Cap150Rows209_G05
 open CleanupEval208 CleanupMachineSound208 CleanupRecipes208
 set_option maxHeartbeats 0

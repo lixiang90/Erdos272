@@ -1,11 +1,15 @@
-import Mathlib.NumberTheory.ArithmeticFunction.Moebius
-import Mathlib.Data.Rat.Cast.Order
-import Mathlib.Data.Rat.Cast.Lemmas
-import Mathlib.Data.Real.Basic
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Positivity
-import Mathlib.Tactic.Linarith
-import Lean.Elab.Tactic.Omega
+module
+
+public import Mathlib.NumberTheory.ArithmeticFunction.Moebius
+public import Mathlib.Data.Rat.Cast.Order
+public import Mathlib.Data.Rat.Cast.Lemmas
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Tactic.Linarith
+public import Lean.Elab.Tactic.Omega
+
+@[expose] public section
 
 /-! Independent finite arithmetic supplement. Python supplies only numerals;
 ordinary Lean kernels check every recurrence, bound, sum, and actual-Moebius

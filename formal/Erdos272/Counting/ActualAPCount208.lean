@@ -1,8 +1,12 @@
-import Mathlib.Data.Finset.Powerset
-import Mathlib.Data.Finset.Prod
-import Mathlib.Data.Finset.Sort
-import Mathlib.Data.Fintype.Fin
-import Mathlib.Tactic
+module
+
+public import Mathlib.Data.Finset.Powerset
+public import Mathlib.Data.Finset.Prod
+public import Mathlib.Data.Finset.Sort
+public import Mathlib.Data.Fintype.Fin
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! # Actual finite AP codes
 

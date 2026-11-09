@@ -1,5 +1,12 @@
-import Erdos272.Counting.OffResidue44
-import Mathlib.Combinatorics.Enumerative.DoubleCounting
+module
+
+public import Erdos272.Counting.OffResidue44
+public import Mathlib.Combinatorics.Enumerative.DoubleCounting
+public import Mathlib.Data.Nat.Choose.Cast
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! The actual interval traces can be packed using their physical length
 and the proved fringe width directly.  No cubic interval-size wrapper is

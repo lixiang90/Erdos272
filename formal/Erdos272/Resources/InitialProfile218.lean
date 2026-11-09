@@ -1,6 +1,10 @@
-import Erdos272.Resources.CovarianceFamily214
-import Erdos272.Arithmetic.RecoveryCaps213
-import Erdos272.Resources.RecoveryResource214
+module
+
+public import Erdos272.Resources.CovarianceFamily214
+public import Erdos272.Arithmetic.RecoveryCaps213
+public import Erdos272.Resources.RecoveryResource214
+
+@[expose] public section
 
 namespace JSP233.InitialProfile218
 open StarCompletion APGeometry HarmonicAbel29 DenseDeletion40

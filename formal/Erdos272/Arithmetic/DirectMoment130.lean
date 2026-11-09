@@ -1,5 +1,12 @@
-import Erdos272.Arithmetic.DirectMoment129
-import Erdos272.Arithmetic.TrapezoidStep130
+module
+
+public import Erdos272.Arithmetic.DirectMoment129
+public import Erdos272.Arithmetic.TrapezoidStep130
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 namespace JSP233.DirectMoment130
 open SimplexMoment57 DivisorMoment122 VolumeLower125 HarmonicAbel29
 open TrapezoidStep130

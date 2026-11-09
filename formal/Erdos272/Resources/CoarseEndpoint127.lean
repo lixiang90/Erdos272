@@ -1,4 +1,8 @@
-import Erdos272.Resources.RawEndpoint127
+module
+
+public import Erdos272.Resources.RawEndpoint127
+
+@[expose] public section
 
 /-! The complete2+3 witness bound is paid before intervals and thin width.
 The same original family's full485N deletion remains explicit. The absolute

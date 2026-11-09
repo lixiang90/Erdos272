@@ -1,6 +1,11 @@
-import Erdos272.Arithmetic.ComputedSigma209
-import Erdos272.Arithmetic.SigmaBaseData209
-import Erdos272.Arithmetic.FastFullLookup209
+module
+
+public import Erdos272.Arithmetic.ComputedSigma209
+public import Erdos272.Arithmetic.SigmaBaseData209
+public import Erdos272.Arithmetic.FastFullLookup209
+public import Mathlib.Tactic.NormNum.Prime
+
+@[expose] public section
 namespace JSP233.SigmaValue209
 set_option maxHeartbeats 0
 

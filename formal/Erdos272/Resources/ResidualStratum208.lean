@@ -1,5 +1,9 @@
-import Erdos272.Resources.ResidualOccupancy208
-import Erdos272.Arithmetic.StepClass208
+module
+
+public import Erdos272.Resources.ResidualOccupancy208
+public import Erdos272.Arithmetic.StepClass208
+
+@[expose] public section
 
 namespace JSP233.ResidualStratum208
 open StarCompletion APGeometry NearAP36 ResidualOccupancy208 ResidualSpan208

@@ -1,5 +1,9 @@
-import Erdos272.Resources.FarCut134
-import Erdos272.Arithmetic.ConvexPrice134
+module
+
+public import Erdos272.Resources.FarCut134
+public import Erdos272.Arithmetic.ConvexPrice134
+
+@[expose] public section
 
 namespace JSP233.CroftPrice134
 open scoped Classical BigOperators

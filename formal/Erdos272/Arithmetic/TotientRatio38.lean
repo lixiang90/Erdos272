@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.HalfInterval37
+module
+
+public import Erdos272.Arithmetic.HalfInterval37
+
+@[expose] public section
 
 /-! Real totient-ratio supplies for the actual coupled half interval.
 R may be a rational primorial product embedded in the reals. -/

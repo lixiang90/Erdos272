@@ -1,6 +1,10 @@
-import Erdos272.Certificates.SigmaSteps209
-import Erdos272.Arithmetic.SigmaBaseData209
-import Erdos272.Arithmetic.FastFullLookup209
+module
+
+public import Erdos272.Certificates.SigmaSteps209
+public import Erdos272.Arithmetic.SigmaBaseData209
+public import Erdos272.Arithmetic.FastFullLookup209
+
+@[expose] public section
 namespace JSP233.SigmaBaseBlock209_24578
 set_option maxHeartbeats 0
 set_option Elab.async false

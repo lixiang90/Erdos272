@@ -1,4 +1,9 @@
-import Erdos272.Resources.ResidualGlobal208
+module
+
+public import Erdos272.Resources.ResidualGlobal208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.PartitionCleanup208
 open StarCompletion APGeometry NearAP36 CoreCleanup208 ResidualStratum208

@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.UniformLow208
-import Erdos272.Resources.UniformActual208
+module
+
+public import Erdos272.Arithmetic.UniformLow208
+public import Erdos272.Resources.UniformActual208
+
+@[expose] public section
 
 /-! Exact concavity on each of the three low-density neighbor pieces. -/
 namespace JSP233.UniformConcave208

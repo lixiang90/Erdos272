@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.SimplexMoment57
+module
+
+public import Erdos272.Arithmetic.SimplexMoment57
+
+@[expose] public section
 
 /-! Exact left/right distance prefixes and the one-copy simplex exception.
 The root is an actual member of Ground N.  No supplied exception bound,

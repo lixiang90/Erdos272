@@ -1,4 +1,8 @@
-import Erdos272.Core.TracePacking43
+module
+
+public import Erdos272.Core.TracePacking43
+
+@[expose] public section
 
 /-! Actual dense traces with a grid parameter p independent of the dense
 rank r. Actual anchors are constructed from the same legal original family. -/

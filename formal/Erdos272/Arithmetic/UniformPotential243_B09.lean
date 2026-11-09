@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.UniformPotentialData208
+module
+
+public import Erdos272.Arithmetic.UniformPotentialData208
+
+@[expose] public section
 namespace JSP233.UniformPotential208
 open UniformQuery208 UniformEnvelope208 UniformSourceQueries208
 set_option maxHeartbeats 0

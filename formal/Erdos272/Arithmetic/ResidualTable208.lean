@@ -1,11 +1,15 @@
-import Erdos272.Arithmetic.ResidualValues208_B00
-import Erdos272.Arithmetic.ResidualValues208_B01
-import Erdos272.Arithmetic.ResidualValues208_B02
-import Erdos272.Arithmetic.ResidualValues208_B03
-import Erdos272.Arithmetic.ResidualValues208_B04
-import Erdos272.Arithmetic.ResidualValues208_B05
-import Erdos272.Arithmetic.ResidualValues208_B06
-import Erdos272.Arithmetic.ResidualValues208_B07
+module
+
+public import Erdos272.Arithmetic.ResidualValues208_B00
+public import Erdos272.Arithmetic.ResidualValues208_B01
+public import Erdos272.Arithmetic.ResidualValues208_B02
+public import Erdos272.Arithmetic.ResidualValues208_B03
+public import Erdos272.Arithmetic.ResidualValues208_B04
+public import Erdos272.Arithmetic.ResidualValues208_B05
+public import Erdos272.Arithmetic.ResidualValues208_B06
+public import Erdos272.Arithmetic.ResidualValues208_B07
+
+@[expose] public section
 
 namespace JSP233.ResidualTable208
 set_option maxHeartbeats 0

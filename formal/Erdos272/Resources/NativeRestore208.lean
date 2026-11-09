@@ -1,6 +1,10 @@
-import Erdos272.Resources.FewOff208
-import Erdos272.Arithmetic.NativeGates208
-import Erdos272.Core.Terminal29Native117
+module
+
+public import Erdos272.Resources.FewOff208
+public import Erdos272.Arithmetic.NativeGates208
+public import Erdos272.Core.Terminal29Native117
+
+@[expose] public section
 
 namespace JSP233.NativeRestore208
 open StarCompletion APGeometry LongTerminal35 DenseDeletion40 RestoreTerminal35 TerminalDeficit51 KKRetention32

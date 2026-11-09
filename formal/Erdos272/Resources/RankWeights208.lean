@@ -1,4 +1,9 @@
-import Erdos272.Resources.RankSlots208
+module
+
+public import Erdos272.Resources.RankSlots208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! The total length of all rank-r gaps is at most r(N-1). -/
 namespace JSP233.RankWeights208

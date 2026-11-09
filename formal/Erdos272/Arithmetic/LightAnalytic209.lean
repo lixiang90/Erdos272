@@ -1,5 +1,10 @@
-import Erdos272.Arithmetic.LightPhaseSum209
-import Erdos272.Arithmetic.LightSeries209
+module
+
+public import Erdos272.Arithmetic.LightPhaseSum209
+public import Erdos272.Arithmetic.LightSeries209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.LightAnalytic209
 open LightPhaseAnalytic209 LightPhaseSum209 LightSeries209 PrefixAbel208

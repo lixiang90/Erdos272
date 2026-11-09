@@ -1,4 +1,9 @@
-import Erdos272.Retention.RankTwenty58
+module
+
+public import Erdos272.Retention.RankTwenty58
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The real r11 restore table, using the pre-existing ratio-rank physical
 payment theorem.  The original family and all deleted avoiders stay internal.

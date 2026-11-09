@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.FastSource208
-import Erdos272.Arithmetic.TotientSieve208
+module
+
+public import Erdos272.Arithmetic.FastSource208
+public import Erdos272.Arithmetic.TotientSieve208
+
+@[expose] public section
 
 /-! # One-pass kernel checks of finite source rectangles
 

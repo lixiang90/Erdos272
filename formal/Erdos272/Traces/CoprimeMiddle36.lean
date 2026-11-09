@@ -1,4 +1,8 @@
-import Erdos272.Core.LongCore34
+module
+
+public import Erdos272.Core.LongCore34
+
+@[expose] public section
 
 /-! Finite middle coprime indices for the actual exterior-prefix geometry.
 The physical condition is 6*t*J <= N, with no totient-supply premise. -/

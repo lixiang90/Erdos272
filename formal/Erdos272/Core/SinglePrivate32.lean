@@ -1,6 +1,10 @@
-import Erdos272.Resources.JointResources31
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Ring
+module
+
+public import Erdos272.Resources.JointResources31
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 /-! Intrinsic missing-completion pairs inside the actual rooted private pool.
 The geometric lemmas below derive closure from the actual singleton pool. -/

@@ -1,5 +1,9 @@
-import Erdos272.Capacity.BudgetLoss31
-import Erdos272.Capacity.QuantitativeTail31
+module
+
+public import Erdos272.Capacity.BudgetLoss31
+public import Erdos272.Capacity.QuantitativeTail31
+
+@[expose] public section
 
 /-! A genuine large active AP class supplies the surplus required by the
 original-family payment. Existence of such a class is a separate structural

@@ -1,4 +1,8 @@
-import Erdos272.Resources.ShiftedWindows208
+module
+
+public import Erdos272.Resources.ShiftedWindows208
+
+@[expose] public section
 
 namespace JSP233.ClippedWindows208
 open StarCompletion APGeometry NearAP36 ShiftedBlocks208 PotentialPhases208

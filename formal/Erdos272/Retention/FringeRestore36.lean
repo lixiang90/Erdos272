@@ -1,4 +1,8 @@
-import Erdos272.Retention.Restore33
+module
+
+public import Erdos272.Retention.Restore33
+
+@[expose] public section
 
 /-! Separate the deleted-fringe recovery cost from the long-core geometry.
 Only 4640*t <= N is needed here; no logarithmic long-core condition occurs. -/

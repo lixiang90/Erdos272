@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.CombinedCounts208
-import Erdos272.Arithmetic.WindowSums208
-import Erdos272.Resources.BandSystem208
+module
+
+public import Erdos272.Arithmetic.CombinedCounts208
+public import Erdos272.Arithmetic.WindowSums208
+public import Erdos272.Resources.BandSystem208
+
+@[expose] public section
 
 namespace JSP233.CleanupWindowBounds208
 open StarCompletion APGeometry NearAP36 LightClosed208 WindowCounts208 WindowSums208 CombinedCounts208

@@ -1,5 +1,10 @@
-import Erdos272.Resources.RawEndpoint115
-import Mathlib.NumberTheory.Harmonic.Bounds
+module
+
+public import Erdos272.Resources.RawEndpoint115
+public import Mathlib.NumberTheory.Harmonic.Bounds
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Physical middle rows use their actual finite Mobius cutoff N/d.
 All rows return to the same finite density rho_N before being summed. -/

@@ -1,4 +1,10 @@
-import Erdos272.Counting.ConflictBudget208
+module
+
+public import Erdos272.Counting.ConflictBudget208
+public import Mathlib.Data.Int.Interval
+public import Mathlib.Algebra.BigOperators.Field
+
+@[expose] public section
 
 /-! Finite integer unit segments give the exact span sum. This is the
 finite double-sum form of the phase integral, including ordered-pair correction. -/

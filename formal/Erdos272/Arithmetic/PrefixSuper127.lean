@@ -1,4 +1,9 @@
-import Erdos272.Arithmetic.WitnessMoment122
+module
+
+public import Erdos272.Arithmetic.WitnessMoment122
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.PrefixSuper127
 open scoped Classical BigOperators

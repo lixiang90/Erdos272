@@ -1,5 +1,13 @@
-import Erdos272.Arithmetic.CoprimeDensity52
-import Mathlib.Tactic
+module
+
+public import Erdos272.Arithmetic.CoprimeDensity52
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! A finite reciprocal-square certificate. Only the first 1000 terms are
 computed; finite telescoping controls the entire interval up to 1670000. -/

@@ -1,6 +1,10 @@
-import Erdos272.Resources.FarCut134
-import Erdos272.Arithmetic.ConvexPrice134
-import Erdos272.Counting.FiniteNear136
+module
+
+public import Erdos272.Resources.FarCut134
+public import Erdos272.Arithmetic.ConvexPrice134
+public import Erdos272.Counting.FiniteNear136
+
+@[expose] public section
 
 namespace JSP233.CroftPrice137
 open scoped Classical BigOperators

@@ -1,5 +1,9 @@
-import Erdos272.Retention.LongTerminal35
-import Erdos272.Arithmetic.PrimePrefix35
+module
+
+public import Erdos272.Retention.LongTerminal35
+public import Erdos272.Arithmetic.PrimePrefix35
+
+@[expose] public section
 
 /-! Actual unordered witness-pair coding, retaining the variable anchor in
 every coprime row. The geometric prefix-witness property is explicit. -/

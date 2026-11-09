@@ -1,6 +1,12 @@
-import Erdos272.Counting.APLength208
-import Erdos272.Arithmetic.APCoupling208
-import Erdos272.Arithmetic.TerminalGcd208
+module
+
+public import Erdos272.Counting.APLength208
+public import Erdos272.Arithmetic.APCoupling208
+public import Erdos272.Arithmetic.TerminalGcd208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! The continuous AP profile follows from actual integer length counts. -/
 namespace JSP233.APProfile208

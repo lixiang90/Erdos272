@@ -1,5 +1,10 @@
-import Erdos272.Geometry.BlockAP119
-import Mathlib.Tactic
+module
+
+public import Erdos272.Geometry.BlockAP119
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+
+@[expose] public section
 
 /-! Compatible actual truncated APs pay their overlap in integer unit
 segments. A common point repeats with period d*e, or d when d=e. -/

@@ -1,7 +1,11 @@
-import Erdos272.Core.SmallKernel112
-import Erdos272.Global.RootPaid135
-import Erdos272.Arithmetic.CroftPrice135
-import Erdos272.Counting.APDensity112
+module
+
+public import Erdos272.Core.SmallKernel112
+public import Erdos272.Global.RootPaid135
+public import Erdos272.Arithmetic.CroftPrice135
+public import Erdos272.Counting.APDensity112
+
+@[expose] public section
 namespace JSP233.CroftKernel135
 open StarCompletion APGeometry PrivateFinset SparseSmall39 DenseDeletion40 Density41
 open scoped Classical BigOperators

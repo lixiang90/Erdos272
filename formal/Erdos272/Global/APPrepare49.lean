@@ -1,5 +1,9 @@
-import Erdos272.Resources.PreparedWitness48
-import Erdos272.Counting.APLinearCount49
+module
+
+public import Erdos272.Resources.PreparedWitness48
+public import Erdos272.Counting.APLinearCount49
+
+@[expose] public section
 
 /-! Actual AP endpoint preparation, with all filters on the same original family. -/
 namespace JSP233.APPrepare49

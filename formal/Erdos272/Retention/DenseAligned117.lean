@@ -1,4 +1,10 @@
-import Erdos272.Retention.Relative13Fringe116
+module
+
+public import Erdos272.Retention.Relative13Fringe116
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! Dense actual crooked members cannot be globally aligned at step11 or
 larger.  The full original ground set, not merely the core interval, is used

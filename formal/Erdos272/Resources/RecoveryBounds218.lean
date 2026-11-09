@@ -1,8 +1,12 @@
-import Erdos272.Counting.DensePair218
-import Erdos272.Counting.UnitAvoider218
-import Erdos272.Counting.FringeCount218
-import Erdos272.Geometry.RetainedIntervals218
-import Erdos272.Arithmetic.DirectMoment128
+module
+
+public import Erdos272.Counting.DensePair218
+public import Erdos272.Counting.UnitAvoider218
+public import Erdos272.Counting.FringeCount218
+public import Erdos272.Geometry.RetainedIntervals218
+public import Erdos272.Arithmetic.DirectMoment128
+
+@[expose] public section
 
 namespace JSP233.RecoveryBounds218
 open StarCompletion APGeometry DenseDeletion40 HarmonicAbel29

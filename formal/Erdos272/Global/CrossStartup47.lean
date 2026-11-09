@@ -1,6 +1,11 @@
-import Erdos272.Core.DenseSharper41
-import Erdos272.Arithmetic.HarmonicSharp39
-import Erdos272.Foundation.JSP233
+module
+
+public import Erdos272.Core.DenseSharper41
+public import Erdos272.Arithmetic.HarmonicSharp39
+public import Erdos272.Foundation.JSP233
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 /-! Native unbounded dyadic cubic gate and actual retained-family density. -/
 namespace JSP233.CrossStartup47

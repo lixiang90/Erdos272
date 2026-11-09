@@ -1,4 +1,9 @@
-import Erdos272.Resources.AffineWitness47
+module
+
+public import Erdos272.Resources.AffineWitness47
+public import Mathlib.Tactic.NormNum.Prime
+
+@[expose] public section
 namespace JSP233.PrimorialValue47
 open PrimorialPrefix46
 open scoped Classical BigOperators

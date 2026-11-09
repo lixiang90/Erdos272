@@ -1,5 +1,9 @@
-import Erdos272.Foundation.JSP233
-import Erdos272.Resources.StarBound30
+module
+
+public import Erdos272.Foundation.JSP233
+public import Erdos272.Resources.StarBound30
+
+@[expose] public section
 
 /-! The new complete common-point theorem discharges the previously explicit
 StarBound parameter of the existing actual-[N] omitter threshold. -/

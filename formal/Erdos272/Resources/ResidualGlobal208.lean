@@ -1,5 +1,11 @@
-import Erdos272.Counting.ResidualTwoCensus208
-import Erdos272.Arithmetic.ResidualAggregate208
+module
+
+public import Erdos272.Counting.ResidualTwoCensus208
+public import Erdos272.Arithmetic.ResidualAggregate208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.ResidualGlobal208
 open StarCompletion APGeometry NearAP36 ResidualWeights208 ResidualStratum208

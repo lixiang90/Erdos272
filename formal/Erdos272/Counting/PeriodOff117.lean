@@ -1,4 +1,8 @@
-import Erdos272.Retention.Relative13Fringe116
+module
+
+public import Erdos272.Retention.Relative13Fringe116
+
+@[expose] public section
 
 /-! All traces through a common off-residue point avoid its period class.
 The holes are actual points of the physical interval, shared across steps. -/

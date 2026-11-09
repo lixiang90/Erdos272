@@ -1,7 +1,12 @@
-import Erdos272.Arithmetic.SourcePrefixExact208
-import Erdos272.Resources.SourceBridge208
-import Erdos272.Resources.SelectedLayer208
-import Erdos272.Arithmetic.BatchSourceBlocks208
+module
+
+public import Erdos272.Arithmetic.SourcePrefixExact208
+public import Erdos272.Resources.SourceBridge208
+public import Erdos272.Resources.SelectedLayer208
+public import Erdos272.Arithmetic.BatchSourceBlocks208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! The fourteen exact unit-source rows apply to actual finite sets.
 The finite prefix and analytic tail cover every physical source below 2^50;

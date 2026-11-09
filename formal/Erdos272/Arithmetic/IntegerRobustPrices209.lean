@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.IntegerLowPrices209
-import Erdos272.Arithmetic.IntegerHighPrices209
+module
+
+public import Erdos272.Arithmetic.IntegerLowPrices209
+public import Erdos272.Arithmetic.IntegerHighPrices209
+
+@[expose] public section
 
 namespace JSP233.IntegerRobustPrices209
 open StarCompletion APGeometry DenseDeletion40 Density41 HarmonicAbel29

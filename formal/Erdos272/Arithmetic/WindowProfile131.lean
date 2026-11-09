@@ -1,4 +1,10 @@
-import Erdos272.Resources.PairRecovery131
+module
+
+public import Erdos272.Resources.PairRecovery131
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 namespace JSP233.WindowProfile131
 open StarCompletion RestrictedWitness44 DivisorMoment45 HarmonicAbel29
 open SimplexMoment57 TwoSidedMoment62 PairRecovery131

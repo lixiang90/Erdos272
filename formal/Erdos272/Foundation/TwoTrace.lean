@@ -1,5 +1,9 @@
-import Erdos272.Foundation.PrivateFinset
-import Mathlib.Data.Int.Interval
+module
+
+public import Erdos272.Foundation.PrivateFinset
+public import Mathlib.Data.Int.Interval
+
+@[expose] public section
 
 /-!
 The actual two-trace mechanism for a common progression of step two.

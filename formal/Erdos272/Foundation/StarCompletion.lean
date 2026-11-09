@@ -1,12 +1,16 @@
-import Mathlib.Data.Finset.Card
-import Mathlib.Data.Int.Basic
-import Mathlib.Algebra.Divisibility.Basic
-import Mathlib.Algebra.Group.Int.Defs
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Ring
-import Mathlib.Tactic.IntervalCases
-import Lean.Elab.Tactic.Omega
-import Aesop
+module
+
+public import Mathlib.Data.Finset.Card
+public import Mathlib.Data.Int.Basic
+public import Mathlib.Algebra.Divisibility.Basic
+public import Mathlib.Algebra.Group.Int.Defs
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.IntervalCases
+public import Lean.Elab.Tactic.Omega
+public import Aesop
+
+@[expose] public section
 
 /-!
 Actual finite integer-set root completion, independent of the unformalized

@@ -1,4 +1,8 @@
-import Erdos272.Retention.JointFringe44
+module
+
+public import Erdos272.Retention.JointFringe44
+
+@[expose] public section
 
 /-! Actual ceil-grid preceding anchors, with the real interval as the off pool. -/
 namespace JSP233.CeilFringe114

@@ -1,5 +1,9 @@
-import Erdos272.Resources.PreparedWitness48
-import Mathlib.Tactic
+module
+
+public import Erdos272.Resources.PreparedWitness48
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! # Local codes for actual preparation failures
 

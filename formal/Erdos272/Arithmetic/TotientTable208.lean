@@ -1,5 +1,9 @@
-import Mathlib.Data.Nat.Totient
-import Mathlib.Tactic
+module
+
+public import Mathlib.Data.Nat.Totient
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! # Kernel-checkable totient tables
 

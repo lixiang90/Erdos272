@@ -1,5 +1,9 @@
-import Erdos272.Traces.CollisionTree35
-import Erdos272.Resources.CollisionLabels34
+module
+
+public import Erdos272.Traces.CollisionTree35
+public import Erdos272.Resources.CollisionLabels34
+
+@[expose] public section
 
 /-! Actual pure-trace tail collisions, using the finite global decomposition.
 Actual tail privacy gives faithful coordinate antichains. Every constructed

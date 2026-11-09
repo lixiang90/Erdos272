@@ -1,7 +1,12 @@
-import Erdos272.Counting.UnitCount218
-import Erdos272.Geometry.PairShadowGeometry218
-import Erdos272.Resources.DenseOmitted214
-import Erdos272.Resources.InitialProfile218
+module
+
+public import Erdos272.Counting.UnitCount218
+public import Erdos272.Geometry.PairShadowGeometry218
+public import Erdos272.Resources.DenseOmitted214
+public import Erdos272.Resources.InitialProfile218
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 namespace JSP233.DensePair218
 open StarCompletion APGeometry DenseDeletion40 Density41 SparseSmall39

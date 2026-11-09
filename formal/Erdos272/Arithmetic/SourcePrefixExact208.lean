@@ -1,21 +1,25 @@
-import Erdos272.Arithmetic.SourcePrefix208_13_000
-import Erdos272.Arithmetic.SourcePrefix208_B00
-import Erdos272.Arithmetic.SourcePrefix208_B01
-import Erdos272.Arithmetic.SourcePrefix208_B02
-import Erdos272.Arithmetic.SourcePrefix208_B03
-import Erdos272.Arithmetic.SourcePrefix208_B04
-import Erdos272.Arithmetic.SourcePrefix208_B05
-import Erdos272.Arithmetic.SourcePrefix208_B06
-import Erdos272.Arithmetic.SourcePrefix208_B07
-import Erdos272.Arithmetic.SourcePrefix208_B08
-import Erdos272.Arithmetic.SourcePrefix208_B09
-import Erdos272.Arithmetic.SourcePrefix208_B10
-import Erdos272.Arithmetic.SourcePrefix208_B11
-import Erdos272.Arithmetic.SourcePrefix208_B12
-import Erdos272.Arithmetic.SourcePrefix208_B13
-import Erdos272.Arithmetic.SourcePrefix208_B14
-import Erdos272.Arithmetic.SourcePrefix208_B15
-import Erdos272.Arithmetic.SourcePrefix208_B16
+module
+
+public import Erdos272.Arithmetic.SourcePrefix208_13_000
+public import Erdos272.Arithmetic.SourcePrefix208_B00
+public import Erdos272.Arithmetic.SourcePrefix208_B01
+public import Erdos272.Arithmetic.SourcePrefix208_B02
+public import Erdos272.Arithmetic.SourcePrefix208_B03
+public import Erdos272.Arithmetic.SourcePrefix208_B04
+public import Erdos272.Arithmetic.SourcePrefix208_B05
+public import Erdos272.Arithmetic.SourcePrefix208_B06
+public import Erdos272.Arithmetic.SourcePrefix208_B07
+public import Erdos272.Arithmetic.SourcePrefix208_B08
+public import Erdos272.Arithmetic.SourcePrefix208_B09
+public import Erdos272.Arithmetic.SourcePrefix208_B10
+public import Erdos272.Arithmetic.SourcePrefix208_B11
+public import Erdos272.Arithmetic.SourcePrefix208_B12
+public import Erdos272.Arithmetic.SourcePrefix208_B13
+public import Erdos272.Arithmetic.SourcePrefix208_B14
+public import Erdos272.Arithmetic.SourcePrefix208_B15
+public import Erdos272.Arithmetic.SourcePrefix208_B16
+
+@[expose] public section
 
 /-! Disjoint physical checks, joined entirely by proof. -/
 namespace JSP233.SourcePrefixExact208

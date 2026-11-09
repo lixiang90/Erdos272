@@ -1,5 +1,10 @@
-import Erdos272.Resources.ActualUnitRecipe208
-import Erdos272.Resources.ActualCleanupEval208
+module
+
+public import Erdos272.Resources.ActualUnitRecipe208
+public import Erdos272.Resources.ActualCleanupEval208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.ActualUnitLayer208
 open StarCompletion APGeometry NearAP36 SourceBridge208 SourceCertified208 SourcePrefixSpecs208

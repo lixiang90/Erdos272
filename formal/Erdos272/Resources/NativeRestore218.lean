@@ -1,5 +1,9 @@
-import Erdos272.Resources.TerminalRanks218
-import Erdos272.Resources.NativeRestore213
+module
+
+public import Erdos272.Resources.TerminalRanks218
+public import Erdos272.Resources.NativeRestore213
+
+@[expose] public section
 
 /-! The actual same-family native-29 restoration with one minimum member
 and all five density ranks 2 through 6. -/

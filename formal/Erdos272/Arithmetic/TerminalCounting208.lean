@@ -1,5 +1,9 @@
-import Erdos272.Resources.NoHigh208
-import Mathlib.Tactic
+module
+
+public import Erdos272.Resources.NoHigh208
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! # Arithmetic coordinates of the local terminal code pool
 

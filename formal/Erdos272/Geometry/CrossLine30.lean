@@ -1,8 +1,12 @@
-import Erdos272.Geometry.AffineLine30
-import Erdos272.Resources.StarResources30
-import Erdos272.Foundation.PrivatePairExistence
-import Mathlib.Algebra.BigOperators.Group.Finset.Basic
-import Mathlib.Data.Int.Interval
+module
+
+public import Erdos272.Geometry.AffineLine30
+public import Erdos272.Resources.StarResources30
+public import Erdos272.Foundation.PrivatePairExistence
+public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+public import Mathlib.Data.Int.Interval
+
+@[expose] public section
 
 /-! Actual gcd-labelled line pools. Distinct positive steps use disjoint
 physical two-point resources. The linewise defects are summed only over

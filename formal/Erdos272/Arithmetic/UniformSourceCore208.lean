@@ -1,5 +1,12 @@
-import Mathlib.Algebra.Order.Floor.Semiring
-import Mathlib.Tactic
+module
+
+public import Mathlib.Algebra.Order.Floor.Semiring
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 
 /-! Exact stepwise polynomials of the continuous uniform source.
 This module proves the scale law algebraically; the actual integer source

@@ -1,4 +1,8 @@
-import Erdos272.Retention.CrossBad120
+module
+
+public import Erdos272.Retention.CrossBad120
+
+@[expose] public section
 namespace JSP233.Shape140
 open StarCompletion APGeometry
 open scoped Classical

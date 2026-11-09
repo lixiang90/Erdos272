@@ -1,5 +1,9 @@
-import Erdos272.Traces.DyadicTraceSupply36
-import Erdos272.Arithmetic.HarmonicAbel
+module
+
+public import Erdos272.Traces.DyadicTraceSupply36
+public import Erdos272.Arithmetic.HarmonicAbel
+
+@[expose] public section
 
 /-! Flexible payment of actual short AP prefixes and a true dyadic harmonic
 bound.  No prefix row is forced to spend half of its supply. -/

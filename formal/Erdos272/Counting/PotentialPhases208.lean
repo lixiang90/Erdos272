@@ -1,4 +1,8 @@
-import Erdos272.Resources.ShiftedBlocks208
+module
+
+public import Erdos272.Resources.ShiftedBlocks208
+
+@[expose] public section
 
 namespace JSP233.PotentialPhases208
 open StarCompletion APGeometry NearAP36 ShiftedBlocks208

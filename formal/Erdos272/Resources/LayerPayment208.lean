@@ -1,5 +1,11 @@
-import Erdos272.Resources.IntrinsicTriples208
-import Mathlib.Tactic
+module
+
+public import Erdos272.Resources.IntrinsicTriples208
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! A fractional cover pays the one actual triple pool once.  The pointwise
 cover is the interface for the source-potential and threshold lemmas; the

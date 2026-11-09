@@ -1,5 +1,9 @@
-import Erdos272.Global.SparseSmall39
-import Erdos272.Resources.WeightedTail39
+module
+
+public import Erdos272.Global.SparseSmall39
+public import Erdos272.Resources.WeightedTail39
+
+@[expose] public section
 
 /-! Actual sparse-family common root from the certified small and large budgets.
 The remaining public inputs are the explicit uniform number-theoretic gates. -/

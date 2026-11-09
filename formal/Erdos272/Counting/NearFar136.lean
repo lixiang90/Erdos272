@@ -1,6 +1,10 @@
-import Erdos272.Counting.FiniteNear136
-import Erdos272.Counting.NearFar134
-import Erdos272.Resources.FarWeighted136
+module
+
+public import Erdos272.Counting.FiniteNear136
+public import Erdos272.Counting.NearFar134
+public import Erdos272.Resources.FarWeighted136
+
+@[expose] public section
 namespace JSP233.NearFar136
 open StarCompletion APGeometry NearAP36 NearWhole112
 open scoped Classical BigOperators

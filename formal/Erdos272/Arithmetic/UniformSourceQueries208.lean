@@ -1,10 +1,14 @@
-import Erdos272.Arithmetic.UniformSourceQueries208_B00
-import Erdos272.Arithmetic.UniformSourceQueries208_B01
-import Erdos272.Arithmetic.UniformSourceQueries208_B02
-import Erdos272.Arithmetic.UniformSourceQueries208_B03
-import Erdos272.Arithmetic.UniformSourceQueries208_B04
-import Erdos272.Arithmetic.UniformSourceQueries208_B05
-import Erdos272.Arithmetic.UniformSourceQueries208_B06
+module
+
+public import Erdos272.Arithmetic.UniformSourceQueries208_B00
+public import Erdos272.Arithmetic.UniformSourceQueries208_B01
+public import Erdos272.Arithmetic.UniformSourceQueries208_B02
+public import Erdos272.Arithmetic.UniformSourceQueries208_B03
+public import Erdos272.Arithmetic.UniformSourceQueries208_B04
+public import Erdos272.Arithmetic.UniformSourceQueries208_B05
+public import Erdos272.Arithmetic.UniformSourceQueries208_B06
+
+@[expose] public section
 
 namespace JSP233.UniformSourceQueries208
 open UniformQuery208

@@ -1,5 +1,9 @@
-import Erdos272.Resources.FactorCells34
-import Erdos272.Counting.TailSelection34
+module
+
+public import Erdos272.Resources.FactorCells34
+public import Erdos272.Counting.TailSelection34
+
+@[expose] public section
 
 /-! Actual lcm collision labels become coordinate meets. This does not
 construct the descending collision forest or assert its total cost. -/

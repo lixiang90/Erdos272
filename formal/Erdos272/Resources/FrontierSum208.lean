@@ -1,5 +1,12 @@
-import Erdos272.Resources.LocalizedMiddle208
-import Mathlib.Tactic
+module
+
+public import Erdos272.Resources.LocalizedMiddle208
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The complete local frontier price, including the truncated main tail. -/
 namespace JSP233.FrontierSum208

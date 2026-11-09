@@ -1,4 +1,9 @@
-import Erdos272.Arithmetic.HarmonicLog55
+module
+
+public import Erdos272.Arithmetic.HarmonicLog55
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! A finite correction to the decreasing harmonic logarithmic sequence.
 The 63-term exact anchor pays the full error; no asymptotic numerical

@@ -1,5 +1,10 @@
-import Erdos272.Arithmetic.FloorTrapezoid130
-import Erdos272.Arithmetic.ConvexQuotient130
+module
+
+public import Erdos272.Arithmetic.FloorTrapezoid130
+public import Erdos272.Arithmetic.ConvexQuotient130
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 namespace JSP233.TrapezoidStep130
 open Set MeasureTheory intervalIntegral
 open VolumeLower125 VolumeStep125 SimplexMoment57 FloorTrapezoid130 ConvexQuotient130

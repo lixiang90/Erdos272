@@ -1,4 +1,8 @@
-import Erdos272.Resources.CommonPoint208
+module
+
+public import Erdos272.Resources.CommonPoint208
+
+@[expose] public section
 namespace JSP233.CommonCapacity208
 open StarCompletion APGeometry NearAP36 FarSlot112
 open scoped Classical

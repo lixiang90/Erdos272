@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.MarkerSieve209
-import Erdos272.Arithmetic.FrontierCheck209
+module
+
+public import Erdos272.Arithmetic.MarkerSieve209
+public import Erdos272.Arithmetic.FrontierCheck209
+
+@[expose] public section
 
 /-! Kernel evaluation is call by name. Matching a natural argument before
 continuing keeps successive numeric accumulator expressions from growing.

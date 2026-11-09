@@ -1,4 +1,9 @@
-import Erdos272.Geometry.DensePhase137
+module
+
+public import Erdos272.Geometry.DensePhase137
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.ResidueInterval137
 open StarCompletion APGeometry
 open scoped Classical BigOperators

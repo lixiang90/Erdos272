@@ -1,4 +1,9 @@
-import Mathlib.Tactic
+module
+
+public import Erdos272.Foundation.ProofTactics
+public import Mathlib.Data.Real.Basic
+
+@[expose] public section
 
 /-! Kernel checked affine ellipsoid recovery.  The variables in the profile
 are the same endpoint `L` and total fringe width `w = L + N - R` throughout.

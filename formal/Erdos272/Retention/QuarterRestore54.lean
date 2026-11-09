@@ -1,4 +1,9 @@
-import Erdos272.Core.TerminalSeven52
+module
+
+public import Erdos272.Core.TerminalSeven52
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual reciprocal restoration retaining the integer quarter in B(N).
 The low branch obtains its deficit from the actual minimum omitted member;

@@ -1,5 +1,11 @@
-import Erdos272.Resources.CovarianceFinite213
-import Erdos272.Resources.LocalizedResource208
+module
+
+public import Erdos272.Resources.CovarianceFinite213
+public import Erdos272.Resources.LocalizedResource208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual resource sums, with each physical e_d independently chosen.
 No geometry or family-cardinality hypothesis is introduced here. -/

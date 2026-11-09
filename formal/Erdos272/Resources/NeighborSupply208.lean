@@ -1,5 +1,10 @@
-import Erdos272.Resources.PairRanks208
-import Erdos272.Resources.NeighborSlots208
+module
+
+public import Erdos272.Resources.PairRanks208
+public import Erdos272.Resources.NeighborSlots208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Genuine intrinsic third-point supplies for the first three rank distances.
 All AP covers inside the actual source are excluded, rather than only

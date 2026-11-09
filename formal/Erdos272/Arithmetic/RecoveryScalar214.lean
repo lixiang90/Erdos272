@@ -1,4 +1,8 @@
-import Erdos272.Resources.RecoveryResource214
+module
+
+public import Erdos272.Resources.RecoveryResource214
+
+@[expose] public section
 namespace JSP233.RecoveryScalar214
 open Recovery208 RecoveryCaps213 AlignedPlans212 RecoveryOmitters212
 noncomputable section

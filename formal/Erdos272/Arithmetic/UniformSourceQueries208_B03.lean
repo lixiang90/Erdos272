@@ -1,5 +1,9 @@
-import Erdos272.Certificates.UniformQueryBlocks208
-import Erdos272.Arithmetic.UniformQuery208
+module
+
+public import Erdos272.Certificates.UniformQueryBlocks208
+public import Erdos272.Arithmetic.UniformQuery208
+
+@[expose] public section
 
 namespace JSP233.UniformSourceQueries208_B03
 open UniformQuery208

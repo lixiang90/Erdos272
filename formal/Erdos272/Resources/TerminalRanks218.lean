@@ -1,4 +1,10 @@
-import Erdos272.Counting.FringeCount218
+module
+
+public import Erdos272.Counting.FringeCount218
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! All five actual density ranks pay their own complete aligned/off plan.
 The terminal width remains the physical native width 29. -/

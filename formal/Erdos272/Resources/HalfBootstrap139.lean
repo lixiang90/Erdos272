@@ -1,5 +1,9 @@
-import Erdos272.Resources.HalfRecovery133
-import Erdos272.Resources.BootstrapFringe139
+module
+
+public import Erdos272.Resources.HalfRecovery133
+public import Erdos272.Resources.BootstrapFringe139
+
+@[expose] public section
 namespace JSP233.HalfBootstrap139
 open StarCompletion APGeometry CoprimeDensity52 MiddleJoint51 MiddleDeficit52
 open PreparedClasses50 APPrepare49 PreparedWitness48 MiddleCoordinates51

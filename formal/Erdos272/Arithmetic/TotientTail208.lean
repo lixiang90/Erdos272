@@ -1,5 +1,11 @@
-import Erdos272.Arithmetic.PrimorialRatio39
-import Erdos272.Arithmetic.PureSource208
+module
+
+public import Erdos272.Arithmetic.PrimorialRatio39
+public import Erdos272.Arithmetic.PureSource208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Analytic tail closure for the finite source calculation.  A kernel
 certificate need only cover a short prefix: the already proved primorial

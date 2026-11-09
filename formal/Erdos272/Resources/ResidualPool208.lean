@@ -1,4 +1,8 @@
-import Erdos272.Resources.CoreCleanup208
+module
+
+public import Erdos272.Resources.CoreCleanup208
+
+@[expose] public section
 
 namespace JSP233.ResidualPool208
 open StarCompletion APGeometry NearAP36 CoreCleanup208 CommonCapacity208

@@ -1,4 +1,10 @@
-import Erdos272.Resources.RectSlack137
+module
+
+public import Erdos272.Resources.RectSlack137
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Algebra.Group.Action.Defs
+
+@[expose] public section
 namespace JSP233.RectSlack140
 open scoped BigOperators
 noncomputable section

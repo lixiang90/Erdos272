@@ -1,18 +1,22 @@
-import Erdos272.Arithmetic.SmallCover209
-import Erdos272.Arithmetic.FullCoverBlock209_000
-import Erdos272.Arithmetic.FullCoverBlock209_001
-import Erdos272.Arithmetic.FullCoverBlock209_002
-import Erdos272.Arithmetic.FullCoverBlock209_003
-import Erdos272.Arithmetic.FullCoverBlock209_004
-import Erdos272.Arithmetic.FullCoverBlock209_005
-import Erdos272.Arithmetic.FullCoverBlock209_006
-import Erdos272.Arithmetic.FullCoverBlock209_007
-import Erdos272.Arithmetic.FullCoverBlock209_008
-import Erdos272.Arithmetic.FullCoverBlock209_009
-import Erdos272.Arithmetic.FullCoverBlock209_010
-import Erdos272.Arithmetic.FullCoverBlock209_011
-import Erdos272.Arithmetic.FullCoverBlock209_012
-import Erdos272.Arithmetic.FullCoverBlock209_013
+module
+
+public import Erdos272.Arithmetic.SmallCover209
+public import Erdos272.Arithmetic.FullCoverBlock209_000
+public import Erdos272.Arithmetic.FullCoverBlock209_001
+public import Erdos272.Arithmetic.FullCoverBlock209_002
+public import Erdos272.Arithmetic.FullCoverBlock209_003
+public import Erdos272.Arithmetic.FullCoverBlock209_004
+public import Erdos272.Arithmetic.FullCoverBlock209_005
+public import Erdos272.Arithmetic.FullCoverBlock209_006
+public import Erdos272.Arithmetic.FullCoverBlock209_007
+public import Erdos272.Arithmetic.FullCoverBlock209_008
+public import Erdos272.Arithmetic.FullCoverBlock209_009
+public import Erdos272.Arithmetic.FullCoverBlock209_010
+public import Erdos272.Arithmetic.FullCoverBlock209_011
+public import Erdos272.Arithmetic.FullCoverBlock209_012
+public import Erdos272.Arithmetic.FullCoverBlock209_013
+
+@[expose] public section
 namespace JSP233.FullCoverage209
 open FactorFullData209
 set_option maxHeartbeats 0

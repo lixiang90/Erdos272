@@ -1,4 +1,10 @@
-import Erdos272.Arithmetic.VolumeLower125
+module
+
+public import Erdos272.Arithmetic.VolumeLower125
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.Order.Floor.Semifield
+
+@[expose] public section
 
 namespace JSP233.VolumeStep125
 open VolumeLower125 SimplexMoment57

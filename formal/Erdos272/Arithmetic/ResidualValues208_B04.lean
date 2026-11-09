@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.ResidualCeil208
+module
+
+public import Erdos272.Arithmetic.ResidualCeil208
+
+@[expose] public section
 namespace JSP233.ResidualValues208_B04
 set_option maxHeartbeats 0
 set_option maxRecDepth 10000

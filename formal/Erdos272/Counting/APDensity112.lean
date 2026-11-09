@@ -1,5 +1,12 @@
-import Erdos272.Counting.Density41
-import Erdos272.Counting.EndpointDensity54
+module
+
+public import Erdos272.Counting.Density41
+public import Erdos272.Counting.EndpointDensity54
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Data.Nat.Choose.Cast
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-!
 An actual original-family AP and sparse-crooked density bound.  The AP fiber

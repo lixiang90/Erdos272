@@ -1,5 +1,9 @@
-import Erdos272.Resources.CoreShellHalf136
-import Erdos272.Resources.WeightedJoint136
+module
+
+public import Erdos272.Resources.CoreShellHalf136
+public import Erdos272.Resources.WeightedJoint136
+
+@[expose] public section
 namespace JSP233.ActualJoint136
 open StarCompletion APGeometry FarSlot112 FarCapacity112 FarJoint112
 open CoreShellHalf136

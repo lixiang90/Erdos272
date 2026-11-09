@@ -1,4 +1,8 @@
-import Lean
+module
+
+public import Lean
+
+@[expose] public section
 
 /-!
 The eight actual AP stencil, with an unbounded integer-set bridge.

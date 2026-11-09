@@ -1,8 +1,12 @@
-import Erdos272.Counting.MiddleDeficit52
-import Erdos272.Retention.JointFringe44
-import Erdos272.Construction.ExtremalValue45
-import Erdos272.Global.EndpointStability53
-import Erdos272.Global.NonInterval53
+module
+
+public import Erdos272.Counting.MiddleDeficit52
+public import Erdos272.Retention.JointFringe44
+public import Erdos272.Construction.ExtremalValue45
+public import Erdos272.Global.EndpointStability53
+public import Erdos272.Global.NonInterval53
+
+@[expose] public section
 
 /-! Actual original-family upper bound in the large-N range. The retained
 family and its reflected orientation are always those of the original family.

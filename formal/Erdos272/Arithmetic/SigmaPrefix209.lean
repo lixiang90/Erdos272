@@ -1,5 +1,11 @@
-import Erdos272.Arithmetic.SigmaSieve209
-import Erdos272.Arithmetic.ForcedCheck209
+module
+
+public import Erdos272.Arithmetic.SigmaSieve209
+public import Erdos272.Arithmetic.ForcedCheck209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Basic.Real.Basic
+
+@[expose] public section
 namespace JSP233.SigmaPrefix209
 set_option maxHeartbeats 0
 open Finset

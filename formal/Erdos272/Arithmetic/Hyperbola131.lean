@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.SimplexMoment57
-import Mathlib.Data.Nat.Sqrt
+module
+
+public import Erdos272.Arithmetic.SimplexMoment57
+public import Mathlib.Data.Nat.Sqrt
+
+@[expose] public section
 namespace JSP233.Hyperbola131
 open SimplexMoment57
 open scoped Classical BigOperators

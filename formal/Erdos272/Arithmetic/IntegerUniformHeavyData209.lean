@@ -1,5 +1,9 @@
-import Erdos272.Resources.IntegerUniformLight209
-import Erdos272.Arithmetic.IntegerRobustPrices209
+module
+
+public import Erdos272.Resources.IntegerUniformLight209
+public import Erdos272.Arithmetic.IntegerRobustPrices209
+
+@[expose] public section
 
 namespace JSP233.IntegerUniformHeavyData209
 open IntegerUniformProfiles209 IntegerUniformRows209 IntegerHighPrices209

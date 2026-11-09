@@ -1,5 +1,10 @@
-import Erdos272.Arithmetic.CoprimeDensity52
-import Erdos272.Retention.EndpointDeficit44
+module
+
+public import Erdos272.Arithmetic.CoprimeDensity52
+public import Erdos272.Retention.EndpointDeficit44
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Physical scaling and actual-family endpoint102 from the finite coprime
 resource pools. The scaling proof is adapted from the fixed Erdos272 source;

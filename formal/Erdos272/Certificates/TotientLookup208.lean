@@ -1,7 +1,11 @@
-import Erdos272.Arithmetic.SourceLookupData208
-import Erdos272.Arithmetic.PrimeCover208
-import Mathlib.Data.Fintype.Basic
-import Mathlib.Tactic.FinCases
+module
+
+public import Erdos272.Arithmetic.SourceLookupData208
+public import Erdos272.Arithmetic.PrimeCover208
+public import Mathlib.Data.Fintype.Basic
+public import Mathlib.Tactic.FinCases
+
+@[expose] public section
 
 /-! Small kernel certificates for every original totient recurrence check. -/
 namespace JSP233.SourceLookupFast208

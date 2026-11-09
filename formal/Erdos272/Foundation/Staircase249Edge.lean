@@ -1,4 +1,8 @@
-import Erdos272.Foundation.Staircase249Data
+module
+
+public import Erdos272.Foundation.Staircase249Data
+
+@[expose] public section
 
 namespace JSP233.Staircase249Data
 open JSP233.StaircaseCertificate

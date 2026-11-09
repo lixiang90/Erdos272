@@ -1,6 +1,12 @@
-import Erdos272.Arithmetic.Unit240Rows218
-import Erdos272.Resources.ActualUnitLayer208
-import Erdos272.Arithmetic.ResidualCeil208
+module
+
+public import Erdos272.Arithmetic.Unit240Rows218
+public import Erdos272.Resources.ActualUnitLayer208
+public import Erdos272.Arithmetic.ResidualCeil208
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.Unit240Geometry218
 open StarCompletion APGeometry NearAP36 SourceBridge208 SourceCertified208 SourcePrefixSpecs208

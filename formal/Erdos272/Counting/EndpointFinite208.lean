@@ -1,4 +1,8 @@
-import Erdos272.Certificates.EndpointFinite208.Block071
+module
+
+public import Erdos272.Certificates.EndpointFinite208.Block071
+
+@[expose] public section
 
 /-! Finite endpoint bounds assembled from sequentially checked certificate
 blocks. Candidate data and all checks live in Certificates/EndpointFinite208.

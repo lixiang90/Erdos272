@@ -1,5 +1,9 @@
-import Lean.Elab.Tactic.Decide
-import Lean.Elab.Deriving.DecEq
+module
+
+public import Lean.Elab.Tactic.Decide
+public import Lean.Elab.Deriving.DecEq
+
+@[expose] public section
 namespace JSP233.CleanupMachine208
 set_option maxHeartbeats 0
 def gate (d : Nat) : Nat := if 2 ∣ d then 2 else if 3 ∣ d then 3 else if 5 ∣ d then 5 else if 7 ∣ d then 7 else 11

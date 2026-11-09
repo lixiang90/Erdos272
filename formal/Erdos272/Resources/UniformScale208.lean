@@ -1,4 +1,8 @@
-import Erdos272.Resources.UniformActual208
+module
+
+public import Erdos272.Resources.UniformActual208
+
+@[expose] public section
 
 /-! The actual mixed source scales by v², hence its global fee scales by v⁻³. -/
 namespace JSP233.UniformScale208

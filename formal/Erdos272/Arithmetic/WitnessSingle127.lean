@@ -1,5 +1,9 @@
-import Erdos272.Arithmetic.SingleTangent127
-import Erdos272.Arithmetic.PrefixSuper127
+module
+
+public import Erdos272.Arithmetic.SingleTangent127
+public import Erdos272.Arithmetic.PrefixSuper127
+
+@[expose] public section
 namespace JSP233.WitnessSingle127
 open StarCompletion RestrictedWitness44 DivisorMoment45
 open HarmonicAbel29 SimplexMoment57 TwoSidedMoment62 DivisorMoment122

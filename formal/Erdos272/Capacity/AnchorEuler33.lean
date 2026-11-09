@@ -1,11 +1,15 @@
-import Mathlib.Data.Nat.Totient
-import Mathlib.Algebra.Order.BigOperators.Group.Finset
-import Mathlib.Data.Fintype.BigOperators
-import Mathlib.Data.Finset.Max
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Ring
-import Lean.Elab.Tactic.Omega
+module
+
+public import Mathlib.Data.Nat.Totient
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Mathlib.Data.Fintype.BigOperators
+public import Mathlib.Data.Finset.Max
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Ring
+public import Lean.Elab.Tactic.Omega
+
+@[expose] public section
 
 /-! Actual Euler-factor shell payment for arbitrary finite dimension.
 The arithmetic weights are Mathlib's Nat.totient, not an assumed weight bound. -/

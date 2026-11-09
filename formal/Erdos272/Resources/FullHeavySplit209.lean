@@ -1,5 +1,10 @@
-import Erdos272.Counting.HeavyCredit208
-import Erdos272.Resources.CleanupWindowBounds208
+module
+
+public import Erdos272.Counting.HeavyCredit208
+public import Erdos272.Resources.CleanupWindowBounds208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.FullHeavySplit209
 open StarCompletion APGeometry NearAP36

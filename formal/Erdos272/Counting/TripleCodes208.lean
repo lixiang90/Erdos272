@@ -1,7 +1,11 @@
-import Erdos272.Resources.IntrinsicTriples208
-import Erdos272.Arithmetic.APInterval208
-import Mathlib.Data.Int.GCD
-import Mathlib.Tactic
+module
+
+public import Erdos272.Resources.IntrinsicTriples208
+public import Erdos272.Arithmetic.APInterval208
+public import Mathlib.Data.Int.GCD
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! # The actual primitive AP encoding of coverable triples
 

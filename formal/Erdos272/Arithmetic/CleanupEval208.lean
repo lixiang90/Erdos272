@@ -1,8 +1,12 @@
-import Erdos272.Resources.CleanupNet208
-import Erdos272.Arithmetic.LightPrice208
-import Erdos272.Arithmetic.WindowSums208
-import Erdos272.Arithmetic.CombinedCounts208
-import Erdos272.Arithmetic.StepClass208
+module
+
+public import Erdos272.Resources.CleanupNet208
+public import Erdos272.Arithmetic.LightPrice208
+public import Erdos272.Arithmetic.WindowSums208
+public import Erdos272.Arithmetic.CombinedCounts208
+public import Erdos272.Arithmetic.StepClass208
+
+@[expose] public section
 
 namespace JSP233.CleanupEval208
 open LightClosed208 CleanupNet208 WindowCounts208 WindowSums208 CombinedCounts208

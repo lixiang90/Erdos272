@@ -1,4 +1,8 @@
-import Erdos272.Core.FarSlot112
+module
+
+public import Erdos272.Core.FarSlot112
+
+@[expose] public section
 
 namespace JSP233.CommonPoint208
 open StarCompletion APGeometry NearAP36 FarSlot112

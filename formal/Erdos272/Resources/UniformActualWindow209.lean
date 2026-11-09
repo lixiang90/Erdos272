@@ -1,6 +1,10 @@
-import Erdos272.Arithmetic.UniformPotential208
-import Erdos272.Arithmetic.TotientWindow209
-import Erdos272.Arithmetic.SigmaCertificate209
+module
+
+public import Erdos272.Arithmetic.UniformPotential208
+public import Erdos272.Arithmetic.TotientWindow209
+public import Erdos272.Arithmetic.SigmaCertificate209
+
+@[expose] public section
 
 namespace JSP233.UniformActualWindow209
 open StarCompletion APGeometry SourceBridge208 UniformSourceCore208 UniformAbel208

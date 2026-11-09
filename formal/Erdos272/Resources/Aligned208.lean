@@ -1,5 +1,9 @@
-import Erdos272.Retention.JointFringe44
-import Erdos272.Resources.ActualGrid208
+module
+
+public import Erdos272.Retention.JointFringe44
+public import Erdos272.Resources.ActualGrid208
+
+@[expose] public section
 
 /-! Actual aligned members may use a separate anchor quantum at every
 physical step.  The private-point code retains the actual step and grid

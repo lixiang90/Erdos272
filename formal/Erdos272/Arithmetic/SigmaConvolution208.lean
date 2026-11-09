@@ -1,6 +1,12 @@
-import Erdos272.Arithmetic.SigmaPrefix209
-import Erdos272.Arithmetic.TotientConvolution208
-import Erdos272.Resources.UniformAbel208
+module
+
+public import Erdos272.Arithmetic.SigmaPrefix209
+public import Erdos272.Arithmetic.TotientConvolution208
+public import Erdos272.Resources.UniformAbel208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The finite divisor convolution is the full physical step-weight sum. -/
 namespace JSP233.SigmaConvolution208

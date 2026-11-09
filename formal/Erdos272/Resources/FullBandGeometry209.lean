@@ -1,5 +1,10 @@
-import Erdos272.Resources.FullHeavySplit209
-import Erdos272.Resources.ActualBandEval208
+module
+
+public import Erdos272.Resources.FullHeavySplit209
+public import Erdos272.Resources.ActualBandEval208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.FullBandGeometry209
 open StarCompletion APGeometry NearAP36 SourceBridge208 ShiftedBlocks208

@@ -1,6 +1,11 @@
-import Erdos272.Resources.OriginalTerminal212
-import Erdos272.Global.NonInterval53
-import Erdos272.Resources.DenseDeletion208
+module
+
+public import Erdos272.Resources.OriginalTerminal212
+public import Erdos272.Global.NonInterval53
+public import Erdos272.Resources.DenseDeletion208
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The initial resource is independent of intervalization.  Its first left
 bound excludes noninterval retained avoiders; only then is the interval core

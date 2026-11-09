@@ -1,7 +1,11 @@
-import Erdos272.Resources.ExteriorWitness36
-import Erdos272.Core.CoreAP36
-import Erdos272.Retention.RestoreTerminal35
-import Erdos272.Retention.FringeRestore36
+module
+
+public import Erdos272.Resources.ExteriorWitness36
+public import Erdos272.Core.CoreAP36
+public import Erdos272.Retention.RestoreTerminal35
+public import Erdos272.Retention.FringeRestore36
+
+@[expose] public section
 
 /-! Actual long-core terminals with automatic crooked witnesses.
 The final retained and original-family endpoints have no witness, good-crooked

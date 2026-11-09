@@ -1,8 +1,13 @@
-import Erdos272.Resources.LocalResourceRecovery208
-import Erdos272.Arithmetic.RecoveryPrefix208
-import Erdos272.Resources.RecoveryOmitters208
-import Erdos272.Resources.RecoveryGates208
-import Erdos272.Arithmetic.HarmonicCorrect118
+module
+
+public import Erdos272.Resources.LocalResourceRecovery208
+public import Erdos272.Arithmetic.RecoveryPrefix208
+public import Erdos272.Resources.RecoveryOmitters208
+public import Erdos272.Resources.RecoveryGates208
+public import Erdos272.Arithmetic.HarmonicCorrect118
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Four actual recovery preparations. The resource at each step is proved
 before its consequent geometric gate is used at the following step. -/

@@ -1,5 +1,10 @@
-import Erdos272.Resources.SharedUniform209
-import Erdos272.Resources.StrongAPResponse209
+module
+
+public import Erdos272.Resources.SharedUniform209
+public import Erdos272.Resources.StrongAPResponse209
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.SharedUniformStrong209
 open StarCompletion APGeometry DenseDeletion40 Density41 IntrinsicTriples208 HarmonicAbel29

@@ -1,4 +1,8 @@
-import Erdos272.Core.AnchorAssembly37
+module
+
+public import Erdos272.Core.AnchorAssembly37
+
+@[expose] public section
 
 /-! Actual divisor traces constructed from integer AP anchors.
 No downset, prefix key, shell count or physical-cell budget is assumed. -/

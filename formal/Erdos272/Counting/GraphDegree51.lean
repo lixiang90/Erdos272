@@ -1,5 +1,11 @@
-import Erdos272.Core.FarAssembly37
-import Mathlib.Data.Nat.Choose.Cast
+module
+
+public import Erdos272.Core.FarAssembly37
+public import Mathlib.Data.Nat.Choose.Cast
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Actual witness-graph incidence and the 71q/7 candidate geometry. -/
 namespace JSP233.GraphDegree51

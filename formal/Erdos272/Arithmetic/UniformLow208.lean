@@ -1,4 +1,10 @@
-import Erdos272.Arithmetic.StepWeightShape208
+module
+
+public import Erdos272.Arithmetic.StepWeightShape208
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 
 /-! The low-density side is one explicit cubic, including the closed D=2 boundary. -/
 namespace JSP233.UniformLow208

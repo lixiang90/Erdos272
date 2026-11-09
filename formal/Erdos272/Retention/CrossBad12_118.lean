@@ -1,4 +1,9 @@
-import Erdos272.Retention.BalancedFringe115
+module
+
+public import Erdos272.Retention.BalancedFringe115
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! Actual AP intersections of two short traces cannot use both exterior
 arms.  The sources remain on Ground N; their exterior rectangles are real. -/

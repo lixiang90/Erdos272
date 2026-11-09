@@ -1,6 +1,10 @@
-import Erdos272.Global.PaddedCommon212
-import Erdos272.Global.RootQuadratic208
-import Erdos272.Resources.DenseDeletion208
+module
+
+public import Erdos272.Global.PaddedCommon212
+public import Erdos272.Global.RootQuadratic208
+public import Erdos272.Resources.DenseDeletion208
+
+@[expose] public section
 
 /-! Actual deleted avoiders are not rooted. The root of the retained sparse
 family forces every such omitter to be larger, before all-pair counting. -/

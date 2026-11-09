@@ -1,6 +1,10 @@
-import Erdos272.Retention.Terminal36
-import Erdos272.Retention.JointFringe44
-import Erdos272.Arithmetic.PrimorialRatio39
+module
+
+public import Erdos272.Retention.Terminal36
+public import Erdos272.Retention.JointFringe44
+public import Erdos272.Arithmetic.PrimorialRatio39
+
+@[expose] public section
 
 /-! Actual external avoiders force a small-AP deficit.  The adaptive original
 family restoration below retains the established logarithmic physical terminal

@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.ComputedTotient209
+module
+
+public import Erdos272.Arithmetic.ComputedTotient209
+
+@[expose] public section
 namespace JSP233.FastComputed209
 set_option maxHeartbeats 0
 def value (base factor : Nat → Nat) (fuel n : Nat) : Nat :=

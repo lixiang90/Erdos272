@@ -1,4 +1,8 @@
-import Erdos272.Core.TracePacking43
+module
+
+public import Erdos272.Core.TracePacking43
+
+@[expose] public section
 
 /-! A common actual off-residue point forces one-point intersections of
 interval traces, including traces with different steps. -/

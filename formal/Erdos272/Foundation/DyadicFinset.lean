@@ -1,5 +1,9 @@
-import Erdos272.Foundation.PrivateFinset
-import Erdos272.Foundation.DyadicStencil
+module
+
+public import Erdos272.Foundation.PrivateFinset
+public import Erdos272.Foundation.DyadicStencil
+
+@[expose] public section
 
 /-!
 Actual finite integer-set dyadic-stencil payment.  The eight displayed APs

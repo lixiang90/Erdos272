@@ -1,4 +1,9 @@
-import Erdos272.Resources.LocalMobius119
+module
+
+public import Erdos272.Resources.LocalMobius119
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.LocalMobius120
 /-! A finite cubic cutoff removes the global harmonic density loss.
 Every actual local row returns to the same rho_N before physical scaling. -/

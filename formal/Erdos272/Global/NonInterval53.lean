@@ -1,7 +1,13 @@
-import Erdos272.Core.TerminalSeven52
-import Erdos272.Counting.MiddleDeficit52
-import Erdos272.Counting.NonIntervalAP47
-import Erdos272.Arithmetic.DivisorMoment45
+module
+
+public import Erdos272.Core.TerminalSeven52
+public import Erdos272.Counting.MiddleDeficit52
+public import Erdos272.Counting.NonIntervalAP47
+public import Erdos272.Arithmetic.DivisorMoment45
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.NonInterval53
 open StarCompletion PrivatePairExistence LongTerminal35 WitnessInterval43 RestrictedWitness44

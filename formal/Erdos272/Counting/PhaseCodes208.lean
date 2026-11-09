@@ -1,5 +1,9 @@
-import Erdos272.Counting.PhaseDensity208
-import Erdos272.Counting.ConflictBudget208
+module
+
+public import Erdos272.Counting.PhaseDensity208
+public import Erdos272.Counting.ConflictBudget208
+
+@[expose] public section
 
 namespace JSP233.PhaseCodes208
 open scoped Classical BigOperators

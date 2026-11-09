@@ -1,4 +1,10 @@
-import Erdos272.Arithmetic.ResidualAggregate208
+module
+
+public import Erdos272.Arithmetic.ResidualAggregate208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 namespace JSP233.CappedWeights209
 open ResidualAggregate208 ResidualWeights208

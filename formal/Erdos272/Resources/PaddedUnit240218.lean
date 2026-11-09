@@ -1,5 +1,9 @@
-import Erdos272.Resources.Unit240Aggregate218
-import Erdos272.Global.Common240216
+module
+
+public import Erdos272.Resources.Unit240Aggregate218
+public import Erdos272.Global.Common240216
+
+@[expose] public section
 
 namespace JSP233.PaddedUnit240218
 open StarCompletion APGeometry Density41

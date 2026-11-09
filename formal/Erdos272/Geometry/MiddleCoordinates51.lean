@@ -1,4 +1,8 @@
-import Erdos272.Global.PreparedClasses50
+module
+
+public import Erdos272.Global.PreparedClasses50
+
+@[expose] public section
 
 /-! Actual primitive witnesses and centered integer models in the middle region. -/
 namespace JSP233.MiddleCoordinates51

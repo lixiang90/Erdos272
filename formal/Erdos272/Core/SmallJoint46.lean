@@ -1,4 +1,9 @@
-import Erdos272.Counting.SparseCross41
+module
+
+public import Erdos272.Counting.SparseCross41
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! A small omitter pays the small root part. The global degree bound and
 the cross-pair error are alternatives, rather than additive worst cases. -/

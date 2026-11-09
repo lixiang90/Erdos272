@@ -1,5 +1,9 @@
-import Erdos272.Resources.GlobalPreparation209
-import Erdos272.Arithmetic.TotientExtended209
+module
+
+public import Erdos272.Resources.GlobalPreparation209
+public import Erdos272.Arithmetic.TotientExtended209
+
+@[expose] public section
 
 namespace JSP233.GlobalRecoveryActual209
 open StarCompletion APGeometry DenseDeletion40

@@ -1,5 +1,9 @@
-import Erdos272.Resources.BandSystem208
-import Erdos272.Resources.LightActualPrice208
+module
+
+public import Erdos272.Resources.BandSystem208
+public import Erdos272.Resources.LightActualPrice208
+
+@[expose] public section
 
 namespace JSP233.BandLabels208
 open StarCompletion APGeometry SourceBridge208 ShiftedBlocks208

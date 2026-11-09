@@ -1,4 +1,9 @@
-import Erdos272.Traces.SquarefreeSupply35
+module
+
+public import Erdos272.Traces.SquarefreeSupply35
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! The two floors in a genuine half interval are coupled.  Twice the
 count has squarefree error 2^omega, so no rounding error is paid twice. -/

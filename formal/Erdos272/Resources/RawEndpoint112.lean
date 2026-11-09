@@ -1,5 +1,11 @@
-import Erdos272.Resources.ResourceBudget56
-import Erdos272.Arithmetic.TwoSidedMoment62
+module
+
+public import Erdos272.Resources.ResourceBudget56
+public import Erdos272.Arithmetic.TwoSidedMoment62
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Data.Nat.Choose.Cast
+
+@[expose] public section
 
 /-!
 The direct endpoint-width square completion, transported through the actual

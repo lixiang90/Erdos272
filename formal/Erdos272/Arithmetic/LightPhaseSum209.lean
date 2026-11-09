@@ -1,5 +1,12 @@
-import Erdos272.Arithmetic.LightPhaseAnalytic209
-import Erdos272.Arithmetic.LightPeriodic209
+module
+
+public import Erdos272.Arithmetic.LightPhaseAnalytic209
+public import Erdos272.Arithmetic.LightPeriodic209
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 namespace JSP233.LightPhaseSum209
 open LightPhaseAnalytic209 LightPeriodic209 PrefixAbel208

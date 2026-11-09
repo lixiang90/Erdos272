@@ -1,7 +1,11 @@
-import Erdos272.Capacity.AnchorCapacity33
-import Mathlib.Data.Nat.Totient
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Ring
+module
+
+public import Erdos272.Capacity.AnchorCapacity33
+public import Mathlib.Data.Nat.Totient
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 /-! Exact gcd-cell counts in actual anchored integer intervals. -/
 namespace JSP233.DivisorCells34

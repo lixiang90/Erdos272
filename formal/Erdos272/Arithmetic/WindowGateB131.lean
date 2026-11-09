@@ -1,7 +1,12 @@
-import Erdos272.Arithmetic.PrefixTableD131
-import Erdos272.Arithmetic.PrefixLog131
-import Erdos272.Arithmetic.PairWindow131
-import Erdos272.Arithmetic.WindowProfile131
+module
+
+public import Erdos272.Arithmetic.PrefixTableD131
+public import Erdos272.Arithmetic.PrefixLog131
+public import Erdos272.Arithmetic.PairWindow131
+public import Erdos272.Arithmetic.WindowProfile131
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 namespace JSP233.WindowGateB131
 open PrefixTable131 PrefixLog131 PairWindow131 WindowProfile131 PairRecovery131 SimplexMoment57
 open scoped Classical BigOperators

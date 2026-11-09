@@ -1,4 +1,11 @@
-import Erdos272.Resources.Aligned208
+module
+
+public import Erdos272.Resources.Aligned208
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Order.Interval.Finset.Nat
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! Kernel-checked step-dependent plans for the three preparations and all
 ten terminal integer density ranks.  The tables are finite arithmetic;

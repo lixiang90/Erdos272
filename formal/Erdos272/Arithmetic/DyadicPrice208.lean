@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.SevenPrices208
+module
+
+public import Erdos272.Arithmetic.SevenPrices208
+
+@[expose] public section
 
 /-! Exhaust the dyadic indices justified by the actual omitter size.  The
 continuous N intervals are covered by proved endpoint inequalities, rather

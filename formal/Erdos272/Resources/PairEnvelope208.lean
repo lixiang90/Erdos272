@@ -1,6 +1,10 @@
-import Erdos272.Resources.SourceBridge208
-import Erdos272.Foundation.APGeometry
-import Mathlib.Tactic
+module
+
+public import Erdos272.Resources.SourceBridge208
+public import Erdos272.Foundation.APGeometry
+public import Erdos272.Foundation.ProofTactics
+
+@[expose] public section
 
 /-! Actual unions of all fixed-step AP covers of one pair. -/
 namespace JSP233.PairEnvelope208

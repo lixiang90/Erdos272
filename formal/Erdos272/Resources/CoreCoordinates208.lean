@@ -1,4 +1,8 @@
-import Erdos272.Resources.MaximumCore208
+module
+
+public import Erdos272.Resources.MaximumCore208
+
+@[expose] public section
 
 namespace JSP233.CoreCoordinates208
 open StarCompletion APGeometry SourceBridge208 NearAP36 MaximumCore208

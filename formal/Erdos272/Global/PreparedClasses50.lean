@@ -1,7 +1,11 @@
-import Erdos272.Global.APPrepare49
-import Erdos272.Counting.CornerJoint49
-import Erdos272.Counting.APExterior50
-import Erdos272.Counting.RightJoint50
+module
+
+public import Erdos272.Global.APPrepare49
+public import Erdos272.Counting.CornerJoint49
+public import Erdos272.Counting.APExterior50
+public import Erdos272.Counting.RightJoint50
+
+@[expose] public section
 
 /-! Actual prepared classes and the same-family corner reduction. -/
 namespace JSP233.PreparedClasses50

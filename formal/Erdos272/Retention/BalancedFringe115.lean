@@ -1,4 +1,9 @@
-import Erdos272.Retention.BadFringe115
+module
+
+public import Erdos272.Retention.BadFringe115
+public import Mathlib.Order.Interval.Finset.Nat
+
+@[expose] public section
 
 /-! The long-trace fringe and the exceptional short-trace family are counted
 on the same actual exterior.  The minimum source size is retained throughout. -/

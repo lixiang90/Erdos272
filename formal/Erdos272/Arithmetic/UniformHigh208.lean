@@ -1,5 +1,10 @@
-import Erdos272.Arithmetic.UniformPolynomial208
-import Erdos272.Resources.UniformActual208
+module
+
+public import Erdos272.Arithmetic.UniformPolynomial208
+public import Erdos272.Resources.UniformActual208
+public import Mathlib.Algebra.Order.Archimedean.Real.Basic
+
+@[expose] public section
 
 /-! The complete high-density side is monotone across every closed step boundary. -/
 namespace JSP233.UniformHigh208

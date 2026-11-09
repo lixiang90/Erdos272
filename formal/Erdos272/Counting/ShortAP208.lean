@@ -1,4 +1,8 @@
-import Erdos272.Counting.APCount41
+module
+
+public import Erdos272.Counting.APCount41
+
+@[expose] public section
 
 /-! Actual short progressions in the original ground set. The argument
 counts prescribed root positions and prescribed pairs before using the

@@ -1,4 +1,8 @@
-import Erdos272.Counting.APCount41
+module
+
+public import Erdos272.Counting.APCount41
+
+@[expose] public section
 
 /-! Maximum AP cardinality rules out a finer progression on a long overlap.
 This is the density alternative in the unit core-block admissibility gate. -/

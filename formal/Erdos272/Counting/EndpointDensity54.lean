@@ -1,4 +1,9 @@
-import Erdos272.Counting.MiddleDeficit52
+module
+
+public import Erdos272.Counting.MiddleDeficit52
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Sharper actual finite coprime density and the full prepared-family
 endpoint81 chain. No resource row or family count is supplied. -/

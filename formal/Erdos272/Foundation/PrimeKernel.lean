@@ -1,5 +1,9 @@
-import Erdos272.Foundation.PrivateFinset
-import Mathlib.Data.Int.Interval
+module
+
+public import Erdos272.Foundation.PrivateFinset
+public import Mathlib.Data.Int.Interval
+
+@[expose] public section
 
 /-! Actual AP step forcing in the unit-step and near-full step-three
 branches. No uniform pair-step or scalar payment premise is assumed. -/

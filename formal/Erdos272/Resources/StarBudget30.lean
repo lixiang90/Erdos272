@@ -1,6 +1,10 @@
-import Erdos272.Resources.StarResources30
-import Mathlib.Data.Int.Interval
-import Mathlib.Data.Nat.Choose.Basic
+module
+
+public import Erdos272.Resources.StarResources30
+public import Mathlib.Data.Int.Interval
+public import Mathlib.Data.Nat.Choose.Basic
+
+@[expose] public section
 
 /-! The physical interval and active-step arithmetic of the common-point
 bound. The geometric AP-line estimate is explicit until CrossLine30 supplies it. -/

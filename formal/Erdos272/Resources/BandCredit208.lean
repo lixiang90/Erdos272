@@ -1,4 +1,8 @@
-import Erdos272.Resources.BandLabels208
+module
+
+public import Erdos272.Resources.BandLabels208
+
+@[expose] public section
 
 namespace JSP233.BandCredit208
 open StarCompletion APGeometry NearAP36 ShiftedBlocks208 BandLabels208

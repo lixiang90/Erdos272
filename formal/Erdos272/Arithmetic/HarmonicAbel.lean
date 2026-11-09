@@ -1,10 +1,14 @@
-import Mathlib.NumberTheory.Harmonic.Bounds
-import Mathlib.NumberTheory.ArithmeticFunction.Moebius
-import Mathlib.Algebra.BigOperators.Module
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Ring
-import Mathlib.Tactic.Positivity
-import Lean.Elab.Tactic.Omega
+module
+
+public import Mathlib.NumberTheory.Harmonic.Bounds
+public import Mathlib.NumberTheory.ArithmeticFunction.Moebius
+public import Mathlib.Algebra.BigOperators.Module
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.Positivity
+public import Lean.Elab.Tactic.Omega
+
+@[expose] public section
 
 /-! Actual harmonic sums and finite reverse Abel summation. The totient
 specializations take the explicit prefix estimate as input; they prove the

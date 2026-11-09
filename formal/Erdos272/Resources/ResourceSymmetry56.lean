@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.CoprimeDensity52
+module
+
+public import Erdos272.Arithmetic.CoprimeDensity52
+
+@[expose] public section
 
 namespace JSP233.ResourceSymmetry56
 open MiddleJoint51 CoprimeDensity52

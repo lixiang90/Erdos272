@@ -1,4 +1,8 @@
-import Erdos272.Arithmetic.FewOffGates212
+module
+
+public import Erdos272.Arithmetic.FewOffGates212
+
+@[expose] public section
 
 namespace JSP233.NativeGates212
 open AlignedPlans212 FewOffGates212

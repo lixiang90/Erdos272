@@ -1,7 +1,11 @@
-import Erdos272.Resources.RawEndpoint127
-import Erdos272.Resources.CoarseEndpoint127
-import Erdos272.Arithmetic.RawLogGate117
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+module
+
+public import Erdos272.Resources.RawEndpoint127
+public import Erdos272.Resources.CoarseEndpoint127
+public import Erdos272.Arithmetic.RawLogGate117
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+
+@[expose] public section
 
 /-! The113.113m gates retain the complete absolute exclusion tangent fee. The fine
 core has a negative constant; positivity and exponential shift are proved

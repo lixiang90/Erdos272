@@ -1,5 +1,10 @@
-import Erdos272.Arithmetic.PairWeighted131
-import Erdos272.Arithmetic.EndpointEval131
+module
+
+public import Erdos272.Arithmetic.PairWeighted131
+public import Erdos272.Arithmetic.EndpointEval131
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 namespace JSP233.PrefixState131
 open PairWeighted131 SimplexMoment57

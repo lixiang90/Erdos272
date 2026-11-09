@@ -1,5 +1,9 @@
-import Erdos272.Global.APPrepare49
-import Erdos272.Arithmetic.Hyperbola131
+module
+
+public import Erdos272.Global.APPrepare49
+public import Erdos272.Arithmetic.Hyperbola131
+
+@[expose] public section
 
 /-! The actual large-AP endpoint filters are injected into the complete
 integer parameter library. Its size uses truncated natural subtraction,

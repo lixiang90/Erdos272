@@ -1,5 +1,9 @@
-import Erdos272.Staircase.StaircaseTailBridge29
-import Mathlib.Algebra.BigOperators.Intervals
+module
+
+public import Erdos272.Staircase.StaircaseTailBridge29
+public import Mathlib.Algebra.BigOperators.Intervals
+
+@[expose] public section
 
 /-! A quadratic surplus in the actual primitive bad-pair pool of a thick line.
 All arithmetic inputs come from the verified floor/Abel accounting chain. -/
