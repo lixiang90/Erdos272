@@ -33,7 +33,7 @@ The following table gives the individual results, their ranges, and the correspo
 
 All five public theorems are in [formal/PublicResults.lean](formal/PublicResults.lean), in namespace `JSP233.PublicResults`. The six problem definitions are written directly in that file. Their correspondence with the internal model is checked by Lean through definitional equality.
 
-The [English paper (PDF)](paper/erdos272.pdf) and its [LaTeX source](paper/erdos272.tex) present the computer-assisted result for `N ≥ 200000`. They develop the explicit large-order argument and describe the mixed-source finite-window certificates and symbolic recovery. On the dev branch the Lean electronic supplement extends the formal result down to `N ≥ 19227`.
+The [English paper (PDF)](paper/erdos272.pdf) and its [LaTeX source](paper/erdos272.tex) present the computer-assisted result for `N ≥ 19227`. They develop the explicit large-order argument and describe the mixed-source finite-window certificates and symbolic recovery. On the dev branch the Lean electronic supplement formally verifies the result for `N ≥ 19227`.
 
 The remaining finite range is `1 ≤ N < 19227`.
 

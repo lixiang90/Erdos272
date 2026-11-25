@@ -31,7 +31,7 @@ $\{1,\ldots,N\}$ whose intersections of distinct members are nonempty
 arithmetic progressions. We give a computer-assisted proof that
 \[
  v(N)=\binom N2+1+\left\lfloor\frac{N-1}{4}\right\rfloor
- \qquad(N\ge 200000).
+ \qquad(N\ge 19227).
 \]
 The lower bound is Szab\'o's construction. For the upper bound we delete
 large nonprogressions, obtain a common point for the remaining
@@ -43,7 +43,7 @@ combine a source from a longest AP with a totient source, use a zero-cost
 initial potential layer, and perform two symbolic recovery preparations.
 The accompanying Lean 4.35.0 development supplies the complete structural
 proofs and finite certificates and forms part of the proof. The remaining
-finite range below 200000 is open in this development.
+finite range below 19227 is open in this development.
 \end{abstract}
 
 \section{Statement and scope}
@@ -59,7 +59,7 @@ The members themselves need not be APs. Set
 The maximum exists because its domain is finite.
 
 \begin{theorem}\label{thm:main}
-For every integer $N\ge200000$, $v(N)=B(N)$. For every $N\ge1$,
+For every integer $N\ge19227$, $v(N)=B(N)$. For every $N\ge1$,
 there is a legal family of size $B(N)$.
 \end{theorem}
 
@@ -325,7 +325,7 @@ $|\F|=|\Hh|\le B(N)$, a contradiction.
 The finite part of the argument uses deletion parameter 12. Its source
 and recovery lemmas apply to the same actual legal family throughout.
 We give the certificate interfaces and the choices at the lower end of
-the range. All their finite proof data are included in the source.
+the range $N\ge200000$. All their finite proof data are included in the source.
 
 For a member $S$, let $s=|S|$, let $a$ be the largest cardinality of an AP
 contained in $S$, and put $e=s-a$. Let $\operatorname{Pool}(S)$ be the
@@ -417,14 +417,14 @@ slack $1/240$. The exact original-family restoration is
 \code{Retention/N200000/Restore200000.lean}.
 
 \begin{lemma}[Finite-window certificate]\label{lem:finite}
-If $200000\le N<2^{49}$ and $\F$ is legal, then $|\F|\le B(N)$.
+If $19227\le N<2^{49}$ and $\F$ is legal, then $|\F|\le B(N)$.
 \end{lemma}
 \begin{proof}[Computer-assisted proof]
 The lower-end windows just described are assembled with the remaining
 source, common-root, and recovery windows in
-\code{Global/N200000/Global200000.lean}, declaration
+\code{Global/N19227/Global19227.lean}, declaration
 \code{actual_original_upper_bound}. Its only hypotheses are
-$200000\le N$ and legality of the original family. The arithmetic data
+$19227\le N$ and legality of the original family. The arithmetic data
 and every required structural lemma are in its direct import closure.
 The files use the physical directory paths and are checked with the
 pinned Lean and mathlib versions as specified below.
@@ -432,7 +432,7 @@ pinned Lean and mathlib versions as specified below.
 
 \begin{proof}[Proof of Theorem~\ref{thm:main}]
 For $N\ge2^{49}$ apply Proposition~\ref{prop:tail}. For
-$200000\le N<2^{49}$, Lemma~\ref{lem:finite} gives the upper bound,
+$19227\le N<2^{49}$, Lemma~\ref{lem:finite} gives the upper bound,
 and Proposition~\ref{prop:lower} gives an attaining family. The same
 construction proves the assertion for every positive $N$.
 \end{proof}
@@ -452,7 +452,7 @@ Theorem~\ref{thm:main} is checked by
 \code{PublicResults.upper_bound} gives the universal original-family
 upper bound and \code{PublicResults.optimal_family} supplies an attaining
 family, all in namespace \code{JSP233}. Their numerical hypothesis is
-$200000\le N$. The construction entry
+$19227\le N$. The construction entry
 \code{PublicResults.lower_bound} assumes only $1\le N$.
 
 The development is pinned to Lean 4.35.0 and mathlib's matching stable
