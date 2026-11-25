@@ -1,0 +1,170 @@
+module
+
+public import Mathlib.Tactic.IntervalCases
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G0
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G1
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G10
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G11
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G12
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G13
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G14
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G15
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G16
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G17
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G18
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G19
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G2
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G20
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G21
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G22
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G3
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G4
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G5
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G6
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G7
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G8
+public import Erdos272.Arithmetic.N65968.WitnessChecks65968G9
+
+@[expose] public section
+
+namespace JSP233.WitnessFacts65968
+open WitnessNumeric65968
+noncomputable section
+set_option autoImplicit false
+set_option maxHeartbeats 1000000
+set_option maxRecDepth 200000
+
+theorem bound {k : ℕ} (hk : k<128) : value k≤(data k).cap := by
+  interval_cases k
+  · exact WitnessChecks65968G0.checked000
+  · exact WitnessChecks65968G0.checked001
+  · exact WitnessChecks65968G0.checked002
+  · exact WitnessChecks65968G0.checked003
+  · exact WitnessChecks65968G1.checked004
+  · exact WitnessChecks65968G1.checked005
+  · exact WitnessChecks65968G1.checked006
+  · exact WitnessChecks65968G1.checked007
+  · exact WitnessChecks65968G2.checked008
+  · exact WitnessChecks65968G2.checked009
+  · exact WitnessChecks65968G2.checked010
+  · exact WitnessChecks65968G2.checked011
+  · exact WitnessChecks65968G3.checked012
+  · exact WitnessChecks65968G3.checked013
+  · exact WitnessChecks65968G3.checked014
+  · exact WitnessChecks65968G3.checked015
+  · exact WitnessChecks65968G4.checked016
+  · exact WitnessChecks65968G4.checked017
+  · exact WitnessChecks65968G4.checked018
+  · exact WitnessChecks65968G4.checked019
+  · exact WitnessChecks65968G5.checked020
+  · exact WitnessChecks65968G5.checked021
+  · exact WitnessChecks65968G5.checked022
+  · exact WitnessChecks65968G5.checked023
+  · exact WitnessChecks65968G6.checked024
+  · exact WitnessChecks65968G6.checked025
+  · exact WitnessChecks65968G6.checked026
+  · exact WitnessChecks65968G6.checked027
+  · exact WitnessChecks65968G7.checked028
+  · exact WitnessChecks65968G7.checked029
+  · exact WitnessChecks65968G7.checked030
+  · exact WitnessChecks65968G7.checked031
+  · exact WitnessChecks65968G8.checked032
+  · exact WitnessChecks65968G8.checked033
+  · exact WitnessChecks65968G8.checked034
+  · exact WitnessChecks65968G8.checked035
+  · exact WitnessChecks65968G9.checked036
+  · exact WitnessChecks65968G9.checked037
+  · exact WitnessChecks65968G9.checked038
+  · exact WitnessChecks65968G9.checked039
+  · exact WitnessChecks65968G10.checked040
+  · exact WitnessChecks65968G10.checked041
+  · exact WitnessChecks65968G10.checked042
+  · exact WitnessChecks65968G10.checked043
+  · exact WitnessChecks65968G11.checked044
+  · exact WitnessChecks65968G11.checked045
+  · exact WitnessChecks65968G11.checked046
+  · exact WitnessChecks65968G11.checked047
+  · exact WitnessChecks65968G12.checked048
+  · exact WitnessChecks65968G12.checked049
+  · exact WitnessChecks65968G12.checked050
+  · exact WitnessChecks65968G12.checked051
+  · exact WitnessChecks65968G13.checked052
+  · exact WitnessChecks65968G13.checked053
+  · exact WitnessChecks65968G13.checked054
+  · exact WitnessChecks65968G13.checked055
+  · exact WitnessChecks65968G13.checked056
+  · exact WitnessChecks65968G13.checked057
+  · exact WitnessChecks65968G13.checked058
+  · exact WitnessChecks65968G13.checked059
+  · exact WitnessChecks65968G14.checked060
+  · exact WitnessChecks65968G14.checked061
+  · exact WitnessChecks65968G14.checked062
+  · exact WitnessChecks65968G14.checked063
+  · exact WitnessChecks65968G14.checked064
+  · exact WitnessChecks65968G14.checked065
+  · exact WitnessChecks65968G14.checked066
+  · exact WitnessChecks65968G14.checked067
+  · exact WitnessChecks65968G15.checked068
+  · exact WitnessChecks65968G15.checked069
+  · exact WitnessChecks65968G15.checked070
+  · exact WitnessChecks65968G15.checked071
+  · exact WitnessChecks65968G15.checked072
+  · exact WitnessChecks65968G15.checked073
+  · exact WitnessChecks65968G15.checked074
+  · exact WitnessChecks65968G15.checked075
+  · exact WitnessChecks65968G16.checked076
+  · exact WitnessChecks65968G16.checked077
+  · exact WitnessChecks65968G16.checked078
+  · exact WitnessChecks65968G16.checked079
+  · exact WitnessChecks65968G16.checked080
+  · exact WitnessChecks65968G16.checked081
+  · exact WitnessChecks65968G16.checked082
+  · exact WitnessChecks65968G16.checked083
+  · exact WitnessChecks65968G17.checked084
+  · exact WitnessChecks65968G17.checked085
+  · exact WitnessChecks65968G17.checked086
+  · exact WitnessChecks65968G17.checked087
+  · exact WitnessChecks65968G17.checked088
+  · exact WitnessChecks65968G17.checked089
+  · exact WitnessChecks65968G17.checked090
+  · exact WitnessChecks65968G17.checked091
+  · exact WitnessChecks65968G18.checked092
+  · exact WitnessChecks65968G18.checked093
+  · exact WitnessChecks65968G18.checked094
+  · exact WitnessChecks65968G18.checked095
+  · exact WitnessChecks65968G18.checked096
+  · exact WitnessChecks65968G18.checked097
+  · exact WitnessChecks65968G18.checked098
+  · exact WitnessChecks65968G18.checked099
+  · exact WitnessChecks65968G19.checked100
+  · exact WitnessChecks65968G19.checked101
+  · exact WitnessChecks65968G19.checked102
+  · exact WitnessChecks65968G19.checked103
+  · exact WitnessChecks65968G19.checked104
+  · exact WitnessChecks65968G19.checked105
+  · exact WitnessChecks65968G19.checked106
+  · exact WitnessChecks65968G19.checked107
+  · exact WitnessChecks65968G20.checked108
+  · exact WitnessChecks65968G20.checked109
+  · exact WitnessChecks65968G20.checked110
+  · exact WitnessChecks65968G20.checked111
+  · exact WitnessChecks65968G20.checked112
+  · exact WitnessChecks65968G20.checked113
+  · exact WitnessChecks65968G20.checked114
+  · exact WitnessChecks65968G20.checked115
+  · exact WitnessChecks65968G21.checked116
+  · exact WitnessChecks65968G21.checked117
+  · exact WitnessChecks65968G21.checked118
+  · exact WitnessChecks65968G21.checked119
+  · exact WitnessChecks65968G21.checked120
+  · exact WitnessChecks65968G21.checked121
+  · exact WitnessChecks65968G21.checked122
+  · exact WitnessChecks65968G21.checked123
+  · exact WitnessChecks65968G22.checked124
+  · exact WitnessChecks65968G22.checked125
+  · exact WitnessChecks65968G22.checked126
+  · exact WitnessChecks65968G22.checked127
+
+#print axioms bound
+end
+end JSP233.WitnessFacts65968

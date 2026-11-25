@@ -13,11 +13,11 @@ open StarCompletion StarResources30 CrossLine30 AffineLine30 StaircaseGeometry
 open scoped Classical
 noncomputable section
 
-theorem actual_affine_pool_surplus_count (c d : ℤ) (hd : 0<d)
+theorem actual_affine_pool_surplus_count_of_extent (c d : ℤ) (hd : 0<d)
     (F : Finset (Finset ℤ))
     (hF : ∀ S∈F, ∃ l r : ℕ, S=mapSet c d (Window l r) ∧ 4≤S.card)
     (hleft : ∃ S∈F, c-2*d∈S) (hright : ∃ S∈F, c+2*d∈S)
-    (hcard : 1000000<F.card) :
+    (hcard : 810000<F.card) :
     (F.card:ℝ)+(F.card:ℝ)/21≤(gcdStepPool c d F).card := by
   obtain ⟨U,hU,hunit⟩ := exists_normalized_family c d hd F (fun _ _ => True) (by
     intro S hS
@@ -45,8 +45,16 @@ theorem actual_affine_pool_surplus_count (c d : ℤ) (hd : 0<d)
   have hPc : (gcdStepPool c d F).card=(PrimitivePool U).card := by
     rw [←hU,gcdStepPool_mapFamily_card c d hd]
   rw [hAc,hPc]
-  exact QuantitativeTail31.actual_unit_family_pool_surplus_count U hUunit hUl hUr
+  exact QuantitativeTail31.actual_unit_family_pool_surplus_count_of_extent U hUunit hUl hUr
     (by rw [←hAc]; exact hcard)
+
+theorem actual_affine_pool_surplus_count (c d : ℤ) (hd : 0<d)
+    (F : Finset (Finset ℤ))
+    (hF : ∀ S∈F, ∃ l r : ℕ, S=mapSet c d (Window l r) ∧ 4≤S.card)
+    (hleft : ∃ S∈F, c-2*d∈S) (hright : ∃ S∈F, c+2*d∈S)
+    (hcard : 1000000<F.card) :
+    (F.card:ℝ)+(F.card:ℝ)/21≤(gcdStepPool c d F).card :=
+  actual_affine_pool_surplus_count_of_extent c d hd F hF hleft hright (by omega)
 
 theorem actual_middle_window_of_large_active_class
     (N : ℕ) (F : Finset (Finset ℤ)) (c : ℤ) (hN : 65536≤N)

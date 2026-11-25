@@ -1,0 +1,64 @@
+module
+
+public import Erdos272.Resources.N88404.SourcePayment88404W0
+public import Erdos272.Resources.N88404.SourcePayment88404W1
+public import Erdos272.Resources.N88404.SourcePayment88404W2
+public import Erdos272.Resources.N88404.SourcePayment88404W3
+public import Erdos272.Resources.N88404.WindowData88404
+
+@[expose] public section
+
+namespace JSP233.WindowPayment88404
+open StarCompletion APGeometry IntrinsicTriples208 SourceBridge208 WindowData88404
+open scoped Classical BigOperators
+noncomputable section
+set_option autoImplicit false
+set_option maxHeartbeats 1000000
+
+theorem actual_source_for_proof {w N : ℕ} {A F : Finset (Finset ℤ)}
+    (hw : w < 4) (hlo : (info w).low ≤ N) (hhi : N ≤ (info w).high)
+    (hlegal : Legal (Ground N) A) (hbad : ∀ S ∈ A, ¬IsAP S)
+    (hsize : ∀ S ∈ A, (info w).memberFloor ≤ S.card)
+    (hsparse : ∀ S ∈ A, 12*S.card ≤ N) (hAF : A ⊆ F) :
+    (A.card : ℝ) ≤ 6*G w*(∑ S ∈ F, ((Pool S).card : ℝ))+Fee w N := by
+  interval_cases w
+  · have hb := SourcePayment88404W0.actual_source
+      (by simpa [info] using hlo)
+      (by
+        have hn : N ≤ 90408 := by simpa [info] using hhi
+        exact hn.trans (by decide : 90408 ≤ 90408))
+      hlegal hbad (by simpa [info] using hsize) hsparse hAF
+    simpa [G, Fee, CoeffA, CoeffB, CoeffC, SourceData88404W0.G,
+      SourceData88404W0.SourceUpper, SourceData88404W0.CoeffA,
+      SourceData88404W0.CoeffB, SourceData88404W0.CoeffC] using hb
+  · have hb := SourcePayment88404W1.actual_source
+      (by simpa [info] using hlo)
+      (by
+        have hn : N ≤ 92436 := by simpa [info] using hhi
+        exact hn.trans (by decide : 92436 ≤ 92436))
+      hlegal hbad (by simpa [info] using hsize) hsparse hAF
+    simpa [G, Fee, CoeffA, CoeffB, CoeffC, SourceData88404W1.G,
+      SourceData88404W1.SourceUpper, SourceData88404W1.CoeffA,
+      SourceData88404W1.CoeffB, SourceData88404W1.CoeffC] using hb
+  · have hb := SourcePayment88404W2.actual_source
+      (by simpa [info] using hlo)
+      (by
+        have hn : N ≤ 94487 := by simpa [info] using hhi
+        exact hn.trans (by decide : 94487 ≤ 94487))
+      hlegal hbad (by simpa [info] using hsize) hsparse hAF
+    simpa [G, Fee, CoeffA, CoeffB, CoeffC, SourceData88404W2.G,
+      SourceData88404W2.SourceUpper, SourceData88404W2.CoeffA,
+      SourceData88404W2.CoeffB, SourceData88404W2.CoeffC] using hb
+  · have hb := SourcePayment88404W3.actual_source
+      (by simpa [info] using hlo)
+      (by
+        have hn : N ≤ 94487 := by simpa [info] using hhi
+        exact hn.trans (by decide : 94487 ≤ 118532))
+      hlegal hbad (by simpa [info] using hsize) hsparse hAF
+    simpa [G, Fee, CoeffA, CoeffB, CoeffC, SourceData88404W3.G,
+      SourceData88404W3.SourceUpper, SourceData88404W3.CoeffA,
+      SourceData88404W3.CoeffB, SourceData88404W3.CoeffC] using hb
+
+#print axioms actual_source_for_proof
+end
+end JSP233.WindowPayment88404

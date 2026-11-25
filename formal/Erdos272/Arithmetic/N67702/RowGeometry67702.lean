@@ -1,0 +1,168 @@
+module
+
+public import Erdos272.Arithmetic.N67702.RowGeometryCertificates67702G0
+public import Erdos272.Arithmetic.N67702.RowGeometryCertificates67702G1
+public import Erdos272.Arithmetic.N67702.RowGeometryCertificates67702G2
+public import Erdos272.Arithmetic.N67702.RowGeometryCertificates67702G3
+public import Erdos272.Arithmetic.N67702.RowGeometryCertificates67702G4
+public import Erdos272.Arithmetic.N291012.RowGeometry291012
+
+@[expose] public section
+
+namespace JSP233.RowGeometry67702
+open CleanupRows67702 RowStatic291012
+set_option autoImplicit false
+
+theorem parameters {k : ℕ} (hk : k < 148) : Static (data k) := by
+  interval_cases k
+  · exact RowGeometryCertificates67702G0.static00
+  · exact RowGeometryCertificates67702G0.static01
+  · exact RowGeometryCertificates67702G0.static02
+  · exact RowGeometryCertificates67702G0.static03
+  · exact RowGeometryCertificates67702G0.static04
+  · exact RowGeometryCertificates67702G0.static05
+  · exact RowGeometryCertificates67702G0.static06
+  · exact RowGeometryCertificates67702G0.static07
+  · exact RowGeometryCertificates67702G0.static08
+  · exact RowGeometryCertificates67702G0.static09
+  · exact RowGeometryCertificates67702G0.static10
+  · exact RowGeometryCertificates67702G0.static11
+  · exact RowGeometryCertificates67702G0.static12
+  · exact RowGeometryCertificates67702G0.static13
+  · exact RowGeometryCertificates67702G0.static14
+  · exact RowGeometryCertificates67702G0.static15
+  · exact RowGeometryCertificates67702G0.static16
+  · exact RowGeometryCertificates67702G0.static17
+  · exact RowGeometryCertificates67702G0.static18
+  · exact RowGeometryCertificates67702G0.static19
+  · exact RowGeometryCertificates67702G0.static20
+  · exact RowGeometryCertificates67702G0.static21
+  · exact RowGeometryCertificates67702G0.static22
+  · exact RowGeometryCertificates67702G0.static23
+  · exact RowGeometryCertificates67702G0.static24
+  · exact RowGeometryCertificates67702G0.static25
+  · exact RowGeometryCertificates67702G0.static26
+  · exact RowGeometryCertificates67702G0.static27
+  · exact RowGeometryCertificates67702G0.static28
+  · exact RowGeometryCertificates67702G0.static29
+  · exact RowGeometryCertificates67702G0.static30
+  · exact RowGeometryCertificates67702G0.static31
+  · exact RowGeometryCertificates67702G1.static32
+  · exact RowGeometryCertificates67702G1.static33
+  · exact RowGeometryCertificates67702G1.static34
+  · exact RowGeometryCertificates67702G1.static35
+  · exact RowGeometryCertificates67702G1.static36
+  · exact RowGeometryCertificates67702G1.static37
+  · exact RowGeometryCertificates67702G1.static38
+  · exact RowGeometryCertificates67702G1.static39
+  · exact RowGeometryCertificates67702G1.static40
+  · exact RowGeometryCertificates67702G1.static41
+  · exact RowGeometryCertificates67702G1.static42
+  · exact RowGeometryCertificates67702G1.static43
+  · exact RowGeometryCertificates67702G1.static44
+  · exact RowGeometryCertificates67702G1.static45
+  · exact RowGeometryCertificates67702G1.static46
+  · exact RowGeometryCertificates67702G1.static47
+  · exact RowGeometryCertificates67702G1.static48
+  · exact RowGeometryCertificates67702G1.static49
+  · exact RowGeometryCertificates67702G1.static50
+  · exact RowGeometryCertificates67702G1.static51
+  · exact RowGeometryCertificates67702G1.static52
+  · exact RowGeometryCertificates67702G1.static53
+  · exact RowGeometryCertificates67702G1.static54
+  · exact RowGeometryCertificates67702G1.static55
+  · exact RowGeometryCertificates67702G1.static56
+  · exact RowGeometryCertificates67702G1.static57
+  · exact RowGeometryCertificates67702G1.static58
+  · exact RowGeometryCertificates67702G1.static59
+  · exact RowGeometryCertificates67702G1.static60
+  · exact RowGeometryCertificates67702G1.static61
+  · exact RowGeometryCertificates67702G1.static62
+  · exact RowGeometryCertificates67702G1.static63
+  · exact RowGeometryCertificates67702G2.static64
+  · exact RowGeometryCertificates67702G2.static65
+  · exact RowGeometryCertificates67702G2.static66
+  · exact RowGeometryCertificates67702G2.static67
+  · exact RowGeometryCertificates67702G2.static68
+  · exact RowGeometryCertificates67702G2.static69
+  · exact RowGeometryCertificates67702G2.static70
+  · exact RowGeometryCertificates67702G2.static71
+  · exact RowGeometryCertificates67702G2.static72
+  · exact RowGeometryCertificates67702G2.static73
+  · exact RowGeometryCertificates67702G2.static74
+  · exact RowGeometryCertificates67702G2.static75
+  · exact RowGeometryCertificates67702G2.static76
+  · exact RowGeometryCertificates67702G2.static77
+  · exact RowGeometryCertificates67702G2.static78
+  · exact RowGeometryCertificates67702G2.static79
+  · exact RowGeometryCertificates67702G2.static80
+  · exact RowGeometryCertificates67702G2.static81
+  · exact RowGeometryCertificates67702G2.static82
+  · exact RowGeometryCertificates67702G2.static83
+  · exact RowGeometryCertificates67702G2.static84
+  · exact RowGeometryCertificates67702G2.static85
+  · exact RowGeometryCertificates67702G2.static86
+  · exact RowGeometryCertificates67702G2.static87
+  · exact RowGeometryCertificates67702G2.static88
+  · exact RowGeometryCertificates67702G2.static89
+  · exact RowGeometryCertificates67702G2.static90
+  · exact RowGeometryCertificates67702G2.static91
+  · exact RowGeometryCertificates67702G2.static92
+  · exact RowGeometryCertificates67702G2.static93
+  · exact RowGeometryCertificates67702G2.static94
+  · exact RowGeometryCertificates67702G2.static95
+  · exact RowGeometryCertificates67702G3.static96
+  · exact RowGeometryCertificates67702G3.static97
+  · exact RowGeometryCertificates67702G3.static98
+  · exact RowGeometryCertificates67702G3.static99
+  · exact RowGeometryCertificates67702G3.static100
+  · exact RowGeometryCertificates67702G3.static101
+  · exact RowGeometryCertificates67702G3.static102
+  · exact RowGeometryCertificates67702G3.static103
+  · exact RowGeometryCertificates67702G3.static104
+  · exact RowGeometryCertificates67702G3.static105
+  · exact RowGeometryCertificates67702G3.static106
+  · exact RowGeometryCertificates67702G3.static107
+  · exact RowGeometryCertificates67702G3.static108
+  · exact RowGeometryCertificates67702G3.static109
+  · exact RowGeometryCertificates67702G3.static110
+  · exact RowGeometryCertificates67702G3.static111
+  · exact RowGeometryCertificates67702G3.static112
+  · exact RowGeometryCertificates67702G3.static113
+  · exact RowGeometryCertificates67702G3.static114
+  · exact RowGeometryCertificates67702G3.static115
+  · exact RowGeometryCertificates67702G3.static116
+  · exact RowGeometryCertificates67702G3.static117
+  · exact RowGeometryCertificates67702G3.static118
+  · exact RowGeometryCertificates67702G3.static119
+  · exact RowGeometryCertificates67702G3.static120
+  · exact RowGeometryCertificates67702G3.static121
+  · exact RowGeometryCertificates67702G3.static122
+  · exact RowGeometryCertificates67702G3.static123
+  · exact RowGeometryCertificates67702G3.static124
+  · exact RowGeometryCertificates67702G3.static125
+  · exact RowGeometryCertificates67702G3.static126
+  · exact RowGeometryCertificates67702G3.static127
+  · exact RowGeometryCertificates67702G4.static128
+  · exact RowGeometryCertificates67702G4.static129
+  · exact RowGeometryCertificates67702G4.static130
+  · exact RowGeometryCertificates67702G4.static131
+  · exact RowGeometryCertificates67702G4.static132
+  · exact RowGeometryCertificates67702G4.static133
+  · exact RowGeometryCertificates67702G4.static134
+  · exact RowGeometryCertificates67702G4.static135
+  · exact RowGeometryCertificates67702G4.static136
+  · exact RowGeometryCertificates67702G4.static137
+  · exact RowGeometryCertificates67702G4.static138
+  · exact RowGeometryCertificates67702G4.static139
+  · exact RowGeometryCertificates67702G4.static140
+  · exact RowGeometryCertificates67702G4.static141
+  · exact RowGeometryCertificates67702G4.static142
+  · exact RowGeometryCertificates67702G4.static143
+  · exact RowGeometryCertificates67702G4.static144
+  · exact RowGeometryCertificates67702G4.static145
+  · exact RowGeometryCertificates67702G4.static146
+  · exact RowGeometryCertificates67702G4.static147
+
+#print axioms parameters
+end JSP233.RowGeometry67702

@@ -1,0 +1,105 @@
+module
+
+public import Erdos272.Resources.N291012.RootModel291012
+public import Erdos272.Global.N109474.InitialPreparation109474
+public import Erdos272.Counting.N86412.DenseCount86412
+public import Erdos272.Global.NonInterval53
+public import Erdos272.Counting.N86412.Exception86412
+
+@[expose] public section
+
+namespace JSP233.RetainedIntervals86412
+open StarCompletion APGeometry DenseDeletion40 LongTerminal35 NonIntervalAP47
+open HarmonicAbel29 LocalResourceRecovery208 Recovery208
+open RecoveryPrefix208 RecoveryResource213
+open ActualRecoveryChain208 (harmonic_cap)
+open scoped Classical BigOperators
+noncomputable section
+set_option autoImplicit false
+set_option maxHeartbeats 0
+set_option maxRecDepth 56400
+theorem retained_near {N : ℕ} {F : Finset (Finset ℤ)}
+    (hN : 56400≤N) (hcap : N≤2^18) (hF : Legal (Ground N) F) (hcard : B N≤F.card) :
+    (N : ℝ)^2/2 ≤ (Retained N 12 F).card+82*(N : ℝ) := by
+  have hd := DenseCount86412.actual_deleted_count hN hcap hF
+  have hp := actual_deletion_card_identity N 12 F
+  have hdR : ((Deleted N 12 F).card : ℝ) ≤ 81*(N : ℝ) := by exact_mod_cast hd
+  have hpR : ((Retained N 12 F).card : ℝ)+(Deleted N 12 F).card = F.card := by exact_mod_cast hp
+  have hn : (N.choose 2 : ℝ)+1 ≤ F.card := by
+    exact_mod_cast (show N.choose 2+1 ≤ F.card by unfold B at hcard; omega)
+  rw [Nat.cast_choose_two] at hn
+  nlinarith only [hdR, hpR, hn, Nat.cast_nonneg (α := ℝ) N]
+
+theorem actual_avoiders_are_intervals {N c L : ℕ} {F : Finset (Finset ℤ)}
+    (hN : 56400≤N) (hhigh : N≤88403) (hcN : (c : ℤ)∈Ground N)
+    (hF : Legal (Ground N) F) (hcard : B N≤F.card)
+    (hroot : ∀S∈Retained N 12 F,¬IsAP S→(c : ℤ)∈S)
+    (hcL : c≤L) (hLN : L≤N)
+    (hlow : ∀S∈Avoiders (Retained N 12 F) (c : ℤ),∃a∈S,a≤(L : ℤ))
+    (hleft : (L : ℝ)<(1/16 : ℝ)*N) :
+    ∀S∈Avoiders (Retained N 12 F) (c : ℤ),IsInterval S := by
+  intro S hS
+  by_contra hno
+  obtain ⟨hSG,hcS⟩ := Finset.mem_filter.mp hS
+  have hret := actual_retained_legal (r := 12) hF
+  have hb := NonInterval53.actual_noninterval_family_count hret hroot hcL hLN hlow hSG hcS hno
+  have hd := retained_near hN (by omega : N≤2^18) hF hcard
+  have he := Exception86412.exception_cap (by omega : 10000≤N) hhigh hcN
+  have hcaps := LocalRecovery86412.actual_caps (k := 0) (by decide) (by omega : 10000≤N) hhigh
+  have hH12 : Harmonic N≤12 := by
+    have ht := hcaps.harmonic_le
+    norm_num [LocalRecovery86412.HLocal, LocalRecovery86412.LogLocal] at ht
+    exact ht
+  have hlin := mul_le_mul_of_nonneg_left hH12 (show (0 : ℝ) ≤ 2*N by positivity)
+  have hLN2 := mul_le_mul_of_nonneg_right hleft.le (Nat.cast_nonneg (α := ℝ) N)
+  have hn : (56400 : ℝ) ≤ N := by exact_mod_cast hN
+  have hn0 : (0 : ℝ) < N := by linarith only [hn]
+  have hgap : (1128 : ℝ) < (N : ℝ)/48 := by linarith only [hn]
+  have hp := mul_lt_mul_of_pos_right hgap hn0
+  nlinarith only [hb, hd, he, hlin, hLN2, hp, hn]
+
+theorem actual_avoiders_intervals {N c L R : ℕ} {F : Finset (Finset ℤ)} {P T : Finset ℤ}
+    (g : RootModel291012.Start N c L R F P T) (hN : 56400≤N) (hhigh : N≤88403)
+    (hleft : (L : ℝ)<(1/16 : ℝ)*N) :
+    ∀S∈Avoiders (Retained N 12 F) (c : ℤ),∃a b : ℕ,
+      c<a ∧ a≤L ∧ R≤b ∧ b≤N ∧ S=Interval (a,b) := by
+  have hlow : ∀S∈Avoiders (Retained N 12 F) (c : ℤ),∃a∈S,a≤(L : ℤ) := by
+    intro S hS
+    obtain ⟨hSG,hcS⟩ := Finset.mem_filter.mp hS
+    exact (g.outside S hSG hcS).1
+  have hright : ∀S∈Avoiders (Retained N 12 F) (c : ℤ),∃b∈S,(R : ℤ)≤b := by
+    intro S hS
+    obtain ⟨hSG,hcS⟩ := Finset.mem_filter.mp hS
+    exact (g.outside S hSG hcS).2
+  have hi := actual_avoiders_are_intervals hN (by omega : N≤88403) g.root_mem g.legal g.near_card
+    g.root g.root_left.le (g.left_right.trans g.right_ground) hlow hleft
+  have hF := actual_retained_legal (r := 12) g.legal
+  have hcL := g.root_left
+  have hLR := g.left_right
+  intro S hS
+  obtain ⟨a,b,hrep⟩ := hi S hS
+  obtain ⟨u,hu,huL⟩ := hlow S hS
+  obtain ⟨v,hv,hRv⟩ := hright S hS
+  obtain ⟨hSG,hcS⟩ := Finset.mem_filter.mp hS
+  have huI : a≤u ∧ u≤b := Finset.mem_Icc.mp (by rwa [←hrep])
+  have hvI : a≤v ∧ v≤b := Finset.mem_Icc.mp (by rwa [←hrep])
+  have hab : a≤b := huI.1.trans huI.2
+  have haS : a∈S := by rw [hrep];exact Finset.mem_Icc.mpr ⟨le_rfl,hab⟩
+  have hbS : b∈S := by rw [hrep];exact Finset.mem_Icc.mpr ⟨hab,le_rfl⟩
+  have haN := (mem_ground N a).mp (hF.1 S hSG haS)
+  have hbN := (mem_ground N b).mp (hF.1 S hSG hbS)
+  have hca : (c : ℤ)<a := by
+    by_contra hn
+    apply hcS
+    rw [hrep]
+    exact Finset.mem_Icc.mpr ⟨by omega,by omega⟩
+  have ha : (a.toNat : ℤ)=a := Int.toNat_of_nonneg (by omega)
+  have hb : (b.toNat : ℤ)=b := Int.toNat_of_nonneg (by omega)
+  refine ⟨a.toNat,b.toNat,by omega,by omega,by omega,by omega,?_⟩
+  simpa only [Interval,ha,hb] using hrep
+
+#print axioms retained_near
+#print axioms actual_avoiders_are_intervals
+#print axioms actual_avoiders_intervals
+end
+end JSP233.RetainedIntervals86412

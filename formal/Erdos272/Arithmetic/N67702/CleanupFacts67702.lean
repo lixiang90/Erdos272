@@ -1,0 +1,171 @@
+module
+
+public import Erdos272.Arithmetic.N67702.CleanupFacts67702G0
+public import Erdos272.Arithmetic.N67702.CleanupFacts67702G1
+public import Erdos272.Arithmetic.N67702.CleanupFacts67702G2
+public import Erdos272.Arithmetic.N67702.CleanupFacts67702G3
+
+@[expose] public section
+
+namespace JSP233.CleanupFacts67702
+open CleanupRows67702
+open CleanupEval208 (ChunkFacts)
+open CleanupMachineSound208 (toRow toTotals)
+open CleanupSegments208 (append_exact)
+open CleanupFastSound208 (check_sound)
+set_option maxHeartbeats 0
+set_option maxRecDepth 200000
+
+theorem all_facts {k : ℕ} (hk : k < 148) : ChunkFacts (toRow (data k).row) 1 (data k).steps (toTotals (data k).total) := by
+  interval_cases k
+  · exact fact00
+  · exact fact01
+  · exact fact02
+  · exact fact03
+  · exact fact04
+  · exact fact05
+  · exact fact06
+  · exact fact07
+  · exact fact08
+  · exact fact09
+  · exact fact10
+  · exact fact11
+  · exact fact12
+  · exact fact13
+  · exact fact14
+  · exact fact15
+  · exact fact16
+  · exact fact17
+  · exact fact18
+  · exact fact19
+  · exact fact20
+  · exact fact21
+  · exact fact22
+  · exact fact23
+  · exact fact24
+  · exact fact25
+  · exact fact26
+  · exact fact27
+  · exact fact28
+  · exact fact29
+  · exact fact30
+  · exact fact31
+  · exact fact32
+  · exact fact33
+  · exact fact34
+  · exact fact35
+  · exact fact36
+  · exact fact37
+  · exact fact38
+  · exact fact39
+  · exact fact40
+  · exact fact41
+  · exact fact42
+  · exact fact43
+  · exact fact44
+  · exact fact45
+  · exact fact46
+  · exact fact47
+  · exact fact48
+  · exact fact49
+  · exact fact50
+  · exact fact51
+  · exact fact52
+  · exact fact53
+  · exact fact54
+  · exact fact55
+  · exact fact56
+  · exact fact57
+  · exact fact58
+  · exact fact59
+  · exact fact60
+  · exact fact61
+  · exact fact62
+  · exact fact63
+  · exact fact64
+  · exact fact65
+  · exact fact66
+  · exact fact67
+  · exact fact68
+  · exact fact69
+  · exact fact70
+  · exact fact71
+  · exact fact72
+  · exact fact73
+  · exact fact74
+  · exact fact75
+  · exact fact76
+  · exact fact77
+  · exact fact78
+  · exact fact79
+  · exact fact80
+  · exact fact81
+  · exact fact82
+  · exact fact83
+  · exact fact84
+  · exact fact85
+  · exact fact86
+  · exact fact87
+  · exact fact88
+  · exact fact89
+  · exact fact90
+  · exact fact91
+  · exact fact92
+  · exact fact93
+  · exact fact94
+  · exact fact95
+  · exact fact96
+  · exact fact97
+  · exact fact98
+  · exact fact99
+  · exact fact100
+  · exact fact101
+  · exact fact102
+  · exact fact103
+  · exact fact104
+  · exact fact105
+  · exact fact106
+  · exact fact107
+  · exact fact108
+  · exact fact109
+  · exact fact110
+  · exact fact111
+  · exact fact112
+  · exact fact113
+  · exact fact114
+  · exact fact115
+  · exact fact116
+  · exact fact117
+  · exact fact118
+  · exact fact119
+  · exact fact120
+  · exact fact121
+  · exact fact122
+  · exact fact123
+  · exact fact124
+  · exact fact125
+  · exact fact126
+  · exact fact127
+  · exact fact128
+  · exact fact129
+  · exact fact130
+  · exact fact131
+  · exact fact132
+  · exact fact133
+  · exact fact134
+  · exact fact135
+  · exact fact136
+  · exact fact137
+  · exact fact138
+  · exact fact139
+  · exact fact140
+  · exact fact141
+  · exact fact142
+  · exact fact143
+  · exact fact144
+  · exact fact145
+  · exact fact146
+  · exact fact147
+
+#print axioms all_facts
+end JSP233.CleanupFacts67702

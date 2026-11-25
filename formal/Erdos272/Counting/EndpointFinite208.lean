@@ -1,12 +1,11 @@
 module
 
-public import Erdos272.Certificates.EndpointFinite208.Block071
+public import Erdos272.Counting.SquareEndpoint208
 
 @[expose] public section
 
-/-! Finite endpoint bounds assembled from sequentially checked certificate
-blocks. Candidate data and all checks live in Certificates/EndpointFinite208.
-Each check uses ordinary kernel reduction. -/
+/-! The initial endpoint blocks and a monotone harmonic difference give the
+same bound on every ground. The finite interfaces below serve existing callers. -/
 namespace JSP233.EndpointFinite208
 open StarCompletion APPrepare49 HarmonicAbel29 EndpointAP208 EndpointGate208
 open scoped Classical
@@ -16,12 +15,20 @@ set_option maxHeartbeats 0
 set_option maxRecDepth 200000
 set_option Elab.async false
 
-theorem endpoint_library48_25 {U t : ℕ}
-    (hU : 2 ≤ U) (hhigh : U ≤ 853476) (ht : t < U) :
+theorem endpoint_all48_25 {U t : ℕ} (hU : 2 ≤ U) (ht : t < U) :
     (EndpointCount t : ℝ) ≤ (U : ℝ) * (Harmonic U - 48 / 25) + 11 := by
   have hm : (EndpointCount t : ℝ) ≤ EndpointCount (U - 1) := by
     exact_mod_cast endpoint_count_mono (show t ≤ U - 1 by omega)
-  exact hm.trans (bound071 U hU (by omega))
+  apply hm.trans
+  by_cases small : U < 128961
+  · exact bound039 U hU small
+  · exact SquareEndpoint208.payment (by omega)
+
+set_option linter.unusedVariables false in
+theorem endpoint_library48_25 {U t : ℕ}
+    (hU : 2 ≤ U) (hhigh : U ≤ 853476) (ht : t < U) :
+    (EndpointCount t : ℝ) ≤ (U : ℝ) * (Harmonic U - 48 / 25) + 11 :=
+  endpoint_all48_25 hU ht
 
 theorem actual_low_cut48_25 {N c : ℕ} {F : Finset (Finset ℤ)}
     (hF : Legal (Ground N) F) (hN : 2 ≤ N) (hhigh : N ≤ 853476)
@@ -39,6 +46,7 @@ theorem actual_high_cut48_25 {N c L : ℕ} {F : Finset (Finset ℤ)}
     exact_mod_cast actual_high_cut_parameter_bound hF (show 1 ≤ L by omega)
   exact hm.trans (endpoint_library48_25 hL hhigh (by omega))
 
+#print axioms endpoint_all48_25
 #print axioms endpoint_library48_25
 #print axioms actual_low_cut48_25
 #print axioms actual_high_cut48_25

@@ -3,6 +3,7 @@ module
 public import Erdos272.Resources.DenseDeletion208
 public import Erdos272.Capacity.LowSteps32
 public import Erdos272.Core.OneThird32
+public import Erdos272.Geometry.AffineMiddleWitness31
 public import Erdos272.Capacity.SingletonCapacity32
 public import Erdos272.Arithmetic.HarmonicSharp39
 public import Mathlib.Algebra.BigOperators.Field
@@ -68,11 +69,11 @@ theorem actual_AP_lower {N : ℕ} {c : ℤ} {F : Finset (Finset ℤ)}
   have hkR : ((CommonKernel (Ground N) F c).card:ℝ)≤1 := by exact_mod_cast hkernel
   nlinarith only [hchoose,hreqR,hkR]
 
-theorem actual_budget_with_many_surpluses {N : ℕ} {c : ℤ}
+theorem actual_budget_with_small_surpluses {N : ℕ} {c : ℤ}
     {F : Finset (Finset ℤ)} (hc : c∈Ground N) (hF : Legal (Ground N) F)
     (D : Finset ℤ)
     (hD : D⊆APActiveSteps c (APLarge (RootPart F c)))
-    (hbig : ∀d∈D,1000000<(StepClass (APLarge (RootPart F c)) (trueStep c) d).card) :
+    (hbig : ∀d∈D,810000<(StepClass (APLarge (RootPart F c)) (trueStep c) d).card) :
     (F.card:ℝ)+(∑d∈D,((StepClass (APLarge (RootPart F c)) (trueStep c) d).card:ℝ))/21≤
       (Avoiders F c).card+(CommonKernel (Ground N) F c).card+
         ((N-1).choose 2:ℕ)+((N-1:ℕ):ℝ)/4 := by
@@ -94,7 +95,7 @@ theorem actual_budget_with_many_surpluses {N : ℕ} {c : ℤ}
       have hactive : d∈APActiveSteps c A := hD hdD
       have hp := actual_step_labels_positive c A hAP hroot d hd
       have hrep := actual_step_class_representation c A hAP hroot hlarge d
-      have hs := AffineMiddleWitness31.actual_affine_pool_surplus_count c d hp
+      have hs := AffineMiddleWitness31.actual_affine_pool_surplus_count_of_extent c d hp
         (StepClass A (trueStep c) d) hrep hl hr (hbig d hdD)
       simp only [loss,if_pos hdD,if_pos hactive]
       linarith only [hs]
@@ -136,6 +137,16 @@ theorem actual_budget_with_many_surpluses {N : ℕ} {c : ℤ}
     linarith only [h4R]
   dsimp only [A] at hs hbR haR
   linarith only [hs,hbR,haR]
+
+theorem actual_budget_with_many_surpluses {N : ℕ} {c : ℤ}
+    {F : Finset (Finset ℤ)} (hc : c∈Ground N) (hF : Legal (Ground N) F)
+    (D : Finset ℤ)
+    (hD : D⊆APActiveSteps c (APLarge (RootPart F c)))
+    (hbig : ∀d∈D,1000000<(StepClass (APLarge (RootPart F c)) (trueStep c) d).card) :
+    (F.card:ℝ)+(∑d∈D,((StepClass (APLarge (RootPart F c)) (trueStep c) d).card:ℝ))/21≤
+      (Avoiders F c).card+(CommonKernel (Ground N) F c).card+
+        ((N-1).choose 2:ℕ)+((N-1:ℕ):ℝ)/4 :=
+  actual_budget_with_small_surpluses hc hF D hD (fun d hd => by have := hbig d hd; omega)
 
 theorem actual_budget_with_low_surpluses {N : ℕ} {c : ℤ}
     {F : Finset (Finset ℤ)} (hc : c∈Ground N) (hF : Legal (Ground N) F) :

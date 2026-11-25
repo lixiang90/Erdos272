@@ -99,14 +99,18 @@ theorem actual_defect_le_max_harmonic {C : Finset (ℕ × ℕ)}
     -(107/1000 : ℝ)*(M : ℝ)^2 + 3*(M : ℝ)*Harmonic M+5*(M : ℝ)+4
   linarith
 
-theorem quadratic_margin (M : ℝ) (hM : 1000 ≤ M) :
+theorem quadratic_margin_of_extent (M : ℝ) (hM : 900 ≤ M) :
     M^2/20 ≤ (107/1000 : ℝ)*M^2 - 3*M*(8+M/128) - 5*M - 4 := by
   have hp := mul_nonneg (sub_nonneg.mpr hM) (show 0 ≤ M by linarith)
   nlinarith
 
-theorem coordinates_pool_surplus {C : Finset (ℕ × ℕ)}
+theorem quadratic_margin (M : ℝ) (hM : 1000 ≤ M) :
+    M^2/20 ≤ (107/1000 : ℝ)*M^2 - 3*M*(8+M/128) - 5*M - 4 :=
+  quadratic_margin_of_extent M (by linarith only [hM])
+
+theorem coordinates_pool_surplus_of_extent {C : Finset (ℕ × ℕ)}
     (hvalid : ∀ p ∈ C, Valid p) (hL : 2 ≤ Height C) (hR : 2 ≤ Width C)
-    (hM : 1000 ≤ max (Height C) (Width C)) :
+    (hM : 900 ≤ max (Height C) (Width C)) :
     ((Family C).card : ℝ) + ((max (Height C) (Width C) : ℕ) : ℝ)^2/20 ≤
       (PrimitivePool (Family C)).card := by
   let M := max (Height C) (Width C)
@@ -114,12 +118,19 @@ theorem coordinates_pool_surplus {C : Finset (ℕ × ℕ)}
   have hh := harmonic_linear M
   have hp : (0 : ℝ) ≤ 3*(M : ℝ) := by positivity
   have hmul := mul_le_mul_of_nonneg_left hh hp
-  have hMr : (1000 : ℝ) ≤ M := by exact_mod_cast hM
-  have hq := quadratic_margin (M : ℝ) hMr
+  have hMr : (900 : ℝ) ≤ M := by exact_mod_cast hM
+  have hq := quadratic_margin_of_extent (M : ℝ) hMr
   change ((Family C).card : ℝ) + (M : ℝ)^2/20 ≤ (PrimitivePool (Family C)).card
   change ((Family C).card : ℝ) - (PrimitivePool (Family C)).card ≤
     -(107/1000 : ℝ)*(M : ℝ)^2+3*(M : ℝ)*Harmonic M+5*(M : ℝ)+4 at ha
   nlinarith
+
+theorem coordinates_pool_surplus {C : Finset (ℕ × ℕ)}
+    (hvalid : ∀ p ∈ C, Valid p) (hL : 2 ≤ Height C) (hR : 2 ≤ Width C)
+    (hM : 1000 ≤ max (Height C) (Width C)) :
+    ((Family C).card : ℝ) + ((max (Height C) (Width C) : ℕ) : ℝ)^2/20 ≤
+      (PrimitivePool (Family C)).card :=
+  coordinates_pool_surplus_of_extent hvalid hL hR (by omega)
 
 theorem family_card_le_rectangle (C : Finset (ℕ × ℕ)) :
     (Family C).card ≤ (Height C+1)*(Width C+1) := by
@@ -137,34 +148,34 @@ theorem family_card_le_max_square (C : Finset (ℕ × ℕ)) :
     (Nat.succ_le_succ (le_max_right (Height C) (Width C)))
   exact (family_card_le_rectangle C).trans (by simpa only [pow_two] using hh)
 
-theorem family_count_forces_large_extent (C : Finset (ℕ × ℕ))
-    (hcard : 1000000 < (Family C).card) : 1000 ≤ max (Height C) (Width C) := by
+theorem family_count_forces_extent (C : Finset (ℕ × ℕ)) (k : ℕ)
+    (hcard : k^2 < (Family C).card) : k ≤ max (Height C) (Width C) := by
   have hh := family_card_le_max_square C
   by_contra hn
-  have hm : max (Height C) (Width C) ≤ 999 := by omega
-  have hm2 := Nat.mul_le_mul (Nat.succ_le_succ hm) (Nat.succ_le_succ hm)
-  have hp : (max (Height C) (Width C)+1)^2 ≤ 1000000 := by
+  have hm : max (Height C) (Width C) < k := by omega
+  have hm2 := Nat.mul_le_mul (hm) (hm)
+  have hp : (max (Height C) (Width C)+1)^2 ≤ k^2 := by
     simpa only [pow_two] using hm2
   omega
 
-theorem coordinates_pool_surplus_count {C : Finset (ℕ × ℕ)}
+theorem coordinates_pool_surplus_count_of_extent {C : Finset (ℕ × ℕ)}
     (hvalid : ∀ p ∈ C, Valid p) (hL : 2 ≤ Height C) (hR : 2 ≤ Width C)
-    (hM : 1000 ≤ max (Height C) (Width C)) :
+    (hM : 900 ≤ max (Height C) (Width C)) :
     ((Family C).card : ℝ) + ((Family C).card : ℝ)/21 ≤
       (PrimitivePool (Family C)).card := by
   let M := max (Height C) (Width C)
   have hh : ((Family C).card : ℝ) ≤ ((M : ℝ)+1)^2 := by
     exact_mod_cast family_card_le_max_square C
-  have hm : (1000 : ℝ) ≤ M := by exact_mod_cast hM
+  have hm : (900 : ℝ) ≤ M := by exact_mod_cast hM
   have hp := mul_nonneg (sub_nonneg.mpr hm) (show (0 : ℝ) ≤ M by linarith)
-  have hs := coordinates_pool_surplus hvalid hL hR hM
+  have hs := coordinates_pool_surplus_of_extent hvalid hL hR hM
   change ((Family C).card : ℝ)+(M : ℝ)^2/20 ≤ (PrimitivePool (Family C)).card at hs
   nlinarith
 
-theorem actual_unit_family_pool_surplus_count (F : Finset (Finset ℤ))
+theorem actual_unit_family_pool_surplus_count_of_extent (F : Finset (Finset ℤ))
     (hF : ∀ S ∈ F, ∃ l r : ℕ, S = Window l r ∧ 4 ≤ S.card)
     (hleft : ∃ S ∈ F, (-2 : ℤ) ∈ S) (hright : ∃ S ∈ F, (2 : ℤ) ∈ S)
-    (hcard : 1000000 < F.card) :
+    (hcard : 810000 < F.card) :
     (F.card : ℝ)+(F.card : ℝ)/21 ≤ (PrimitivePool F).card := by
   obtain ⟨C,hC,hvalid⟩ := exists_coordinates F hF
   have hL : 2 ≤ Height C := by
@@ -183,9 +194,27 @@ theorem actual_unit_family_pool_surplus_count (F : Finset (Finset ℤ))
     have hm := (mem_window p.1 p.2 2).mp hw
     have hh : p.2 ≤ Width C := Finset.le_sup (f := Prod.snd) hp
     omega
-  have hM : 1000 ≤ max (Height C) (Width C) :=
-    family_count_forces_large_extent C (by rw [hC]; exact hcard)
-  simpa only [hC] using coordinates_pool_surplus_count hvalid hL hR hM
+  have hM : 900 ≤ max (Height C) (Width C) :=
+    family_count_forces_extent C 900 (by rw [hC]; exact hcard)
+  simpa only [hC] using coordinates_pool_surplus_count_of_extent hvalid hL hR hM
+
+theorem family_count_forces_large_extent (C : Finset (ℕ × ℕ))
+    (hcard : 1000000 < (Family C).card) : 1000 ≤ max (Height C) (Width C) :=
+  family_count_forces_extent C 1000 hcard
+
+theorem coordinates_pool_surplus_count {C : Finset (ℕ × ℕ)}
+    (hvalid : ∀ p ∈ C, Valid p) (hL : 2 ≤ Height C) (hR : 2 ≤ Width C)
+    (hM : 1000 ≤ max (Height C) (Width C)) :
+    ((Family C).card : ℝ) + ((Family C).card : ℝ)/21 ≤
+      (PrimitivePool (Family C)).card :=
+  coordinates_pool_surplus_count_of_extent hvalid hL hR (by omega)
+
+theorem actual_unit_family_pool_surplus_count (F : Finset (Finset ℤ))
+    (hF : ∀ S ∈ F, ∃ l r : ℕ, S = Window l r ∧ 4 ≤ S.card)
+    (hleft : ∃ S ∈ F, (-2 : ℤ) ∈ S) (hright : ∃ S ∈ F, (2 : ℤ) ∈ S)
+    (hcard : 1000000 < F.card) :
+    (F.card : ℝ)+(F.card : ℝ)/21 ≤ (PrimitivePool F).card :=
+  actual_unit_family_pool_surplus_count_of_extent F hF hleft hright (by omega)
 
 #print axioms log_128_le_seven
 #print axioms harmonic_128_le_eight

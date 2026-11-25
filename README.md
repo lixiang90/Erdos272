@@ -14,28 +14,28 @@ The problem is [Erdős #272](https://www.erdosproblems.com/272), also listed as 
 
 ## Results in this repository
 
-**Theorem.** Let $N\ge200000$ be an integer. Among all families $\mathcal F$ of distinct subsets of $[N]=\{1,\ldots,N\}$ such that $A\cap B$ is a nonempty arithmetic progression for every pair of distinct members $A,B\in\mathcal F$, the maximum possible cardinality is
+**Theorem.** Let $N\ge19227$ be an integer. Among all families $\mathcal F$ of distinct subsets of $[N]=\{1,\ldots,N\}$ such that $A\cap B$ is a nonempty arithmetic progression for every pair of distinct members $A,B\in\mathcal F$, the maximum possible cardinality is
 
 $$
 \max |\mathcal F|=\binom{N}{2}+1+\left\lfloor\frac{N-1}{4}\right\rfloor.
 $$
 
-Singletons and two-element sets count as arithmetic progressions. Every such family satisfies this upper bound, and for every $N\ge200000$ a family attaining equality exists.
+Singletons and two-element sets count as arithmetic progressions. Every such family satisfies this upper bound, and for every $N\ge19227$ a family attaining equality exists.
 
 The following table gives the individual results, their ranges, and the corresponding Lean declarations.
 
 | Result | Scope | Entry |
 |---|---|---|
 | Szabó's matching construction | Every `N ≥ 1` | `lower_bound` |
-| The paper's theorem | Every `N ≥ 200000` | `paper_exact_value` |
-| Formal upper bound and exact value | Every `N ≥ 200000` | `upper_bound`, `exact_value` |
-| Existence of an attaining optimal family | Every `N ≥ 200000` | `optimal_family` |
+| Exact value in the form used by the paper | Every `N ≥ 19227` | `paper_exact_value` |
+| Formal upper bound and exact value | Every `N ≥ 19227` | `upper_bound`, `exact_value` |
+| Existence of an attaining optimal family | Every `N ≥ 19227` | `optimal_family` |
 
 All five public theorems are in [formal/PublicResults.lean](formal/PublicResults.lean), in namespace `JSP233.PublicResults`. The six problem definitions are written directly in that file. Their correspondence with the internal model is checked by Lean through definitional equality.
 
-The [English paper (PDF)](paper/erdos272.pdf) and its [LaTeX source](paper/erdos272.tex) present the computer-assisted result for `N ≥ 200000`. They develop the explicit large-order argument and describe the mixed-source finite-window certificates and symbolic recovery. The complete structural proofs and finite certificates form the Lean electronic supplement.
+The [English paper (PDF)](paper/erdos272.pdf) and its [LaTeX source](paper/erdos272.tex) present the computer-assisted result for `N ≥ 200000`. They develop the explicit large-order argument and describe the mixed-source finite-window certificates and symbolic recovery. On the dev branch the Lean electronic supplement extends the formal result down to `N ≥ 19227`.
 
-The remaining finite range is `1 ≤ N < 200000`.
+The remaining finite range is `1 ≤ N < 19227`.
 
 ## Dated formalization milestones
 
@@ -49,6 +49,7 @@ The dates below use UTC+8 and record completed formal checks of the original pro
 | 2026-11-08 | `N ≥ 243614` | Research development, Lean 4.32.2 |
 | 2026-11-08 | `N ≥ 233811` | Research development, Lean 4.32.2 |
 | 2026-11-09 | `N ≥ 200000` | Mixed-source proof and public migration to Lean and mathlib 4.35.0 |
+| 2026-11-25 | `N ≥ 19227` | First-cut certificates and common-root recovery checked on Lean 4.35.0 |
 
 ## Check the proofs
 
@@ -65,7 +66,7 @@ The project uses **Lean 4.35.0** and **mathlib v4.35.0**. Exact dependency commi
 
 The public entry prints the theorem types and their axiom dependencies. The proofs use only the standard axioms `propext`, `Classical.choice`, and `Quot.sound`. Finite arithmetic certificates are checked by Lean's kernel.
 
-The public import closure was checked sequentially with one Lean thread and a 6 GiB aggregate committed-memory cap, reusing the pinned mathlib cache. A full build can take substantial time. On machines with limited resources, compile project modules one at a time in dependency order and limit concurrent Lean processes.
+For a serial build, run `lake env python check_public.py` from the formal directory after fetching the mathlib cache. It runs one Lean process with one thread at a time. See the formal proof guide for the memory option.
 
 ## Layout
 
@@ -83,7 +84,9 @@ formal/
     Resources/, Arithmetic/   Joint counts and exact arithmetic certificates
     Certificates/             Finite proof data
     Global/                   Assembly of the universal upper bounds
-    */N200000/                Mixed-source certificates and final assembly
+    */N19227/                 Final assembly and finite certificates below 20258
+    */N20258/                 First-cut certificates and common-root recovery
+    */N200000/                Mixed-source certificates for the prior bound
     */N233811/, */N243614/     Intermediate source and recovery windows
     */N250262/, */N291012/     Supporting finite-window certificates
 ```

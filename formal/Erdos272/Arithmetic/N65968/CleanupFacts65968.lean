@@ -1,0 +1,150 @@
+module
+
+public import Erdos272.Arithmetic.N65968.CleanupFacts65968G0
+public import Erdos272.Arithmetic.N65968.CleanupFacts65968G1
+
+@[expose] public section
+
+namespace JSP233.CleanupFacts65968
+open CleanupRows65968
+open CleanupEval208 (ChunkFacts)
+open CleanupMachineSound208 (toRow toTotals)
+noncomputable section
+set_option autoImplicit false
+set_option maxHeartbeats 1000000
+set_option maxRecDepth 200000
+
+theorem all_facts {k : ℕ} (hk : k<128) : ChunkFacts (toRow (data k).row) 1 (data k).steps (toTotals (data k).total) := by
+  interval_cases k
+  · exact CleanupFacts65968G0.fact00
+  · exact CleanupFacts65968G0.fact01
+  · exact CleanupFacts65968G0.fact02
+  · exact CleanupFacts65968G0.fact03
+  · exact CleanupFacts65968G0.fact04
+  · exact CleanupFacts65968G0.fact05
+  · exact CleanupFacts65968G0.fact06
+  · exact CleanupFacts65968G0.fact07
+  · exact CleanupFacts65968G0.fact08
+  · exact CleanupFacts65968G0.fact09
+  · exact CleanupFacts65968G0.fact10
+  · exact CleanupFacts65968G0.fact11
+  · exact CleanupFacts65968G0.fact12
+  · exact CleanupFacts65968G0.fact13
+  · exact CleanupFacts65968G0.fact14
+  · exact CleanupFacts65968G0.fact15
+  · exact CleanupFacts65968G0.fact16
+  · exact CleanupFacts65968G0.fact17
+  · exact CleanupFacts65968G0.fact18
+  · exact CleanupFacts65968G0.fact19
+  · exact CleanupFacts65968G0.fact20
+  · exact CleanupFacts65968G0.fact21
+  · exact CleanupFacts65968G0.fact22
+  · exact CleanupFacts65968G0.fact23
+  · exact CleanupFacts65968G0.fact24
+  · exact CleanupFacts65968G0.fact25
+  · exact CleanupFacts65968G0.fact26
+  · exact CleanupFacts65968G0.fact27
+  · exact CleanupFacts65968G0.fact28
+  · exact CleanupFacts65968G0.fact29
+  · exact CleanupFacts65968G0.fact30
+  · exact CleanupFacts65968G0.fact31
+  · exact CleanupFacts65968G0.fact32
+  · exact CleanupFacts65968G0.fact33
+  · exact CleanupFacts65968G0.fact34
+  · exact CleanupFacts65968G0.fact35
+  · exact CleanupFacts65968G0.fact36
+  · exact CleanupFacts65968G0.fact37
+  · exact CleanupFacts65968G0.fact38
+  · exact CleanupFacts65968G0.fact39
+  · exact CleanupFacts65968G0.fact40
+  · exact CleanupFacts65968G0.fact41
+  · exact CleanupFacts65968G0.fact42
+  · exact CleanupFacts65968G0.fact43
+  · exact CleanupFacts65968G0.fact44
+  · exact CleanupFacts65968G0.fact45
+  · exact CleanupFacts65968G0.fact46
+  · exact CleanupFacts65968G0.fact47
+  · exact CleanupFacts65968G0.fact48
+  · exact CleanupFacts65968G0.fact49
+  · exact CleanupFacts65968G0.fact50
+  · exact CleanupFacts65968G0.fact51
+  · exact CleanupFacts65968G0.fact52
+  · exact CleanupFacts65968G0.fact53
+  · exact CleanupFacts65968G0.fact54
+  · exact CleanupFacts65968G0.fact55
+  · exact CleanupFacts65968G0.fact56
+  · exact CleanupFacts65968G0.fact57
+  · exact CleanupFacts65968G0.fact58
+  · exact CleanupFacts65968G0.fact59
+  · exact CleanupFacts65968G0.fact60
+  · exact CleanupFacts65968G0.fact61
+  · exact CleanupFacts65968G0.fact62
+  · exact CleanupFacts65968G0.fact63
+  · exact CleanupFacts65968G1.fact64
+  · exact CleanupFacts65968G1.fact65
+  · exact CleanupFacts65968G1.fact66
+  · exact CleanupFacts65968G1.fact67
+  · exact CleanupFacts65968G1.fact68
+  · exact CleanupFacts65968G1.fact69
+  · exact CleanupFacts65968G1.fact70
+  · exact CleanupFacts65968G1.fact71
+  · exact CleanupFacts65968G1.fact72
+  · exact CleanupFacts65968G1.fact73
+  · exact CleanupFacts65968G1.fact74
+  · exact CleanupFacts65968G1.fact75
+  · exact CleanupFacts65968G1.fact76
+  · exact CleanupFacts65968G1.fact77
+  · exact CleanupFacts65968G1.fact78
+  · exact CleanupFacts65968G1.fact79
+  · exact CleanupFacts65968G1.fact80
+  · exact CleanupFacts65968G1.fact81
+  · exact CleanupFacts65968G1.fact82
+  · exact CleanupFacts65968G1.fact83
+  · exact CleanupFacts65968G1.fact84
+  · exact CleanupFacts65968G1.fact85
+  · exact CleanupFacts65968G1.fact86
+  · exact CleanupFacts65968G1.fact87
+  · exact CleanupFacts65968G1.fact88
+  · exact CleanupFacts65968G1.fact89
+  · exact CleanupFacts65968G1.fact90
+  · exact CleanupFacts65968G1.fact91
+  · exact CleanupFacts65968G1.fact92
+  · exact CleanupFacts65968G1.fact93
+  · exact CleanupFacts65968G1.fact94
+  · exact CleanupFacts65968G1.fact95
+  · exact CleanupFacts65968G1.fact96
+  · exact CleanupFacts65968G1.fact97
+  · exact CleanupFacts65968G1.fact98
+  · exact CleanupFacts65968G1.fact99
+  · exact CleanupFacts65968G1.fact100
+  · exact CleanupFacts65968G1.fact101
+  · exact CleanupFacts65968G1.fact102
+  · exact CleanupFacts65968G1.fact103
+  · exact CleanupFacts65968G1.fact104
+  · exact CleanupFacts65968G1.fact105
+  · exact CleanupFacts65968G1.fact106
+  · exact CleanupFacts65968G1.fact107
+  · exact CleanupFacts65968G1.fact108
+  · exact CleanupFacts65968G1.fact109
+  · exact CleanupFacts65968G1.fact110
+  · exact CleanupFacts65968G1.fact111
+  · exact CleanupFacts65968G1.fact112
+  · exact CleanupFacts65968G1.fact113
+  · exact CleanupFacts65968G1.fact114
+  · exact CleanupFacts65968G1.fact115
+  · exact CleanupFacts65968G1.fact116
+  · exact CleanupFacts65968G1.fact117
+  · exact CleanupFacts65968G1.fact118
+  · exact CleanupFacts65968G1.fact119
+  · exact CleanupFacts65968G1.fact120
+  · exact CleanupFacts65968G1.fact121
+  · exact CleanupFacts65968G1.fact122
+  · exact CleanupFacts65968G1.fact123
+  · exact CleanupFacts65968G1.fact124
+  · exact CleanupFacts65968G1.fact125
+  · exact CleanupFacts65968G1.fact126
+  · exact CleanupFacts65968G1.fact127
+
+#print axioms all_facts
+end
+end JSP233.CleanupFacts65968

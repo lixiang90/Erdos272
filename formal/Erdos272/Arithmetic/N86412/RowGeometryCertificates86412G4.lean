@@ -1,0 +1,43 @@
+module
+
+public import Erdos272.Arithmetic.N86412.CleanupRows86412
+public import Erdos272.Arithmetic.N291012.RowStatic291012
+
+@[expose] public section
+
+namespace JSP233.RowGeometryCertificates86412G4
+open CleanupRows86412 RowStatic291012
+set_option maxHeartbeats 0
+set_option maxRecDepth 200000
+
+theorem static40 : Static data40 := by constructor <;> decide +kernel
+#print axioms static40
+
+theorem static41 : Static data41 := by constructor <;> decide +kernel
+#print axioms static41
+
+theorem static42 : Static data42 := by constructor <;> decide +kernel
+#print axioms static42
+
+theorem static43 : Static data43 := by constructor <;> decide +kernel
+#print axioms static43
+
+theorem static44 : Static data44 := by constructor <;> decide +kernel
+#print axioms static44
+
+theorem static45 : Static data45 := by constructor <;> decide +kernel
+#print axioms static45
+
+theorem static46 : Static data46 := by constructor <;> decide +kernel
+#print axioms static46
+
+theorem static47 : Static data47 := by constructor <;> decide +kernel
+#print axioms static47
+
+theorem static48 : Static data48 := by constructor <;> decide +kernel
+#print axioms static48
+
+theorem static49 : Static data49 := by constructor <;> decide +kernel
+#print axioms static49
+
+end JSP233.RowGeometryCertificates86412G4

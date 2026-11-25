@@ -1,0 +1,197 @@
+module
+
+public import Mathlib.Tactic.IntervalCases
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G0
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G1
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G2
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G3
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G4
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G5
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G6
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G7
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G8
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G9
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G10
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G11
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G12
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G13
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G14
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G15
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G16
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G17
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G18
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G19
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G20
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G21
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G22
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G23
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G24
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G25
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G26
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G27
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G28
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G29
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G30
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G31
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G32
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G33
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G34
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G35
+public import Erdos272.Arithmetic.N67702.WitnessHighChecks67702G36
+
+@[expose] public section
+
+namespace JSP233.WitnessHighFacts67702
+open WitnessHighNumeric67702
+theorem bound {k : ℕ} (hk : k < 148) : value (data k) ≤ (data k).cap := by
+  interval_cases k
+  · exact WitnessHighChecks67702G0.checked000
+  · exact WitnessHighChecks67702G0.checked001
+  · exact WitnessHighChecks67702G0.checked002
+  · exact WitnessHighChecks67702G0.checked003
+  · exact WitnessHighChecks67702G1.checked004
+  · exact WitnessHighChecks67702G1.checked005
+  · exact WitnessHighChecks67702G1.checked006
+  · exact WitnessHighChecks67702G1.checked007
+  · exact WitnessHighChecks67702G2.checked008
+  · exact WitnessHighChecks67702G2.checked009
+  · exact WitnessHighChecks67702G2.checked010
+  · exact WitnessHighChecks67702G2.checked011
+  · exact WitnessHighChecks67702G3.checked012
+  · exact WitnessHighChecks67702G3.checked013
+  · exact WitnessHighChecks67702G3.checked014
+  · exact WitnessHighChecks67702G3.checked015
+  · exact WitnessHighChecks67702G4.checked016
+  · exact WitnessHighChecks67702G4.checked017
+  · exact WitnessHighChecks67702G4.checked018
+  · exact WitnessHighChecks67702G4.checked019
+  · exact WitnessHighChecks67702G5.checked020
+  · exact WitnessHighChecks67702G5.checked021
+  · exact WitnessHighChecks67702G5.checked022
+  · exact WitnessHighChecks67702G5.checked023
+  · exact WitnessHighChecks67702G6.checked024
+  · exact WitnessHighChecks67702G6.checked025
+  · exact WitnessHighChecks67702G6.checked026
+  · exact WitnessHighChecks67702G6.checked027
+  · exact WitnessHighChecks67702G7.checked028
+  · exact WitnessHighChecks67702G7.checked029
+  · exact WitnessHighChecks67702G7.checked030
+  · exact WitnessHighChecks67702G7.checked031
+  · exact WitnessHighChecks67702G8.checked032
+  · exact WitnessHighChecks67702G8.checked033
+  · exact WitnessHighChecks67702G8.checked034
+  · exact WitnessHighChecks67702G8.checked035
+  · exact WitnessHighChecks67702G9.checked036
+  · exact WitnessHighChecks67702G9.checked037
+  · exact WitnessHighChecks67702G9.checked038
+  · exact WitnessHighChecks67702G9.checked039
+  · exact WitnessHighChecks67702G10.checked040
+  · exact WitnessHighChecks67702G10.checked041
+  · exact WitnessHighChecks67702G10.checked042
+  · exact WitnessHighChecks67702G10.checked043
+  · exact WitnessHighChecks67702G11.checked044
+  · exact WitnessHighChecks67702G11.checked045
+  · exact WitnessHighChecks67702G11.checked046
+  · exact WitnessHighChecks67702G11.checked047
+  · exact WitnessHighChecks67702G12.checked048
+  · exact WitnessHighChecks67702G12.checked049
+  · exact WitnessHighChecks67702G12.checked050
+  · exact WitnessHighChecks67702G12.checked051
+  · exact WitnessHighChecks67702G13.checked052
+  · exact WitnessHighChecks67702G13.checked053
+  · exact WitnessHighChecks67702G13.checked054
+  · exact WitnessHighChecks67702G13.checked055
+  · exact WitnessHighChecks67702G14.checked056
+  · exact WitnessHighChecks67702G14.checked057
+  · exact WitnessHighChecks67702G14.checked058
+  · exact WitnessHighChecks67702G14.checked059
+  · exact WitnessHighChecks67702G15.checked060
+  · exact WitnessHighChecks67702G15.checked061
+  · exact WitnessHighChecks67702G15.checked062
+  · exact WitnessHighChecks67702G15.checked063
+  · exact WitnessHighChecks67702G16.checked064
+  · exact WitnessHighChecks67702G16.checked065
+  · exact WitnessHighChecks67702G16.checked066
+  · exact WitnessHighChecks67702G16.checked067
+  · exact WitnessHighChecks67702G17.checked068
+  · exact WitnessHighChecks67702G17.checked069
+  · exact WitnessHighChecks67702G17.checked070
+  · exact WitnessHighChecks67702G17.checked071
+  · exact WitnessHighChecks67702G18.checked072
+  · exact WitnessHighChecks67702G18.checked073
+  · exact WitnessHighChecks67702G18.checked074
+  · exact WitnessHighChecks67702G18.checked075
+  · exact WitnessHighChecks67702G19.checked076
+  · exact WitnessHighChecks67702G19.checked077
+  · exact WitnessHighChecks67702G19.checked078
+  · exact WitnessHighChecks67702G19.checked079
+  · exact WitnessHighChecks67702G20.checked080
+  · exact WitnessHighChecks67702G20.checked081
+  · exact WitnessHighChecks67702G20.checked082
+  · exact WitnessHighChecks67702G20.checked083
+  · exact WitnessHighChecks67702G21.checked084
+  · exact WitnessHighChecks67702G21.checked085
+  · exact WitnessHighChecks67702G21.checked086
+  · exact WitnessHighChecks67702G21.checked087
+  · exact WitnessHighChecks67702G22.checked088
+  · exact WitnessHighChecks67702G22.checked089
+  · exact WitnessHighChecks67702G22.checked090
+  · exact WitnessHighChecks67702G22.checked091
+  · exact WitnessHighChecks67702G23.checked092
+  · exact WitnessHighChecks67702G23.checked093
+  · exact WitnessHighChecks67702G23.checked094
+  · exact WitnessHighChecks67702G23.checked095
+  · exact WitnessHighChecks67702G24.checked096
+  · exact WitnessHighChecks67702G24.checked097
+  · exact WitnessHighChecks67702G24.checked098
+  · exact WitnessHighChecks67702G24.checked099
+  · exact WitnessHighChecks67702G25.checked100
+  · exact WitnessHighChecks67702G25.checked101
+  · exact WitnessHighChecks67702G25.checked102
+  · exact WitnessHighChecks67702G25.checked103
+  · exact WitnessHighChecks67702G26.checked104
+  · exact WitnessHighChecks67702G26.checked105
+  · exact WitnessHighChecks67702G26.checked106
+  · exact WitnessHighChecks67702G26.checked107
+  · exact WitnessHighChecks67702G27.checked108
+  · exact WitnessHighChecks67702G27.checked109
+  · exact WitnessHighChecks67702G27.checked110
+  · exact WitnessHighChecks67702G27.checked111
+  · exact WitnessHighChecks67702G28.checked112
+  · exact WitnessHighChecks67702G28.checked113
+  · exact WitnessHighChecks67702G28.checked114
+  · exact WitnessHighChecks67702G28.checked115
+  · exact WitnessHighChecks67702G29.checked116
+  · exact WitnessHighChecks67702G29.checked117
+  · exact WitnessHighChecks67702G29.checked118
+  · exact WitnessHighChecks67702G29.checked119
+  · exact WitnessHighChecks67702G30.checked120
+  · exact WitnessHighChecks67702G30.checked121
+  · exact WitnessHighChecks67702G30.checked122
+  · exact WitnessHighChecks67702G30.checked123
+  · exact WitnessHighChecks67702G31.checked124
+  · exact WitnessHighChecks67702G31.checked125
+  · exact WitnessHighChecks67702G31.checked126
+  · exact WitnessHighChecks67702G31.checked127
+  · exact WitnessHighChecks67702G32.checked128
+  · exact WitnessHighChecks67702G32.checked129
+  · exact WitnessHighChecks67702G32.checked130
+  · exact WitnessHighChecks67702G32.checked131
+  · exact WitnessHighChecks67702G33.checked132
+  · exact WitnessHighChecks67702G33.checked133
+  · exact WitnessHighChecks67702G33.checked134
+  · exact WitnessHighChecks67702G33.checked135
+  · exact WitnessHighChecks67702G34.checked136
+  · exact WitnessHighChecks67702G34.checked137
+  · exact WitnessHighChecks67702G34.checked138
+  · exact WitnessHighChecks67702G34.checked139
+  · exact WitnessHighChecks67702G35.checked140
+  · exact WitnessHighChecks67702G35.checked141
+  · exact WitnessHighChecks67702G35.checked142
+  · exact WitnessHighChecks67702G35.checked143
+  · exact WitnessHighChecks67702G36.checked144
+  · exact WitnessHighChecks67702G36.checked145
+  · exact WitnessHighChecks67702G36.checked146
+  · exact WitnessHighChecks67702G36.checked147
+#print axioms bound
+end JSP233.WitnessHighFacts67702

@@ -1,6 +1,14 @@
 # Reading the formal proof
 
-Start with [PublicResults.lean](PublicResults.lean). It contains all six definitions of the original extremal problem and five public results. The upper bound, exact value, optimal family, and paper theorem hold for every `N ≥ 200000`. The construction holds for every positive `N`. The problem is about intersections of distinct members, and `IsAP` requires a nonempty set.
+Start with [PublicResults.lean](PublicResults.lean). It contains all six definitions of the original extremal problem and five public results. The upper bound, exact value, optimal family, and exact-value statement in the form used by the paper hold for every `N ≥ 19227`. The construction holds for every positive `N`. The problem is about intersections of distinct members, and `IsAP` requires a nonempty set.
+
+## The final assembly and the first finite window
+
+[Global/N19227/Global19227.lean](Erdos272/Global/N19227/Global19227.lean) proves the upper bound on the original family for every `N ≥ 19227`. The matching construction yields the exact value and an optimal family.
+
+- For `19227 ≤ N ≤ 20257`, the proof splits on whether the retained nonprogression members have a common point. [RootedFamily20258.lean](Erdos272/Global/N20258/RootedFamily20258.lean) handles the common-point case. It bounds an entirely rooted retained family directly and otherwise restores the original family from a one-sided start.
+- [Unrooted19227.lean](Erdos272/Global/N19227/Unrooted19227.lean) uses the first sparse cutoff in the other case. Arithmetic certificates for `19227–19682` reuse individual price proofs and check population bands against the ground interval endpoints. The [bridge](Erdos272/Global/N19227/CutBridge19227.lean) reuses the same cutoff argument and price tables over `19683–20257`.
+- [Global20258.lean](Erdos272/Global/N20258/Global20258.lean) covers `N ≥ 20258`. Its finite-window argument connects to [Global40000.lean](Erdos272/Global/N40000/Global40000.lean) and the larger-order proofs.
 
 ## The large-order part of the paper
 
@@ -12,9 +20,9 @@ Start with [PublicResults.lean](PublicResults.lean). It contains all six definit
 6. [Retention/Terminal36.lean](Erdos272/Retention/Terminal36.lean) and [Retention/JointFringe44.lean](Erdos272/Retention/JointFringe44.lean) count the retained family and restore the deleted members using their common long core.
 7. [Global/GlobalUpper53.lean](Erdos272/Global/GlobalUpper53.lean) assembles the original-family large-order theorem.
 
-## The finite-window proof and final result
+## The earlier 200000 theorem
 
-[Global/N200000/Global200000.lean](Erdos272/Global/N200000/Global200000.lean) is the final assembly for every `N ≥ 200000`. Its public conclusions assume the numerical threshold and legality of the actual family.
+[Global/N200000/Global200000.lean](Erdos272/Global/N200000/Global200000.lean) assembles the earlier theorem for every `N ≥ 200000`. Its public conclusions assume the numerical threshold and legality of the actual family.
 
 1. [Core/N200000/CoreUnionSource200000.lean](Erdos272/Core/N200000/CoreUnionSource200000.lean) proves the longest-AP source for the actual member and step denominator.
 2. [Core/N200000/MixedCore200000.lean](Erdos272/Core/N200000/MixedCore200000.lean) splits on the actual defect and combines that source with certified totient floors.
@@ -24,7 +32,7 @@ Start with [PublicResults.lean](PublicResults.lean). It contains all six definit
 6. [Retention/N200000/RecoveryChain200000.lean](Erdos272/Retention/N200000/RecoveryChain200000.lean) performs the two symbolic preparations, and [Restore200000.lean](Erdos272/Retention/N200000/Restore200000.lean) restores the original family.
 7. Supporting windows are grouped under `N233811`, `N243614`, `N250262`, and `N291012` within the same mathematical topic directories.
 
-The development contains 1,685 project modules, including the public entry. Every project import names its physical path beneath this directory. Lake resolves the hierarchy directly. The six public definitions elaborate using their Mathlib imports alone, and the theorem proofs are imported from the project modules.
+Every project import names its physical path beneath this directory. Lake resolves the hierarchy directly. The six public definitions elaborate using their Mathlib imports alone, and the theorem proofs come from the project modules.
 
 ## Module and certificate organization
 
@@ -47,4 +55,10 @@ lake build
 
 Use the committed Lean toolchain and Lake manifest. Finite certificates are discharged by ordinary Lean proof terms. `PublicResults.lean` prints the five public theorem types and their axiom dependencies, which use only `propext`, `Classical.choice`, and `Quot.sound`.
 
-The full public import closure was checked sequentially with one Lean thread, a 6 GiB aggregate committed-memory cap, and the pinned mathlib cache. The arithmetic certificates make a full build time-consuming. Compile project modules in dependency order and limit concurrent Lean processes on machines with limited resources.
+For a serial build with a Lean memory setting of 4096 MiB per invocation, run the following after fetching the mathlib cache.
+
+```sh
+lake env python check_public.py --memory 4096
+```
+
+The script follows the public file's imports in dependency order and runs one single-threaded Lean process at a time. It caches project objects by source and dependency fingerprints in `.lake/checked-public`. A full build includes several thousand project modules and can take substantial time.

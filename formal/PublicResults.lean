@@ -7,14 +7,14 @@ public import Mathlib.Data.Int.Basic
 public import Mathlib.Algebra.Divisibility.Basic
 public import Mathlib.Algebra.Group.Int.Defs
 public import Mathlib.Data.Nat.Choose.Basic
-public import Erdos272.Global.N200000.Global200000
+public import Erdos272.Global.N19227.Global19227
 
 @[expose] public section
 
 /-! # JSP-000233 / Erdos #272: the formalized large-N result
 
 All objects in the statements are defined below using only Lean/Mathlib.
-Proofs reuse the project modules. For every N >= 200000,
+Proofs reuse the project modules. For every N >= 19227,
 `exact_value` proves `Value N = N.choose 2 + 1 + (N - 1) / 4`.
 The universal upper bound and an attaining optimal family are also proved;
 the lower bound holds for every positive N.
@@ -62,20 +62,20 @@ theorem lower_bound (N : ℕ) (hN : 1≤N) : B N≤Value N :=
   ExtremalValue45.actual_lower_bound N hN
 
 theorem upper_bound {N : ℕ} {F : Finset (Finset ℤ)}
-    (hN : 200000≤N) (hF : Legal (Ground N) F) : F.card≤B N :=
-  Global200000.actual_original_upper_bound hN hF
+    (hN : 19227≤N) (hF : Legal (Ground N) F) : F.card≤B N :=
+  Global19227.actual_original_upper_bound hN hF
 
-theorem exact_value (N : ℕ) (hN : 200000≤N) : Value N=B N :=
-  Global200000.actual_value_eq_B N hN
+theorem exact_value (N : ℕ) (hN : 19227≤N) : Value N=B N :=
+  Global19227.actual_value_eq_B N hN
 
-theorem optimal_family (N : ℕ) (hN : 200000≤N) :
+theorem optimal_family (N : ℕ) (hN : 19227≤N) :
     ∃F:Finset (Finset ℤ),Legal (Ground N) F ∧ F.card=B N ∧
       ∀G:Finset (Finset ℤ),Legal (Ground N) G→G.card≤F.card :=
-  Global200000.actual_optimal_family N hN
+  Global19227.actual_optimal_family N hN
 
-/-- The theorem presented in the accompanying paper. -/
-theorem paper_exact_value (N : ℕ) (hN : 200000≤N) : Value N=B N :=
-  Global200000.actual_value_eq_B N hN
+/-- The exact-value statement in the form used by the accompanying paper. -/
+theorem paper_exact_value (N : ℕ) (hN : 19227≤N) : Value N=B N :=
+  Global19227.actual_value_eq_B N hN
 
 #check @lower_bound
 #check @upper_bound

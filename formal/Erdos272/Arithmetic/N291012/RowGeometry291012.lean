@@ -17,7 +17,8 @@ noncomputable section
 set_option autoImplicit false
 set_option maxHeartbeats 0
 
-theorem parameters {k : ℕ} (hk : k < 91) : Static (CleanupRows291012.data k) := by
+private theorem rows00 {k : ℕ} (hi : k < 13) :
+    Static (CleanupRows291012.data k) := by
   interval_cases k
   · exact RowGeometryCertificates291012G0.static00
   · exact RowGeometryCertificates291012G0.static01
@@ -32,6 +33,10 @@ theorem parameters {k : ℕ} (hk : k < 91) : Static (CleanupRows291012.data k) :
   · exact RowGeometryCertificates291012G0.static10
   · exact RowGeometryCertificates291012G0.static11
   · exact RowGeometryCertificates291012G0.static12
+
+private theorem rows13 {k : ℕ} (lo : 13 ≤ k) (hi : k < 26) :
+    Static (CleanupRows291012.data k) := by
+  interval_cases k
   · exact RowGeometryCertificates291012G1.static13
   · exact RowGeometryCertificates291012G1.static14
   · exact RowGeometryCertificates291012G1.static15
@@ -45,6 +50,10 @@ theorem parameters {k : ℕ} (hk : k < 91) : Static (CleanupRows291012.data k) :
   · exact RowGeometryCertificates291012G1.static23
   · exact RowGeometryCertificates291012G1.static24
   · exact RowGeometryCertificates291012G1.static25
+
+private theorem rows26 {k : ℕ} (lo : 26 ≤ k) (hi : k < 39) :
+    Static (CleanupRows291012.data k) := by
+  interval_cases k
   · exact RowGeometryCertificates291012G2.static26
   · exact RowGeometryCertificates291012G2.static27
   · exact RowGeometryCertificates291012G2.static28
@@ -58,6 +67,10 @@ theorem parameters {k : ℕ} (hk : k < 91) : Static (CleanupRows291012.data k) :
   · exact RowGeometryCertificates291012G2.static36
   · exact RowGeometryCertificates291012G2.static37
   · exact RowGeometryCertificates291012G2.static38
+
+private theorem rows39 {k : ℕ} (lo : 39 ≤ k) (hi : k < 52) :
+    Static (CleanupRows291012.data k) := by
+  interval_cases k
   · exact RowGeometryCertificates291012G3.static39
   · exact RowGeometryCertificates291012G3.static40
   · exact RowGeometryCertificates291012G3.static41
@@ -71,6 +84,10 @@ theorem parameters {k : ℕ} (hk : k < 91) : Static (CleanupRows291012.data k) :
   · exact RowGeometryCertificates291012G3.static49
   · exact RowGeometryCertificates291012G3.static50
   · exact RowGeometryCertificates291012G3.static51
+
+private theorem rows52 {k : ℕ} (lo : 52 ≤ k) (hi : k < 65) :
+    Static (CleanupRows291012.data k) := by
+  interval_cases k
   · exact RowGeometryCertificates291012G4.static52
   · exact RowGeometryCertificates291012G4.static53
   · exact RowGeometryCertificates291012G4.static54
@@ -84,6 +101,10 @@ theorem parameters {k : ℕ} (hk : k < 91) : Static (CleanupRows291012.data k) :
   · exact RowGeometryCertificates291012G4.static62
   · exact RowGeometryCertificates291012G4.static63
   · exact RowGeometryCertificates291012G4.static64
+
+private theorem rows65 {k : ℕ} (lo : 65 ≤ k) (hi : k < 78) :
+    Static (CleanupRows291012.data k) := by
+  interval_cases k
   · exact RowGeometryCertificates291012G5.static65
   · exact RowGeometryCertificates291012G5.static66
   · exact RowGeometryCertificates291012G5.static67
@@ -97,6 +118,10 @@ theorem parameters {k : ℕ} (hk : k < 91) : Static (CleanupRows291012.data k) :
   · exact RowGeometryCertificates291012G5.static75
   · exact RowGeometryCertificates291012G5.static76
   · exact RowGeometryCertificates291012G5.static77
+
+private theorem rows78 {k : ℕ} (lo : 78 ≤ k) (hi : k < 91) :
+    Static (CleanupRows291012.data k) := by
+  interval_cases k
   · exact RowGeometryCertificates291012G6.static78
   · exact RowGeometryCertificates291012G6.static79
   · exact RowGeometryCertificates291012G6.static80
@@ -110,6 +135,21 @@ theorem parameters {k : ℕ} (hk : k < 91) : Static (CleanupRows291012.data k) :
   · exact RowGeometryCertificates291012G6.static88
   · exact RowGeometryCertificates291012G6.static89
   · exact RowGeometryCertificates291012G6.static90
+
+theorem parameters {k : ℕ} (hk : k < 91) : Static (CleanupRows291012.data k) := by
+  by_cases h13 : k < 13
+  · exact rows00 h13
+  by_cases h26 : k < 26
+  · exact rows13 (by omega) h26
+  by_cases h39 : k < 39
+  · exact rows26 (by omega) h39
+  by_cases h52 : k < 52
+  · exact rows39 (by omega) h52
+  by_cases h65 : k < 65
+  · exact rows52 (by omega) h65
+  by_cases h78 : k < 78
+  · exact rows65 (by omega) h78
+  exact rows78 (by omega) hk
 
 theorem cover {v : Data} (h : Static v) {N n : ℕ}
     (hN : N ≤ v.row.high) (hm : v.memberFloor ≤ n) (hs : 12*n ≤ N) :

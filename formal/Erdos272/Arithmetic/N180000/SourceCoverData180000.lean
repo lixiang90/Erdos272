@@ -1,0 +1,231 @@
+module
+
+public import Erdos272.Arithmetic.N291012.SourceFloorSound291012
+
+@[expose] public section
+
+namespace JSP233.SourceCoverData180000
+
+noncomputable def strides0000 : List ℕ := List.replicate 16 2
+
+noncomputable def strides0001 : List ℕ := List.replicate 16 2
+
+noncomputable def strides0002 : List ℕ := List.replicate 128 2
+
+noncomputable def strides0003 : List ℕ := List.replicate 33 1 ++ [2, 1, 1, 1, 1, 2] ++ List.replicate 12 1 ++ [2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+noncomputable def strides0004 : List ℕ := List.replicate 79 1 ++ [2] ++ List.replicate 14 1 ++ [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2] ++ List.replicate 14 1 ++ [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+noncomputable def strides0005 : List ℕ := [2, 1, 1, 2, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1]
+
+noncomputable def strides0006 : List ℕ := [1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1, 2, 2, 2, 2, 2, 1, 1, 1, 1, 2, 2, 2, 2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1, 2, 2, 2, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 1, 2, 2, 2, 2, 1, 1] ++ List.replicate 14 2 ++ [1, 1, 2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 2, 1, 2, 1] ++ List.replicate 13 2 ++ [1, 2, 1] ++ List.replicate 28 2
+
+noncomputable def strides0007 : List ℕ := List.replicate 124 2
+
+noncomputable def strides0008 : List ℕ := [1, 2] ++ List.replicate 28 1 ++ [2, 1, 1, 2, 1, 1, 1, 1, 2] ++ List.replicate 12 1 ++ [2, 1, 1, 1, 1, 2, 1]
+
+noncomputable def strides0009 : List ℕ := [1, 1, 1, 1, 1, 1, 1, 2] ++ List.replicate 24 1 ++ [2, 1, 1, 2] ++ List.replicate 18 1 ++ [2, 1, 1, 2, 1, 1, 1, 1, 2] ++ List.replicate 12 1 ++ [2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 1]
+
+noncomputable def strides0010 : List ℕ := [1]
+
+noncomputable def strides0011 : List ℕ := [1]
+
+noncomputable def strides0012 : List ℕ := [1, 1, 1]
+
+noncomputable def strides0013 : List ℕ := [2, 2, 2, 2, 2]
+
+noncomputable def strides0014 : List ℕ := [2, 2, 2, 2, 2]
+
+noncomputable def strides0015 : List ℕ := List.replicate 40 2
+
+noncomputable def strides0016 : List ℕ := [1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2] ++ List.replicate 12 1 ++ [2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2]
+
+noncomputable def strides0017 : List ℕ := [1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 1, 1]
+
+noncomputable def strides0018 : List ℕ := [2, 1, 2, 1, 1, 2, 2, 1, 1] ++ List.replicate 14 2 ++ [1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1]
+
+noncomputable def strides0019 : List ℕ := [1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 2, 2, 1]
+
+noncomputable def strides0020 : List ℕ := List.replicate 32 2
+
+noncomputable def strides0021 : List ℕ := List.replicate 16 2
+
+noncomputable def strides0022 : List ℕ := [1, 1, 1, 1, 1]
+
+noncomputable def strides0023 : List ℕ := List.replicate 30 1
+
+noncomputable def strides0024 : List ℕ := [2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1]
+
+noncomputable def strides0025 : List ℕ := [1, 2, 2, 2, 2, 1]
+
+noncomputable def strides0026 : List ℕ := [1] ++ List.replicate 19 2 ++ [1]
+
+noncomputable def strides0027 : List ℕ := List.replicate 14 1 ++ [2, 2, 1, 1]
+
+noncomputable def strides0028 : List ℕ := [2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1] ++ List.replicate 75 2
+
+noncomputable def strides0029 : List ℕ := List.replicate 20 1
+
+noncomputable def strides0030 : List ℕ := [1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 1, 1, 2, 2, 2, 2, 2, 1, 1]
+
+noncomputable def strides0031 : List ℕ := [1, 1, 1]
+
+noncomputable def strides0032 : List ℕ := List.replicate 18 1
+
+noncomputable def strides0033 : List ℕ := [2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1]
+
+noncomputable def strides0034 : List ℕ := [1, 2, 1, 1, 2, 2, 1]
+
+noncomputable def strides0035 : List ℕ := [1, 2, 2]
+
+noncomputable def strides0036 : List ℕ := [2, 2, 2, 2, 2, 1, 1, 1, 1, 2, 2, 2]
+
+noncomputable def strides0037 : List ℕ := [2, 1, 2, 1] ++ List.replicate 13 2 ++ [1, 2, 1, 2, 2, 2, 2, 2, 2, 2]
+
+noncomputable def strides0038 : List ℕ := List.replicate 15 1 ++ [2, 1, 1, 1]
+
+noncomputable def strides0039 : List ℕ := [1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 1, 1, 2, 2, 1, 1, 2, 1, 1, 2, 2, 2, 2, 2, 1]
+
+noncomputable def strides0040 : List ℕ := [1, 1, 1, 2, 2, 1, 1] ++ List.replicate 35 2 ++ [3, 3, 2, 2, 3, 3, 3, 3, 3, 1]
+
+noncomputable def strides0041 : List ℕ := List.replicate 20 1
+
+noncomputable def strides0042 : List ℕ := List.replicate 26 1 ++ [2] ++ List.replicate 14 1 ++ [2, 1, 1, 2, 2]
+
+noncomputable def strides0043 : List ℕ := [1, 1]
+
+noncomputable def strides0044 : List ℕ := List.replicate 12 1
+
+noncomputable def strides0045 : List ℕ := [2, 2, 2, 2, 2, 2, 2, 2]
+
+noncomputable def strides0046 : List ℕ := [1, 1, 1, 1, 1, 1]
+
+noncomputable def strides0047 : List ℕ := [1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 1]
+
+noncomputable def strides0048 : List ℕ := [2, 1, 1, 2, 2, 1, 1]
+
+noncomputable def strides0049 : List ℕ := [1, 1, 1, 1, 1, 1, 2, 2, 1, 1] ++ List.replicate 14 2
+
+noncomputable def strides0050 : List ℕ := [1, 1, 1, 1, 1, 1, 2, 1, 1]
+
+noncomputable def strides0051 : List ℕ := [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1]
+
+noncomputable def strides0052 : List ℕ := [1, 1]
+
+noncomputable def strides0053 : List ℕ := [1, 1, 1, 2, 1, 1, 1]
+
+noncomputable def strides0054 : List ℕ := [1, 1, 2, 1, 1]
+
+noncomputable def strides0055 : List ℕ := [1, 1, 1] ++ List.replicate 17 2 ++ [3, 3, 2]
+
+noncomputable def strides0056 : List ℕ := [1, 2, 2, 2, 2, 2]
+
+noncomputable def strides0057 : List ℕ := [1, 1, 2, 2, 1, 1, 2]
+
+noncomputable def strides0058 : List ℕ := [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 2, 1]
+
+noncomputable def strides0059 : List ℕ := [2, 1, 1]
+
+noncomputable def strides0060 : List ℕ := [1, 1]
+
+noncomputable def strides0061 : List ℕ := [2, 1, 1, 2, 2, 1, 1]
+
+noncomputable def strides0062 : List ℕ := [2, 2, 1]
+
+noncomputable def strides0063 : List ℕ := [1, 2, 2, 1]
+
+noncomputable def strides0064 : List ℕ := [1, 2, 2, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1]
+
+noncomputable def strides0065 : List ℕ := [1]
+
+noncomputable def strides0066 : List ℕ := [1]
+
+noncomputable def strides0067 : List ℕ := [1, 1, 1, 2, 2, 1]
+
+noncomputable def strides0068 : List ℕ := [1, 1, 1, 1]
+
+noncomputable def strides0069 : List ℕ := [1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 2]
+
+noncomputable def strides0070 : List ℕ := [1, 1, 1, 1, 2]
+
+noncomputable def strides0071 : List ℕ := [1, 1, 1, 1, 2, 2, 1, 1, 2, 2, 1]
+
+noncomputable def strides0072 : List ℕ := [1, 1, 1]
+
+noncomputable def strides0073 : List ℕ := [1, 1, 1, 1, 1, 1, 1]
+
+noncomputable def strides0074 : List ℕ := List.replicate 12 1 ++ [2, 1]
+
+noncomputable def strides0075 : List ℕ := [2, 1, 2, 2, 2, 2, 2, 2]
+
+noncomputable def strides0076 : List ℕ := [1, 1, 1, 1]
+
+noncomputable def strides0077 : List ℕ := [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1]
+
+noncomputable def strides0078 : List ℕ := [1, 1, 2, 1, 1]
+
+noncomputable def strides0079 : List ℕ := [1, 1, 1]
+
+noncomputable def strides0080 : List ℕ := [1, 1, 1]
+
+noncomputable def strides0081 : List ℕ := [1, 1, 2, 2, 2, 1]
+
+noncomputable def strides0082 : List ℕ := [1, 1, 1, 1]
+
+noncomputable def strides0083 : List ℕ := [1, 1, 1, 1, 1, 2, 1, 2]
+
+noncomputable def strides0084 : List ℕ := [1, 1]
+
+noncomputable def strides0085 : List ℕ := [1, 1, 1, 2]
+
+noncomputable def strides0086 : List ℕ := [1, 1, 1, 1, 1, 1, 1, 1, 2, 2]
+
+noncomputable def strides0087 : List ℕ := [1, 2, 1]
+
+noncomputable def strides0088 : List ℕ := [1, 2, 2, 1]
+
+noncomputable def strides0089 : List ℕ := [1, 1, 1, 1, 1, 2, 2, 2, 1]
+
+noncomputable def strides0090 : List ℕ := [1, 1, 1]
+
+noncomputable def strides0091 : List ℕ := [1, 1, 2, 2, 2, 3]
+
+noncomputable def strides0092 : List ℕ := [1, 1, 2]
+
+noncomputable def strides0093 : List ℕ := [2, 1, 1, 2, 2, 2]
+
+noncomputable def strides0094 : List ℕ := [1, 1]
+
+noncomputable def strides0095 : List ℕ := [1, 1, 1, 2, 2, 3, 3, 4, 4]
+
+noncomputable def strides0096 : List ℕ := [1, 2]
+
+noncomputable def strides0097 : List ℕ := [1, 1, 2, 2, 1]
+
+noncomputable def strides0098 : List ℕ := [1, 1, 1]
+
+noncomputable def strides0099 : List ℕ := [1, 1, 1, 1, 1, 2]
+
+noncomputable def strides0100 : List ℕ := [1, 1]
+
+noncomputable def strides0101 : List ℕ := [1, 1, 1, 2, 2, 1]
+
+noncomputable def strides0102 : List ℕ := [1, 1, 1, 1, 2, 2]
+
+noncomputable def strides0103 : List ℕ := [1, 1, 1]
+
+noncomputable def strides0104 : List ℕ := [1, 1]
+
+noncomputable def strides0105 : List ℕ := [1, 1]
+
+noncomputable def strides0106 : List ℕ := [1, 1, 1, 2]
+
+noncomputable def strides0107 : List ℕ := [1, 1]
+
+noncomputable def strides0108 : List ℕ := [1, 1, 1, 2]
+
+noncomputable def strides0109 : List ℕ := [1, 1]
+
+noncomputable def strides0110 : List ℕ := [1, 1, 1, 2]
+
+end JSP233.SourceCoverData180000

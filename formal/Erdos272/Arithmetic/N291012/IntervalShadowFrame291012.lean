@@ -17,11 +17,12 @@ noncomputable section
 set_option autoImplicit false
 set_option maxHeartbeats 1000000
 
-theorem actual_frame {N : ℕ} {c : ℤ} {U : Finset (Finset ℤ)}
+theorem actual_frame_enclosed {N : ℕ} {c : ℤ} {U : Finset (Finset ℤ)}
     (hc : c ∈ Ground N) (hground : ∀ S ∈ U, S ⊆ Ground N)
     (hroot : ∀ S ∈ U, c ∈ S) (hi : ∀ S ∈ U, ∃ a b : ℤ, S = Finset.Icc a b)
     (htwo : ∀ S ∈ U, 2 ≤ S.card) :
     ∃ A B : ℕ, A+B ≤ N-1 ∧
+      (∀ S ∈ U, S ⊆ Finset.Icc (c-A) (c+B)) ∧
       Pairs c A B U ⊆ (Finset.range A).product (Finset.range B) ∧
       (U.card : ℝ) ≤ (A : ℝ)+B+(Pairs c A B U).card ∧
       (A : ℝ)^3+(B : ℝ)^3-A-B+
@@ -82,9 +83,22 @@ theorem actual_frame {N : ℕ} {c : ℤ} {U : Finset (Finset ℤ)}
     exact_mod_cast hshadow
   rw [APResidual208.cast_choose_three, APResidual208.cast_choose_three] at hshadowR
   push_cast at hshadowR
-  refine ⟨A, B, by omega, Finset.filter_subset _ _, hcount, ?_⟩
+  refine ⟨A, B, by omega, henv, Finset.filter_subset _ _, hcount, ?_⟩
   nlinarith only [hshadowR]
 
+theorem actual_frame {N : ℕ} {c : ℤ} {U : Finset (Finset ℤ)}
+    (hc : c ∈ Ground N) (hground : ∀ S ∈ U, S ⊆ Ground N)
+    (hroot : ∀ S ∈ U, c ∈ S) (hi : ∀ S ∈ U, ∃ a b : ℤ, S = Finset.Icc a b)
+    (htwo : ∀ S ∈ U, 2 ≤ S.card) :
+    ∃ A B : ℕ, A+B ≤ N-1 ∧
+      Pairs c A B U ⊆ (Finset.range A).product (Finset.range B) ∧
+      (U.card : ℝ) ≤ (A : ℝ)+B+(Pairs c A B U).card ∧
+      (A : ℝ)^3+(B : ℝ)^3-A-B+
+        6*(∑ p ∈ Pairs c A B U, ((p.1 : ℝ)+p.2+1)) ≤ 6*((APShadow U).card : ℝ) := by
+  obtain ⟨A,B,span,_,grid,count,shadow⟩ := actual_frame_enclosed hc hground hroot hi htwo
+  exact ⟨A,B,span,grid,count,shadow⟩
+
+#print axioms actual_frame_enclosed
 #print axioms actual_frame
 end
 end JSP233.IntervalShadowFrame291012

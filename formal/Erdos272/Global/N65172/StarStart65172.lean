@@ -1,0 +1,88 @@
+module
+
+public import Erdos272.Counting.N65172.StarLower65172
+public import Erdos272.Arithmetic.N94488.HarmonicCaps94488
+public import Erdos272.Counting.N67702.StarMidpoint67702
+public import Erdos272.Counting.N86412.DenseCount86412
+
+@[expose] public section
+
+namespace JSP233.StarStart65172
+open StarCompletion StarResources30 CrossLine30 JointResources31 HarmonicAbel29 DenseDeletion40
+open LowSteps32 APGeometry RecoveryCaps213 StarMidpoint67702
+open scoped Classical BigOperators
+noncomputable section
+set_option autoImplicit false
+set_option maxHeartbeats 1000000
+set_option Elab.async false
+theorem actual_small_kernel_window {N : ℕ} {c : ℤ} {F : Finset (Finset ℤ)}
+    (hN : 65172 ≤ N) (hhi : N ≤ 179999) (hc : c ∈ Ground N) (hF : Legal (Ground N) F)
+    (htwo : 2 ≤ (Avoiders F c).card) (hkernel : (CommonKernel (Ground N) F c).card ≤ 1)
+    (hcount : (Avoiders F c).card ≤ 81*N) : F.card ≤ B N := by
+  by_contra hn
+  have hcounter : N.choose 2+1 ≤ F.card := by unfold B at hn; omega
+  have hlow := StarLower65172.actual_AP_lower (by omega : 7 ≤ N) hc hF htwo hkernel hcounter
+  let A := APLarge (RootPart F c)
+  have hground : ∀ S ∈ A, S ⊆ Ground N := fun S hS =>
+    hF.1 S (Finset.mem_filter.mp (Finset.mem_filter.mp hS).1).1
+  have hAP : ∀ S ∈ A, IsAP S := fun S hS => (Finset.mem_filter.mp hS).2.1
+  have hroot : Rooted A c := fun S hS => (Finset.mem_filter.mp (Finset.mem_filter.mp hS).1).2
+  have hlarge : ∀ S ∈ A, 4 ≤ S.card := fun S hS => (Finset.mem_filter.mp hS).2.2
+  have htotal := StarMidpoint67702.actual_AP_total 10 N c A hground hAP hroot hlarge hc
+  norm_num only [Nat.cast_ofNat] at htotal
+  change (A.card : ℝ) ≤ (∑ d ∈ LowActive 10 c A,
+    ((StepClass A (trueStep c) (d : ℤ)).card : ℝ))+
+      ((N-1 : ℕ) : ℝ)^2/42+2*((N-1 : ℕ) : ℝ)*Harmonic (N-1)+((N-1 : ℕ) : ℝ) at htotal
+  have hh : Harmonic (N-1) ≤ 14 := (harmonic_mono (Nat.sub_le N 1)).trans
+    ((HarmonicCaps94488.source_cap hhi).trans (by norm_num))
+  have hHpay := mul_le_mul_of_nonneg_left hh
+    (show (0 : ℝ) ≤ 2*((N-1 : ℕ) : ℝ) by positivity)
+  have hb := StarMidpoint67702.actual_budget_with_low_surpluses 10 hc hF
+  norm_num only [Nat.cast_ofNat] at hb
+  have hcountR : ((Avoiders F c).card : ℝ) ≤ 81*((N-1 : ℕ) : ℝ)+81 := by
+    have hx : ((Avoiders F c).card : ℝ) ≤ 81*(N : ℝ) := by exact_mod_cast hcount
+    have he : (N : ℝ) = ((N-1 : ℕ) : ℝ)+1 := by exact_mod_cast (show N = N-1+1 by omega)
+    linarith only [hx, he]
+  have hkR : ((CommonKernel (Ground N) F c).card : ℝ) ≤ 1 := by exact_mod_cast hkernel
+  have hcounterR : ((N-1).choose 2 : ℝ)+((N-1 : ℕ) : ℝ)+1 ≤ F.card := by
+    have hid := StarBudget30.small_budget_identity N (by omega : 1 ≤ N)
+    have hx : (N.choose 2 : ℝ)+1 ≤ F.card := by exact_mod_cast hcounter
+    have hi : (N.choose 2 : ℝ)+1 = (N : ℝ)+((N-1).choose 2 : ℝ) := by exact_mod_cast hid.symm
+    have he : (N : ℝ) = ((N-1 : ℕ) : ℝ)+1 := by exact_mod_cast (show N = N-1+1 by omega)
+    linarith only [hx, hi, he]
+  have hnR : (65171 : ℝ) ≤ ((N-1 : ℕ) : ℝ) := by exact_mod_cast (show 65171 ≤ N-1 by omega)
+  have hp := mul_nonneg (show (0 : ℝ) ≤ ((N-1 : ℕ) : ℝ)-65171 by linarith only [hnR])
+    (show (0 : ℝ) ≤ ((N-1 : ℕ) : ℝ) by positivity)
+  change (((N-1 : ℕ) : ℝ)^2/18)-(7/2 : ℝ)*((N-1 : ℕ) : ℝ)-2*(Avoiders F c).card+1 ≤ A.card at hlow
+  change (F.card : ℝ)+((∑ d ∈ LowActive 10 c A,
+    ((StepClass A (trueStep c) (d : ℤ)).card : ℝ))-10000000)/21 ≤ _ at hb
+  nlinarith only [hlow, htotal, hHpay, hb, hcountR, hkR, hcounterR, hp, hnR]
+
+theorem actual_retained_star_window {N : ℕ} {c : ℤ} {F : Finset (Finset ℤ)}
+    (hN : 65172≤N) (hhi : N≤179999)
+    (hc : c∈Ground N) (hF : Legal (Ground N) F)
+    (hroot : Rooted (Retained N 12 F) c) : F.card≤B N := by
+  have hsub : Avoiders F c⊆Deleted N 12 F := by
+    intro S hS
+    obtain ⟨hSF,hcS⟩ := Finset.mem_filter.mp hS
+    by_contra hnd
+    exact hcS (hroot S (Finset.mem_sdiff.mpr ⟨hSF,hnd⟩))
+  have hbad : ∀S∈Avoiders F c,¬IsAP S :=
+    fun S hS => (Finset.mem_filter.mp (hsub hS)).2.1
+  have hdel := DenseCount86412.actual_deleted_count (by omega : 56400≤N) (by omega : N ≤ 2^18) hF
+  have hcount : (Avoiders F c).card≤81*N := (Finset.card_le_card hsub).trans hdel
+  by_cases htwo : 2≤(Avoiders F c).card
+  · by_cases hk : 2≤(CommonKernel (Ground N) F c).card
+    · have hb := AnchorCompletion38.actual_crooked_large_kernel_payment N F c hc hF htwo hk hbad
+      omega
+    · exact actual_small_kernel_window (by omega : 65172≤N) hhi hc hF htwo (by omega) hcount
+  · apply StarBoundConcrete30.best_omitter_threshold_unconditional N F c hc hF hbad
+    have hs : (Avoiders F c).card≤5*N/6 := by omega
+    exact hs.trans (le_max_right _ _)
+
+
+
+#print axioms actual_small_kernel_window
+#print axioms actual_retained_star_window
+end
+end JSP233.StarStart65172
